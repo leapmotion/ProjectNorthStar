@@ -35,8 +35,6 @@
 #include "./Lib_Chicago/I2C/i2c.h"
 #include "./Lib_Chicago/Debug/cmd.h"
 
-#include "./Lib_Backlight/backlight.h"
-
 
 //#############################################################################
 // Pre-compiler Definitions
@@ -63,20 +61,7 @@ void setup(){
 	SerialUSB.begin(921600);
 
 	// Backlight driver
-	// PWM_out pin, vsync_in pin
-	backlight.begin(PIN_backlight_pwm, PIN_backlight_vsync_in);
-	
-	// current(uA), voltage, easingType, vsyncMode, frameRate, startTime(us), stopTime(us)
-	backlight.setup(
-		backlight.easingFunctionSetup::exponential, 
-		backlight.vsyncModeSetup::vsyncModeAstableAutostart, 
-		PANEL_FRAME_RATE, 
-		500, 
-		2000
-	);
-	
-	backlight.brightness(510, true);
-	backlight.lightOn(true);
+	analogWrite(PIN_backlight_pwm, 64);
 	
 	// Chicago bridge
 	EXT_INTR_ENABLE();
