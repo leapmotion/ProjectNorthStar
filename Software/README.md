@@ -1,6 +1,6 @@
 # Project North Star: Software
 
-[img src="https://i.imgur.com/or9KhyJ.png"]
+[![North Star Starting Scene](https://i.imgur.com/or9KhyJ.png)](https://github.com/leapmotion/ProjectNorthStar/tree/master/Software)
 
 This Unity Package contains the Unity Assets, Scenes, and Prewarping systems necessary to build Unity applications with the Project North Star headset.
 
