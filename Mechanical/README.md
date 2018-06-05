@@ -2,7 +2,7 @@
 
 This folder contains the mechanical assets necessary to build a Project North Star AR Headset.
 
-[![North Star Exploded View](/Mechanical/imgs/explodedview.PNG)
+![North Star Exploded View](/Mechanical/imgs/explodedview.PNG)
 
 ![Example Headset](/Mechanical/imgs/overviewbuild.jpg)
 
