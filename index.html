@@ -1,178 +1,6 @@
 <head>
-<style>
-	
-	body {
-		color: #4d4d4d;
-		    font: 16px/1.6 "montserrat", Helvetica, sans-serif;	
-			
-			background-color: #f9f9f9;
-			margin:0; padding:0;
-	}
-	
-	#page {
-		background-color:white;
-	}
-	
-	h1{
-		font-family: freightsans_pro,Arial,sans-serif !important;
-		    font-size: 50px;
-		    color: #6b6b6b;
-		    margin-bottom: 0;
-		    font-weight: normal;
-		    line-height: 100%;
-			text-align: center;
-			    font-size: 1.8em;
-			    padding: 1em;
-	}
-	
-	h5 {
-		    font-size: 1em;
-	}
-	
-	img {
-		max-width:500px;
-	}
-	
-	img:hover {
-		cursor:pointer;
-	}
-	
-	video {
-		display:inline-block;
-	}
-	
-	li {
-		margin: 1em 0;
-	}
-	
-	li>img, li>video {
-		max-width:300px;
-	}
-	
-	ol#BOM {
-	  margin: 0 0 1.5em;
-	  padding: 0;
-	  counter-reset: item;
-	}
-
-	ol#BOM > li {
-	  margin: 1em 0;
-	  padding: 0 0 0 2em;
-	  text-indent: -2em;
-	  list-style-type: none;
-	  counter-increment: item;
-	}
-	
-	ol#BOM > li:before {
-	  border:2px solid black;
-	  display: inline-block;
-	  width: 0.5em;
-      height: 1.35em;
-	  padding:0 0.25em 0 0.5em;
-	  margin-right:0.5em;
-
-	  font-weight: bold;
-	  text-align: right;
-	  content: counter(item,upper-latin) "";
-	}
-	
-	table,table td {
-		border:1px solid black;
-	}
-	table {
-		display:inline-block;
-	}
-	
-	tr:first-child>td {
-		text-align:center;
-		border:0;!important;
-		font-weight:bold;
-	}
-	
-	img.header {
-		max-width:360px;
-	}
-	
-	hr {
-		background-color:#5daa00;
-		height:2px;
-	}
-	
-	hr.print {
-		border:none;
-		  border-top:1px dotted #333;
-		  color:#fff;
-		  background-color:#fff;
-		  height:1px;
-		width:66%;
-		
-	}
-	
-	div.imageBannerCell {
-		width:360px;
-		height:203px;
-		display:inline-block;
-		overflow:hidden;
-	}
-	
-	#imageBanner {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content:center;
-		margin:0 auto;
-		width:100%;
-	}
-	
-	#introWrapper {
-		max-width: 52%;
-		    float: left;
-		    box-sizing: border-box;
-		
-	}
-	
-	#page {
-		max-width:1024px;
-		margin:1.5em auto;
-		box-sizing:border-box;
-		padding:0 1.5em 3em 1.5em;
-	}
-	
-	span.BOMRef {
-		border:2px solid black;
-		width:1.3em;
-		display:inline-block;
-		text-align:center;
-	}
-	
-	#headerBanner{
-	    width: 100%;
-	    height: 104px;
-	    background-color: #222;
-	    box-sizing: border-box;
-	    padding: 1.8em;
-	}
-	
-	#headerBanner>img {
-		float:left;
-		height: 48px;
-	}
-	
-	#team {
-		text-align:center;
-		opacity:0.6;
-	}
-	
-	#CADfiles {
-		display:inline-block;
-		background-color:#5daa00;
-		color:white;
-		text-align:center;
-		height:3em;
-		line-height:3em;
-		width:20em;
-	}
-	
-	</style></head>
+	<link rel="stylesheet" href="css/style.css">
+</head>
 	
 	<body>
 
@@ -191,7 +19,7 @@
 </div>
 
 <div id="page">
-	<h1>Leap Motion Reference AR Headset – Project North Star (Rev 1)</h1>
+	<h1>Leap Motion Project North Star - Mechanical Guide</h1>
 	
 <hr/>
 
@@ -203,7 +31,7 @@ The purpose of this guide is to instruct, with access to a few common tools, how
 
 Although not a complete AR solution, Project North Star points to a future where the physical and virtual worlds blend together into a single magical experience. With it we hope to gather like-minded people and build that future together.<br/><br/>
 
-<a id="CADfiles" href="./North%20Star%203D%20Files/">Download 3D CAD files</a> 
+<a id="CADfiles" href="https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical/North%20Star%203D%20Files">Download 3D CAD files</a> 
 </div>
 
 <div style="width:33%;margin-left:15%;display:inline-block">
@@ -215,10 +43,10 @@ Although not a complete AR solution, Project North Star points to a future where
 	<li>3D Printed Parts</li>
 	<!-- <li>Sanding and Finishing</li> -->
 	<li>Assembly Instructions</li>
-	<li>Calibration</li>
+	<li>Optical Calibration</li>
 	<li>Notes</li>
 	
-</ol>
+</ol><br/><br/>
 </div><br/><br/>
 
 
@@ -243,11 +71,13 @@ Although not a complete AR solution, Project North Star points to a future where
 <ol id="BOM">
 
 <li>Leap Motion next-generation ultra-wide tracking module<br/><br/>
- Coming soon!
+<i>Coming soon!</i>
+
 </li>
 <hr/>
 <li>Leap Motion display driver <br/><br/>
-Coming soon!
+<i>Coming soon!</i>
+
 </li>
 <hr/>
 <li>BOE 3.5-inch 120Hz LCDs<br/>
@@ -580,7 +410,8 @@ Final Assembly:<br/><br/>
 
 16) Make adjustments for user's head.
 <hr/>
-<h3>Calibration</h3>
+<h3>Optical Calibration</h3>
+<i>Coming soon!</i>
 <hr/>
 <h3>Notes</h3>
 <ul>
