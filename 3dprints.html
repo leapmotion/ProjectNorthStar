@@ -1,0 +1,251 @@
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+	
+	<body>
+
+<!-- ><h3>Introduction</h3> -->
+
+<div id="headerBanner">
+	
+	<img src="imgs/logo.png"/>
+	
+</div>
+
+<div id="page">
+	<h1>Project North Star - 3D Printing Reference</h1>	
+	
+<hr/>
+
+<i>Note: Use your slicer's part orientation tools to ensure flat contact with print surface. In Simplify 3D, it can be found in the menu "Edit > Place Surface On Bed"
+</i>
+<ol>
+<li><h5>Optics Bracket</h5>
+	
+	The optics bracket is the most difficult part to FDM print. The toed-in optics and long thin beams require a tuned printer and large print bed (200x250mm). To reduce the chance for print failure, support material is manually removed where it is thin and tall (see image below). Furthermore, to alleviate the finishing work, the print is separated into 2 print profiles: fast and high-res. The high-res profile's goal is to reduce stepping on the near-horizontal crossbeam. Afterwards, a file and 220-grit sandpaper very quickly make the surface passable without the need for filler. Although printing the entire bracket with one profile also produces good brackets, this hybrid solution saved time and produced better results without much effort. Makes sense if a file and sand paper is already available.<br/><br/>
+
+	All the optical components are mounted to this bracket. Take your time, be meticulous. It's crucial that care is taken in producing a good print. This will save time during calibration.
+	<br/>
+
+
+	<img minimal-lightbox src="imgs/bedPlacement_opticsBracket.png"/>
+	<video src="imgs/timelapses/opticsBrackWHITEBigTabs_20180425052347.mp4" controls></video>
+	<img minimal-lightbox src="imgs/bedPlacement_OpticsSupports.png"/><br/>
+
+	<img minimal-lightbox src="imgs/IMG_6551.jpg"/>
+	<img minimal-lightbox src="imgs/IMG_9233.jpg"/><br/>
+
+	<table>
+		<tr><td colspan=2>Print from: 0 - 5mm:</td></tr>
+		<tr><td>layer height</td><td>0.25mm</td></tr>
+		<tr><td>infill</td><td>20% rectilinear</td></tr>
+		<tr><td>top/bottom layers</td><td>3</td></tr>
+		<tr><td>perimeter walls</td><td>2</td></tr>
+		<tr><td>temperature</td><td>200 C</td></tr>
+		<tr><td>supports</td><td>yes, 60% infill</td></tr>
+	</table>
+	<table>
+		<tr><td colspan=2>Print from: 5 - 32mm:</td></tr>
+		<tr><td>layer height</td><td>0.15mm</td></tr>
+		<tr><td>infill</td><td>20% rectilinear</td></tr>
+		<tr><td>top/bottom layers</td><td>6</td></tr>
+		<tr><td>perimeter walls</td><td>3</td></tr>
+		<tr><td>temperature</td><td>200 C</td></tr>
+		<tr><td>supports</td><td>yes, 40% infill</td></tr>
+	
+	</table>
+	<table>
+		<tr><td colspan=2>Print from: 32mm - end:</td></tr>
+		<tr><td>layer height</td><td>0.25mm</td></tr>
+		<tr><td>infill</td><td>20% rectilinear</td></tr>
+		<tr><td>top/bottom layers</td><td>3</td></tr>
+		<tr><td>perimeter walls</td><td>2</td></tr>
+		<tr><td>temperature</td><td>200 C</td></tr>
+		<tr><td>supports</td><td>yes, 60%</td></tr>
+	
+	</table><br/><br/>
+
+</li>	
+<hr class="print"/>
+<li><h5>Halo</h5>
+	
+	Choose the correct halo for the Leap Motion module you're using. There are currently two variants: one for the released Leap Motion Controller and one for our custom ultra-wide FOV module not yet available.<br/><br/>
+	
+	<img minimal-lightbox src="imgs/alternateHalo.jpg"/>
+	<img minimal-lightbox src="imgs/bedPlacement_halo.png"/>
+	<img minimal-lightbox src="imgs/IMG_6514.JPG"/>
+	<video src="imgs/timelapses/HaloOptimized_20180426171820.mp4" controls></video>
+	<br/>
+	<table>
+		<tr><td>layer height</td><td>0.25mm</td></tr>
+		<tr><td>infill</td><td>20% rectilinear</td></tr>
+		<tr><td>top/bottom layers</td><td>3</td></tr>
+		<tr><td>perimeter walls</td><td>3</td></tr>
+		<tr><td>temperature</td><td>200 C</td></tr>
+		<tr><td>supports</td><td>yes</td></tr>
+	</table>
+
+</li>
+
+<hr class="print"/>	
+<li><h5>Lid</h5>
+	
+	Choose the matching lid for the halo you're using. There are currently two variants: one for the released Leap Motion Controller and one for our custom ultra-wide FOV module not yet available.<br/><br/>
+	
+	<img minimal-lightbox src="imgs/bedPlacement_haloLid.png"/>
+	<img minimal-lightbox src="imgs/IMG_8902.JPG" />
+	<video src="imgs/timelapses/LatestLid_20180423202548.mp4" controls></video>
+	<img minimal-lightbox src="imgs/lidAlternative.jpg" />
+	<br/>
+	<table>
+		<tr><td>layer height</td><td>0.25mm</td></tr>
+		<tr><td>infill</td><td>20% rectilinear</td></tr>
+		<tr><td>top/bottom layers</td><td>3</td></tr>
+		<tr><td>perimeter walls</td><td>2</td></tr>
+		<tr><td>temperature</td><td>200 C</td></tr>
+		<tr><td>supports</td><td>yes</td></tr>
+	</table>
+
+</li>
+<hr class="print"/>
+<li><h5>Electronics Tray</h5>
+	
+	Only needed for the custom hand tracking module. If you're using the Leap Motion Controller inside a metal housing, you don't need this part.<br/><br/>
+	
+	<img minimal-lightbox src="imgs/bedPlacement_electronicsTray.png"/>
+	<img minimal-lightbox src="imgs/IMG_5822.JPG"/>
+	<video src="imgs/timelapses/ARElectronicsTray_20180425012536.mp4" controls></video>
+	<br/>
+	<table>
+		<tr><td>layer height</td><td>0.25mm</td></tr>
+		<tr><td>infill</td><td>20% rectilinear</td></tr>
+		<tr><td>top/bottom layers</td><td>3</td></tr>
+		<tr><td>perimeter walls</td><td>2</td></tr>
+		<tr><td>temperature</td><td>200 C</td></tr>
+		<tr><td>supports</td><td>no</td></tr>
+	</table>
+
+
+
+</li>	
+<hr class="print"/>
+<li><h5>USB Strain relief</h5>
+	
+	Only needed for the custom hand tracking module. If you're using the Leap Motion Controller inside a metal housing, you don't need this part.<br/><br/>
+	
+	<img minimal-lightbox src="imgs/bedPlacement_strainRelief.png"/>
+
+	<img minimal-lightbox src="imgs/IMG_9208.JPG"/>
+	<video src="imgs/timelapses/USBStrainRelief-CamSafe_20180425010142.mp4" controls></video>
+	<br/>
+	<table>
+		<tr><td>layer height</td><td>0.25mm</td></tr>
+		<tr><td>infill</td><td>20% rectilinear</td></tr>
+		<tr><td>top/bottom layers</td><td>3</td></tr>
+		<tr><td>perimeter walls</td><td>2</td></tr>
+		<tr><td>temperature</td><td>200 C</td></tr>
+		<tr><td>supports</td><td>no</td></tr>
+	</table>
+</li>
+<hr class="print"/>	
+<li><h5>Display Tray</h5>
+<img minimal-lightbox src="imgs/bedPlacement_displayTray.png"/>
+<video src="imgs/timelapses/DisplayTrayLatestLowTempOptimizedMirrored_20180425183308.mp4" controls></video>
+
+<br/><br/>
+
+The print is done using multiple print profiles to minimize the need for support material. By printing the feature at a lower temperature the plastic can span longer distances without support. Also, align the print roughly as shown (~45 degrees) to prevent the support material from printing orthogonal to lip, which makes it harder to remove in post.<br/><br/>
+
+After printing, remove and clean up any support material so that the display slides in easily. We used a sharp chisel to scrap away any remaining plastic burs.<br/><br/>
+
+Check the lip of the part is flat and consistent throughout to prevent any extra light leaking from the edges of the LCD panels.<br/><br/>
+
+Optional step is tapping the screw holes to make sure any extra plastic is removed and the screws will fasten smoothly.
+<br/>
+
+<img minimal-lightbox src="imgs/IMG_2692.JPG"/><img minimal-lightbox src="imgs/IMG_5909.JPG"/><img minimal-lightbox src="imgs/IMG_1365.JPG"/>
+
+<br/>
+<table>
+	<tr><td colspan=2>Print from: 0 - 3mm:</td></tr>
+	<tr><td>layer height</td><td>0.25mm</td></tr>
+	<tr><td>infill</td><td>20% rectilinear</td></tr>
+	<tr><td>top/bottom layers</td><td>3</td></tr>
+	<tr><td>perimeter walls</td><td>2</td></tr>
+	<tr><td>temperature</td><td>200 C</td></tr>
+	<tr><td>supports</td><td>yes</td></tr>
+	
+</table>
+
+<table>
+	<tr><td colspan=2>Print from: 3mm - end:</td></tr>
+	<tr><td>layer height</td><td>0.25mm</td></tr>
+	<tr><td>infill</td><td>20% rectilinear</td></tr>
+	<tr><td>top/bottom layers</td><td>3</td></tr>
+	<tr><td>perimeter walls</td><td>2</td></tr>
+	<tr><td>temperature</td><td>190 C</td></tr>
+	<tr><td>supports</td><td>yes</td></tr>
+	
+</table>
+
+</li>	
+<hr class="print"/>
+<li><h5>Hinges (left and right pairs)</h5>
+	
+	There are two styles of hinges to choose from depending on the headgear you're using. <br/><br/>
+	
+	<i><b>Hinges for Miller branded headgear:</b></i><br/><br/>
+	
+	<img minimal-lightbox src="imgs/bedPlacement_hingeA.png"/><img minimal-lightbox src="imgs/bedPlacement_hingeB.png"/>
+	<img minimal-lightbox src="imgs/IMG_1130.JPG"/>
+	<video src="imgs/timelapses/hingesPair_20180425213458.mp4" controls></video>
+
+	<video src="imgs/timelapses/hingesPairTracks_20180425230035.mp4" controls></video>
+<br/><br/><br/>
+
+	<i><b>Hinges for 3M Speedglas branded headgear:</b></i><br/><br/>
+	<img minimal-lightbox src="imgs/alternateHingeParts.jpg"/><br/><br/>
+
+	<table>
+		<tr><td>layer height</td><td>0.25mm</td></tr>
+		<tr><td>infill</td><td>20% rectilinear</td></tr>
+		<tr><td>top/bottom layers</td><td>3</td></tr>
+		<tr><td>perimeter walls</td><td>2</td></tr>
+		<tr><td>temperature</td><td>200 C</td></tr>
+		<tr><td>supports</td><td>yes</td></tr>
+	</table>
+
+</li>
+<hr class="print"/>
+<li><h5>Slide endcaps</h5>
+
+<img minimal-lightbox src="imgs/bedPlacement_endCaps.png"/>
+
+<img minimal-lightbox src="imgs/IMG_5852.JPG"/>
+<video src="imgs/timelapses/endCaps_20180425203542 2.mp4" controls></video>
+<br/>
+<table>
+	<tr><td>layer height</td><td>0.25mm</td></tr>
+	<tr><td>infill</td><td>20% rectilinear</td></tr>
+	<tr><td>top/bottom layers</td><td>3</td></tr>
+	<tr><td>perimeter walls</td><td>2</td></tr>
+	<tr><td>temperature</td><td>200 C</td></tr>
+	<tr><td>supports</td><td>yes</td></tr>
+</table>
+
+</li>	
+</ol>
+<br/><br/>
+<hr/>
+<br/><br/>
+ <a id="CADfiles" href="mechanical.html">Back to build guide</a>
+
+
+</div>
+
+
+
+<script src="js/minimal.lightbox.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.min.js"></script>
+</body>

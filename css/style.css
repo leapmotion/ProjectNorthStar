@@ -11,7 +11,7 @@
 	}
 	
 	h1{
-		font-family: freightsans_pro,Arial,sans-serif !important;
+		font-family: 'Roboto', freightsans_pro,Arial, sans-serif !important;
 		    font-size: 50px;
 		    color: #6b6b6b;
 		    margin-bottom: 0;
@@ -167,4 +167,9 @@
 		height:3em;
 		line-height:3em;
 		width:20em;
+	}
+	
+	#BOMTable {
+		text-align:center;
+		font-size:0.8em;
 	}

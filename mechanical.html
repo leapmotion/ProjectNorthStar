@@ -1,5 +1,6 @@
 <head>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 	
 	<body>
@@ -25,19 +26,24 @@
 
 
 <div id="introWrapper">
-<h3>Introduction</h3>
+<h3>Overview</h3>
 
-The purpose of this guide is to instruct, with access to a few common tools, how to make a North Star reference AR headset. It's aimed to be accessible and inexpensive to build, using as many off-the-shelf components and 3D-printed parts as possible. At the same time, several key components are custom-made (e.g. the reflectors, display driver board, and Leap Motion hand tracking module.)<br/><br/> 
+The headset is made up of three modular assemblies: the optics bracket, the headgear with hinges, and the halo (which contains all the electronics). This configuration has been very useful as we iterated on different parts. The parts are 3D printed using consumer grade 3D printers and materials, with a couple parts from <a href="https://www.mcmaster.com/">McMaster-Carr</a>. The goal is to have an easily reproduced AR headset that anyone can put together.<br/><br/>
 
-Although not a complete AR solution, Project North Star points to a future where the physical and virtual worlds blend together into a single magical experience. With it we hope to gather like-minded people and build that future together.<br/><br/>
+Ignoring the reflectors*, you'll need to 3D print roughly 20+ hours of parts and cut, drill and tap aluminum bar stock. Nothing expensive or major requiring a machine shop, but a few tools are expected. Read below for the list.
 
-<a id="CADfiles" href="https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical/North%20Star%203D%20Files">Download 3D CAD files</a> 
+<i>*Note: We are exploring different possibilities for individuals to obtain reflectors.</i>
+
+<br/><br/>
+
+<a id="CADfiles" href="https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical/North%20Star%203D%20Files">Download 3D CAD files</a><br/> <i>These parts and this guide are still a work in progress</i>
+
 </div>
 
 <div style="width:33%;margin-left:15%;display:inline-block">
 <h3>Table of Contents</h3>
 <ol>
-	<li>Introduction</li>
+	<li>Overview</li>
 	<li>Tools & Materials</li>
 	<li>BOM</li>
 	<li>3D Printed Parts</li>
@@ -46,7 +52,7 @@ Although not a complete AR solution, Project North Star points to a future where
 	<li>Optical Calibration</li>
 	<li>Notes</li>
 	
-</ol><br/><br/>
+</ol><br/><br/><br/><br/><br/><br/>
 </div><br/><br/>
 
 
@@ -55,23 +61,60 @@ Although not a complete AR solution, Project North Star points to a future where
 <ul id="">
 	<li>3D printer and software: <a href="https://www.makergear.com/products/m2">MakerGear M2</a>, <a href="https://www.simplify3d.com/">Simplify3D</a>, print profiles: <a href="https://www.thingiverse.com/thing:269637"> Rsilver's M2 Simplify 3D optimized profiles, Thingiverse</a></li>
 	<li>Filament: <a href="https://www.amazon.com/eSUN-1-75mm-Printer-Filament-2-2lbs/dp/B01EKEMB7Q">eSun PLA+, Amazon</a></li>
-	<li>T6 Torx driver for thin-plastic screws</li>
-	<li>Phillips driver for M2.5 screws</li>
+	<li>T6 Torx driver for thin-plastic screws <a href="https://www.mcmaster.com/#37455a34/=1debsao">Torx T6 driver, McMaster</a></li>
+	<li>Phillips driver for M2.5 screws <a href="https://www.amazon.com/TEKTON-26663-Phillips-4-Inch-Screwdriver/dp/B014US1NS0/">Screwdriver Phillips #1 size, Amazon</a></li>
 	<li>M2.5 Screw thread tap *: <a href="https://www.mcmaster.com/#26475a33">M2.5 x 0.45 mm Thread Tap, McMaster</a><br/>
 	<!-- ><span>* Alternatively can use <a href="https://www.mcmaster.com/#93625a102">matching nuts</a> instead of tapping material</span> -->
-	<li>Hot glue gun (on low setting ~ 40W)</li>
-	<li>Latex gloves (minimize fingerprints on optical components)</li>
-	<li>Optional: 3D print finishing tools (wire cutters, small chisel, file, sand paper, etc.)</li>
+	<li>Hot glue gun (on low setting < 40W), for reflectors <a href="https://www.amazon.com/ccbetter-Upgraded-Removable-Anti-hot-Flexible/dp/B01178RVI2/"> Hot glue gun, Amazon</a></li>
+	<li>Latex or Nitrile gloves (minimize fingerprints on optical components) <a href="https://www.amazon.com/MedPride-Powder-Free-Nitrile-Gloves-Large/dp/B00GS8VGP6/">Sterile gloves, Amazon</a></li>
+	<li>Optional: These are our favorite 3D print finishing tools (
+		<a href="https://www.amazon.com/gp/product/B00FZPDG1K/ref=oh_aui_search_detailpage?ie=UTF8&psc=1">wire cutters</a>, 
+		<a href="https://www.amazon.com/Octave-Tool-Kit-3D-Printer/dp/B00ASFRSP2">chisel</a>, 
+		<a href="https://www.amazon.com/Needle-HIGHEST-QUALITY-Hardened-Strength/dp/B01MRCZKIX">file</a>, 
+		<a href="https://www.amazon.com/3M-Wetordry-Sandpaper-11-Inch-Assorted/dp/B001449TPS">sand paper</a>, 
+		<a href="https://www.amazon.com/gp/product/B06XG1FY8P/ref=oh_aui_search_detailpage?ie=UTF8&psc=1">hand drill</a>, etc.)</li>
 </ul>
 <hr/>
 <img minimal-lightbox style="float:right;width:400px;" src="imgs/BOMReference.png"/>
 
 <h3>BOM</h3>
 
+<table id="BOMTable">
+	
+	<tr> <th>BOM Ref.</th> <th>Part Name</th> <th>Quantity</th> <th>Procurement</th></tr>
+	
+	<tr> <td>A</td> <td> Leap Motion Controller</td> <td>1</td> <td><a href="https://www.amazon.com/Leap-Motion-Controller-Packaging-Software/dp/B00HVYBWQO">1</a></td></tr>
+	
+	<tr> <td>B</td> <td> Display Driver</td> <td>1</td> <td>TBD</td></tr>
+	
+	<tr> <td>C</td> <td> 3.5-inch 120Hz LCDs</td> <td>2</td> <td>TBD</td></tr>
+	
+	<tr> <td>D</td> <td> Acrylic reflectors</td> <td>2</td> <td>TBD</td></tr>
+	
+	<tr> <td>E</td> <td> Headgear</td> <td>1</td> <td><a href="https://www.amazon.com/Miller-Headgear-Generation-Welding-Helmets/dp/B073QY6B7Y">1</a> or <a href="https://www.amazon.com/gp/product/B003V5KSNK/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1">2</a></td></tr>
+	
+	<tr> <td>F</td> <td> Self-tapping screws for plastic</td> <td>1 pk</td> <td><a href="https://www.mcmaster.com/#96817a209">1</a></td></tr>
+	
+	<tr> <td>G</td> <td> Machine screws M2.5 x 6mm</td> <td>1 pk</td> <td><a href="https://www.mcmaster.com/#92005a066">1</a></td></tr>
+
+	<tr> <td>H</td> <td> Hinge fasteners, #10-32</td> <td>1 pk ea.</td> <td><a href="https://www.mcmaster.com/#92949a270">1</a> and <a href="https://www.mcmaster.com/#91831a411">1</a></td></tr>
+
+	<tr> <td>I</td> <td> Al. bar stock 10x3mm </td> <td>12-in [300 mm]</td> <td><a href="https://www.mcmaster.com/#9146t21">1</a></td></tr>
+
+	<tr> <td>J</td> <td> 3D printed parts</td> <td>-</td> <td><a href="https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical/North%20Star%203D%20Files">DIY</a></td></tr>
+
+</table>
+
 <ol id="BOM">
 
-<li>Leap Motion next-generation ultra-wide tracking module<br/><br/>
-<i>Coming soon!</i>
+<li>Leap Motion Controller<br/><br/>
+
+Depending on which Leap Motion hand tracking module you use, it will determine which sets of 3D prints you'll need. Check the 3D printing section for more details. <br/><br/>
+	
+	Retail Leap Motion Controller - <a href="https://www.amazon.com/Leap-Motion-Controller-Packaging-Software/dp/B00HVYBWQO/ref=sr_1_2?s=industrial&ie=UTF8&qid=1529622781&sr=8-2&keywords=leap+motion"> Amazon</a><br/>
+
+<i>-or-</i><br/>
+Custom ultra-wide tracking module
 
 </li>
 <hr/>
@@ -110,15 +153,24 @@ From the elipsoid definition, the reflectors need to be rotated and translated i
 <hr/>
 <li>
 
-OEM Welder's Mask Headgear replacement<br/><br/>
+OEM Headgear replacement<br/><br/>
 
-Light and adjustable with rigid mount points. Several welder's mask headgear vendors were tested, but most failed to be rigid or comfortable for our applications. Their general design is made of injection-molded plastic features that tighten onto either side of a welding faceshield. Although it may be desireable for those features to be flexible and compliant while welding, our heavier AR assemblies caused the headgear to flex and/or dig into the users' head. (Ouch.) The following Miller branded model's had the least flex and provided the a rigid "clamping" to the head. It really helps to be lightweight as well.<br/><br/>
+Light and adjustable with rigid mount points. Several welder's mask headgear vendors were tested, but most failed to be rigid or comfortable for our applications. Their general design is made of injection-molded plastic features that tighten onto either side of a welding faceshield. Although it may be desireable for those features to be flexible and compliant for welding, our heavier AR assemblies caused the headgear to flex and/or dig into the users' head. Ouch. The following Miller branded model's had very little flex and generally comfortable. It really helps they're lightweight as well.<br/><br/>
 
-These two specific generations of headgears yielded the best results, mounting evolving electronics on the most varied heads. The amount of adjustment points makes it work for the large majority of users.<br/><br/>
+These two specific generations of headgears yielded the best results quickly, mounting evolving electronics on the most varied heads. The amount of adjustment points makes it work for the large majority of users.<br/><br/>
 	
 Welding Replacement Headgear - <a href="https://www.amazon.com/Miller-Headgear-Generation-Welding-Helmets/dp/B073QY6B7Y">Miller Generation IV for T94 Headgear, Amazon</a> Part #260486 or <a href="https://www.amazon.com/Miller-Electric-256174-Headgear-Helmet/dp/B00826AM7A" >Miller Replacement Headgear, Amazon </a> Part #256174
 <br/></br>
-	<img minimal-lightbox src="imgs/millereplacement.jpg"/><img minimal-lightbox src="imgs/millergen4.jpg"/><img minimal-lightbox src="imgs/headgearExample.png"/><br>
+	<img minimal-lightbox src="imgs/millereplacement.jpg"/><img minimal-lightbox src="imgs/millergen4.jpg"/><img minimal-lightbox src="imgs/headgearExample.png"/><br/><br/></br>
+
+<b>Alternative: </b> <br/><br/>
+
+The 3M Speedglas Utility headgear was the first headgear we used for North Star prototypes. At the time, the optics would bounce around, causing the reflected image to shake wildly as we moved around.  We minimized this by switching to the stiffer Miller headgear and continued other improvements for several months. However, the 3M headgear was sorely missed, as it was simple to put-on and less intimidating for demos. Since then we added cheek alignment features, which solved the image bounce, and therefore makes sense to bring back this design as a supplement to the release headgear. The headgear and optics are interchangeable, only the hinges need to match the headgear.<br/></br>
+
+Welding Replacement Headgear - <a href="https://www.amazon.com/gp/product/B003V5KSNK/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1">3M Speedglas Welding Helmet Headband, Amazon</a><br/><br/>
+
+<img minimal-lightbox src="imgs/3MSpeedglas.jpg"/> <img minimal-lightbox src="imgs/headgearComparison.png"/> <br/><br/>
+
 </li>
 <hr/>
 <li>
@@ -163,201 +215,9 @@ Welding Replacement Headgear - <a href="https://www.amazon.com/Miller-Headgear-G
 </li>
 </ol>
 
-Note: Use your slicer's part orientation tools to ensure flat contact with print surface. In Simplify 3D, it can be found in the menu "Edit > Place Surface On Bed"
-
-<ol>
-<li><h5>Optics Bracket</h5>
-	
-	The optics bracket is the most difficult part to FDM print. The toed-in optics and long thin beams require a tuned printer and large print bed (200x250mm). To reduce the chance for print failure, support material is manually removed where it is thin and tall (see image below). Furthermore, to alleviate the finishing work, the print is separated into 2 print profiles: fast and high-res. The high-res profile's goal is to reduce stepping on the near-horizontal crossbeam. Afterwards, a file and 220-grit sandpaper very quickly make the surface passable without the need for filler. Although printing the entire bracket with one profile also produces good brackets, this hybrid solution saved time and produced better results without much effort. Makes sense if a file and sand paper is already available.<br/><br/>
-
-	All the optical components are mounted to this bracket. Take your time, be meticulous. It's crucial that care is taken in producing a good print. This will save time during calibration.
-	<br/>
-
-
-	<img minimal-lightbox src="imgs/bedPlacement_opticsBracket.png"/>
-	<video src="imgs/timelapses/opticsBrackWHITEBigTabs_20180425052347.mp4" controls></video>
-	<img minimal-lightbox src="imgs/bedPlacement_OpticsSupports.png"/><br/>
-
-	<img minimal-lightbox src="imgs/IMG_6551.jpg"/>
-	<img minimal-lightbox src="imgs/IMG_9233.jpg"/><br/>
-
-	<table>
-		<tr><td colspan=2>Print from: 0 - 5mm:</td></tr>
-		<tr><td>layer height</td><td>0.25mm</td></tr>
-		<tr><td>infill</td><td>20% rectilinear</td></tr>
-		<tr><td>top/bottom layers</td><td>3</td></tr>
-		<tr><td>perimeter walls</td><td>2</td></tr>
-		<tr><td>temperature</td><td>200 C</td></tr>
-		<tr><td>supports</td><td>yes, 60% infill</td></tr>
-	</table>
-	<table>
-		<tr><td colspan=2>Print from: 5 - 32mm:</td></tr>
-		<tr><td>layer height</td><td>0.15mm</td></tr>
-		<tr><td>infill</td><td>20% rectilinear</td></tr>
-		<tr><td>top/bottom layers</td><td>6</td></tr>
-		<tr><td>perimeter walls</td><td>3</td></tr>
-		<tr><td>temperature</td><td>200 C</td></tr>
-		<tr><td>supports</td><td>yes, 40% infill</td></tr>
-	
-	</table>
-	<table>
-		<tr><td colspan=2>Print from: 32mm - end:</td></tr>
-		<tr><td>layer height</td><td>0.25mm</td></tr>
-		<tr><td>infill</td><td>20% rectilinear</td></tr>
-		<tr><td>top/bottom layers</td><td>3</td></tr>
-		<tr><td>perimeter walls</td><td>2</td></tr>
-		<tr><td>temperature</td><td>200 C</td></tr>
-		<tr><td>supports</td><td>yes, 60%</td></tr>
-	
-	</table><br/><br/>
-
-</li>	
-<hr class="print"/>
-<li><h5>Halo</h5>
-	<img minimal-lightbox src="imgs/bedPlacement_halo.png"/>
-	<img minimal-lightbox src="imgs/IMG_6514.JPG"/>
-	<video src="imgs/timelapses/HaloOptimized_20180426171820.mp4" controls></video>
-	<br/>
-	<table>
-		<tr><td>layer height</td><td>0.25mm</td></tr>
-		<tr><td>infill</td><td>20% rectilinear</td></tr>
-		<tr><td>top/bottom layers</td><td>3</td></tr>
-		<tr><td>perimeter walls</td><td>2</td></tr>
-		<tr><td>temperature</td><td>200 C</td></tr>
-		<tr><td>supports</td><td>yes</td></tr>
-	</table>
-
-</li>
-
-<hr class="print"/>	
-<li><h5>Lid</h5>
-	<img minimal-lightbox src="imgs/bedPlacement_haloLid.png"/>
-	<img minimal-lightbox src="imgs/IMG_8902.JPG" />
-	<video src="imgs/timelapses/LatestLid_20180423202548.mp4" controls></video>
-	<br/>
-	<table>
-		<tr><td>layer height</td><td>0.25mm</td></tr>
-		<tr><td>infill</td><td>20% rectilinear</td></tr>
-		<tr><td>top/bottom layers</td><td>3</td></tr>
-		<tr><td>perimeter walls</td><td>2</td></tr>
-		<tr><td>temperature</td><td>200 C</td></tr>
-		<tr><td>supports</td><td>no</td></tr>
-	</table>
-
-</li>
-<hr class="print"/>
-<li><h5>Electronics Tray</h5>
-	<img minimal-lightbox src="imgs/bedPlacement_electronicsTray.png"/>
-	<img minimal-lightbox src="imgs/IMG_5822.JPG"/>
-	<video src="imgs/timelapses/ARElectronicsTray_20180425012536.mp4" controls></video>
-	<br/>
-	<table>
-		<tr><td>layer height</td><td>0.25mm</td></tr>
-		<tr><td>infill</td><td>20% rectilinear</td></tr>
-		<tr><td>top/bottom layers</td><td>3</td></tr>
-		<tr><td>perimeter walls</td><td>2</td></tr>
-		<tr><td>temperature</td><td>200 C</td></tr>
-		<tr><td>supports</td><td>no</td></tr>
-	</table>
-
-
-
-</li>	
-<hr class="print"/>
-<li><h5>USB Strain relief</h5>
-	<img minimal-lightbox src="imgs/bedPlacement_strainRelief.png"/>
-
-	<img minimal-lightbox src="imgs/IMG_9208.JPG"/>
-	<video src="imgs/timelapses/USBStrainRelief-CamSafe_20180425010142.mp4" controls></video>
-	<br/>
-	<table>
-		<tr><td>layer height</td><td>0.25mm</td></tr>
-		<tr><td>infill</td><td>20% rectilinear</td></tr>
-		<tr><td>top/bottom layers</td><td>3</td></tr>
-		<tr><td>perimeter walls</td><td>2</td></tr>
-		<tr><td>temperature</td><td>200 C</td></tr>
-		<tr><td>supports</td><td>no</td></tr>
-	</table>
-</li>
-<hr class="print"/>	
-<li><h5>Display Tray</h5>
-<img minimal-lightbox src="imgs/bedPlacement_displayTray.png"/>
-<video src="imgs/timelapses/DisplayTrayLatestLowTempOptimizedMirrored_20180425183308.mp4" controls></video>
-
-<br/><br/>
-
-The print is done using multiple print profiles to minimize the need for support material. By printing the feature at a lower temperature the plastic can span longer distances without support. Also, align the print roughly as shown (~45 degrees) to prevent the support material from printing orthogonal to lip.<br/><br/>
-
-After printing, remove and clean up any support material so that the display slides in easily. We used a sharp chisel to scrap away any remaining plastic burs.<br/><br/>
-
-Check the lip of the part is flat and consistent throughout to prevent any extra light leaking from the edges of the LCD panels.<br/><br/>
-
-Optional step is tapping the screw holes to make sure any extra plastic is removed and the screws will fasten smoothly.
-<br/>
-
-<img minimal-lightbox src="imgs/IMG_2692.JPG"/><img minimal-lightbox src="imgs/IMG_5909.JPG"/><img minimal-lightbox src="imgs/IMG_1365.JPG"/>
-
-<br/>
-<table>
-	<tr><td colspan=2>Print from: 0 - 3mm:</td></tr>
-	<tr><td>layer height</td><td>0.25mm</td></tr>
-	<tr><td>infill</td><td>20% rectilinear</td></tr>
-	<tr><td>top/bottom layers</td><td>3</td></tr>
-	<tr><td>perimeter walls</td><td>2</td></tr>
-	<tr><td>temperature</td><td>200 C</td></tr>
-	<tr><td>supports</td><td>yes</td></tr>
-	
-</table>
-
-<table>
-	<tr><td colspan=2>Print from: 3mm - end:</td></tr>
-	<tr><td>layer height</td><td>0.25mm</td></tr>
-	<tr><td>infill</td><td>20% rectilinear</td></tr>
-	<tr><td>top/bottom layers</td><td>3</td></tr>
-	<tr><td>perimeter walls</td><td>2</td></tr>
-	<tr><td>temperature</td><td>190 C</td></tr>
-	<tr><td>supports</td><td>yes</td></tr>
-	
-</table>
-
-</li>	
-<hr class="print"/>
-<li><h5>Hinges (left and right pairs)</h5>
-	<img minimal-lightbox src="imgs/bedPlacement_hingeA.png"/><img minimal-lightbox src="imgs/bedPlacement_hingeB.png"/>
-	<img minimal-lightbox src="imgs/IMG_1130.JPG"/>
-	<video src="imgs/timelapses/hingesPair_20180425213458.mp4" controls></video>
-
-	<video src="imgs/timelapses/hingesPairTracks_20180425230035.mp4" controls></video>
-<br/>
-	<table>
-		<tr><td>layer height</td><td>0.25mm</td></tr>
-		<tr><td>infill</td><td>20% rectilinear</td></tr>
-		<tr><td>top/bottom layers</td><td>3</td></tr>
-		<tr><td>perimeter walls</td><td>2</td></tr>
-		<tr><td>temperature</td><td>200 C</td></tr>
-		<tr><td>supports</td><td>yes</td></tr>
-	</table>
-
-</li>
-<hr class="print"/>
-<li><h5>Slide endcaps</h5>
-
-<img minimal-lightbox src="imgs/bedPlacement_endCaps.png"/>
-
-<img minimal-lightbox src="imgs/IMG_5852.JPG"/>
-<video src="imgs/timelapses/endCaps_20180425203542 2.mp4" controls></video>
-<br/>
-<table>
-	<tr><td>layer height</td><td>0.25mm</td></tr>
-	<tr><td>infill</td><td>20% rectilinear</td></tr>
-	<tr><td>top/bottom layers</td><td>3</td></tr>
-	<tr><td>perimeter walls</td><td>2</td></tr>
-	<tr><td>temperature</td><td>200 C</td></tr>
-	<tr><td>supports</td><td>yes</td></tr>
-</table>
-
-</li>	
-</ol>
+ Each component has suggested orientation and print settings for the best performance and least print time. Proceed to the 3D print section for information on each print: <a href="3dprints.html">3D Printing Part Reference</a><br/><br/>
+ 
+ <a id="CADfiles" href="3dprints.html">3D Printing Reference</a>
 
 <hr/>
 <h3>Assembly Steps</h3>
