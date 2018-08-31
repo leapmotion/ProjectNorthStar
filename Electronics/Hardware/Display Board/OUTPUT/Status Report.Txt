@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 6:43:09 PM On 8/16/2018
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [0084 - AR Display Board Rev2.1.PrjPcb]
+   Generated File[Bill of Materials-0084 - AR Display Board Rev2.1.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 6:43:21 PM On 8/16/2018
