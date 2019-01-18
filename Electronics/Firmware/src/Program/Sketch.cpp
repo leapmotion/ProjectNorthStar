@@ -59,14 +59,25 @@ void setup(){
 	
 	// VRPN serial debug
 	SerialUSB.begin(921600);
-
+	
+	Serial.println("");
+	Serial.println("************        Leap Motion        ***********");
+	Serial.println("*                Project North Star              *");
+	Serial.println("**************************************************");
+	Serial.printf("Resolution: %dx%d@%dfps\n", PANEL_H_ACTIVE, PANEL_V_ACTIVE, PANEL_FRAME_RATE);
+	Serial.println("");
+	
 	// Backlight driver
-	analogWrite(PIN_backlight_pwm, 64);
+	HDK_LCD_BL_ON();
+	HDK_LCD_BL_PWM(64);
 	
 	// Chicago bridge
 	EXT_INTR_ENABLE();
 	chicago_state_change(STATE_NONE);
 	chicago_last_state_change(STATE_NONE);
+	
+	// indicate that the device is initialized
+	LED_YELLOW_ON();
 }
 
 void loop(){		
