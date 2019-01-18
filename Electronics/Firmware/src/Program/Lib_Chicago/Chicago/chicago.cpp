@@ -1159,7 +1159,9 @@ static char mipi_edid_write_buffer(uint32_t edid_serial_number){
 		}
 	
 		temp_int = get_pixel_clock();
+		#ifdef DEBUG_LEVEL_3
 		TRACE1("\tPixel_clk = %d\n", (temp_int/100));
+		#endif
 
 		// Pixel clock
 		i2c_write_byte_keep(EDID_DB1_BASE+EDID_PIXEL_CLK_L, (uint8_t)(temp_int&0x00FF));
@@ -1705,7 +1707,9 @@ static void chicago_read_chip_id(void){
 	i2c_read_byte(SLAVEID_SPI, CHIP_ID_LOW, &reg_temp);
 	reg_int |= (((uint32_t)reg_temp)&0x00FF);
 	
+	#ifdef DEBUG_LEVEL_3
 	TRACE1("\tChip ID = %04X\n", reg_int);
+	#endif
 }
 
 //-----------------------------------------------------------------------------
@@ -2354,7 +2358,9 @@ void chicago_main(void){
 						// set flag to ON, no need to set HPD again
 						set_HPD = FLAG_VALUE_ON;
 				
+						#ifdef DEBUG_LEVEL_3
 						TRACE1("\t%s\n", "HotPlug Detect set to HIGH");
+						#endif
 					}
 				#endif
 				//}

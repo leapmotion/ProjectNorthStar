@@ -64,6 +64,11 @@ void setup(){
 	Serial.println("************        Leap Motion        ***********");
 	Serial.println("*                Project North Star              *");
 	Serial.println("**************************************************");
+	Serial.printf("Firmware release: %x.%x.%x\n", ((LEAP_DISPLAY_BOARD_REV & 0xff00) >> 8),
+												  ((LEAP_DISPLAY_BOARD_REV & 0x00f0) >> 4),
+												   (LEAP_DISPLAY_BOARD_REV & 0x000f));
+	Serial.println(buildDate);
+	Serial.println(buildTime);
 	Serial.printf("Resolution: %dx%d@%dfps\n", PANEL_H_ACTIVE, PANEL_V_ACTIVE, PANEL_FRAME_RATE);
 	Serial.println("");
 	
