@@ -30,8 +30,8 @@
     <AssemblyName>Program</AssemblyName>
     <ResetRule>0</ResetRule>
     <EraseKey />
-    <avrtool>com.atmel.avrdbg.tool.jtagice3plus</avrtool>
-    <avrtoolserialnumber>J30200038231</avrtoolserialnumber>
+    <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
+    <avrtoolserialnumber>J41800094999</avrtoolserialnumber>
     <avrdeviceexpectedsignature>0x10010305</avrdeviceexpectedsignature>
     <avrtoolinterface>SWD</avrtoolinterface>
     <com_atmel_avrdbg_tool_edbg>
@@ -74,7 +74,7 @@
     <com_atmel_avrdbg_tool_jtagice3plus>
       <ToolOptions>
         <InterfaceProperties>
-          <SwdClock>2000000</SwdClock>
+          <SwdClock>0</SwdClock>
         </InterfaceProperties>
         <InterfaceName>SWD</InterfaceName>
       </ToolOptions>
@@ -93,6 +93,17 @@
       <ToolNumber>J30200038231</ToolNumber>
       <ToolName>JTAGICE3</ToolName>
     </com_atmel_avrdbg_tool_jtagicemk3>
+    <com_atmel_avrdbg_tool_atmelice>
+      <ToolOptions>
+        <InterfaceProperties>
+          <SwdClock>2000000</SwdClock>
+        </InterfaceProperties>
+        <InterfaceName>SWD</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
+      <ToolNumber>J41800094999</ToolNumber>
+      <ToolName>Atmel-ICE</ToolName>
+    </com_atmel_avrdbg_tool_atmelice>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
@@ -278,6 +289,7 @@
             <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\pio</Value>
             <Value>%24(ProjectDir)\Lib_SPI</Value>
             <Value>%24(ProjectDir)\Lib_Wire</Value>
+            <Value>%24(ProjectDir)\Lib_Chicago/Debug</Value>
             <Value>%24(ProjectDir)\Lib_USBHost</Value>
             <Value>%24(ProjectDir)\Lib_HID</Value>
             <Value>%24(ProjectDir)\Lib_I2S</Value>
@@ -303,7 +315,7 @@
         </armgcccpp.linker.libraries.Libraries>
         <armgcccpp.linker.libraries.LibrarySearchPaths>
           <ListValues>
-            <Value>..\linker_scripts\linker_scripts\gcc</Value>
+            <Value>../linker_scripts/linker_scripts/gcc</Value>
           </ListValues>
         </armgcccpp.linker.libraries.LibrarySearchPaths>
         <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
@@ -370,12 +382,6 @@
     <Compile Include="Lib_Chicago\I2C\i2c.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Lib_Backlight\backlight.cpp">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="Lib_Backlight\backlight.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="Lib_Wire\Wire.cpp">
       <SubType>compile</SubType>
     </Compile>
@@ -409,7 +415,6 @@
     <Folder Include="linker_scripts\linker_scripts\" />
     <Folder Include="linker_scripts\linker_scripts\gcc\" />
     <Folder Include="Lib_Chicago" />
-    <Folder Include="Lib_Backlight" />
     <Folder Include="Lib_Wire" />
   </ItemGroup>
   <ItemGroup>

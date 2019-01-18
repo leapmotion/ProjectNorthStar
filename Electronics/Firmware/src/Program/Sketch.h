@@ -34,6 +34,10 @@
 	// Pre-compiler Definitions
 	//-----------------------------------------------------------------------------
 
+	#define LEAP_DISPLAY_BOARD_REV          0x0000
+
+	const char * buildDate = "Build date: " __DATE__ ;
+	const char * buildTime = "Build time: " __TIME__ ;
 
 	//#############################################################################
 	// Type Definitions
@@ -58,8 +62,5 @@
 	 * @return void
 	 */
 	void loop();
-	
-	void find_i2c_devices();
-	void ME_cal(uint8_t P0, uint8_t P1, uint8_t P2, uint8_t P4);
 
 #endif /* START_H_ */

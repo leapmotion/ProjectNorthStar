@@ -5,9 +5,9 @@
 *
 * @copyright
 * This library is free software; you can redistribute it and/or
-* modify it under the terms of the GNU General Public
+* modify it under the terms of the GNU Lesser General Public
 * License as published by the Free Software Foundation; either
-* version 3.0 of the License, or (at your option) any later version.
+* version 2.1 of the License, or (at your option) any later version.
 *
 * @copyright
 * Unless required by applicable law or agreed to in writing, software
@@ -36,6 +36,8 @@
 	#include <Arduino.h>
 	#include <Wire.h>
 	
+	#include "debug.h"
+	
 	//#############################################################################
 	// Pre-compiler Definitions
 	//-----------------------------------------------------------------------------
@@ -55,25 +57,18 @@
 	/// @ingroup Config_pins	
 	#define PIN_chicago_pwen					11
 	#define PIN_chicago_pwen_default_state		LOW
+	
+	/// @brief [DOUT] Pin connected (via 1.8V level shifter) to MSDA on Chicago
+	/// @ingroup Config_pins
+	#define PIN_chicago_strobe					12
 
 	//-----------------------------------------------------------------------------
 	// BNO080	
+		
 
-	/// @brief [DIN] Pin connected to IMU interrupt
-	/// @ingroup Config_pins
-	#define PIN_osvr_tracker_intn				A2
-
-	/// @brief [DOUT] Pin connected to IMU reset
-	/// @ingroup Config_pins
-	#define PIN_osvr_tracker_rstn				A1
-
-	/// @brief [DOUT] Pin connected to IMU DFU pin
-	/// @ingroup Config_pins	
-	#define PIN_osvr_tracker_bootn				6				
-
-	// [DEAD] @brief [DIN] Pin connected to power supply fault detector
-	// [DEAD] @ingroup Config_pins
-	// [DEAD] #define PIN_lcd_bl_fault					7
+	// @brief [DIN] Pin connected to display backlight driver fault detection
+	// @ingroup Config_pins
+	#define PIN_lcd_bl_fault					7
 	
 	/// @brief [DIN] Pin connected to audio jack sense switch
 	/// @ingroup Config_pins
@@ -85,7 +80,7 @@
 	
 	/// @brief [DIN] Pin connected (via 1.8V level shifter) to VSYNC in signal
 	/// @ingroup Config_pins
-	#define PIN_backlight_vsync_in				12 //12
+	#define PIN_backlight_vsync_in				PIN_chicago_strobe
 
 	/// @brief [DOUT] Pin connected to OLED SLEP2 voltage select
 	/// @ingroup Config_pins
@@ -102,20 +97,34 @@
 	#define PIN_backlight_pwm					8
 	#define PIN_backlight_pwm_default_state		LOW
 
+	/// @brief [DOUT] Pin connected to panel ledpwm
+	/// @ingroup Config_pins
+	#define PIN_backlight_ledpwm				9
+	#define PIN_backlight_ledpwm_default_state	LOW
+
 	/// @brief [DOUT] Pin connected to LCD backlight enable line
 	/// @ingroup Config_pins
-	//#define PIN_lcd_bl_en						A2
-	//#define PIN_lcd_bl_en_default_state		LOW
+	#define PIN_lcd_bl_en						A2
+	#define PIN_lcd_bl_en_default_state			LOW
 
 	/// @brief [DOUT] Pin connected to panel bias enable line
 	/// @ingroup Config_pins
-	#define PIN_lcd_bias_en						7
+	#define PIN_lcd_bias_en						A1
 	#define PIN_lcd_bias_en_default_state		LOW
 
 	/// @brief [DOUT] Pin connected to 1.0V enable line
 	/// @ingroup Config_pins	
-	//#define PIN_1V0_en							2
-	//#define PIN_1V0_en_default_state			HIGH
+	#define PIN_1V0_en							2
+	#define PIN_1V0_en_default_state			HIGH
+
+	/// @ingroup Config_pins
+	#define PIN_mcu_led0						18
+	#define PIN_mcu_led0_default_state			LOW
+
+	/// @ingroup Config_pins
+	#define PIN_mcu_led1						17
+	#define PIN_mcu_led1_default_state			LOW
+	
 	
 	//#############################################################################
 	// Type Definitions
@@ -124,13 +133,26 @@
 	//#############################################################################
 	// Function Prototypes
 	//-----------------------------------------------------------------------------	
-	#define HDK_LCD_BL_ON()						delay(0); //digitalWrite(PIN_lcd_bl_en, HIGH);
+	#define HDK_LCD_BL_ON()						digitalWrite(PIN_lcd_bl_en, HIGH);
 	#define HDK_LCD_BL_OFF()					delay(0); //digitalWrite(PIN_lcd_bl_en, LOW);
 	
 	#define HDK_LCD_BL_PWM(arg1)				analogWrite(PIN_backlight_pwm, arg1);
 	#define HDK_LCD_BL_PWM_ON()					digitalWrite(PIN_backlight_pwm, HIGH);
+
+	#define LED_RED_ON()						digitalWrite(PIN_mcu_led0, HIGH)
+	#define LED_RED_OFF()						digitalWrite(PIN_mcu_led0, LOW)
+
+	#define LED_YELLOW_ON()						digitalWrite(PIN_mcu_led1, HIGH)
+	#define LED_YELLOW_OFF()					digitalWrite(PIN_mcu_led1, LOW)
 	
 	
+	void static check_bl_fault_isr(void)
+	{
+		int bl_fault = digitalRead(PIN_lcd_bl_fault);
+		bl_fault ? LED_RED_OFF() : LED_RED_ON();
+		Serial.printf("\nBacklight Fault: %s\n\n", bl_fault ? "False":"True");
+	}
+
 	/**
 	 * @brief 
 	 *		Call this to initialize the pins and set their default state
@@ -146,17 +168,26 @@
 		pinMode(PIN_chicago_pwen,   OUTPUT);
 		digitalWrite(PIN_chicago_pwen, PIN_chicago_pwen_default_state);
 			
-		//pinMode(PIN_1V0_en,			OUTPUT);
-		//digitalWrite(PIN_1V0_en,	PIN_1V0_en_default_state);
+		pinMode(PIN_1V0_en,			OUTPUT);
+		digitalWrite(PIN_1V0_en,	PIN_1V0_en_default_state);
 	
-		pinMode(PIN_backlight_pwm,		OUTPUT);
-		digitalWrite(PIN_backlight_pwm, PIN_backlight_pwm_default_state);
+		//pinMode(PIN_backlight_pwm,		OUTPUT);
+		//digitalWrite(PIN_backlight_pwm, PIN_backlight_pwm_default_state);
 	
 		pinMode(PIN_lcd_bias_en,    OUTPUT);
 		digitalWrite(PIN_lcd_bias_en, PIN_lcd_bias_en_default_state);
 		
-		//pinMode(PIN_lcd_bl_en,		OUTPUT);
-		//digitalWrite(PIN_lcd_bl_en, PIN_lcd_bl_en_default_state);
+		pinMode(PIN_lcd_bl_en,		OUTPUT);
+		digitalWrite(PIN_lcd_bl_en, PIN_lcd_bl_en_default_state);
+
+		pinMode(PIN_mcu_led0,		OUTPUT);
+		digitalWrite(PIN_mcu_led0, PIN_mcu_led0_default_state);
+
+		pinMode(PIN_mcu_led1,		OUTPUT);
+		digitalWrite(PIN_mcu_led1, PIN_mcu_led1_default_state);
+		
+		pinMode(PIN_lcd_bl_fault,	INPUT);
+		attachInterrupt(digitalPinToInterrupt(PIN_lcd_bl_fault), check_bl_fault_isr, CHANGE);
 	}
 	
 	
@@ -169,13 +200,15 @@
 	void static setup_USART(uint8_t clear_screen, uint32_t baudRate){
 		Serial.begin(baudRate, SERIAL_8N1);
 		
-		if(clear_screen){
-			for(uint8_t i=0; i<100; i++){
-				Serial.print("\n");
+		#ifdef DEBUG_LEVEL_3
+			if(clear_screen){
+				for(uint8_t i=0; i<100; i++){
+					Serial.print("\n");
+				}
 			}
-		}
-		
-		Serial.print("USART initialized!\n\n");
+			
+			Serial.print("USART initialized!\n\n");
+		#endif
 	}
 	
 	/**

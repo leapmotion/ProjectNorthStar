@@ -1,0 +1,12 @@
+
+# Build results
+# [Dd]ebug/
+# We need to be absolute for Lib_Chicago has source
+# files in a directory named Debug
+Electronics/Firmware/src/ArduinoCore/Debug/
+Electronics/Firmware/src/Program/Debug/
+[Rr]elease
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+

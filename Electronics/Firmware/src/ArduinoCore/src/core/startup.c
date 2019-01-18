@@ -47,7 +47,7 @@
 void SystemInit( void )
 {
   /* Set 1 Flash Wait State for 48MHz, cf tables 20.9 and 35.27 in SAMD21 Datasheet */
-  NVMCTRL->CTRLB.bit.RWS = NVMCTRL_CTRLB_RWS_HALF_Val ;
+  NVMCTRL->CTRLB.bit.RWS = NVMCTRL_CTRLB_RWS_DUAL_Val; //NVMCTRL_CTRLB_RWS_HALF_Val ;
 
   /* Turn on the digital interface clock */
   PM->APBAMASK.reg |= PM_APBAMASK_GCLK ;
@@ -139,7 +139,7 @@ void SystemInit( void )
   /* DFLL Configuration in Closed Loop mode, cf product datasheet chapter 15.6.7.1 - Closed-Loop Operation */
 
   /* Remove the OnDemand mode, Bug http://avr32.icgroup.norway.atmel.com/bugzilla/show_bug.cgi?id=9905 */
-  SYSCTRL->DFLLCTRL.reg = SYSCTRL_DFLLCTRL_ENABLE;
+  SYSCTRL->DFLLCTRL.bit.ONDEMAND = 0 ;
 
   while ( (SYSCTRL->PCLKSR.reg & SYSCTRL_PCLKSR_DFLLRDY) == 0 )
   {
@@ -148,7 +148,7 @@ void SystemInit( void )
 
   SYSCTRL->DFLLMUL.reg = SYSCTRL_DFLLMUL_CSTEP( 31 ) | // Coarse step is 31, half of the max value
                          SYSCTRL_DFLLMUL_FSTEP( 511 ) | // Fine step is 511, half of the max value
-                         SYSCTRL_DFLLMUL_MUL( (VARIANT_MCK + VARIANT_MAINOSC/2) / VARIANT_MAINOSC ) ; // External 32KHz is the reference
+                         SYSCTRL_DFLLMUL_MUL( (VARIANT_MCK/VARIANT_MAINOSC) ) ; // External 32KHz is the reference
 
   while ( (SYSCTRL->PCLKSR.reg & SYSCTRL_PCLKSR_DFLLRDY) == 0 )
   {
@@ -158,6 +158,7 @@ void SystemInit( void )
 #if defined(CRYSTALLESS)
 
   #define NVM_SW_CALIB_DFLL48M_COARSE_VAL 58
+  #define NVM_SW_CALIB_DFLL48M_FINE_VAL   64
 
   // Turn on DFLL
   uint32_t coarse =( *((uint32_t *)(NVMCTRL_OTP4) + (NVM_SW_CALIB_DFLL48M_COARSE_VAL / 32)) >> (NVM_SW_CALIB_DFLL48M_COARSE_VAL % 32) )
@@ -165,28 +166,19 @@ void SystemInit( void )
   if (coarse == 0x3f) {
     coarse = 0x1f;
   }
-  // TODO(tannewt): Load this value from memory we've written previously. There
-  // isn't a value from the Atmel factory.
-  uint32_t fine = 0x1ff;
+  uint32_t fine =( *((uint32_t *)(NVMCTRL_OTP4) + (NVM_SW_CALIB_DFLL48M_FINE_VAL / 32)) >> (NVM_SW_CALIB_DFLL48M_FINE_VAL % 32) )
+                 & ((1 << 10) - 1);
+  if (fine == 0x3ff) {
+    fine = 0x1ff;
+  }
 
   SYSCTRL->DFLLVAL.bit.COARSE = coarse;
   SYSCTRL->DFLLVAL.bit.FINE = fine;
   /* Write full configuration to DFLL control register */
-  SYSCTRL->DFLLMUL.reg = SYSCTRL_DFLLMUL_CSTEP( 0x1f / 4 ) | // Coarse step is 31, half of the max value
-                         SYSCTRL_DFLLMUL_FSTEP( 10 ) |
-                         SYSCTRL_DFLLMUL_MUL( (48000) ) ;
-
-  SYSCTRL->DFLLCTRL.reg = 0;
-
-  while ( (SYSCTRL->PCLKSR.reg & SYSCTRL_PCLKSR_DFLLRDY) == 0 )
-  {
-    /* Wait for synchronization */
-  }
-
-  SYSCTRL->DFLLCTRL.reg =  SYSCTRL_DFLLCTRL_MODE |
+  SYSCTRL->DFLLCTRL.reg =  SYSCTRL_DFLLCTRL_USBCRM | /* USB correction */
                            SYSCTRL_DFLLCTRL_CCDIS |
-                           SYSCTRL_DFLLCTRL_USBCRM | /* USB correction */
-                           SYSCTRL_DFLLCTRL_BPLCKC;
+                           SYSCTRL_DFLLCTRL_WAITLOCK |
+                           SYSCTRL_DFLLCTRL_QLDIS ; /* Disable Quick lock */
 
   while ( (SYSCTRL->PCLKSR.reg & SYSCTRL_PCLKSR_DFLLRDY) == 0 )
   {

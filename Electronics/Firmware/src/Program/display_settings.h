@@ -4,10 +4,15 @@
 * @brief Chicago display settings _H
 *
 * @copyright
-* This library is free software; you can redistribute it and/or
-* modify it under the terms of the GNU General Public
-* License as published by the Free Software Foundation; either
-* version 3.0 of the License, or (at your option) any later version.
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
 *
 * @copyright
 * Unless required by applicable law or agreed to in writing, software
@@ -29,16 +34,8 @@
 	*	them inside display_settings.h
 	*/
 	
-	// Todo, actually write this documentation block 
-		
-	//#define DEBUG_PWM_TEST
-	#define DEBUG_REMOVE_CABLE_DET
-	//#define DEBUG_CHECK_DP_RESOLUTION
-	//#define DEBUG_POWER_OFF_CHICAGO_WHEN_CABLE_OUT
-	#define DEBUG_ENABLE_COLOR_BARS
-	
-    // Panel type ......
-   #define BOE_VS035ZSM
+    // Panel type
+    #define BOE_VS035ZSM
 	
 	/** ###########################################################################
 	* @defgroup Config_panelsettings [Config] Panel settings
@@ -56,7 +53,7 @@
 	*	@ingroup Config_panelsettings
 	*/
     #define PANEL_H_ACTIVE						1440
-
+    
 	/** 
 	*	@brief	Vertical active pixels (per panel)
 	*	@details
@@ -66,7 +63,6 @@
 	*	@ingroup Config_panelsettings
 	*/	
     #define	PANEL_V_ACTIVE						1600
-
     
 	/** 
 	*	@brief	Frame rate (whole display)
@@ -76,33 +72,41 @@
 	*		too low), then the Chicago PLL will lock up. It will also lock up if 
 	*		the clock is too high. Target 350MHz.
 	*	@ingroup Config_panelsettings
+	*	@note Typical value is 90
 	*/
-    #define	PANEL_FRAME_RATE				120
-
+    #define	PANEL_FRAME_RATE				120	
+	
 	/** 
 	*	@brief	Vertical front porch (per panel)
 	*	@details
 	*		Number of blank over-scan rows at the "bottom" of the MIPI panel. 
+	*	@note Typical value is 6 to 12 rows
 	*	@ingroup Config_panelsettings
 	*/
     #define	PANEL_VFP						10
-	
+   	
 	/** 
 	*	@brief	Vertical back porch (per panel)
 	*	@details
 	*		Number of blank over-scan rows at the "top" of the MIPI panel.
 	*		Used as a blank space for panel VSYNC. If this is too low, strange
 	*		things may happen like the first row showing up at the wrong spot.
+	*	@note Typical value is 6 to 12 rows
 	*	@ingroup Config_panelsettings
+	*	@note VS055QHM-NH0-69P0 needs 10
+	*	@note LS029B3SX02 needs 7 to 10
 	*/	
     #define	PANEL_VBP						10
-	
+
 	/** 
 	*	@brief	Vertical sync pulse width
 	*	@details
 	*		Vertical synchronization pulse width for "ONE" MIPI panel. Must be 
 	*		smaller than the vertical back porch width.
+	*	@note Typical value is 1 to 2
 	*	@ingroup Config_panelsettings
+	*	@note VS055QHM-NH0-69P0 needs 2
+	*	@note LS029B3SX02 needs 1 to 2
 	*/		
     #define	PANEL_VSYNC						2
 	
@@ -116,9 +120,12 @@
 	*		increase the total pixel clock by adding arbitrarily large horizontal
 	*		porch values. 
 	*	@ingroup Config_panelsettings
+	*	@note Typical value is 24 to 400 columns
+	*	@note VS055QHM-NH0-69P0 needs 30
+	*	@note LS029B3SX02 needs 20 to 30
 	*/	
     #define	PANEL_HBP					30
-
+       
 	/** 
 	*	@brief	Horizontal front porch (per panel)
 	*	@details
@@ -127,18 +134,24 @@
 	*		increase the total pixel clock by adding arbitrarily large horizontal
 	*		porch values. 
 	*	@ingroup Config_panelsettings
+	*	@note Typical value is 24 to 400 columns
+	*	@note VS055QHM-NH0-69P0 needs 30
+	*	@note LS029B3SX02 needs 24 to 30
 	*/		
     #define	PANEL_HFP					30
-
+	
 	/** 
 	*	@brief	Horizontal sync pulse width
 	*	@details
 	*		Horizontal synchronization pulse width for "ONE" MIPI panel. Must be 
 	*		smaller than the horizontal back porch width.
 	*	@ingroup Config_panelsettings
+	*	@note Typical value is 2 to 6
+	*	@note VS055QHM-NH0-69P0 needs 1
+	*	@note LS029B3SX02 needs 2 to 4
 	*/	
     #define	PANEL_HSYNC					2
-	
+       
 	/** 
 	*	@brief	Number of panels (whole display)
 	*	@details
@@ -286,7 +299,7 @@
 	*		See details at http://www.uefi.org/PNP_ACPI_Registry
 	*	@ingroup Chicago_edidsetting
 	*/	
-	#define EDID_PNP_NAME						"LPM"
+	#define EDID_PNP_NAME						"PNP"
 	
 	/** 
 	*	@brief	EDID product ID
@@ -295,7 +308,7 @@
 	*		driver configurations (if any) onto.
 	*	@ingroup Chicago_edidsetting
 	*/	
-	#define EDID_PRODUCT_ID						0x1019
+	#define EDID_PRODUCT_ID						0x0000
 
 	/** 
 	*	@brief	EDID display name
