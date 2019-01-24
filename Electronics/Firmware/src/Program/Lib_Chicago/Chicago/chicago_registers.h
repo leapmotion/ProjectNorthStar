@@ -139,6 +139,9 @@
 
 	#define R_DSC_CTRL_0					0x0040
 	
+	#define GPIO_MAP_0						0x0041
+	#define	GPIO_MAP_1						0x0042
+	
 	// bit definition
 	#define READ_STATUS_EN					_BIT7
 	#define DSC_EN							_BIT0
@@ -163,6 +166,14 @@
 	#define FLASH_WRITE_MAX_LENGTH			0x20
 
 	#define R_SYS_CTRL_1					0x0081
+
+	// bit definition
+	#define MSDA_MASK						(_BIT7|_BIT6)
+	#define MSDA_UART_SEL					(_BIT7|_BIT6)
+	#define MSDA_I2C						_BIT7
+	#define MSDA_UNKNOWN_1					_BIT6
+	#define MSDA_UNKNOWN_0					0
+
 	#define REG_BAUD_DIV_RATIO				0x0087
 	#define REG_OCM_INTR_END_COUNTER		0x0088
 	#define OCM_DEBUG_CTRL					0x0089
@@ -283,6 +294,16 @@
 	#define SW_AUD_NAUD_SVAL_7_0			0xB5
 	#define SW_AUD_NAUD_SVAL_15_8			0xB6
 	#define SW_AUD_NAUD_SVAL_23_16			0xB7
+
+	#define R_PPS_REG_110					0x00EE
+
+	// bit definition
+	#define GPIO_DATA_1_IN					_BIT7
+	#define GPIO_DATA_0_IN					_BIT6
+	#define GPIO_OE_1						_BIT3
+	#define GPIO_OE_0						_BIT2
+	#define GPIO_DATA_1_O					_BIT1
+	#define GPIO_DATA_0_O					_BIT0
 
 	#define TEST_PATTERN_CTRL				0x00ED
 
