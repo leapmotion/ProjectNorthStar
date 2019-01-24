@@ -1,6 +1,6 @@
 # Project North Star : Hardware 
 
-This folder contains the mechanical assets necessary to build a Project North Star AR Headset. Mechanical Release 3 bundles together all the lessons we learned into a new set of 3D files and drawings. It’s principle objective is to be more inviting, less hacked together, and more reliable. The design includes more adjustments and mechanisms for a larger variety of heads and facial geometries. Overall, the assembly is lighter, more balanced, and stiffer. 
+This folder contains the mechanical assets necessary to build a Project North Star AR Headset. Mechanical Release 3 bundles together all the lessons we learned into a new set of 3D files and drawings. Its principle objective is to be more inviting, less hacked together, and more reliable. The design includes more adjustments and mechanisms for a larger variety of heads and facial geometries. Overall, the assembly is lighter, more balanced, and stiffer. 
 
 ![Example Headset](/Mechanical/imgs/hero-north-star-release.jpg)
 
