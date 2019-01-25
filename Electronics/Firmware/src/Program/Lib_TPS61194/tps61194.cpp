@@ -19,7 +19,7 @@
 * @author Adam Munich
 * @author Jim Newman
 *
-* Please note that this driver is a heavily modified version of Lib_LP8545.
+* Please note that this driver is a heavily redacted version of Lib_LP8545.
 *
 */
 

@@ -1,7 +1,7 @@
 /**
 * @file tps61194.h
 *
-* @brief TPS61194 driver _H
+* @brief TPS61194 driver
 *
 * @copyright
 * This library is free software; you can redistribute it and/or
@@ -186,7 +186,6 @@ class TPS61194_
 	TPS61194_(uint32_t pwmPin, uint32_t vsyncInterruptPin, uint32_t backlightEnablePin);
 	~TPS61194_(void);
 	void setup(TPS_config_vsyncType_t vsyncType, uint8_t vsyncFrequency, uint16_t vsyncStartDelay, uint16_t vsyncPulseLength);
-	void loopTask(void);
 	void brightness(uint16_t pwmVal);
 	void powerOn(void);
 	void powerOff(void);

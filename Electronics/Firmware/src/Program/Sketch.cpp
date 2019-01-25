@@ -41,13 +41,15 @@
 //#############################################################################
 // Pre-compiler Definitions
 //-----------------------------------------------------------------------------
-
+//#define USE_BACKLIGHT_DRIVER
 
 //#############################################################################
 // Variable Declarations
 //-----------------------------------------------------------------------------
 bool g_bDebug = 0;
+#ifdef USE_BACKLIGHT_DRIVER
 TPS61194_ TPS61194(PIN_backlight_pwm, PIN_backlight_vsync_in, PIN_lcd_bl_en);
+#endif
 
 
 //#############################################################################
@@ -76,15 +78,19 @@ void setup(){
 	Serial.println("");
 	
 	// Backlight driver
+#ifdef USE_BACKLIGHT_DRIVER
 	TPS61194.setup(
 		TPS61194.vsyncModeSetup::vsyncModeOneshot,	// vsyncMode
 		PANEL_FRAME_RATE,							// frameRate
 		3333,										// oneshot delay (us)
 		1667										// oneshot pulse width (us)
 	);
-	
 	TPS61194.brightness(512);
 	TPS61194.powerOn();
+#else
+	HDK_LCD_BL_ON();
+	HDK_LCD_BL_PWM(64);
+#endif
 	
 	// Chicago bridge
 	EXT_INTR_ENABLE();
