@@ -135,6 +135,10 @@ static uint8_t  edid_db_count;
 //-----------------------------------------------------------------------------
 /// @copydoc chicago_customized_setting
 static void chicago_customized_setting(void){
+
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_customized_setting(void)\n");
+	#endif
 		
 	// REG7_0_RX_REG7
 	i2c_write_byte(SLAVEID_SERDES, REG7_0_RX_REG7, 0x4D); // 1.62G boosting
@@ -190,6 +194,9 @@ static void chicago_customized_setting(void){
 /// @copydoc chicago_check_ocm_status
 static uint8_t chicago_check_ocm_status(void){
 
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_check_ocm_status(void)\n");
+	#endif	
 	
 	uint8_t reg_temp;
 	
@@ -198,10 +205,16 @@ static uint8_t chicago_check_ocm_status(void){
 
 	if((OCM_LOAD_DONE & reg_temp) == OCM_LOAD_DONE){
 
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("%s\n", "\tOCM loaded");
+		#endif
 		return(FLAG_VALUE_ON);
 	}
 	else{
 
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("%s\n", "\tOCM NOT loaded");
+		#endif		
 		return(FLAG_VALUE_OFF);
 	}
 }
@@ -209,6 +222,10 @@ static uint8_t chicago_check_ocm_status(void){
 //-----------------------------------------------------------------------------
 /// @copydoc chicago_audio_mclk_always_out
 static void chicago_audio_mclk_always_out(void){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_audio_mclk_always_out(void)\n");
+	#endif		
 	
 	uint8_t reg_temp;
 	
@@ -234,6 +251,10 @@ static void chicago_audio_mclk_always_out(void){
 /// @copydoc chicago_set_panel_parameters
 static void chicago_set_panel_parameters(void){
 
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_set_panel_parameters(void)\n");
+	#endif			
+	
 	uint8_t reg_temp;
 	
 	// write H active
@@ -445,6 +466,10 @@ static void chicago_set_panel_parameters(void){
 /// @copydoc mipi_set_LP_HS_mode
 static char mipi_set_LP_HS_mode(uint8_t mipi_port, uint8_t lp_hs){		
 	
+	#ifdef DEBUG_LEVEL_2
+		TRACE2("mipi_set_LP_HS_mode(uint8_t mipi_port=%d, uint8_t lp_hs=%d)\n", mipi_port, lp_hs);
+	#endif				
+	
 	uint8_t slave_id;
 	uint32_t reg_long;
 
@@ -494,6 +519,10 @@ static char mipi_set_LP_HS_mode(uint8_t mipi_port, uint8_t lp_hs){
 //-----------------------------------------------------------------------------
 /// @copydoc mipi_packet_send_short
 static char mipi_packet_send_short(PacketShort_t *short_packet){		
+	
+	#ifdef DEBUG_LEVEL_3
+		TRACE1("mipi_packet_send_short(PacketShort_t *short_packet=%x)\n", short_packet);
+	#endif				
 	
 	uint8_t slave_id;
 	uint32_t reg_long;
@@ -556,6 +585,10 @@ static char mipi_packet_send_short(PacketShort_t *short_packet){
 
 //-----------------------------------------------------------------------------
 char mipi_packet_send_long(PacketLong_t *long_packet){
+	
+	#ifdef DEBUG_LEVEL_3
+		TRACE1("mipi_packet_send_long(PacketLong_t *long_packet=%x)\n", long_packet);
+	#endif		
 		
 	uint8_t			slave_id;
 	uint32_t		div,mod,i;
@@ -635,6 +668,10 @@ static void DPCD_setting(void)
 /// @copydoc chicago_hpd_set
 static char chicago_hpd_set(uint8_t force, uint8_t high_low){
 	
+	#ifdef DEBUG_LEVEL_2
+	TRACE2("chicago_hpd_set(uint8_t force=%d, uint8_t high_low=%d)\n", force, high_low);
+	#endif
+	
 	uint8_t reg_temp;
 
 	i2c_read_byte(SLAVEID_DP_IP, ADDR_SYSTEM_CTRL_0, &reg_temp);
@@ -657,6 +694,10 @@ static char chicago_hpd_set(uint8_t force, uint8_t high_low){
 
 //-----------------------------------------------------------------------------
 char mipi_panel_power_supply(uint8_t onoff){
+
+	#ifdef DEBUG_LEVEL_2
+	TRACE1("mipi_panel_power_supply(uint8_t onoff=%d)\n", onoff);
+	#endif
 	
 		if(onoff == PANEL_POWER_SUPPLY_OFF){
 
@@ -670,13 +711,22 @@ char mipi_panel_power_supply(uint8_t onoff){
 			CHICAGO_PANEL_V33_DOWN();
 			CHICAGO_PANEL_V55_DOWN();
 			CHICAGO_PANEL_V55N_DOWN();
+			#ifdef DEBUG_LEVEL_2
+				TRACE1("\t%s\n", "Panel power supplies OFF");
+			#endif
 			
 			// Initial condition
 			CHICAGO_PANEL0_RESET_DOWN();
 			CHICAGO_PANEL1_RESET_DOWN();		
+			#ifdef DEBUG_LEVEL_2
+				TRACE1("\t%s\n", "Panel n_reset LOW");
+			#endif			
 			
 			CHICAGO_PANEL0_ENPORT_OFF();
 			CHICAGO_PANEL1_ENPORT_OFF();				
+			#ifdef DEBUG_LEVEL_2
+				TRACE1("\t%s\n", "Panel enport LOW");
+			#endif					
 			delay_ms(2);
 		}
 	
@@ -688,11 +738,18 @@ char mipi_panel_power_supply(uint8_t onoff){
 			CHICAGO_PANEL_V33_DOWN();
 			CHICAGO_PANEL_V55_DOWN();
 			CHICAGO_PANEL_V55N_DOWN();
+			#ifdef DEBUG_LEVEL_2
+				TRACE1("\t%s\n", "Panel power supplies OFF");
+			#endif
 			
 			// Reset Low
 			CHICAGO_PANEL0_RESET_DOWN();
 			CHICAGO_PANEL1_RESET_DOWN();
 			
+			#ifdef DEBUG_LEVEL_2
+				TRACE1("\t%s\n", "Panel n_reset LOW");
+			#endif			
+
 			delay_ms(2);
 			
 			// Power Supply VDDI (Typ. 1.8V)
@@ -710,6 +767,10 @@ char mipi_panel_power_supply(uint8_t onoff){
 			// Power Supply AVDD- (Typ. -5.5V)
 			CHICAGO_PANEL_V55_ON();
 
+			#ifdef DEBUG_LEVEL_2
+				TRACE1("\t%s\n", "Panel power supplies ON");
+			#endif
+			
 			// Wait, >= 10ms
 			delay_ms(20);
 
@@ -717,6 +778,9 @@ char mipi_panel_power_supply(uint8_t onoff){
 			// Reset High
 			CHICAGO_PANEL0_RESET_UP();
 			CHICAGO_PANEL1_RESET_UP();
+			#ifdef DEBUG_LEVEL_2
+				TRACE1("\t%s\n", "Panel n_reset HIGH");
+			#endif
 			*/
 		
 			// delay more then 2ms, for HW request
@@ -726,6 +790,10 @@ char mipi_panel_power_supply(uint8_t onoff){
 			CHICAGO_PANEL0_RESET_UP();
 			CHICAGO_PANEL1_RESET_UP();
 
+			#ifdef DEBUG_LEVEL_2
+				TRACE1("\t%s\n", "Panel n_reset HIGH");
+			#endif
+			
 			// Wait, >= 10ms
 			delay_ms(15);
 		}
@@ -736,10 +804,17 @@ char mipi_panel_power_supply(uint8_t onoff){
 //-----------------------------------------------------------------------------
 /// @copydoc mipi_power_on_sequence
 static char DCS_sleep_control(uint8_t onoff){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("mipi_power_on_sequence_dcs_sleep_control(uint8_T onoff=%d)\n", onoff);
+	#endif	
 
 	PacketShort_t	dcs;
 
 	if(onoff == PANEL_SLEEP_IN){
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Sleep In");
+		#endif
 		
 		// Panel power OFF sequence
 		// Sleep In
@@ -758,6 +833,9 @@ static char DCS_sleep_control(uint8_t onoff){
 	}
 	
 	else{
+		#ifdef DEBUG_LEVEL_2
+		TRACE1("\t%s\n", "Sleep Out");
+		#endif
 				
 		// Sleep Out
 		for(uint8_t i = 0; i < MIPI_TOTAL_PORT; i++){
@@ -779,10 +857,18 @@ static char DCS_sleep_control(uint8_t onoff){
 
 //-----------------------------------------------------------------------------
 void mipi_panel_brightness(uint8_t bl){
+
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("mipi_panel_brightness(uint8_T bl=%d)", bl);
+	#endif	
 		
 	uint8_t	i;
 	PacketLong_t	long_dcs;
 	uint8_t	long_data[8];
+
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("\tmipi_panel_brightness = %d\n", bl);
+	#endif	
 
 	long_data[0] = 0xB0;
 	long_data[1] = 0x04;
@@ -851,6 +937,10 @@ void mipi_read_test(void){
 	// ADAM -- DISABLE???
     //return;		
 	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("mipi_read_test(void)\n");
+	#endif		
+	
 	uint8_t	i;
 	
 	PacketShort_t	dcs;
@@ -871,9 +961,17 @@ void mipi_read_test(void){
 /// @copydoc mipi_panel_onoff
 static char DCS_display_control(uint8_t backlight){
 
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("mipi_panel_onoff(uint8_T backlight=%d)\n", backlight);
+	#endif		
+
 	PacketShort_t	short_dcs;
 
 	if(PANEL_DISPLAY_OFF == backlight){
+		
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Panel 3v3 OFF");
+		#endif
 		
 		// Turn OFF backlight
 		// CHICAGO_PANEL_V33_DOWN();
@@ -895,6 +993,9 @@ static char DCS_display_control(uint8_t backlight){
 	}
 	
 	else{
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Panel ON");
+		#endif		
 		
 		// Display data transfer
 		// Display On
@@ -955,6 +1056,10 @@ static char mipi_power_off_sequence(void){
 /// @copydoc mipi_mcu_write_done
 static void mipi_mcu_write_done(void){
 	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("mipi_mcu_write_done(void)\n");
+	#endif
+	
 	uint8_t reg_temp;
 	i2c_read_byte(SLAVEID_SPI, MISC_NOTIFY_OCM0, &reg_temp);
 	
@@ -972,6 +1077,10 @@ static void mipi_mcu_write_done(void){
 //-----------------------------------------------------------------------------
 /// @copydoc get_pixel_clock
 static uint32_t get_pixel_clock(void){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("get_pixel_clock(void)\n");
+	#endif	
 	
 	uint32_t pixel_clk_full;
 	uint32_t h_active, hfp, hsync, hbp;
@@ -1019,6 +1128,10 @@ static uint32_t get_pixel_clock(void){
 //-----------------------------------------------------------------------------
 /// @copydoc mipi_edid_write_buffer
 static char mipi_edid_write_buffer(uint32_t edid_serial_number){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("mipi_edid_write_buffer(void)\n");
+	#endif
 		
 	uint32_t checksum;
 	uint32_t count;
@@ -1159,8 +1272,8 @@ static char mipi_edid_write_buffer(uint32_t edid_serial_number){
 		}
 	
 		temp_int = get_pixel_clock();
-		#ifdef DEBUG_LEVEL_3
-		TRACE1("\tPixel_clk = %d\n", (temp_int/100));
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\tPixel_clk = %d\n", (temp_int/100));
 		#endif
 
 		// Pixel clock
@@ -1287,12 +1400,20 @@ static char mipi_edid_write_buffer(uint32_t edid_serial_number){
 
 	i2c_write_byte_keep(count, (uint8_t)(checksum & 0x00FF));
 	
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("\tDone, checksum = 0x%02X\n", (uint8_t)(checksum & 0x00FF));
+	 #endif
+	
 	return RETURN_NORMAL_VALUE;
 }
 
 //-----------------------------------------------------------------------------
 /// @copydoc mipi_edid_write_external_buffer
 static char mipi_edid_write_external_buffer(void){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("mipi_edid_write_external_buffer(void)\n");
+	#endif
 		
 	uint32_t checksum;
 	uint32_t count;
@@ -1324,6 +1445,10 @@ static char mipi_edid_write_external_buffer(void){
 
 	i2c_write_byte_keep(EDID_EXTERNAL_BUF+count, (uint8_t)(checksum&0x00FF));
 
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("\tDone, checksum = 0x%02X \n", ((uint8_t)(checksum&0x00FF)));
+	#endif	
+
 	return RETURN_NORMAL_VALUE;
 }
 
@@ -1331,6 +1456,10 @@ static char mipi_edid_write_external_buffer(void){
 /// @copydoc chicago_get_edid_resolution
 static void chicago_get_edid_resolution(void){
 
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_get_edid_resolution(void)\n");
+	#endif		
+	
 	uint8_t	i, reg_temp;
 	uint32_t	reg_int;
 
@@ -1363,11 +1492,23 @@ static void chicago_get_edid_resolution(void){
 			edid_db_count++;
 		}
 	}
+
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("\tEDID DB = %d\n", edid_db_count);
+	
+		for(i = 0; i < edid_db_count; i++){
+			TRACE2("\tH = %d, V = %d\n", edid_resolution[i][0], edid_resolution[i][1]);
+		}
+	#endif
 }
 
 //-----------------------------------------------------------------------------
 /// @copydoc chicago_check_dp_edid_resolution
 static char chicago_check_dp_edid_resolution(void){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_check_dp_edid_resolution(void)\n");
+	#endif
 	
 	uint8_t	reg_temp;
 	uint32_t	dp_h_active, dp_v_active;
@@ -1387,6 +1528,10 @@ static char chicago_check_dp_edid_resolution(void){
 	i2c_read_byte(SLAVEID_MAIN_LINK, ADDR_VHEIGHT15_8_DBG, &reg_temp);
 	dp_v_active |= (0x0F00 &((uint32_t)reg_temp << 8));
 
+	#ifdef DEBUG_LEVEL_2
+		TRACE2("\tDisplayPort reports H:%d, V:%d\n", dp_h_active, dp_v_active);
+	#endif
+
 	// compare resolution
 	for(i=0; i < edid_db_count; i++){
 		if((dp_h_active == edid_resolution[i][0]) && (dp_v_active == edid_resolution[i][1])){
@@ -1394,12 +1539,20 @@ static char chicago_check_dp_edid_resolution(void){
 		}
 	}
 
+	#ifdef DEBUG_LEVEL_2
+		TRACE2("\tResolution DOES NOT MATCH H:%s, V:%s !\n", edid_resolution[i][0], edid_resolution[i][1]);
+	#endif 
+	
 	return RETURN_NORMAL_VALUE;
 }
 
 //-----------------------------------------------------------------------------
 /// @copydoc chicago_check_video_stable
 static uint8_t chicago_check_video_stable(void){
+	
+	#ifdef DEBUG_LEVEL_3
+		TRACE0("chicago_check_video_stable(void)\n");
+	#endif
 	
 	if(VIDEOSTABLE_ALL_CONDITION == video_stable){
 		return FLAG_VALUE_ON;
@@ -1415,6 +1568,10 @@ static uint8_t chicago_check_video_stable(void){
 /// @copydoc HDK_chicago_actually_check_video_stable
 static uint8_t HDK_chicago_actually_check_video_stable(void){
 	
+	#ifdef DEBUG_LEVEL_3
+		TRACE0("HDK_chicago_actually_check_video_stable(void)\n");
+	#endif
+	
 	uint8_t reg_temp;
 
 	// Check Video format stable status
@@ -1428,30 +1585,30 @@ static uint8_t HDK_chicago_actually_check_video_stable(void){
 }
 
 
-
 //-----------------------------------------------------------------------------
 /// @copydoc HDK_chicago_actually_check_video_stable
 void HDK_chicago_set_vsync_out(void){
 	
-	CHICAGO_CHIP_POWER_UP();
-	CHICAGO_RESET_UP();
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("HDK_chicago_set_vsync_out(void)\n");
+	#endif
 	
-	delay(10);
-	
-	// Set R_SYS_CTRL_1 to set M_SDA and M_SCL to GPIO
 	uint8_t reg_temp;
-	i2c_read_byte(SLAVEID_SPI, R_SYS_CTRL_1, &reg_temp);
-	i2c_write_byte(SLAVEID_SPI, R_SYS_CTRL_1, 0b11000000 | reg_temp);
-	
-	// Set R_PPS_REG_110 (0xEE)
-	i2c_write_byte(SLAVEID_SPI, 0xEE, 0b00001001); // Check
-	
-	// Set GPIO_MAP_0 (0x41)
-	i2c_write_byte(SLAVEID_SPI, 0x41, 120); // Check
-	
-	delay(10);
-}
 
+	// set UART_SEL to 3
+	i2c_read_byte(SLAVEID_SPI, R_SYS_CTRL_1, &reg_temp);
+	reg_temp |= MSDA_UART_SEL;
+	i2c_write_byte(SLAVEID_SPI, R_SYS_CTRL_1, reg_temp);
+
+	// set MSDA output enable
+	i2c_read_byte(SLAVEID_SPI, R_PPS_REG_110, &reg_temp);
+	reg_temp &= ~(GPIO_DATA_1_O & GPIO_DATA_0_O);	// clear bits 1 and 0
+	reg_temp |= GPIO_OE_1;							// set bit 3
+	i2c_write_byte(SLAVEID_SPI, R_PPS_REG_110, reg_temp);
+
+	// redirect vsync to MSDA output pin
+	i2c_write_byte(SLAVEID_SPI, GPIO_MAP_0, 0x79);
+}
 
 
 //-----------------------------------------------------------------------------
@@ -1486,6 +1643,10 @@ void external_int_isr(void) {
 
 //-----------------------------------------------------------------------------
 void chicago_read_intr_state(void){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_read_intr_state(void)\n");
+	#endif
 	
 	uint8_t reg_temp;
 
@@ -1528,6 +1689,10 @@ void chicago_read_intr_state(void){
 
 //-----------------------------------------------------------------------------
 void HDK_chicago_clear_intr_state(uint8_t readOut){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("HDK_chicago_clear_intr_state(void)\n");
+	#endif
 
 	i2c_write_byte(SLAVEID_DP_TOP,		ADDR_INTR,					ADDR_INTR_MASK            | 0x0000);
 	i2c_write_byte(SLAVEID_MIPI_CTRL,	R_MIP_TX_INT,				R_MIP_TX_INT_MASK         | 0x0000);
@@ -1550,6 +1715,10 @@ void HDK_chicago_clear_intr_state(uint8_t readOut){
 /// @copydoc clear_software_int
 static void clear_software_int(void){	
 	
+	#ifdef DEBUG_LEVEL_3
+		TRACE0("clear_software_int(void)\n");
+	#endif	
+	
 	uint8_t reg_temp;
 
 	i2c_read_byte(SLAVEID_DP_TOP, ADDR_SW_INTR_CTRL, &reg_temp);
@@ -1562,6 +1731,10 @@ static void clear_software_int(void){
 //-----------------------------------------------------------------------------
 void chicago_interrupt_handle(void){
 	
+	#ifdef DEBUG_LEVEL_3
+		TRACE0("chicago_interrupt_handle(void)\n");
+	#endif
+	
 	uint8_t reg_temp;
 
 	#ifdef DEBUG_POWER_OFF_CHICAGO_WHEN_CABLE_OUT
@@ -1571,6 +1744,10 @@ void chicago_interrupt_handle(void){
 
 		if(0 != (reg_temp & AUX_CABLE_OUT)){
 
+			#ifdef DEBUG_LEVEL_2
+				TRACE2("\t%s\n\t%s\n", "cable removed!", "Bridge POWERING OFF");
+			#endif
+		
 			// bit[5] = 1, DP cable disconnect
 			chicago_state_change(STATE_NONE);
 		
@@ -1583,6 +1760,10 @@ void chicago_interrupt_handle(void){
 		i2c_read_byte(SLAVEID_SPI, INT_NOTIFY_MCU0, &reg_temp);
 	
 		if(0 != (reg_temp & AUX_CABLE_OUT)){
+	
+			#ifdef DEBUG_LEVEL_2
+				TRACE2("\t%s\n\t%s\n", "cable removed!", "Bridge STAYING ON");
+			#endif
 		
 			// Turn off backlight
 			DCS_display_control(PANEL_DISPLAY_OFF);
@@ -1599,6 +1780,9 @@ void chicago_interrupt_handle(void){
 	i2c_read_byte(SLAVEID_SPI, INT_NOTIFY_MCU0, &reg_temp);
 	
 	if((reg_temp & AUX_CABLE_IN) != 0){
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "cable inserted!");
+		#endif
 
 		// clear AUX_CABLE_IN
 		reg_temp &= ~AUX_CABLE_IN;
@@ -1609,6 +1793,10 @@ void chicago_interrupt_handle(void){
 	i2c_read_byte(SLAVEID_SPI, INT_NOTIFY_MCU0, &reg_temp);
 	
 	if((reg_temp & VIDEO_RE_CACULATE) != 0){ 
+			
+		#ifdef DEBUG_LEVEL_3
+			TRACE1("\t%s\n","M/N");
+		#endif 
 			
 		// clear VIDEO_UNSTABLE
 		reg_temp &= ~VIDEO_RE_CACULATE;
@@ -1625,6 +1813,10 @@ void chicago_interrupt_handle(void){
 	
 	if((reg_temp & VIDEO_INPUT_EMPTY) != 0){
 		
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n","Empty video stream");
+		#endif
+		
 		// clear VIDEO_INPUT_EMPTY
 		reg_temp &= ~VIDEO_INPUT_EMPTY;
 		i2c_write_byte(SLAVEID_SPI, INT_NOTIFY_MCU0, reg_temp);
@@ -1638,6 +1830,10 @@ void chicago_interrupt_handle(void){
 	i2c_read_byte(SLAVEID_SPI, INT_NOTIFY_MCU0, &reg_temp);
 	
 	if((reg_temp & VIDEO_STABLE) != 0){
+		
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Video stream stable");
+		#endif
 			
 		// clear VIDEO_STABLE
 		reg_temp &= ~VIDEO_STABLE;
@@ -1648,6 +1844,10 @@ void chicago_interrupt_handle(void){
 		
 		#ifdef DEBUG_CHECK_DP_RESOLUTION
 			if(chicago_check_dp_edid_resolution() == 1){
+			
+				#ifdef DEBUG_LEVEL_2
+					TRACE1("\t%s\n", "Measured resolution matches EDID");
+				#endif 
 			
 				video_stable |= VIDEOSTABLE_DP_RESOLUTION_MATCH;
 			}
@@ -1661,6 +1861,10 @@ void chicago_interrupt_handle(void){
 	
 	if((reg_temp & AUDIO_MN_RST) != 0){
 	
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Audio MN reset");
+		#endif
+		
 		// clear AUDIO_MN_RST
 		reg_temp &= ~AUDIO_MN_RST;
 		i2c_write_byte(SLAVEID_SPI, INT_NOTIFY_MCU0, reg_temp);
@@ -1672,6 +1876,10 @@ void chicago_interrupt_handle(void){
 	i2c_read_byte(SLAVEID_SPI, INT_NOTIFY_MCU0, &reg_temp);
 	if((reg_temp & AUDIO_PLL_RST) != 0){
 	
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Audio PLL reset");
+		#endif 
+			
 		// clear AUDIO_PLL_RST
 		reg_temp &= ~AUDIO_PLL_RST;
 		i2c_write_byte(SLAVEID_SPI, INT_NOTIFY_MCU0, reg_temp);
@@ -1697,6 +1905,10 @@ static char chicago_interrupt_set(void){
 //-----------------------------------------------------------------------------
 /// @copydoc chicago_read_chip_id
 static void chicago_read_chip_id(void){
+
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_read_chip_id(void)\n");
+	#endif
 	
 	uint8_t reg_temp;
 	uint32_t reg_int;
@@ -1707,14 +1919,18 @@ static void chicago_read_chip_id(void){
 	i2c_read_byte(SLAVEID_SPI, CHIP_ID_LOW, &reg_temp);
 	reg_int |= (((uint32_t)reg_temp)&0x00FF);
 	
-	#ifdef DEBUG_LEVEL_3
-	TRACE1("\tChip ID = %04X\n", reg_int);
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("\tChip ID = %04X\n", reg_int);
 	#endif
 }
 
 //-----------------------------------------------------------------------------
 char chicago_power_supply(uint8_t onoff){
 
+	#ifdef DEBUG_LEVEL_2	
+		TRACE1("chicago_power_supply(uint8_t onoff=%d)\n", onoff);
+	#endif
+	
 	if(onoff == 0) {
 		CHICAGO_RESET_DOWN();
 		CHICAGO_CHIP_POWER_DOWN();
@@ -1747,12 +1963,24 @@ char chicago_power_supply(uint8_t onoff){
 //-----------------------------------------------------------------------------
 char chicago_power_onoff(uint8_t onoff){
 	
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("chicago_power_onoff(uint8_t onoff=%d)\n", onoff);
+	#endif
+	
 	if(onoff == 0) {
 		CHICAGO_RESET_DOWN();
+		
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Chicago n_reset LOW");
+		#endif	
 		
 		delay_ms(CHICAGO_RESET_DOWN_DELAY);
 		
 		CHICAGO_CHIP_POWER_DOWN();
+		
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Chicago pwen LOW");
+		#endif		
 		
 		delay_ms(CHICAGO_CHIPPOWER_DOWN_DELAY);
 	} 
@@ -1760,11 +1988,19 @@ char chicago_power_onoff(uint8_t onoff){
 	else {
 		CHICAGO_CHIP_POWER_UP();
 			
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Chicago pwen HIGH");
+		#endif	
+			
 		// delay >= 20ms, for clock stable
 		delay_ms(CHICAGO_CHIPPOWER_UP_DELAY);
 		
 		CHICAGO_RESET_UP();
 
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "Chicago n_reset HIGH");
+		#endif
+		
 		// delay >= 10ms, ocm start to work
 		delay_ms(CHICAGO_RESET_UP_DELAY);
 		
@@ -1777,17 +2013,77 @@ char chicago_power_onoff(uint8_t onoff){
 //-----------------------------------------------------------------------------
 uint8_t dp_check_cable_plug_int(void){
 	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("dp_check_cable_plug_int(void)\n");
+	#endif
+	
 	if(IS_CHICAGO_INT()){
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "DP cable IN");
+		#endif
 		return DP_CABLE_IN;
 	}
 	
 	else{
+		#ifdef DEBUG_LEVEL_2
+			TRACE1("\t%s\n", "DP cable OUT");
+		#endif
 		return DP_CABLE_OUT;
 	}
 }
 
 //-----------------------------------------------------------------------------
 void chicago_state_change(ChicagoState state){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE1("chicago_state_change(ChicagoState state=%d)\n", state);
+		
+		TRACE1("\t%s", "State change to ");
+		
+		switch(state){
+			case STATE_NONE:
+				TRACE1("%s", "STATE_NONE");
+				break;
+			case STATE_POWEROFF:
+				TRACE1("%s", "STATE_POWEROFF");
+				break;
+			case STATE_WAITCABLE:
+				TRACE1("%s", "STATE_WAITCABLE");
+				break;
+			case STATE_CONNECTING:
+				TRACE1("%s", "STATE_CONNECTING");
+				break;
+			case STATE_NORMAL:
+				TRACE1("%s", "STATE_NORMAL");
+				break;
+			default:
+				TRACE1("%s", "ERROR_STATE");
+				break;			
+		}
+		
+		TRACE1(", %s", "last_state is ");
+		
+		switch(state){
+			case STATE_NONE:
+			TRACE1("%s\n", "STATE_NONE");
+			break;
+			case STATE_POWEROFF:
+			TRACE1("%s\n", "STATE_POWEROFF");
+			break;
+			case STATE_WAITCABLE:
+			TRACE1("%s\n", "STATE_WAITCABLE");
+			break;
+			case STATE_CONNECTING:
+			TRACE1("%s\n", "STATE_CONNECTING");
+			break;
+			case STATE_NORMAL:
+			TRACE1("%s\n", "STATE_NORMAL");
+			break;
+			default:
+			TRACE1("%s\n", "ERROR_STATE");
+			break;
+		}
+	#endif
 	
 	current_state = state;
 }
@@ -1809,6 +2105,10 @@ ChicagoState chicago_get_last_state(void){
 
 //-----------------------------------------------------------------------------
 void chicago_stop_ocm(void){
+
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_stop_ocm(void)\n");
+	#endif
 	
 	uint8_t reg_temp;
 	
@@ -1823,6 +2123,11 @@ void chicago_stop_ocm(void){
 //-----------------------------------------------------------------------------
 /// @copydoc chicago_ocm_crc_checking
 static char chicago_ocm_crc_checking(void){
+	
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("chicago_ocm_crc_checking(void)\n");
+	#endif
+	
 	uint8_t reg_temp;
 
 	if(RETURN_NORMAL_VALUE == i2c_read_byte(SLAVEID_SPI, HDCP_LOAD_STATUS, &reg_temp)){
@@ -1848,6 +2153,10 @@ static void chicago_set_display_delay_ms(void){
 	//-----------------------------------------------------------------------------
 	/// @copydoc DSC_setting
 	static void DSC_setting(void){	
+		
+		#ifdef DEBUG_LEVEL_2
+			TRACE0("DSC_setting(void)\n");
+		#endif		
 		
         #if defined(SHARP_LS029B3SX01_ONE_120Hz)
 		uint8_t reg_temp;
@@ -1884,6 +2193,10 @@ static void chicago_set_display_delay_ms(void){
 	/// @copydoc DSC_PPS_enable
 	static void DSC_PPS_enable_and_DCS_init(void){
 
+		#ifdef DEBUG_LEVEL_2
+			TRACE0("DSC_PPS_enable(void)\n");
+		#endif
+
 		PacketShort_t short_dcs;
 		PacketLong_t long_dcs;
 		
@@ -1901,6 +2214,8 @@ static void chicago_set_display_delay_ms(void){
 		uint8_t dsc_long3[5] = {
 			0x2B, 0x00, 0x00, 0x06, 0x40
 		};
+
+		TRACE1("\t%s\n", "DSC enable in.");
 
 		/* HSSRAM parameter */
 		for(uint8_t i = 0; i < MIPI_TOTAL_PORT; i++){
@@ -2120,11 +2435,19 @@ static void chicago_set_display_delay_ms(void){
 //-----------------------------------------------------------------------------
 void chicago_main(void){
 		
+	#ifdef DEBUG_LEVEL_3
+		TRACE0("chicago_main(void)\n");
+	#endif
+		
 	char return_value;
 	
 	switch(current_state){
 
 	case STATE_NONE:
+	
+		#ifdef	DEBUG_LEVEL_3
+			TRACE1("\t%s\n", "STATE_NONE"); 
+		#endif
 	
 		// Change last state
 		last_state = STATE_NONE;
@@ -2155,7 +2478,9 @@ void chicago_main(void){
 		// power on Chicago power first
 		chicago_power_supply(CHICAGO_POWER_SUPPLY_ON);
 		
-		HDK_chicago_set_vsync_out(); // ADAM
+		CHICAGO_CHIP_POWER_UP();
+		CHICAGO_RESET_UP();
+		delay(10);
 		
 		//if((DIP_SWITCH_ON==(debug_switch&DS_BIST)) || (DIP_SWITCH_ON==(debug_switch&DS_SCRITP_ONLY))){
 		#ifdef DEBUG_ENABLE_COLOR_BARS
@@ -2183,6 +2508,10 @@ void chicago_main(void){
 		break;
 
 	case STATE_WAITCABLE:
+		
+		#ifdef	DEBUG_LEVEL_3
+			TRACE1("\t%s\n", "STATE_WAITCABLE");
+		#endif
 		
 		// adam edit
 // 		if(0 /*DIP_SWITCH_ON==(debug_switch&DS_SCRITP_ONLY)*/){
@@ -2251,10 +2580,15 @@ void chicago_main(void){
 					
 					else if(return_value == RETURN_FAILURE_VALUE2)
 					{
+						TRACE1("\t%s\n", "I2C Error!!!");						
 					}
 					
 					else
 					{					
+						#ifdef DEBUG_LEVEL_2
+							TRACE1("\t%s\n", "OCM CRC pass.");
+						#endif
+						
 						// Change last state
 						last_state = STATE_WAITCABLE;
 						
@@ -2283,6 +2617,8 @@ void chicago_main(void){
 
 						chicago_set_panel_parameters();
 						
+						HDK_chicago_set_vsync_out();
+
 						#ifdef DEBUG_CHECK_DP_RESOLUTION
 							chicago_get_edid_resolution();
 						#endif
@@ -2304,6 +2640,9 @@ void chicago_main(void){
 
 	case STATE_CONNECTING:
 
+		#ifdef	DEBUG_LEVEL_3
+			TRACE1("\t%s\n", "STATE_CONNECTING"); 
+		#endif
 	
 		if(last_state == STATE_WAITCABLE)
 		{
@@ -2358,8 +2697,8 @@ void chicago_main(void){
 						// set flag to ON, no need to set HPD again
 						set_HPD = FLAG_VALUE_ON;
 				
-						#ifdef DEBUG_LEVEL_3
-						TRACE1("\t%s\n", "HotPlug Detect set to HIGH");
+						#ifdef DEBUG_LEVEL_2
+							TRACE1("\t%s\n", "HotPlug Detect set to HIGH");
 						#endif
 					}
 				#endif
@@ -2398,6 +2737,9 @@ void chicago_main(void){
 		}
 		else
 		{
+			#ifdef	DEBUG_LEVEL_2
+				TRACE1("\t%s\n", "ERROR_STATE"); 
+			#endif
 	
 			// Error state
 			TRACE2("\t%s: Error last state, last_state = %d", __LINE__, (uint32_t)(last_state));
@@ -2408,6 +2750,9 @@ void chicago_main(void){
 		break;
 
 	case STATE_NORMAL:
+		#ifdef	DEBUG_LEVEL_3
+			TRACE1("\t%s\n", "STATE_NORMAL"); 
+		#endif
 
 		if(last_state == STATE_CONNECTING)
 		{
@@ -2435,6 +2780,9 @@ void chicago_main(void){
 
 	// for debug only
 	case STATE_POWEROFF:
+		#ifdef	DEBUG_LEVEL_3
+			TRACE1("\t%s\n", "STATE_POWEROFF"); 
+		#endif
 		
 		// For Debug Command Used Only
 		if(last_state != STATE_POWEROFF)
@@ -2456,6 +2804,11 @@ void chicago_main(void){
 		break;
 
 	default:
+		#ifdef	DEBUG_LEVEL_3
+			TRACE1("\t%s\n", "STATE_DEFAULT_ERROR"); 
+		#endif
+	
+		TRACE1("\tError current state, current_state = %d\n", (uint32_t)(current_state));
 		
 		last_state = STATE_NONE;
 		current_state = STATE_NONE;

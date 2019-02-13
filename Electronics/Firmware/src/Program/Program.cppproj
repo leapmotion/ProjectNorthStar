@@ -382,6 +382,12 @@
     <Compile Include="Lib_Chicago\I2C\i2c.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Lib_TPS61194\tps61194.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_TPS61194\tps61194.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Lib_Wire\Wire.cpp">
       <SubType>compile</SubType>
     </Compile>
@@ -416,6 +422,7 @@
     <Folder Include="linker_scripts\linker_scripts\gcc\" />
     <Folder Include="Lib_Chicago" />
     <Folder Include="Lib_Wire" />
+    <Folder Include="Lib_TPS61194" />
   </ItemGroup>
   <ItemGroup>
     <None Include="linker_scripts\linker_scripts\gcc\flash_without_bootloader.ld">
