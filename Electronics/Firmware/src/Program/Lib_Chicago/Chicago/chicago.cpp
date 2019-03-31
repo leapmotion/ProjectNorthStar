@@ -1585,30 +1585,30 @@ static uint8_t HDK_chicago_actually_check_video_stable(void){
 }
 
 
-
 //-----------------------------------------------------------------------------
 /// @copydoc HDK_chicago_actually_check_video_stable
 void HDK_chicago_set_vsync_out(void){
 	
-	CHICAGO_CHIP_POWER_UP();
-	CHICAGO_RESET_UP();
+	#ifdef DEBUG_LEVEL_2
+		TRACE0("HDK_chicago_set_vsync_out(void)\n");
+	#endif
 	
-	delay(10);
-	
-	// Set R_SYS_CTRL_1 to set M_SDA and M_SCL to GPIO
 	uint8_t reg_temp;
-	i2c_read_byte(SLAVEID_SPI, R_SYS_CTRL_1, &reg_temp);
-	i2c_write_byte(SLAVEID_SPI, R_SYS_CTRL_1, 0b11000000 | reg_temp);
-	
-	// Set R_PPS_REG_110 (0xEE)
-	i2c_write_byte(SLAVEID_SPI, 0xEE, 0b00001001); // Check
-	
-	// Set GPIO_MAP_0 (0x41)
-	i2c_write_byte(SLAVEID_SPI, 0x41, 120); // Check
-	
-	delay(10);
-}
 
+	// set UART_SEL to 3
+	i2c_read_byte(SLAVEID_SPI, R_SYS_CTRL_1, &reg_temp);
+	reg_temp |= MSDA_UART_SEL;
+	i2c_write_byte(SLAVEID_SPI, R_SYS_CTRL_1, reg_temp);
+
+	// set MSDA output enable
+	i2c_read_byte(SLAVEID_SPI, R_PPS_REG_110, &reg_temp);
+	reg_temp &= ~(GPIO_DATA_1_O & GPIO_DATA_0_O);	// clear bits 1 and 0
+	reg_temp |= GPIO_OE_1;							// set bit 3
+	i2c_write_byte(SLAVEID_SPI, R_PPS_REG_110, reg_temp);
+
+	// redirect vsync to MSDA output pin
+	i2c_write_byte(SLAVEID_SPI, GPIO_MAP_0, 0x79);
+}
 
 
 //-----------------------------------------------------------------------------
@@ -2478,7 +2478,9 @@ void chicago_main(void){
 		// power on Chicago power first
 		chicago_power_supply(CHICAGO_POWER_SUPPLY_ON);
 		
-		HDK_chicago_set_vsync_out(); // ADAM
+		CHICAGO_CHIP_POWER_UP();
+		CHICAGO_RESET_UP();
+		delay(10);
 		
 		//if((DIP_SWITCH_ON==(debug_switch&DS_BIST)) || (DIP_SWITCH_ON==(debug_switch&DS_SCRITP_ONLY))){
 		#ifdef DEBUG_ENABLE_COLOR_BARS
@@ -2615,6 +2617,8 @@ void chicago_main(void){
 
 						chicago_set_panel_parameters();
 						
+						HDK_chicago_set_vsync_out();
+
 						#ifdef DEBUG_CHECK_DP_RESOLUTION
 							chicago_get_edid_resolution();
 						#endif
