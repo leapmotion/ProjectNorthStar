@@ -7,7 +7,7 @@ This folder contains the mechanical assets necessary to build a Project North St
 Major sections are missing. Assembly requires care and patience. Nothing worth having is ever easy.
 ```
 
-![CAD Render](/imgs/calibration-stand-no-blur-rgba.png)
+![CAD Render](/Mechanical/imgs/calibration-stand-no-blur-rgba.png)
 
 ## Getting Started
 
@@ -17,13 +17,13 @@ Open “Assm Drawing North Star.pdf” and construct each sub-assembly as illust
 
 The headset consists of two basic sections: the optics #100-000 and headgear #200-000. The optics subassembly currently has two variants: Release 3 optics and Update 3.1 (i.e. the simplified optics assembly). The headgear assembly utilizes the rear adjustment mechanism from a Miller branded welder’s helmet, but several models can be made to work.
 
-![Overview](/imgs/overview.png)
+![Overview](/Mechanical/imgs/overview.png)
 
 ### Optics assembly: Release 3 vs 3.1
 
 Functionally, the two optics assemblies are the same. Release 3 is closer to the original design aesthetic and it’s marginally (8g) more lightweight. On the other hand, Update 3.1 halves the print time by removing the need for supports on the sides. Overall, the simplified 3.1 bracket is easier to print with lower print failures and stiffer too. It’s recommended to start with the simplified Release 3.1 optics assembly for the first build. See drawing #100-000 in the assembly PDF for more information.
 
-![Overview](/imgs/IMG_8601.jpg)
+![Overview](/Mechanical/imgs/IMG_8601.jpg)
 
 ## Notes on 3D printed parts
 
@@ -61,7 +61,7 @@ The headgear assembly includes parts that print flat but bend to fasten to each 
 
 * [Example using mannequin head](https://www.youtube.com/watch?v=rDvcU_RxaM8) - Preheating the print bed to 70C softens a print enough to shape the part
 
-![Overview](/imgs/forming-3dprint.jpg)
+![Overview](/Mechanical/imgs/forming-3dprint.jpg)
 
 ## Additional Resources
 
