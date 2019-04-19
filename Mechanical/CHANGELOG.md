@@ -13,6 +13,6 @@ All notable Mecahnical changes will be documented in this file.
 ### Changed
 - chamfer on optics bracket display screws, removed lip around rubber washer (#130-001 and #110-001)
 
-##Mar 23, 2019
+## Mar 23, 2019
 ### Added
 Added simplified optics assembly (#130-000)
