@@ -15,4 +15,4 @@ All notable Mecahnical changes will be documented in this file.
 
 ## Mar 23, 2019
 ### Added
-Added simplified optics assembly (#130-000)
+- Added simplified optics assembly (#130-000)
