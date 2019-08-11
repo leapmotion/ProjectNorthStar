@@ -6,5 +6,5 @@ Documentation and assembly instructions can be found here: [https://github.com/l
 
 [![Project North Star Headset](http://blog.leapmotion.com/wp-content/uploads/2018/04/hero-unveil.png)](http://blog.leapmotion.com/northstar/)
 
-test edit
+
 
