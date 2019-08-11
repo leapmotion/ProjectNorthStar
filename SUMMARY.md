@@ -9,6 +9,6 @@
 
 ## Guides
 
-* [Introduction](guides/introduction.md)
 * [Leap Motion Project North Star - Mechanical Guide](guides/leap-motion-project-north-star-mechanical-guide.md)
+* [Untitled](guides/untitled.md)
 
