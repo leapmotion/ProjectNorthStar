@@ -80,8 +80,11 @@ The reflectors are diamond-turned and milled from PMMA \(a.k.a. acrylic\). The o
 
 From the elipsoid definition, the reflectors need to be rotated and translated into position. We define the origin point as the midpoint between the two reflector foci, which should line up with the user's pupils:
 
-  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/OpticsTransformations.png)![](https://leapmotion.github.io/ProjectNorthStar/imgs/ReflectorEnd.png)![](https://leapmotion.github.io/ProjectNorthStar/imgs/ReflectorsFront.png)
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/OpticsTransformations.png)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/ReflectorEnd.png)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/ReflectorsFront.png)
 
 ## E: OEM Headgear replacement
 
@@ -89,102 +92,156 @@ Light and adjustable with rigid mount points. Several welder's mask headgear ven
   
 These two specific generations of headgears yielded the best results quickly, mounting evolving electronics on the most varied heads. The amount of adjustment points makes it work for the large majority of users.  
   
-Welding Replacement Headgear - [Miller Generation IV for T94 Headgear, Amazon](https://www.amazon.com/Miller-Headgear-Generation-Welding-Helmets/dp/B073QY6B7Y) Part \#260486 or [Miller Replacement Headgear, Amazon ](https://www.amazon.com/Miller-Electric-256174-Headgear-Helmet/dp/B00826AM7A)Part \#256174   
-  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/millereplacement.jpg)![](https://leapmotion.github.io/ProjectNorthStar/imgs/millergen4.jpg)![](https://leapmotion.github.io/ProjectNorthStar/imgs/headgearExample.png)  
-  
-  
+Welding Replacement Headgear - [Miller Generation IV for T94 Headgear, Amazon](https://www.amazon.com/Miller-Headgear-Generation-Welding-Helmets/dp/B073QY6B7Y) Part \#260486 or [Miller Replacement Headgear, Amazon ](https://www.amazon.com/Miller-Electric-256174-Headgear-Helmet/dp/B00826AM7A)Part \#256174
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/millereplacement.jpg)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/millergen4.jpg)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/headgearExample.png)
+
 **Alternative:**   
   
 The 3M Speedglas Utility headgear was the first headgear we used for North Star prototypes. At the time, the optics would bounce around, causing the reflected image to shake wildly as we moved around. We minimized this by switching to the stiffer Miller headgear and continued other improvements for several months. However, the 3M headgear was sorely missed, as it was simple to put-on and less intimidating for demos. Since then we added cheek alignment features, which solved the image bounce, and therefore makes sense to bring back this design as a supplement to the release headgear. The headgear and optics are interchangeable, only the hinges need to match the headgear.  
   
-Welding Replacement Headgear - [3M Speedglas Welding Helmet Headband, Amazon](https://www.amazon.com/gp/product/B003V5KSNK/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)  
-  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/3MSpeedglas.jpg) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/headgearComparison.png) 
+Welding Replacement Headgear - [3M Speedglas Welding Helmet Headband, Amazon](https://www.amazon.com/gp/product/B003V5KSNK/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)
 
----
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/3MSpeedglas.jpg)
 
-## F: \[Qty: 6\] Delta PT screws M2.0 x 6 mm Long "Thread-Forming Screws for Thin Plastic" - [McMaster \#96817a209](https://www.mcmaster.com/#96817a209)  ![](https://leapmotion.github.io/ProjectNorthStar/imgs/96817a209l.gif)
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/headgearComparison.png)
 
-## G: \[Qty:12\] M2.5 x 0.45 mm Thread, 6 mm Long "Steel Pan Head Phillips Screw" - [McMaster \#92005a066](https://www.mcmaster.com/#92005a066) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/92005a066l.gif)
+## F: \[Qty: 6\] Delta PT screws M2.0 x 6 mm Long "Thread-Forming Screws for Thin Plastic" - [McMaster \#96817a209](https://www.mcmaster.com/#96817a209)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/96817a209l.gif)
+
+## G: \[Qty:12\] M2.5 x 0.45 mm Thread, 6 mm Long "Steel Pan Head Phillips Screw" - [McMaster \#92005a066](https://www.mcmaster.com/#92005a066)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/92005a066l.gif)
 
 ## H: \[Qty:2 pairs\] Hinge rotation fasteners
 
 Machine screws, 10-32 Thread Size, 7/8" Long "Steel Button Head Hex Drive Screw" - [McMaster \#92949a270](https://www.mcmaster.com/#92949a270)  
-Matching nuts, 10-32 Thread Size, Stainless "Steel Nylon-Insert Locknut" - [McMaster \#91831a411](https://www.mcmaster.com/#91831a411)  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/92949a270l.gif) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/91831a411l.gif)
+Matching nuts, 10-32 Thread Size, Stainless "Steel Nylon-Insert Locknut" - [McMaster \#91831a411](https://www.mcmaster.com/#91831a411)
 
-## I: \[Qty:2\] 3x10mm Al. bar stock cut to approximately 150mm length [McMaster \#92005a066](https://www.mcmaster.com/#9146t21)
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/92949a270l.gif)
 
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/9146T213p1.png)  
-Cut, drill, and tap the slides to roughly 150mm \(6 inches\) in length. We used a Dremel rotary tool to cut the bar stock to length, and transferred the hole pattern from the Halo 3D print using a [transfer punch.](https://www.amazon.com/gp/product/B008DXYOLC/ref=oh_aui_search_detailpage?ie=UTF8&psc=1) The two holes are tapped using [M2.5 x 0.45 mm Thread Tap, McMaster](https://www.mcmaster.com/#26475a33)  
-  
-  
-Cost and speed being the most important design parameters, this DIY method performs as well as a machined part at 100x lower price. Without access to a CNC metal workshop it's surprisingly expensive to have 1-2 parts machined.  
-  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_5222.JPG) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_4481.JPG)![](https://leapmotion.github.io/ProjectNorthStar/imgs/slideDimensions.png) 
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/91831a411l.gif)
+
+## I: \[Qty:2\] 3x10mm Al. bar stock cut to approximately 150mm length [McMaster \#92005a066](https://www.mcmaster.com/#9146t21) 
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/9146T213p1.png)
+
+Cut, drill, and tap the slides to roughly 150mm \(6 inches\) in length. We used a Dremel rotary tool to cut the bar stock to length, and transferred the hole pattern from the Halo 3D print using a [transfer punch.](https://www.amazon.com/gp/product/B008DXYOLC/ref=oh_aui_search_detailpage?ie=UTF8&psc=1) The two holes are tapped using [M2.5 x 0.45 mm Thread Tap, McMaster](https://www.mcmaster.com/#26475a33)
+
+Cost and speed being the most important design parameters, this DIY method performs as well as a machined part at 100x lower price. Without access to a CNC metal workshop it's surprisingly expensive to have 1-2 parts machined.
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_5222.JPG)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_4481.JPG)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/slideDimensions.png)
 
 ## J: 3D Printed Parts
 
-Each component has suggested orientation and print settings for the best performance and least print time. Proceed to the 3D print section for information on each print: [3D Printing Part Reference](https://leapmotion.github.io/ProjectNorthStar/3dprints.html)  
-  
-[3D Printing Reference](https://leapmotion.github.io/ProjectNorthStar/3dprints.html)
+Each component has suggested orientation and print settings for the best performance and least print time. Proceed to the 3D print section for information on each print: [3D Printing Part Reference](https://leapmotion.github.io/ProjectNorthStar/3dprints.html)
+
+### [3D Printing Reference](https://leapmotion.github.io/ProjectNorthStar/3dprints.html)
 
 ## Assembly Steps
 
-The NorthStar headset has three main sub-assemblies: the optics bracket, the electronics tray, and the adjustable headgear.**Miller headgear:** \(see below for alternate headgear with torsion hinge\)  
+The NorthStar headset has three main sub-assemblies: the optics bracket, the electronics tray, and the adjustable headgear.
+
+#### **Miller headgear:** _\(see below for alternate headgear with torsion hinge\)_
+
+1\) Verify the aluminum bar stock slides without resistance inside the 3D printed hinges. Tip: Repeatedly sliding the bar stock quickly through a new hinge clears out any obtrusive burs, and the heat generated shapes the plastic.
+
+2\) Disassemble old hinges from headgear, set aside the o-rings:
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6541.JPG)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6539.JPG)
+
+3\) Assemble new hinge as shown below, using screw/nut `H`. Tighten until the o-ring is still visible and the hinge has considerable resistance turning.
+
+4\) Slide hinge onto headgear, aligning with front of track. Lock in place using screw `F`
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6542.JPG)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6550.JPG)
+
+Alternate: **3M Speedglas headgear:** 
+
+1\) Remove the mounting assemblies on both sides of the headgear, enlarge hole to 18mm. We used a stepped drill to enlarge the hole, a little larger than the diameter of the spring we’re using.
+
+2\) Place matching spring into rear housing, fasten close, and trim spring legs.
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6758.jpg)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6759.jpg)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6762.jpg)
+
+3\) Place the outer hinge housing onto the spring, in the orientation shown. Using the perimeter fasteners, clamp down onto the spring leg, aligning it with the cutout.
+
+4\) Fasten the large center locknut and screw, adjusting it for the desired resistance. Trim the remaining spring leg.
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6763.jpg)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6764.jpg)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6766.jpg)
+
+#### **Electronics Tray:**
+
+5\) Fasten display driver `B` to 3D printed bracket using `F` screws x 3. Fasten hand tracking module `A` to 3D print using screws from its enclosure
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_5446.JPG)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_5873.JPG)
+
+6\) Place USB cable into USB strain relief, and fasten using `F` screws x 2 to electronics tray
+
+7\) Adjust USB cable until the flex connector is aligned with connector and doesn't strain
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_7105.JPG)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_8951.JPG)
+
+#### Optics Bracket:
+
+8\) Fasten electronics tray to halo using 2 screws `F`
+
+9\) Fasten optics bracket to the halo using 6 screws `F`
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_1653.JPG)
+
+10\) Fasten displays and facial interfaces into optics bracket using 4 screws per side `G` \(8 total\). 
+
+11\) Carefully connect the display flex connector to the driver board
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6573.jpg)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_8165.JPG)
+
+12\) Fasten lid to halo using 4 screws `F` from the bottom as shown
+
+13\) Secure wires to lid using cable-ties through the anchors
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_1849.JPG)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_1981.JPG)
+
+14\) Verify reflectors align with tabs in optics bracket, scrape away offending plastic if not. Using hot-glue, "tack" the reflectors into the halo bracket. Be careful not to use too much and be quick enough that the glue doesn't solidify before the reflectors are in place.  
 
 
-1.Verify the aluminum bar stock slides without resistance inside the 3D printed hinges. Tip: Repeatedly sliding the bar stock quickly through a new hinge clears out any obtrusive burs, and the heat generated shapes the plastic.  
-2. Disassemble old hinges from headgear, set aside the o-rings:  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6541.JPG) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6539.JPG)  
-  
-3. Assemble new hinge as shown below, using screw/nut H. Tighten until the o-ring is still visible and the hinge has considerable resistance turning.  
-4. Slide hinge onto headgear, aligning with front of track. Lock in place using screw F  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6542.JPG) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6550.JPG)  
-  
-Alternate: **3M Speedglas headgear:**   
-  
-1. Remove the mounting assemblies on both sides of the headgear, enlarge hole to 18mm. We used a stepped drill to enlarge the hole, a little larger than the diameter of the spring we’re using.  
-2. Place matching spring into rear housing, fasten close, and trim spring legs.  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6758.jpg) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6759.jpg) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6762.jpg)   
-  
-3. Place the outer hinge housing onto the spring, in the orientation shown. Using the perimeter fasteners, clamp down onto the spring leg, aligning it with the cutout.  
-4. Fasten the large center locknut and screw, adjusting it for the desired resistance. Trim the remaining spring leg.  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6763.jpg) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6764.jpg) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6766.jpg)   
-  
-**Electronics Tray:**  
-  
-5. Fasten display driver B to 3D printed bracket using F screws x 3. Fasten hand tracking module A to 3D print using screws from its enclosure  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_5446.JPG) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_5873.JPG)  
-  
-6. Place USB cable into USB strain relief, and fasten using F screws x 2 to electronics tray  
-7. Adjust USB cable until the flex connector is aligned with connector and doesn't strain   
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_7105.JPG)![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_8951.JPG)  
-  
-Optics Bracket:  
-  
-8. Fasten electronics tray to halo using 2 screws F  
-9. Fasten optics bracket to the halo using 6 screws F  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_1653.JPG)  
-  
-10. Fasten displays and facial interfaces into optics bracket using 4 screws per side G \(8 total\).   
-11. Carefully connect the display flex connector to the driver board   
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6573.jpg)![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_8165.JPG)![](https://leapmotion.github.io/ProjectNorthStar/IMG_1849.JPG)  
-  
-12. Fasten lid to halo using 4 screws F from the bottom as shown  
-13. Secure wires to lid using cable-ties through the anchors  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_1849.JPG)![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_1981.JPG)  
-  
-14. Verify reflectors align with tabs in optics bracket, scrape away offending plastic if not. Using hot-glue, "tack" the reflectors into the halo bracket. Be careful not to use too much and be quick enough that the glue doesn't solidify before the reflectors are in place.  
-  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6585.jpg)  
-  
-Final Assembly:  
-  
-15. Fasten slides to assembled optics bracket using 4 x G screws   
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_7997.JPG)  
-  
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6585.jpg)
+
+#### Final Assembly:
+
+15\) Fasten slides to assembled optics bracket using 4 x `G` screws
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_7997.JPG)
+
 16\) Make adjustments for user's head.
 
 ## Notes
