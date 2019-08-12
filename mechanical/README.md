@@ -15,8 +15,6 @@ Major sections are missing. Assembly requires care and patience. Nothing worth h
 
 ![CAD Render](../.gitbook/assets/calibration-stand-no-blur-rgba.png)
 
-{% file src="../.gitbook/assets/assm-drawing-calibration-stand.zip" caption="test file" %}
-
 ## Getting Started
 
 Open the [Headset Mechanical Assembly](headset-assembly.md) and construct each sub-assembly as illustrated. A full list of the parts needed can be found in the [Headset Bill of Materials \(BOM\)](headset-bom.md). Not all sub-assemblies are required as there are multiple designs to choose from. Furthermore, the CAD files are included in STEP format to help design new parts.
