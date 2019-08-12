@@ -12,20 +12,11 @@ Although not a complete AR solution, Project North Star points to a future where
 
 The headset is made up of three modular assemblies: the optics bracket, the headgear with hinges, and the halo \(which contains all the electronics\). This configuration has been very useful as we iterated on different parts. The parts are 3D printed using consumer grade 3D printers and materials, with a couple parts from [McMaster-Carr](https://www.mcmaster.com/). The goal is to have an easily reproduced AR headset that anyone can put together.  
   
-Ignoring the reflectors\*, you'll need to 3D print roughly 20+ hours of parts and cut, drill and tap aluminum bar stock. Nothing expensive or major requiring a machine shop, but a few tools are expected. Read below for the list. \*Note: We are exploring different possibilities for individuals to obtain reflectors.   
-  
-[Download 3D CAD files](https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical/North%20Star%203D%20Files)  
-These parts and this guide are still a work in progress
+Ignoring the reflectors\*, you'll need to 3D print roughly 20+ hours of parts and cut, drill and tap aluminum bar stock. Nothing expensive or major requiring a machine shop, but a few tools are expected. Read below for the list. _\*Note: We are exploring different possibilities for individuals to obtain reflectors._ 
 
-#### Table of Contents
+### [Download 3D CAD files](https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical/North%20Star%203D%20Files)
 
-1. Overview
-2. Tools & Materials
-3. BOM
-4. 3D Printed Parts
-5. Assembly Instructions
-6. Optical Calibration
-7. Notes
+_These parts and this guide are still a work in progress_
 
 ## Tools & Materials
 
@@ -33,14 +24,14 @@ These parts and this guide are still a work in progress
 * Filament: [eSun PLA+, Amazon](https://www.amazon.com/eSUN-1-75mm-Printer-Filament-2-2lbs/dp/B01EKEMB7Q)
 * T6 Torx driver for thin-plastic screws [Torx T6 driver, McMaster](https://www.mcmaster.com/#37455a34/=1debsao)
 * Phillips driver for M2.5 screws [Screwdriver Phillips \#1 size, Amazon](https://www.amazon.com/TEKTON-26663-Phillips-4-Inch-Screwdriver/dp/B014US1NS0/)
-* M2.5 Screw thread tap \*: [M2.5 x 0.45 mm Thread Tap, McMaster](https://www.mcmaster.com/#26475a33) 
+* M2.5 Screw thread tap \*: [M2.5 x 0.45 mm Thread Tap, McMaster](https://www.mcmaster.com/#26475a33)
 * Hot glue gun \(on low setting &lt; 40W\), for reflectors [Hot glue gun, Amazon](https://www.amazon.com/ccbetter-Upgraded-Removable-Anti-hot-Flexible/dp/B01178RVI2/)
 * Latex or Nitrile gloves \(minimize fingerprints on optical components\) [Sterile gloves, Amazon](https://www.amazon.com/MedPride-Powder-Free-Nitrile-Gloves-Large/dp/B00GS8VGP6/)
-* Optional: These are our favorite 3D print finishing tools \( [wire cutters](https://www.amazon.com/gp/product/B00FZPDG1K/ref=oh_aui_search_detailpage?ie=UTF8&psc=1), [chisel](https://www.amazon.com/Octave-Tool-Kit-3D-Printer/dp/B00ASFRSP2), [file](https://www.amazon.com/Needle-HIGHEST-QUALITY-Hardened-Strength/dp/B01MRCZKIX), [sand paper](https://www.amazon.com/3M-Wetordry-Sandpaper-11-Inch-Assorted/dp/B001449TPS), [hand drill](https://www.amazon.com/gp/product/B06XG1FY8P/ref=oh_aui_search_detailpage?ie=UTF8&psc=1), etc.\)
-
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/BOMReference.png)
+* Optional: These are our favorite 3D print finishing tools \([wire cutters](https://www.amazon.com/gp/product/B00FZPDG1K/ref=oh_aui_search_detailpage?ie=UTF8&psc=1), [chisel](https://www.amazon.com/Octave-Tool-Kit-3D-Printer/dp/B00ASFRSP2), [file](https://www.amazon.com/Needle-HIGHEST-QUALITY-Hardened-Strength/dp/B01MRCZKIX), [sand paper](https://www.amazon.com/3M-Wetordry-Sandpaper-11-Inch-Assorted/dp/B001449TPS), [hand drill](https://www.amazon.com/gp/product/B06XG1FY8P/ref=oh_aui_search_detailpage?ie=UTF8&psc=1), etc.\)
 
 ## BOM
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/BOMReference.png)
 
 | BOM Ref. | Part Name | Quantity | Procurement |
 | :--- | :--- | :--- | :--- |
@@ -60,32 +51,37 @@ These parts and this guide are still a work in progress
 Depending on which Leap Motion hand tracking module you use, it will determine which sets of 3D prints you'll need. Check the 3D printing section for more details.   
   
 Retail Leap Motion Controller - [Amazon](https://www.amazon.com/Leap-Motion-Controller-Packaging-Software/dp/B00HVYBWQO/ref=sr_1_2?s=industrial&ie=UTF8&qid=1529622781&sr=8-2&keywords=leap+motion)  
--or-  
+_-or-_  
 Custom ultra-wide tracking module
 
 ## B: Leap Motion display driver
 
-See the [Electronics folder](https://github.com/leapmotion/ProjectNorthStar/tree/master/Electronics) in the main repo for display driver schematics and firmware.
+_See the_ [_Electronics folder_](https://github.com/leapmotion/ProjectNorthStar/tree/master/Electronics) _in the main repo for display driver schematics and firmware._
 
 ## C: BOE 3.5-inch 120Hz LCDs VS035ZSM-NW0 - 3.5inch LTPS 1440\*1600 Module
 
-**Note:** BOE produces 3.5-inch 1440\*1600 modules and refers to them as VS035ZSM-NW0; however they are not listed publicly because they are only sold in large quantities. The panel listed as VS035ZSM-**NH0** is no longer in production nor have we tested it with our driver board. On a broad level, it is possible to make the hardware more accessible through bulk orders of the core components, which is currently under exploration.  
-  
+_**Note:** BOE produces 3.5-inch 1440\*1600 modules and refers to them as VS035ZSM-NW0; however they are not listed publicly because they are only sold in large quantities. The panel listed as VS035ZSM-**NH0** is no longer in production nor have we tested it with our driver board. On a broad level, it is possible to make the hardware more accessible through bulk orders of the core components, which is currently under exploration._
+
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_0701.JPG)
 
 ## D: Reflectors \(aka combiners, lenses\)
 
-What may seem intimidating at first is conceptually very simple. One property of elipsoids is that all the light emitted from one focus reflects off its surface and focuses it to the second focus! Amazing. Therefore, to figure out the section of elipsoid needed in our AR application, we traced a ray backwards from the second focus, through a cellphone-sized .   
+What may seem intimidating at first is conceptually very simple. One property of elipsoids is that all the light emitted from one focus reflects off its surface and focuses it to the second focus! Amazing. Therefore, to figure out the section of elipsoid needed in our AR application, we traced a ray backwards from the second focus, through a cellphone-sized.  
   
-The resultant elipsoid is defined by the following dimensions, chosen to allow a range of 3-to-5-inch LCD panels to be placed near the eye. The perimeter of the elipsoid section was decided on empirically by minimizing distortion with a larger prototype, then cropping to the reflected image. This large reflector was roughly 120x120mm, and the final ended up being around 75x75mm.  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/ElipsoidReflector.png)![](https://leapmotion.github.io/ProjectNorthStar/imgs/reflectorDimensions.png)  
+The resultant elipsoid is defined by the following dimensions, chosen to allow a range of 3-to-5-inch LCD panels to be placed near the eye. The perimeter of the elipsoid section was decided on empirically by minimizing distortion with a larger prototype, then cropping to the reflected image. This large reflector was roughly 120x120mm, and the final ended up being around 75x75mm.
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/ElipsoidReflector.png)
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/reflectorDimensions.png)
+
+The reflectors are diamond-turned and milled from PMMA \(a.k.a. acrylic\). The outside surface needs an anti-reflective coating to prevent a secondary reflection from degrading the image. Indoors and subjectively, 50-50% \(transmissive-reflective\) anti-reflective coating provided the best results for us.
+
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/reflectorOverview.png)
+
+From the elipsoid definition, the reflectors need to be rotated and translated into position. We define the origin point as the midpoint between the two reflector foci, which should line up with the user's pupils:
+
   
-The reflectors are diamond-turned and milled from PMMA \(a.k.a. acrylic\). The outside surface needs an anti-reflective coating to prevent a secondary reflection from degrading the image. Indoors and subjectively, 50-50% \(transmissive-reflective\) anti-reflective coating provided the best results for us.  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/reflectorOverview.png)  
-  
-From the elipsoid definition, the reflectors need to be rotated and translated into position. We define the origin point as the midpoint between the two reflector foci, which should line up with the user's pupils:  
-  
-![](https://leapmotion.github.io/ProjectNorthStar/imgs/OpticsTransformations.png) ![](https://leapmotion.github.io/ProjectNorthStar/imgs/ReflectorEnd.png)![](https://leapmotion.github.io/ProjectNorthStar/imgs/ReflectorsFront.png)
+![](https://leapmotion.github.io/ProjectNorthStar/imgs/OpticsTransformations.png)![](https://leapmotion.github.io/ProjectNorthStar/imgs/ReflectorEnd.png)![](https://leapmotion.github.io/ProjectNorthStar/imgs/ReflectorsFront.png)
 
 ## E: OEM Headgear replacement
 
