@@ -6,6 +6,8 @@
   * [Changelog](mechanical/changelog.md)
 * [Project North Star: Electronics](electronics/README.md)
   * [Project North Star AR Display Board](electronics/firmware.md)
+* [Discord Commuity](https://discordapp.com/invite/NghjdX7)
+* [Reddit Community](https://www.reddit.com/r/ProjectNorthStar/)
 
 ## Guides
 
@@ -15,6 +17,8 @@
 
 ## Leap Motion Blogs <a id="blogs"></a>
 
+* [Leap Motion North Star Blogs](http://blog.leapmotion.com/tag/north-star/)
+* [Leap Motion Forums](https://forums.leapmotion.com/t/project-north-star/7071)
 * [Unveiling Project North Star](blogs/unveiling-project-north-star.md)
 * [Our Journey to the North Star](blogs/our-journey-to-the-north-star.md)
 * [Project North Star is Now Open Source](blogs/project-north-star-is-now-open-source.md)
