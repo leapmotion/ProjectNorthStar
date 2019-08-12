@@ -10,6 +10,6 @@
 ## Guides
 
 * [Leap Motion Project North Star - Mechanical Guide](guides/leap-motion-project-north-star-mechanical-guide.md)
-* [Assembly Drawing Calibration Stand](guides/untitled.md)
-* [North Star Release 3 Assembly Guide](guides/north-star-release-3-assembly-guide.md)
+* [Leap Motion Project North Star - Release 3 Mechanical Assembly Guide](guides/north-star-release-3-assembly-guide.md)
+* [Leap Motion Project North Star - Calibration Stand Guide](guides/untitled.md)
 
