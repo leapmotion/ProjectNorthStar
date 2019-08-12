@@ -24,7 +24,7 @@
 
 ## Leap Motion Blogs <a id="blogs"></a>
 
-* [Leap Motion North Star Blog](http://blog.leapmotion.com/tag/north-star/)
+* [Leap Motion North Star Blogs](http://blog.leapmotion.com/tag/north-star/)
 * [Unveiling Project North Star](blogs/unveiling-project-north-star.md)
 * [Our Journey to the North Star](blogs/our-journey-to-the-north-star.md)
 * [Project North Star is Now Open Source](blogs/project-north-star-is-now-open-source.md)
