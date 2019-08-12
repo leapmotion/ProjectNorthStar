@@ -12,11 +12,17 @@ Although not a complete AR solution, Project North Star points to a future where
 
 The headset is made up of three modular assemblies: the optics bracket, the headgear with hinges, and the halo \(which contains all the electronics\). This configuration has been very useful as we iterated on different parts. The parts are 3D printed using consumer grade 3D printers and materials, with a couple parts from [McMaster-Carr](https://www.mcmaster.com/). The goal is to have an easily reproduced AR headset that anyone can put together.  
   
-Ignoring the reflectors\*, you'll need to 3D print roughly 20+ hours of parts and cut, drill and tap aluminum bar stock. Nothing expensive or major requiring a machine shop, but a few tools are expected. Read below for the list. _\*Note: We are exploring different possibilities for individuals to obtain reflectors._ 
+Ignoring the reflectors, you'll need to 3D print roughly 20+ hours of parts and cut, drill and tap aluminum bar stock. Nothing expensive or major requiring a machine shop, but a few tools are expected. Read below for the list. 
+
+{% hint style="info" %}
+We are exploring different possibilities for individuals to obtain reflectors.
+{% endhint %}
 
 ### [Download 3D CAD files](https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical/North%20Star%203D%20Files)
 
+{% hint style="warning" %}
 _These parts and this guide are still a work in progress_
+{% endhint %}
 
 ## Tools & Materials
 
@@ -60,7 +66,9 @@ _See the_ [_Electronics folder_](https://github.com/leapmotion/ProjectNorthStar/
 
 ## C: BOE 3.5-inch 120Hz LCDs VS035ZSM-NW0 - 3.5inch LTPS 1440\*1600 Module
 
-_**Note:** BOE produces 3.5-inch 1440\*1600 modules and refers to them as VS035ZSM-NW0; however they are not listed publicly because they are only sold in large quantities. The panel listed as VS035ZSM-**NH0** is no longer in production nor have we tested it with our driver board. On a broad level, it is possible to make the hardware more accessible through bulk orders of the core components, which is currently under exploration._
+{% hint style="info" %}
+BOE produces 3.5-inch 1440\*1600 modules and refers to them as VS035ZSM-NW0; however they are not listed publicly because they are only sold in large quantities. The panel listed as VS035ZSM-**NH0** is no longer in production nor have we tested it with our driver board. On a broad level, it is possible to make the hardware more accessible through bulk orders of the core components, which is currently under exploration.
+{% endhint %}
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_0701.JPG)
 
@@ -151,7 +159,9 @@ Each component has suggested orientation and print settings for the best perform
 
 The NorthStar headset has three main sub-assemblies: the optics bracket, the electronics tray, and the adjustable headgear.
 
-#### **Miller headgear:** _\(see below for alternate headgear with torsion hinge\)_
+### **Miller headgear**
+
+_\(see below for alternate headgear with torsion hinge\)_
 
 1\) Verify the aluminum bar stock slides without resistance inside the 3D printed hinges. Tip: Repeatedly sliding the bar stock quickly through a new hinge clears out any obtrusive burs, and the heat generated shapes the plastic.
 
@@ -169,7 +179,7 @@ The NorthStar headset has three main sub-assemblies: the optics bracket, the ele
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6550.JPG)
 
-Alternate: **3M Speedglas headgear:** 
+### Alternate: **3M Speedglas headgear**
 
 1\) Remove the mounting assemblies on both sides of the headgear, enlarge hole to 18mm. We used a stepped drill to enlarge the hole, a little larger than the diameter of the spring we’re using.
 
@@ -191,7 +201,7 @@ Alternate: **3M Speedglas headgear:**
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6766.jpg)
 
-#### **Electronics Tray:**
+### **Electronics Tray**
 
 5\) Fasten display driver `B` to 3D printed bracket using `F` screws x 3. Fasten hand tracking module `A` to 3D print using screws from its enclosure
 
@@ -207,7 +217,7 @@ Alternate: **3M Speedglas headgear:**
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_8951.JPG)
 
-#### Optics Bracket:
+### Optics Bracket
 
 8\) Fasten electronics tray to halo using 2 screws `F`
 
@@ -231,12 +241,11 @@ Alternate: **3M Speedglas headgear:**
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_1981.JPG)
 
-14\) Verify reflectors align with tabs in optics bracket, scrape away offending plastic if not. Using hot-glue, "tack" the reflectors into the halo bracket. Be careful not to use too much and be quick enough that the glue doesn't solidify before the reflectors are in place.  
-
+14\) Verify reflectors align with tabs in optics bracket, scrape away offending plastic if not. Using hot-glue, "tack" the reflectors into the halo bracket. Be careful not to use too much and be quick enough that the glue doesn't solidify before the reflectors are in place.
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_6585.jpg)
 
-#### Final Assembly:
+### Final Assembly
 
 15\) Fasten slides to assembled optics bracket using 4 x `G` screws
 
@@ -246,8 +255,19 @@ Alternate: **3M Speedglas headgear:**
 
 ## Notes
 
-* not optimal for users with glasses
-* electronics bracket hard to access/service once installed
-* no wire management for display flex connectors
-* imbalanced weight due to cables: USB, display port, and power
+{% hint style="info" %}
+Not optimal for users with glasses
+{% endhint %}
+
+{% hint style="info" %}
+Electronics bracket hard to access/service once installed
+{% endhint %}
+
+{% hint style="info" %}
+No wire management for display flex connectors
+{% endhint %}
+
+{% hint style="info" %}
+Imbalanced weight due to cables: USB, display port, and power
+{% endhint %}
 

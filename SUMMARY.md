@@ -12,6 +12,7 @@
 ## Guides
 
 * [Initial Release Mechanical Guide - Leap Motion](guides/leap-motion-project-north-star-mechanical-guide.md)
+* [3D Printing Reference - Leap Motion](guides/3d-printing-reference-leap-motion.md)
 * [Release 3 Mechanical Assembly Guide - Leap Motion](guides/north-star-release-3-assembly-guide.md)
 * [Calibration Stand Guide - Leap Motion](guides/untitled.md)
 
