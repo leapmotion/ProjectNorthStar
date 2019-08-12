@@ -153,7 +153,7 @@ Cost and speed being the most important design parameters, this DIY method perfo
 
 Each component has suggested orientation and print settings for the best performance and least print time. Proceed to the 3D print section for information on each print: [3D Printing Part Reference](https://leapmotion.github.io/ProjectNorthStar/3dprints.html)
 
-### [3D Printing Reference](https://leapmotion.github.io/ProjectNorthStar/3dprints.html)
+### [3D Printing Reference](3d-printing-reference-leap-motion.md)
 
 ## Assembly Steps
 
