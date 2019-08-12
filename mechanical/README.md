@@ -1,17 +1,23 @@
+---
+description: >-
+  This folder contains the mechanical assets necessary to build a Project North
+  Star AR Headset with calibration stand.
+---
+
 # Project North Star : Mechanical
 
-This folder contains the mechanical assets necessary to build a Project North Star AR Headset with calibration stand. Mechanical Release 3 bundles together all the lessons we learned into a new set of 3D files and drawings. Its principle objective is to be more inviting, less hacked together, and more reliable. The design includes more adjustments and mechanisms for a larger variety of heads and facial geometries. Overall, the assembly is lighter, more balanced, and stiffer.
+Mechanical Release 3 bundles together all the lessons we learned into a new set of 3D files and drawings. Its principle objective is to be more inviting, less hacked together, and more reliable. The design includes more adjustments and mechanisms for a larger variety of heads and facial geometries. Overall, the assembly is lighter, more balanced, and stiffer.
 
-```text
-!!! WARNING: This is a work in progress. This is not a finished guide, nor end-user friendly. 
+{% hint style="danger" %}
+This is a work in progress. This is not a finished guide, nor end-user friendly.  
 Major sections are missing. Assembly requires care and patience. Nothing worth having is ever easy.
-```
+{% endhint %}
 
 ![CAD Render](../.gitbook/assets/calibration-stand-no-blur-rgba.png)
 
 ## Getting Started
 
-Open “Assm Drawing North Star.pdf” and construct each sub-assembly as illustrated. A full list of the parts needed can be found in the Bill of Materials \(BOM\) files, which can be imported into spreadsheet software for easier viewing. Not all sub-assemblies are required as there are multiple designs to choose from. Furthermore, the CAD files are included in STEP format to help design new parts.
+Open the [Headset Mechanical Assembly](north-star-release-3-assembly-guide.md) and construct each sub-assembly as illustrated. A full list of the parts needed can be found in the [Headset Bill of Materials \(BOM\)](headset-bill-of-materials.md) and [Calibration Stand BOM](calibration-stand-bill-of-materials.md), which can be imported into spreadsheet software for easier viewing. Not all sub-assemblies are required as there are multiple designs to choose from. Furthermore, the CAD files are included in STEP format to help design new parts.
 
 ## Design Overview
 
@@ -62,10 +68,4 @@ The headgear assembly includes parts that print flat but bend to fasten to each 
 * [Example using mannequin head](https://www.youtube.com/watch?v=rDvcU_RxaM8) - Preheating the print bed to 70C softens a print enough to shape the part
 
 ![Overview](../.gitbook/assets/forming-3dprint.jpg)
-
-## Additional Resources
-
-* Join the community discussion on [Discord](https://discord.gg/NghjdX7)
-* Scroll through the latest posts on [Reddit](https://www.reddit.com/r/ProjectNorthStar/)
-* Keep up with our latest updates [Leap Motion Blog](http://blog.leapmotion.com/)
 

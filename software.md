@@ -1,6 +1,10 @@
-# Project North Star: Software
+---
+description: >-
+  This Unity Package contains the Unity Assets, Scenes, and Prewarping systems
+  necessary to build Unity applications with the Project North Star headset.
+---
 
-This Unity Package contains the Unity Assets, Scenes, and Prewarping systems necessary to build Unity applications with the Project North Star headset.
+# Project North Star: Software
 
 ## Compatibility
 
@@ -29,7 +33,9 @@ These assets are dependent on [Release 4.4.0](https://github.com/leapmotion/Unit
 
 We have included a pre-built version of the internal calibration tool. We can make no guarantees about the accuracy of the process in DIY environments; this pipeline is built from multiple stages, each with multiple points of failure. Included in the .zip file are a python script for calibrating the calibration cameras, a checkerboard .pdf to be used with that, and Windows-based Calibrator exe, and a readme describing how to execute the entire process.
 
-## Click for friendlier video overview:
+## Friendlier video overview
 
-[![](http://img.youtube.com/vi/twyUk7MtiHo/0.jpg)](http://www.youtube.com/watch?v=twyUk7MtiHo)
+{% embed url="https://www.youtube.com/watch?v=twyUk7MtiHo" %}
+
+
 

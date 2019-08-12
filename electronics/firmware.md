@@ -1,6 +1,10 @@
-# Project North Star AR Display Board
+---
+description: >-
+  This is the procedure to install the proper software to build the AR Display
+  Board firmware and the procedure to install the firmware on to the device.
+---
 
-This is the procedure to install the proper software to build the AR Display Board firmware and the procedure to install the firmware on to the device.
+# Project North Star AR Display Board
 
 ## Set Up
 

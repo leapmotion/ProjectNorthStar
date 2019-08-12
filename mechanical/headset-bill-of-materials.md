@@ -1,4 +1,4 @@
-# Release 3 Mechanical Assembly Guide - Leap Motion
+# Headset Bill of Materials
 
 ### BOM
 
@@ -51,34 +51,4 @@
 | \#900-003 | 1 | FOAM FOREHEAD PADDING | [Joann](https://www.joann.com/airtex-0.5-16-oz.-high-density-foam/2180313.html#start=1) |
 | \#900-004 | 1 | FOAM BACKED FABRIC | [Joann](https://www.joann.com/headliner-utility-fabric-55-black/3496072.html) |
 | \#900-005 | 1 | 3x10x165mm 6061 AL. BAR SLIDE | [McMaster \#9146t21](https://www.mcmaster.com/9146t21) |
-
-![NORTH STAR RELEASE 3](../.gitbook/assets/assm-drawing-north-star-release-3-01.png)
-
-![OPTICS ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-02.png)
-
-![HINGED OPTICS BRACKET ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-03.png)
-
-![SIMPLIFIED OPTICS MODULE ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-04.png)
-
-![LEFT DISPLAY ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-05.png)
-
-![LEFT ROT. SLIDE MOUNT ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-06.png)
-
-![HALO ELECTRONICS MODULE ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-07.png)
-
-![ELECTRONICS BAY ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-08.png)
-
-![SIMPLIFIED ELECTRONICS BAY ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-09.png)
-
-![HEADGEAR ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-10.png)
-
-![PADDED FOREHEAD ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-11.png)
-
-![LEFT BRAKE ASSM.](../.gitbook/assets/assm-drawing-north-star-release-3-12.png)
-
-![3x10x165mm 6061 AL. BAR SLIDE](../.gitbook/assets/assm-drawing-north-star-release-3-13.png)
-
-![](../.gitbook/assets/assm-drawing-north-star-release-3-14.png)
-
-
 

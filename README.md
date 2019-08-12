@@ -4,7 +4,7 @@ description: The open-source files comprising Leap Motion's Project North Star A
 
 # Project North Star
 
-Documentation and assembly instructions can be found [here](mechanical/)
+Documentation and assembly instructions can be found [here](mechanical/).
 
 ![](.gitbook/assets/image.png)
 

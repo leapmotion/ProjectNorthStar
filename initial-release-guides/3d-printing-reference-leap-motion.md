@@ -2,7 +2,7 @@
 description: 'Pulled from https://leapmotion.github.io/ProjectNorthStar/3dprints.html'
 ---
 
-# 3D Printing Reference - Leap Motion
+# 3D Printing Reference
 
 {% hint style="info" %}
 Use your slicer's part orientation tools to ensure flat contact with print surface. In Simplify 3D, it can be found in the menu "Edit &gt; Place Surface On Bed"

@@ -1,4 +1,4 @@
-# Calibration Stand Guide - Leap Motion
+# Calibration Stand Bill of Materials
 
 | Part number | Quantity | Description | Source |
 | :--- | :--- | :--- | :--- |
@@ -12,10 +12,4 @@
 | \#650-001 | 22 | M2x8mm LONG THREAD-FORMING SCREWS FOR PLASTIC | [McMaster \#96817a212](https://www.mcmaster.com/96817a212) |
 | \#690-001 | 8 | M2.5x0.45  3.4mm LONG HEAT-SET INSERT FOR PLASTICS | [McMaster \#94180a321](https://www.mcmaster.com/94180a321) |
 | \#700-003 | 2 | ELP USB CAMERA MODULE DUAL LENS STEREO | [Amazon](https://www.amazon.com/ELP-Industrial-Application-Synchronized-ELP-960P2CAM-V90-VC/dp/B078TDLHCP/) |
-
-![CALIBRATION STAND ASSM.](../.gitbook/assets/assm-drawing-calibration-stand-1.png)
-
-![HEADSET HOLDER ASSM.](../.gitbook/assets/assm-drawing-calibration-stand-2.png)
-
-![CAMERA HOLDER ASSM.](../.gitbook/assets/assm-drawing-calibration-stand-3.png)
 

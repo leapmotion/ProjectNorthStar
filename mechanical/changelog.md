@@ -1,6 +1,6 @@
 # Changelog
 
-All notable Mecahnical changes will be documented in this file.
+All notable Mechanical changes will be documented in this file.
 
 ## May 8, 2019
 
