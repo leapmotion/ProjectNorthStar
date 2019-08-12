@@ -2,7 +2,7 @@
 description: 'Pulled from https://leapmotion.github.io/ProjectNorthStar/mechanical.html'
 ---
 
-# Mechanical Guide
+# Initial Release Assembly Guide
 
 The purpose of this guide is to instruct, with access to a few common tools, how to make a Project North Star reference AR headset. It's aimed to be accessible and inexpensive to build, using as many off-the-shelf components and 3D-printed parts as possible. For now, several key components are custom-made \(e.g. the reflectors, display driver board, and our custom ultra-wide hand tracking module\), but we know that together we can find make some work arounds and alternatives.  
   
@@ -153,7 +153,7 @@ Cost and speed being the most important design parameters, this DIY method perfo
 
 Each component has suggested orientation and print settings for the best performance and least print time. Proceed to the 3D print section for information on each print: [3D Printing Part Reference](https://leapmotion.github.io/ProjectNorthStar/3dprints.html)
 
-### [3D Printing Reference](3d-printing-reference-leap-motion.md)
+### [3D Printing Reference](initial-release-3d-printing-reference.md)
 
 ## Assembly Steps
 

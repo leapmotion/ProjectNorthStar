@@ -1,4 +1,4 @@
-# Headset Bill of Materials
+# Headset BOM
 
 ### BOM
 

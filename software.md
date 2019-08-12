@@ -4,7 +4,7 @@ description: >-
   necessary to build Unity applications with the Project North Star headset.
 ---
 
-# Project North Star: Software
+# Software
 
 ## Compatibility
 

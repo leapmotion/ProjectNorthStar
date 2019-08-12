@@ -1,4 +1,4 @@
-# Calibration Stand Bill of Materials
+# Calibration Stand BOM
 
 | Part number | Quantity | Description | Source |
 | :--- | :--- | :--- | :--- |

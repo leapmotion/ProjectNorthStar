@@ -5,20 +5,17 @@
 * [Reddit Community](https://www.reddit.com/r/ProjectNorthStar/)
 * [Leap Motion Forums](https://forums.leapmotion.com/t/project-north-star/7071)
 * [Leap Motion North Star Blogs](http://blog.leapmotion.com/tag/north-star/)
-* [Project North Star : Mechanical](mechanical/README.md)
-  * [Headset Bill of Materials](mechanical/headset-bill-of-materials.md)
-  * [Headset Mechanical Assembly](mechanical/north-star-release-3-assembly-guide.md)
-  * [Calibration Stand Bill of Materials](mechanical/calibration-stand-bill-of-materials.md)
-  * [Calibration Stand Assembly](mechanical/untitled-1.md)
+* [Mechanical](mechanical/README.md)
+  * [Headset BOM](mechanical/headset-bom.md)
+  * [Headset Assembly](mechanical/headset-assembly.md)
+  * [Calibration Stand BOM](mechanical/calibration-stand-bom.md)
+  * [Calibration Stand Assembly](mechanical/calibration-stand-assembly.md)
+  * [Initial Release Assembly Guide](mechanical/initial-release-assembly-guide.md)
+  * [Initial Release 3D Printing Reference](mechanical/initial-release-3d-printing-reference.md)
   * [Changelog](mechanical/changelog.md)
-* [Project North Star: Software](software.md)
-* [Project North Star: Electronics](electronics/README.md)
+* [Software](software.md)
+* [Electronics](electronics/README.md)
   * [Project North Star AR Display Board](electronics/firmware.md)
-
-## Initial Release <a id="initial-release-guides"></a>
-
-* [Mechanical Guide](initial-release-guides/leap-motion-project-north-star-mechanical-guide.md)
-* [3D Printing Reference](initial-release-guides/3d-printing-reference-leap-motion.md)
 
 ## Leap Motion Blogs <a id="blogs"></a>
 

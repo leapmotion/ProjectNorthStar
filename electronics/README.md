@@ -5,5 +5,5 @@ description: >-
   Headset.
 ---
 
-# Project North Star: Electronics
+# Electronics
 

@@ -2,7 +2,7 @@
 description: 'Pulled from https://leapmotion.github.io/ProjectNorthStar/3dprints.html'
 ---
 
-# 3D Printing Reference
+# Initial Release 3D Printing Reference
 
 {% hint style="info" %}
 Use your slicer's part orientation tools to ensure flat contact with print surface. In Simplify 3D, it can be found in the menu "Edit &gt; Place Surface On Bed"
@@ -213,5 +213,5 @@ There are two styles of hinges to choose from depending on the headgear you're u
 | temperature | 200 C |
 | supports | yes |
 
-## [Back to Build Guide](leap-motion-project-north-star-mechanical-guide.md)
+## [Back to Build Guide](initial-release-assembly-guide.md)
 
