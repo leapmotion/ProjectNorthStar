@@ -9,3 +9,4 @@ description: The open-source files comprising Leap Motion's Project North Star A
 Hardware procurement, fabrication, and assembly instructions start here: [https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical](https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical)
 
 Software setup and calibration starts here: [https://github.com/leapmotion/ProjectNorthStar/tree/master/Software](https://github.com/leapmotion/ProjectNorthStar/tree/master/Software)
+
