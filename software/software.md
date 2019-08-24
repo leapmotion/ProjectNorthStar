@@ -35,7 +35,5 @@ We have included a pre-built version of the internal calibration tool. We can ma
 
 ## Video Overview
 
-{% embed url="https://www.youtube.com/watch?v=twyUk7MtiHo" %}
-
-
+{% embed url="https://www.youtube.com/watch?v=twyUk7MtiHo" caption="" %}
 
