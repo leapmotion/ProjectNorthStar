@@ -20,8 +20,8 @@
 ## Electronics
 
 * [Electronics](electronics/readme.md)
-* [Bill of Materials](electronics/bill-of-materials.md)
-* [Project North Star AR Display Board](electronics/project-north-star-ar-display-board.md)
+* [Bill of Materials](electronics/hardware/readme.md)
+* [Firmware](electronics/firmware/readme.md)
 * [Schematics](electronics/schematics.md)
 
 ## Community Links
@@ -43,4 +43,3 @@
 * [Project North Star: Mechanical and Calibration Update 3.1](blogs/project-north-star-mechanical-and-calibration-update-3.1.md)
 * [Project North Star: Mechanical Update 3](blogs/project-north-star-mechanical-update-3.md)
 * [Bending Reality: North Star’s Calibration System](blogs/bending-reality-north-stars-calibration-system.md)
-
