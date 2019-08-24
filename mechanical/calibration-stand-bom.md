@@ -1,5 +1,7 @@
 # Calibration Stand BOM
 
+{% file src="../.gitbook/assets/bom\_north-star-calibration-stand.tsv" %}
+
 | Part number | Quantity | Description | Source |
 | :--- | :--- | :--- | :--- |
 | \#310-001 | 1 | BASE MOUNTING PLATE | 3DPRINT |

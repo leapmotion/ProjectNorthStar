@@ -2,7 +2,7 @@
 
 This guide is also available as a PDF:
 
-{% file src="../.gitbook/assets/assm-drawing-calibration-stand \(1\).pdf" %}
+{% file src="../.gitbook/assets/assm-drawing-calibration-stand \(2\).pdf" %}
 
 ## 300-000
 

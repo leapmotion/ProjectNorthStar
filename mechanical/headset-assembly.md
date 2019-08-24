@@ -2,7 +2,9 @@
 
 This guide is also available as a PDF:
 
-{% file src="../.gitbook/assets/assm-drawing-north-star-release-3 \(1\).pdf" %}
+{% file src="../.gitbook/assets/assm-drawing-north-star-release-3 \(2\).pdf" %}
+
+
 
 ## 000-000
 

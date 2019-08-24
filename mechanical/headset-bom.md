@@ -1,5 +1,9 @@
 # Headset BOM
 
+{% file src="../.gitbook/assets/bom-north-star-release-3.tsv" %}
+
+{% file src="../.gitbook/assets/bom-north-star-update-3.1.tsv" %}
+
 ## BOM
 
 | Part number | Quantity | Description | Source |
