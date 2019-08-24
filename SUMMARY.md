@@ -2,9 +2,9 @@
 
 * [Project North Star](README.md)
 
-## Mechanical <a id="mechanical"></a>
+## Mechanical
 
-* [Mechanical](mechanical/README.md)
+* [Mechanical](mechanical/mechanical.md)
 * [Headset BOM](mechanical/headset-bom.md)
 * [Headset Assembly](mechanical/headset-assembly.md)
 * [Calibration Stand BOM](mechanical/calibration-stand-bom.md)
@@ -13,11 +13,11 @@
 * [Initial Release 3D Printing Reference](mechanical/initial-release-3d-printing-reference.md)
 * [Changelog](mechanical/changelog.md)
 
-## Software <a id="software"></a>
+## Software
 
-* [Software](software/README.md)
+* [Software](software/software.md)
 
-## Electronics <a id="electronics"></a>
+## Electronics
 
 * [Electronics](electronics/README.md)
 * [Bill of Materials](electronics/hardware/README.md)
@@ -35,7 +35,7 @@
 ## Leap Motion Blogs <a id="blogs"></a>
 
 * [Leap Motion North Star Blog](http://blog.leapmotion.com/tag/north-star/)
-* [Unveiling Project North Star](blogs/readme.md)
+* [Unveiling Project North Star](blogs/README.md)
 * [Our Journey to the North Star](blogs/our-journey-to-the-north-star.md)
 * [Project North Star is Now Open Source](blogs/project-north-star-is-now-open-source.md)
 * [Project North Star: Mechanical Update 1](blogs/project-north-star-mechanical-update-1.md)
