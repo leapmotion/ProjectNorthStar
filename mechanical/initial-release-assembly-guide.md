@@ -4,15 +4,15 @@ description: 'Pulled from https://leapmotion.github.io/ProjectNorthStar/mechanic
 
 # Initial Release Assembly Guide
 
-The purpose of this guide is to instruct, with access to a few common tools, how to make a Project North Star reference AR headset. It's aimed to be accessible and inexpensive to build, using as many off-the-shelf components and 3D-printed parts as possible. For now, several key components are custom-made \(e.g. the reflectors, display driver board, and our custom ultra-wide hand tracking module\), but we know that together we can find make some work arounds and alternatives.  
-  
+The purpose of this guide is to instruct, with access to a few common tools, how to make a Project North Star reference AR headset. It's aimed to be accessible and inexpensive to build, using as many off-the-shelf components and 3D-printed parts as possible. For now, several key components are custom-made \(e.g. the reflectors, display driver board, and our custom ultra-wide hand tracking module\), but we know that together we can find make some work arounds and alternatives.
+
 Although not a complete AR solution, Project North Star points to a future where the physical and virtual worlds blend together into a single magical experience. With it we hope to gather like-minded people and build that future together.
 
 ## Overview
 
-The headset is made up of three modular assemblies: the optics bracket, the headgear with hinges, and the halo \(which contains all the electronics\). This configuration has been very useful as we iterated on different parts. The parts are 3D printed using consumer grade 3D printers and materials, with a couple parts from [McMaster-Carr](https://www.mcmaster.com/). The goal is to have an easily reproduced AR headset that anyone can put together.  
-  
-Ignoring the reflectors, you'll need to 3D print roughly 20+ hours of parts and cut, drill and tap aluminum bar stock. Nothing expensive or major requiring a machine shop, but a few tools are expected. Read below for the list. 
+The headset is made up of three modular assemblies: the optics bracket, the headgear with hinges, and the halo \(which contains all the electronics\). This configuration has been very useful as we iterated on different parts. The parts are 3D printed using consumer grade 3D printers and materials, with a couple parts from [McMaster-Carr](https://www.mcmaster.com/). The goal is to have an easily reproduced AR headset that anyone can put together.
+
+Ignoring the reflectors, you'll need to 3D print roughly 20+ hours of parts and cut, drill and tap aluminum bar stock. Nothing expensive or major requiring a machine shop, but a few tools are expected. Read below for the list.
 
 {% hint style="info" %}
 We are exploring different possibilities for individuals to obtain reflectors.
@@ -54,8 +54,8 @@ _These parts and this guide are still a work in progress_
 
 ## A: Leap Motion Controller
 
-Depending on which Leap Motion hand tracking module you use, it will determine which sets of 3D prints you'll need. Check the 3D printing section for more details.   
-  
+Depending on which Leap Motion hand tracking module you use, it will determine which sets of 3D prints you'll need. Check the 3D printing section for more details.
+
 Retail Leap Motion Controller - [Amazon](https://www.amazon.com/Leap-Motion-Controller-Packaging-Software/dp/B00HVYBWQO/ref=sr_1_2?s=industrial&ie=UTF8&qid=1529622781&sr=8-2&keywords=leap+motion)  
 _-or-_  
 Custom ultra-wide tracking module
@@ -74,8 +74,8 @@ BOE produces 3.5-inch 1440\*1600 modules and refers to them as VS035ZSM-NW0; how
 
 ## D: Reflectors \(aka combiners, lenses\)
 
-What may seem intimidating at first is conceptually very simple. One property of elipsoids is that all the light emitted from one focus reflects off its surface and focuses it to the second focus! Amazing. Therefore, to figure out the section of elipsoid needed in our AR application, we traced a ray backwards from the second focus, through a cellphone-sized.  
-  
+What may seem intimidating at first is conceptually very simple. One property of elipsoids is that all the light emitted from one focus reflects off its surface and focuses it to the second focus! Amazing. Therefore, to figure out the section of elipsoid needed in our AR application, we traced a ray backwards from the second focus, through a cellphone-sized.
+
 The resultant elipsoid is defined by the following dimensions, chosen to allow a range of 3-to-5-inch LCD panels to be placed near the eye. The perimeter of the elipsoid section was decided on empirically by minimizing distortion with a larger prototype, then cropping to the reflected image. This large reflector was roughly 120x120mm, and the final ended up being around 75x75mm.
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/ElipsoidReflector.png)
@@ -96,10 +96,10 @@ From the elipsoid definition, the reflectors need to be rotated and translated i
 
 ## E: OEM Headgear replacement
 
-Light and adjustable with rigid mount points. Several welder's mask headgear vendors were tested, but most failed to be rigid or comfortable for our applications. Their general design is made of injection-molded plastic features that tighten onto either side of a welding faceshield. Although it may be desireable for those features to be flexible and compliant for welding, our heavier AR assemblies caused the headgear to flex and/or dig into the users' head. Ouch. The following Miller branded model's had very little flex and generally comfortable. It really helps they're lightweight as well.  
-  
-These two specific generations of headgears yielded the best results quickly, mounting evolving electronics on the most varied heads. The amount of adjustment points makes it work for the large majority of users.  
-  
+Light and adjustable with rigid mount points. Several welder's mask headgear vendors were tested, but most failed to be rigid or comfortable for our applications. Their general design is made of injection-molded plastic features that tighten onto either side of a welding faceshield. Although it may be desireable for those features to be flexible and compliant for welding, our heavier AR assemblies caused the headgear to flex and/or dig into the users' head. Ouch. The following Miller branded model's had very little flex and generally comfortable. It really helps they're lightweight as well.
+
+These two specific generations of headgears yielded the best results quickly, mounting evolving electronics on the most varied heads. The amount of adjustment points makes it work for the large majority of users.
+
 Welding Replacement Headgear - [Miller Generation IV for T94 Headgear, Amazon](https://www.amazon.com/Miller-Headgear-Generation-Welding-Helmets/dp/B073QY6B7Y) Part \#260486 or [Miller Replacement Headgear, Amazon ](https://www.amazon.com/Miller-Electric-256174-Headgear-Helmet/dp/B00826AM7A)Part \#256174
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/millereplacement.jpg)
@@ -108,10 +108,10 @@ Welding Replacement Headgear - [Miller Generation IV for T94 Headgear, Amazon](h
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/headgearExample.png)
 
-**Alternative:**   
-  
-The 3M Speedglas Utility headgear was the first headgear we used for North Star prototypes. At the time, the optics would bounce around, causing the reflected image to shake wildly as we moved around. We minimized this by switching to the stiffer Miller headgear and continued other improvements for several months. However, the 3M headgear was sorely missed, as it was simple to put-on and less intimidating for demos. Since then we added cheek alignment features, which solved the image bounce, and therefore makes sense to bring back this design as a supplement to the release headgear. The headgear and optics are interchangeable, only the hinges need to match the headgear.  
-  
+**Alternative:**
+
+The 3M Speedglas Utility headgear was the first headgear we used for North Star prototypes. At the time, the optics would bounce around, causing the reflected image to shake wildly as we moved around. We minimized this by switching to the stiffer Miller headgear and continued other improvements for several months. However, the 3M headgear was sorely missed, as it was simple to put-on and less intimidating for demos. Since then we added cheek alignment features, which solved the image bounce, and therefore makes sense to bring back this design as a supplement to the release headgear. The headgear and optics are interchangeable, only the hinges need to match the headgear.
+
 Welding Replacement Headgear - [3M Speedglas Welding Helmet Headband, Amazon](https://www.amazon.com/gp/product/B003V5KSNK/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/3MSpeedglas.jpg)
@@ -135,7 +135,7 @@ Matching nuts, 10-32 Thread Size, Stainless "Steel Nylon-Insert Locknut" - [McMa
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/91831a411l.gif)
 
-## I: \[Qty:2\] 3x10mm Al. bar stock cut to approximately 150mm length [McMaster \#92005a066](https://www.mcmaster.com/#9146t21) 
+## I: \[Qty:2\] 3x10mm Al. bar stock cut to approximately 150mm length [McMaster \#92005a066](https://www.mcmaster.com/#9146t21)
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/9146T213p1.png)
 
@@ -225,7 +225,7 @@ _\(see below for alternate headgear with torsion hinge\)_
 
 ![](https://leapmotion.github.io/ProjectNorthStar/imgs/IMG_1653.JPG)
 
-10\) Fasten displays and facial interfaces into optics bracket using 4 screws per side `G` \(8 total\). 
+10\) Fasten displays and facial interfaces into optics bracket using 4 screws per side `G` \(8 total\).
 
 11\) Carefully connect the display flex connector to the driver board
 

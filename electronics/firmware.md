@@ -10,7 +10,7 @@ description: >-
 
 The first thing that you will need to do is to install Atmel Studio. Atmel is now owned by Microchip, so you will need to go to the following web page to download and install Atmel Studio for your version of Windows:
 
-{% embed url="https://www.microchip.com/mplab/avr-support/atmel-studio-7" %}
+{% embed url="https://www.microchip.com/mplab/avr-support/atmel-studio-7" caption="" %}
 
 The next step is to clone the Project North Start repository from github. So let's first create a directory in which we can install all of our development source code. So start by bringing up a windows terminal and then enter the following commands:
 

@@ -72,3 +72,4 @@ The headgear assembly includes parts that print flat but bend to fasten to each 
 Preheating the print bed to 70C softens a print enough to shape the part
 
 ![Overview](../.gitbook/assets/forming-3dprint.jpg)
+

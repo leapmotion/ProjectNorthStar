@@ -1,6 +1,6 @@
 # Headset BOM
 
-### BOM
+## BOM
 
 | Part number | Quantity | Description | Source |
 | :--- | :--- | :--- | :--- |
@@ -25,7 +25,7 @@
 | \#210-003 | 2 | FOREHEAD HINGE CAP | 3DPRINT |
 | \#210-004 | 2 | FOREHEAD HINGE BASE | 3DPRINT |
 | \#220-001 | 2 | REAR HINGE BASE | 3DPRINT |
-| \#220-002 | 2 | REAR HINGE CAP  | 3DPRINT |
+| \#220-002 | 2 | REAR HINGE CAP | 3DPRINT |
 | \#230-001 | 1 | LEFT SIDE MAIN SPAN WITH SLIDE BRAKE | 3DPRINT |
 | \#230-002 | 1 | LEFT BRAKE HOUSING | 3DPRINT |
 | \#230-003 | 1 | LEFT BRAKE BUTTON | 3DPRINT |

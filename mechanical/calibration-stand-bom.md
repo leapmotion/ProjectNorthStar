@@ -2,7 +2,7 @@
 
 | Part number | Quantity | Description | Source |
 | :--- | :--- | :--- | :--- |
-| \#310-001 | 1 | BASE MOUNTING PLATE  | 3DPRINT |
+| \#310-001 | 1 | BASE MOUNTING PLATE | 3DPRINT |
 | \#310-002 | 1 | LEFT LEFT STAND | 3DPRINT |
 | \#310-003 | 1 | RIGHT LEFT STAND | 3DPRINT |
 | \#320-001 | 1 | DUAL STEREO CAMERA MOUNT BRACKET | 3DPRINT |
