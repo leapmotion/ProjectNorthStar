@@ -20,6 +20,7 @@
 ## Electronics <a id="electronics"></a>
 
 * [Electronics](electronics/README.md)
+* [Bill of Materials](electronics/hardware/README.md)
 * [Project North Star AR Display Board](electronics/firmware/README.md)
 
 ## Community Links
