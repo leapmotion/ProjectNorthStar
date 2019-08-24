@@ -1,5 +1,9 @@
 # Headset Assembly
 
+This guide is also available as a PDF:
+
+{% file src="../.gitbook/assets/assm-drawing-north-star-release-3 \(1\).pdf" %}
+
 ### 000-000
 
 ![North Star Release 3](../.gitbook/assets/assm-drawing-north-star-release-3-01.png)
