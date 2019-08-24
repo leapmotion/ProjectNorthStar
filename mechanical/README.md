@@ -17,7 +17,7 @@ Major sections are missing. Assembly requires care and patience. Nothing worth h
 
 ## Getting Started
 
-Open the [Headset Mechanical Assembly](headset-assembly.md) and construct each sub-assembly as illustrated. A full list of the parts needed can be found in the [Headset Bill of Materials \(BOM\)](headset-bom.md). Not all sub-assemblies are required as there are multiple designs to choose from. Furthermore, the CAD files are included in STEP format to help design new parts.
+Open the [Headset Mechanical Assembly](headset-assembly.md) and construct each sub-assembly as illustrated. A full list of the parts needed can be found in the [Headset Bill of Materials \(BOM\)](headset-bom.md). Not all sub-assemblies are required as there are multiple designs to choose from. Additionally, the CAD files are included in STEP format to help design new parts.
 
 ## Design Overview
 
@@ -34,8 +34,8 @@ Functionally, the two optics assemblies are the same. Release 3 is closer to the
 ## Notes on 3D printed parts
 
 * The parts were designed for a FDM style 3D printer
-* All development was done using eSun's PLA Pro \(PLA+\) filament. We've found it to be strong, easy to print, and have great surface finish.
-* A build plate of approximately 250x200mm is recommended for the largest parts 
+* All development was done using [eSun's PLA Pro / PLA+](https://www.amazon.com/eSUN-1-75mm-Printer-Filament-Colors/dp/B07K642RQP) filament. We've found it to be strong, easy to print, and have great surface finish.
+* A build plate of approximately 250x200mm is recommended for the largest parts
 * Parts may need to be rotated to align with print bed.
 * Some parts have optimized versions \(labeled “FDM OPTIMIZED”\) with extra plastic tabs that need removing. These versions aid in minimizing warping and gripping the print surface.
 
@@ -72,4 +72,3 @@ The headgear assembly includes parts that print flat but bend to fasten to each 
 Preheating the print bed to 70C softens a print enough to shape the part
 
 ![Overview](../.gitbook/assets/forming-3dprint.jpg)
-

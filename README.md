@@ -4,9 +4,8 @@ description: The open-source files comprising Leap Motion's Project North Star A
 
 # Project North Star
 
-Documentation and assembly instructions can be found [here](mechanical/).
+[![Project North Star Headset](http://blog.leapmotion.com/wp-content/uploads/2018/04/hero-unveil.png)](http://blog.leapmotion.com/northstar/)
 
-![](.gitbook/assets/image.png)
+Hardware procurement, fabrication, and assembly instructions start here: https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical
 
-{% embed url="http://blog.leapmotion.com/northstar/" %}
-
+Software setup and calibration starts here: https://github.com/leapmotion/ProjectNorthStar/tree/master/Software
