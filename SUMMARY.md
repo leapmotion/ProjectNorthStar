@@ -1,18 +1,26 @@
 # Table of contents
 
 * [Project North Star](README.md)
-* [Mechanical](mechanical/README.md)
-  * [Headset BOM](mechanical/headset-bom.md)
-  * [Headset Assembly](mechanical/headset-assembly.md)
-  * [Calibration Stand BOM](mechanical/calibration-stand-bom.md)
-  * [Calibration Stand Assembly](mechanical/calibration-stand-assembly.md)
-  * [Initial Release Assembly Guide](mechanical/initial-release-assembly-guide.md)
-  * [Initial Release 3D Printing Reference](mechanical/initial-release-3d-printing-reference.md)
-  * [Changelog](mechanical/changelog.md)
-* [Software](software/README.md)
-  * [child page](software/child-page.md)
-* [Electronics](electronics/README.md)
-  * [Project North Star AR Display Board](electronics/firmware.md)
+
+## Mechanical <a id="mechanical-1"></a>
+
+* [Mechanical](mechanical-1/mechanical.md)
+* [Headset BOM](mechanical-1/headset-bom.md)
+* [Headset Assembly](mechanical-1/headset-assembly.md)
+* [Calibration Stand BOM](mechanical-1/calibration-stand-bom.md)
+* [Calibration Stand Assembly](mechanical-1/calibration-stand-assembly.md)
+* [Initial Release Assembly Guide](mechanical-1/initial-release-assembly-guide.md)
+* [Initial Release 3D Printing Reference](mechanical-1/initial-release-3d-printing-reference.md)
+* [Changelog](mechanical-1/changelog.md)
+
+## Software <a id="software-1"></a>
+
+* [Software](software-1/software.md)
+
+## Electronics <a id="electronics-1"></a>
+
+* [Electronics](electronics-1/electronics.md)
+* [Project North Star AR Display Board](electronics-1/firmware.md)
 
 ## Community Links
 
@@ -26,7 +34,7 @@
 ## Leap Motion Blogs <a id="blogs"></a>
 
 * [Leap Motion North Star Blog](http://blog.leapmotion.com/tag/north-star/)
-* [Unveiling Project North Star](blogs/unveiling-project-north-star.md)
+* [Unveiling Project North Star](blogs/readme.md)
 * [Our Journey to the North Star](blogs/our-journey-to-the-north-star.md)
 * [Project North Star is Now Open Source](blogs/project-north-star-is-now-open-source.md)
 * [Project North Star: Mechanical Update 1](blogs/project-north-star-mechanical-update-1.md)
