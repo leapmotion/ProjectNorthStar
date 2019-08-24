@@ -9,7 +9,8 @@
   * [Initial Release Assembly Guide](mechanical/initial-release-assembly-guide.md)
   * [Initial Release 3D Printing Reference](mechanical/initial-release-3d-printing-reference.md)
   * [Changelog](mechanical/changelog.md)
-* [Software](software.md)
+* [Software](software/README.md)
+  * [child page](software/child-page.md)
 * [Electronics](electronics/README.md)
   * [Project North Star AR Display Board](electronics/firmware.md)
 
