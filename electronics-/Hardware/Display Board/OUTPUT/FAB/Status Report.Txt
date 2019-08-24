@@ -1,0 +1,11 @@
+Output: IPC-356-D Netlist
+Type  : Test Points
+From  : PCB Document [0084 - AR Display Board Rev2.1.PcbDoc]
+   Generated File[Fabrication Testpoint Report for 0084 - AR Display Board Rev2.1.csv]
+   Generated File[Fabrication Testpoint Report for 0084 - AR Display Board Rev2.1.ipc]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 6:43:31 PM On 8/16/2018
