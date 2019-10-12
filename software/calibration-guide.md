@@ -21,7 +21,7 @@ Take a deep breath and...
 * Editing the config variables at the top of `dualStereoChessboardCalibration.py` with the correct:
   * Number of interior corners on each axis
   * Dimensions of each square on the checkerboard \(in meters!\)
-* Install Python 3 on your machine and run `pip install numpy` and `pip install opencv-python`
+* Install Python 3 on your machine and run `pip install numpy` and `pip install opencv-contrib-python`
   * Run it from the python scripts folder, usually something like `C:\Users\*USERNAME*\AppData\Local\Programs\Python\Python36\Scripts`
 * Running `dualStereoChessboardCalibration.py`
   * First, ensure that your upper stereo camera appears on top in the camera visualizer
