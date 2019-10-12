@@ -16,7 +16,7 @@
 ## Software
 
 * [Software](software/software.md)
-* [North Star Calibration](software/calibration-guide.md)
+* [Calibration](software/calibration-guide.md)
 
 ## Electronics
 

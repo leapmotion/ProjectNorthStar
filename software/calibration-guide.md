@@ -1,6 +1,8 @@
-# North Star Calibration
+---
+description: FOLLOW THESE DIRECTIONS TO CALIBRATE YOUR NORTH STAR
+---
 
-FOLLOW THESE DIRECTIONS TO CALIBRATE YOUR NORTH STAR
+# Calibration
 
 Take a deep breath and...
 
