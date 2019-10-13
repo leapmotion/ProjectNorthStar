@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>ATSAMD21G18A</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <ArduinoProjectType>Sketch</ArduinoProjectType>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <Name>Program</Name>
+    <RootNamespace>Program</RootNamespace>
+    <ArduinoIdeDir>C:\nextcloud\Arduino\Software\Arduino_1_8_2</ArduinoIdeDir>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AssemblyName>Program</AssemblyName>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+    <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
+    <avrtoolserialnumber>J41800094999</avrtoolserialnumber>
+    <avrdeviceexpectedsignature>0x10010305</avrdeviceexpectedsignature>
+    <avrtoolinterface>SWD</avrtoolinterface>
+    <com_atmel_avrdbg_tool_edbg>
+      <ToolOptions>
+        <InterfaceProperties>
+          <SwdClock>2000000</SwdClock>
+        </InterfaceProperties>
+        <InterfaceName>SWD</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.edbg</ToolType>
+      <ToolNumber>00000000EZE000006478</ToolNumber>
+      <ToolName>EDBG</ToolName>
+    </com_atmel_avrdbg_tool_edbg>
+    <avrtoolinterfaceclock>2000000</avrtoolinterfaceclock>
+    <custom>
+      <ToolOptions>
+        <InterfaceProperties>
+          <SwdClock>2000000</SwdClock>
+        </InterfaceProperties>
+        <InterfaceName>
+        </InterfaceName>
+      </ToolOptions>
+      <ToolType>custom</ToolType>
+      <ToolNumber>
+      </ToolNumber>
+      <ToolName>Custom Programming Tool</ToolName>
+    </custom>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.35.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <com_atmel_avrdbg_tool_jtagice3plus>
+      <ToolOptions>
+        <InterfaceProperties>
+          <SwdClock>0</SwdClock>
+        </InterfaceProperties>
+        <InterfaceName>SWD</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.jtagice3plus</ToolType>
+      <ToolNumber>J30200038231</ToolNumber>
+      <ToolName>JTAGICE3</ToolName>
+    </com_atmel_avrdbg_tool_jtagice3plus>
+    <com_atmel_avrdbg_tool_jtagicemk3>
+      <ToolOptions>
+        <InterfaceProperties>
+          <SwdClock>10000000</SwdClock>
+        </InterfaceProperties>
+        <InterfaceName>SWD</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.jtagicemk3</ToolType>
+      <ToolNumber>J30200038231</ToolNumber>
+      <ToolName>JTAGICE3</ToolName>
+    </com_atmel_avrdbg_tool_jtagicemk3>
+    <com_atmel_avrdbg_tool_atmelice>
+      <ToolOptions>
+        <InterfaceProperties>
+          <SwdClock>2000000</SwdClock>
+        </InterfaceProperties>
+        <InterfaceName>SWD</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
+      <ToolNumber>J41800094999</ToolNumber>
+      <ToolName>Atmel-ICE</ToolName>
+    </com_atmel_avrdbg_tool_atmelice>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+            <Value>F_CPU=48000000L</Value>
+            <Value>ARDUINO=10802</Value>
+            <Value>ARDUINO_SAMD_ZERO</Value>
+            <Value>ARDUINO_ARCH_SAMD</Value>
+            <Value>USB_VID=0x2341</Value>
+            <Value>USB_PID=0x804d</Value>
+            <Value>USB_PRODUCT="\"Arduino Zero\""</Value>
+            <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+            <Value>USBCON</Value>
+            <Value>SAMD_SERIES</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\variants</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\avr</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\USB</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\component</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\instance</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\pio</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.OtherFlags>-fno-threadsafe-statics -fno-exceptions</armgcc.compiler.optimization.OtherFlags>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.optimization.PrepareDataForGarbageCollection>True</armgcc.compiler.optimization.PrepareDataForGarbageCollection>
+        <armgcc.compiler.optimization.EnableLongCalls>False</armgcc.compiler.optimization.EnableLongCalls>
+        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+        <armgcc.compiler.warnings.InhibitAllWarnings>True</armgcc.compiler.warnings.InhibitAllWarnings>
+        <armgcc.compiler.miscellaneous.OtherFlags>-std=gnu11 --param max-inline-insns-single=500 -nostdlib</armgcc.compiler.miscellaneous.OtherFlags>
+        <armgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+            <Value>F_CPU=48000000L</Value>
+            <Value>ARDUINO=10802</Value>
+            <Value>ARDUINO_SAMD_ZERO</Value>
+            <Value>ARDUINO_ARCH_SAMD</Value>
+            <Value>USB_VID=0x2341</Value>
+            <Value>USB_PID=0x804d</Value>
+            <Value>USB_PRODUCT="\"Arduino Zero\""</Value>
+            <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+            <Value>USBCON</Value>
+            <Value>SAMD_SERIES</Value>
+          </ListValues>
+        </armgcccpp.compiler.symbols.DefSymbols>
+        <armgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\variants</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\avr</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\USB</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\component</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\instance</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\pio</Value>
+          </ListValues>
+        </armgcccpp.compiler.directories.IncludePaths>
+        <armgcccpp.compiler.optimization.level>Optimize for size (-Os)</armgcccpp.compiler.optimization.level>
+        <armgcccpp.compiler.optimization.OtherFlags>-fno-threadsafe-statics -fno-exceptions</armgcccpp.compiler.optimization.OtherFlags>
+        <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcccpp.compiler.optimization.PrepareDataForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareDataForGarbageCollection>
+        <armgcccpp.compiler.optimization.EnableLongCalls>False</armgcccpp.compiler.optimization.EnableLongCalls>
+        <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+        <armgcccpp.compiler.warnings.InhibitAllWarnings>True</armgcccpp.compiler.warnings.InhibitAllWarnings>
+        <armgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11 --param max-inline-insns-single=500 -nostdlib</armgcccpp.compiler.miscellaneous.OtherFlags>
+        <armgcccpp.linker.general.UseNewlibNano>True</armgcccpp.linker.general.UseNewlibNano>
+        <armgcccpp.linker.general.AdditionalSpecs>Use syscall stubs (--specs=nosys.specs)</armgcccpp.linker.general.AdditionalSpecs>
+        <armgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.Libraries>
+        <armgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>..\linker_scripts\linker_scripts\gcc</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.LibrarySearchPaths>
+        <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <armgcccpp.linker.miscellaneous.LinkerFlags>-Tflash_without_bootloader.ld -Wl,--cref -Os -Wl,--check-sections -Wl,--unresolved-symbols=report-all -Wl,--warn-common -Wl,--warn-section-align</armgcccpp.linker.miscellaneous.LinkerFlags>
+        <armgcccpp.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+          </ListValues>
+        </armgcccpp.assembler.general.IncludePaths>
+        <armgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.assembler.debugging.DebugLevel>
+        <armgcccpp.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+          </ListValues>
+        </armgcccpp.preprocessingassembler.general.IncludePaths>
+      </ArmGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>F_CPU=48000000L</Value>
+            <Value>ARDUINO=10802</Value>
+            <Value>ARDUINO_SAMD_ZERO</Value>
+            <Value>ARDUINO_ARCH_SAMD</Value>
+            <Value>USB_VID=0x2341</Value>
+            <Value>USB_PID=0x804d</Value>
+            <Value>USB_PRODUCT="\"Arduino Zero\""</Value>
+            <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+            <Value>USBCON</Value>
+            <Value>SAMD_SERIES</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\variants</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\avr</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\USB</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\component</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\instance</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\pio</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.OtherFlags>-fno-threadsafe-statics -fno-exceptions</armgcc.compiler.optimization.OtherFlags>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.optimization.PrepareDataForGarbageCollection>True</armgcc.compiler.optimization.PrepareDataForGarbageCollection>
+        <armgcc.compiler.optimization.EnableLongCalls>False</armgcc.compiler.optimization.EnableLongCalls>
+        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+        <armgcc.compiler.warnings.InhibitAllWarnings>True</armgcc.compiler.warnings.InhibitAllWarnings>
+        <armgcc.compiler.miscellaneous.OtherFlags>-std=gnu11 --param max-inline-insns-single=500 -nostdlib</armgcc.compiler.miscellaneous.OtherFlags>
+        <armgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>F_CPU=48000000L</Value>
+            <Value>ARDUINO=10802</Value>
+            <Value>ARDUINO_SAMD_ZERO</Value>
+            <Value>ARDUINO_ARCH_SAMD</Value>
+            <Value>USB_VID=0x1532</Value>
+            <Value>USB_PID=0x0b00</Value>
+            <Value>USB_PRODUCT="\"Arduino Zero\""</Value>
+            <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+            <Value>USBCON</Value>
+            <Value>SAMD_SERIES</Value>
+          </ListValues>
+        </armgcccpp.compiler.symbols.DefSymbols>
+        <armgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\variants</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\avr</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\USB</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\component</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\instance</Value>
+            <Value>%24(ProjectDir)\..\ArduinoCore\include\core\samd21\include\pio</Value>
+            <Value>%24(ProjectDir)\Lib_SPI</Value>
+            <Value>%24(ProjectDir)\Lib_Wire</Value>
+            <Value>%24(ProjectDir)\Lib_Chicago/Debug</Value>
+            <Value>%24(ProjectDir)\Lib_USBHost</Value>
+            <Value>%24(ProjectDir)\Lib_HID</Value>
+            <Value>%24(ProjectDir)\Lib_I2S</Value>
+            <Value>%24(ProjectDir)\Lib_SAMD_AnalogCorrection</Value>
+            <Value>%24(ProjectDir)\Lib_RadioHead</Value>
+            <Value>%24(ProjectDir)\Lib_RadioHead\STM32ArduinoCompat</Value>
+            <Value>%24(ProjectDir)\Lib_RadioHead\RHutil</Value>
+          </ListValues>
+        </armgcccpp.compiler.directories.IncludePaths>
+        <armgcccpp.compiler.optimization.OtherFlags>-fno-threadsafe-statics -fno-exceptions</armgcccpp.compiler.optimization.OtherFlags>
+        <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcccpp.compiler.optimization.PrepareDataForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareDataForGarbageCollection>
+        <armgcccpp.compiler.optimization.EnableLongCalls>False</armgcccpp.compiler.optimization.EnableLongCalls>
+        <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+        <armgcccpp.compiler.warnings.InhibitAllWarnings>True</armgcccpp.compiler.warnings.InhibitAllWarnings>
+        <armgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11 --param max-inline-insns-single=500 -nostdlib</armgcccpp.compiler.miscellaneous.OtherFlags>
+        <armgcccpp.linker.general.UseNewlibNano>True</armgcccpp.linker.general.UseNewlibNano>
+        <armgcccpp.linker.general.AdditionalSpecs>Use syscall stubs (--specs=nosys.specs)</armgcccpp.linker.general.AdditionalSpecs>
+        <armgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.Libraries>
+        <armgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>../linker_scripts/linker_scripts/gcc</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.LibrarySearchPaths>
+        <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <armgcccpp.linker.memorysettings.ExternalRAM />
+        <armgcccpp.linker.miscellaneous.LinkerFlags>-Tflash_without_bootloader.ld -Wl,--cref -Os -Wl,--check-sections -Wl,--unresolved-symbols=report-all -Wl,--warn-common -Wl,--warn-section-align</armgcccpp.linker.miscellaneous.LinkerFlags>
+        <armgcccpp.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+          </ListValues>
+        </armgcccpp.assembler.general.IncludePaths>
+        <armgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.assembler.debugging.DebugLevel>
+        <armgcccpp.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+          </ListValues>
+        </armgcccpp.preprocessingassembler.general.IncludePaths>
+        <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+      </ArmGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="display_settings.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Chicago\chicago.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Chicago\chicago.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Chicago\chicago_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Chicago\chicago_registers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Debug\cmd.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Debug\cmd.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Debug\cmdHandler.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Debug\cmdHandler.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Debug\debug.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Debug\debug.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Debug\serial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\Debug\serial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\I2C\i2c.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Chicago\I2C\i2c.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_TPS61194\tps61194.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_TPS61194\tps61194.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Wire\Wire.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lib_Wire\Wire.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="pin_settings.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sketch.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sketch.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Content Include="readme.html">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArduinoCore\ArduinoCore.cppproj">
+      <Name>ArduinoCore</Name>
+      <Project>57f97b29-242c-4f11-a21d-df837ffbbb4b</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lib_Chicago\Chicago" />
+    <Folder Include="Lib_Chicago\Debug" />
+    <Folder Include="Lib_Chicago\I2C" />
+    <Folder Include="linker_scripts\" />
+    <Folder Include="linker_scripts\linker_scripts\" />
+    <Folder Include="linker_scripts\linker_scripts\gcc\" />
+    <Folder Include="Lib_Chicago" />
+    <Folder Include="Lib_Wire" />
+    <Folder Include="Lib_TPS61194" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="linker_scripts\linker_scripts\gcc\flash_without_bootloader.ld">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="linker_scripts\linker_scripts\gcc\flash_with_bootloader.ld">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

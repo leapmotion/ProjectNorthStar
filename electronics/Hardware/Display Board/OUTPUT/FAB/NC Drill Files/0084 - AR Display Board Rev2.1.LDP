@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\SVN\Projects\0084 - AR Display Board\Rev 2.1\0084 - AR Display Board Rev2.1.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=0084 - ar display board rev2.1-roundholes.txt|LayerPairs=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=0084 - ar display board rev2.1-slotholes.txt|LayerPairs=gtl,gbl
