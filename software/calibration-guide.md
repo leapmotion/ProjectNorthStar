@@ -8,10 +8,11 @@ Take a deep breath and...
 
 ## 1. Build the Calibration Rig
 
-* This requires:
-  * 3D Printing the mechanical assembly, search for it here: [https://leapmotion.github.io/ProjectNorthStar/](https://leapmotion.github.io/ProjectNorthStar/)
-  * Affixing TWO of these Stereo Cameras to it: [https://www.amazon.com/ELP- Industrial- Application- Synchronized- ELP- 960P2CAM- V90- VC/dp/B078TDLHCP/](https://www.amazon.com/ELP-Industrial-Application-Synchronized-ELP-960P2CAM-V90-VC/dp/B078TDLHCP/)
-* Acquiring a large monitor to use as the calibration target
+This requires:
+
+* 3D Printing the mechanical assembly, search for it here: [https://leapmotion.github.io/ProjectNorthStar/](https://leapmotion.github.io/ProjectNorthStar/)
+* Affixing TWO of these Stereo Cameras to it: [https://www.amazon.com/ELP- Industrial- Application- Synchronized- ELP- 960P2CAM- V90- VC/dp/B078TDLHCP/](https://www.amazon.com/ELP-Industrial-Application-Synchronized-ELP-960P2CAM-V90-VC/dp/B078TDLHCP/)
+* Acquiring a large secondary monitor to use as the calibration target
 * Find the exact model and active area of the screen for this monitor; we'll need it in 3\)
 
 ## 2. Calibrate the lenses on your stereo cameras:
