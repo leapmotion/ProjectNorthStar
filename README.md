@@ -16,6 +16,8 @@ Software setup and calibration starts here:
 
 {% embed url="https://www.reddit.com/r/ProjectNorthStar/" %}
 
+{% embed url="https://forums.leapmotion.com/t/project-north-star/7071" %}
+
 
 
 
