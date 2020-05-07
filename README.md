@@ -10,5 +10,13 @@ Hardware procurement, fabrication, and assembly instructions start here
 
 Software setup and calibration starts here: 
 
+{% embed url="https://discord.com/invite/NghjdX7" %}
+
+{% embed url="https://twitter.com/search?q=%23ProjectNorthStar" %}
+
+{% embed url="https://www.reddit.com/r/ProjectNorthStar/" %}
+
+
+
 
 

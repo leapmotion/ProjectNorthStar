@@ -4,6 +4,8 @@
 
 {% file src="../.gitbook/assets/bom-north-star-update-3.1.tsv" %}
 
+## 
+
 ## BOM
 
 | Part number | Quantity | Description | Source |
@@ -38,8 +40,8 @@
 | \#240-002 | 1 | RIGHT BRAKE HOUSING | 3DPRINT |
 | \#240-003 | 1 | RIGHT BRAKE BUTTON | 3DPRINT |
 | \#240-004 | 1 | RIGHT CABLE GUIDE | 3DPRINT |
-| \#500-001 | 1 | LEFT REFLECTOR |  |
-| \#500-002 | 1 | RIGHT REFLECTOR |  |
+| \#500-001 | 1 | LEFT REFLECTOR | [Polaris AR](https://www.smart-prototyping.com/Project-North-Star-Lens) |
+| \#500-002 | 1 | RIGHT REFLECTOR | [Polaris AR](https://www.smart-prototyping.com/Project-North-Star-Lens) |
 | \#630-001 | 1 | 0.304-in OD TORSION SPRING 180 DEG. L-HAND WOUND | [McMaster \#9271K603](https://www.mcmaster.com/9271k6) |
 | \#630-002 | 1 | 0.304-in OD TORSION SPRING 180 DEG. R-HAND WOUND | [McMaster \#9271K668](https://www.mcmaster.com/9271k668) |
 | \#640-001 | 28 | M2.5x0.45 6mm LONG STEEL FLAT HEAT SCREW 90 DEG CS | [McMaster \#91420a016](https://www.mcmaster.com/91420a016) |
@@ -48,11 +50,13 @@
 | \#660-001 | 2 | M4x0.7mm ZINC PLATED NYLON INSERT HEX LOCK NUT | [Amazon](https://www.amazon.com/gp/product/B015A3CV5S/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1) |
 | \#670-001 | 2 | 5/16 ID x 3/4 OD x 1/16in  NEOPRENE WASHER | [Amazon](https://www.amazon.com/s?k=5%2F16+ID+x+3%2F4+OD+x+1%2F16in+NEOPRENE+WASHER&i=industrial&ref=nb_sb_noss) |
 | \#690-001 | 21 | M2.5x0.45  3.4mm LONG HEAT-SET INSERT FOR PLASTICS | [McMaster \#94180a321](https://www.mcmaster.com/94180a321) |
-| \#700-002 | 2 | BOE 3.5-in VS035ZSM-NW0 120HZ LTPS 1440\*1600 Module |  |
-| \#800-001 | 1 | DISPLAY DRIVER BOARD |  |
+| \#700-002 | 2 | BOE 3.5-in VS035ZSM-NW0 120HZ LTPS 1440\*1600 Module | [Polaris AR](https://www.smart-prototyping.com/Display-for-Project-North-Star-3_5inch-1440x1600-pixels) |
+| \#800-001 | 1 | DISPLAY DRIVER BOARD | [Polaris AR](https://www.smart-prototyping.com/Project-North-Star-Display-Driver-Board) |
 | \#900-001 | 1 | MILLER WELDING GEN. III HEADGEAR | [CyberWeld](https://store.cyberweld.com/miwehegeiiir.html) |
 | \#900-002 | 1 | 2mm THICK SELF-STICK ANTI-SKID RUBBER | [Amazon](https://www.amazon.com/gp/product/B01K7JFXAA) |
 | \#900-003 | 1 | FOAM FOREHEAD PADDING | [Joann](https://www.joann.com/airtex-0.5-16-oz.-high-density-foam/2180313.html#start=1) |
 | \#900-004 | 1 | FOAM BACKED FABRIC | [Joann](https://www.joann.com/headliner-utility-fabric-55-black/3496072.html) |
 | \#900-005 | 1 | 3x10x165mm 6061 AL. BAR SLIDE | [McMaster \#9146t21](https://www.mcmaster.com/9146t21) |
+
+
 
