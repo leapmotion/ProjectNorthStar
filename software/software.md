@@ -17,7 +17,7 @@ These assets are dependent on [Release 4.4.0](https://github.com/leapmotion/Unit
 ## Getting Started:
 
 * Make sure your North Star AR Headset is plugged in
-* In windows display settings make sure the headset is showing at the correct resolution (2880x1600) and is to the right of the main monitor.
+* In windows display settings make sure the headset is showing at the correct resolution \(2880x1600\) and is to the right of the main monitor.
 * Create a new Project in Unity 2018.4 LTS
 * Import "LeapAR.unitypackage"
 * Navigate to `LeapMotion/North Star/Scenes/NorthStar.unity`
