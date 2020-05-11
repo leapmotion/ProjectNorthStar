@@ -22,9 +22,9 @@ The driver is currently divided into multiple parts to reflect the modularity of
 
 ## Compatibility
 
-The steamvr launcher currently runs on both windows and linux*. It is unsupported on MacOS due to steamvr's lack of support for the platform. 
+The steamvr launcher currently runs on both windows and linux. It is unsupported on MacOS due to steamvr's lack of support for the platform. 
 
-*Leapmotion v4 software is only available on windows, there are plans for the next version, v5 to have support for linux, currently to run leap hand tracking on linux you'll have to use v2 software.
+Note: Leapmotion v4 software is only available on windows, there are plans for the next version, v5 to have support for linux, currently to run leap hand tracking on linux you'll have to use v2 software.
 
 ## Installing the launcher
 
@@ -40,18 +40,18 @@ Instsall the following prerequisistes:
 
 ## Building from source on Windows 10
 
-*Launch the windows command prompt
-*Run the following:
+* Launch the windows command prompt
+* Run the following:
 ``git clone --recurse-submodules https://github.com/druidsbane/openvr-northstar.git
 cd openvr-northstar
 build.bat``
 
 ## Building from source on Linux (PopOS/Ubuntu 19.10)
 
-*Install Steam and Steamvr
-*Launch SteamVR at least once
-*Launch a terminal window
+* Install Steam and Steamvr
+* Launch SteamVR at least once
+* Launch a terminal window
 * Run the following
-`` git clone --recurse-submodules https://github.com/druidsbane/openvr-northstar.git
+``git clone --recurse-submodules https://github.com/druidsbane/openvr-northstar.git
 cd openvr-northstar
 ./linux.sh``
