@@ -15,10 +15,10 @@ Currently due to the use of extended mode, tracking doesn't fully work as intend
 The driver is currently divided into multiple parts to reflect the modularity of the northstar project. The launcher provides a single place to configure steamvr with the proper settings. It has a field to allow you to input your device specific calibration file, as well as options to enable or disable drivers, which can be useful if you're using a device other than the realsense t265. 
 
 ## Modules
-*Launcher- allows configuration of driver files and input calibration file.
-*Northstar HMD Driver -Handles HMD functions, image distortion. 
-*T265 Driver- Handles 6dof tracking via tracking overrides. 
-*SDraw's [**LeapDriver**](https://github.com/SDraw/driver_leap), simulates valve index controllers with leap motion input.
+* Launcher- allows configuration of driver files and input calibration file.
+* Northstar HMD Driver -Handles HMD functions, image distortion. 
+* T265 Driver- Handles 6dof tracking via tracking overrides. 
+* SDraw's [**LeapDriver**](https://github.com/SDraw/driver_leap), simulates valve index controllers with leap motion input.
 
 ## Compatibility
 
