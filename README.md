@@ -18,7 +18,3 @@ Software setup and calibration start in [/software](software/software.md).
 
 {% embed url="https://forums.leapmotion.com/t/project-north-star/7071" %}
 
-
-
-
-
