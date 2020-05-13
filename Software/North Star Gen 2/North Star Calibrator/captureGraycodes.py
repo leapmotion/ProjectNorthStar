@@ -3,9 +3,21 @@ import numpy as np
 import cv2
 import math
 import time
+import pyrealsense2 as rs2
+import intelutils
 
+rigel = False
+realsense = True
 
-frameWidth = 800
+if rigel:
+  frameWidth  = 800
+  frameHeight = 800
+elif realsense:
+  (frameWidth, 
+   frameHeight) = (
+   848,
+   800,
+  )
 northStarSize = (2880, 1600)
 
 allWhite           = np.ones      ((northStarSize[1], northStarSize[0]), dtype=np.uint8) * 100
@@ -16,8 +28,8 @@ widthContinuum[:,   int(northStarSize[0] / 2) :] = widthContinuum[:, : int(north
 heightContinuum    = cv2.resize   (continuum      [:, None      ], northStarSize, interpolation=cv2.INTER_LINEAR_EXACT)
 widthBits          = np.unpackbits(widthContinuum [:,    :, None].astype(np.uint8), axis=-1)
 heightBits         = np.unpackbits(heightContinuum[:,    :, None].astype(np.uint8), axis=-1)
-widthMeasuredBits  = np.zeros ((frameWidth, frameWidth * 2, 8), dtype=np.uint8)
-heightMeasuredBits = np.zeros ((frameWidth, frameWidth * 2, 8), dtype=np.uint8)
+widthMeasuredBits  = np.zeros ((frameHeight, frameWidth * 2, 8), dtype=np.uint8)
+heightMeasuredBits = np.zeros ((frameHeight, frameWidth * 2, 8), dtype=np.uint8)
 displayedBuffer    = 100 - allWhite
 
 cv2.namedWindow      ("Graycode Viewport", 0)#cv2.WINDOW_NORMAL)
@@ -25,13 +37,21 @@ cv2.setWindowProperty("Graycode Viewport", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_F
 darkFrameBuffer    = np.zeros((720, 1280), dtype=np.uint8)
 
 #Initialize the Stereo Camera's feed
-cap = cv2.VideoCapture(0)
-cap.set(cv2.CAP_PROP_FRAME_WIDTH , frameWidth)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, frameWidth)
-cap.set(cv2.CAP_PROP_CONVERT_RGB , False)
+if rigel:
+  cap = cv2.VideoCapture(0)
+  cap.set(cv2.CAP_PROP_FRAME_WIDTH , frameWidth)
+  cap.set(cv2.CAP_PROP_FRAME_HEIGHT, frameWidth)
+  cap.set(cv2.CAP_PROP_CONVERT_RGB , False)
+elif realsense:
+  print("creating intel thread (at %f)" % time.time())
+  cap = intelutils.intelCamThread(frame_callback = lambda frame: None)
+  print("starting intel thread (at %f)" % time.time())
+  cap.start()
+  print("started intel thread (at %f)" % time.time())
 
-# Turn the Rigel Exposure Up
-os.system(".\LFTool.exe xu set leap 30 " + str(6111) + "L")
+if rigel:
+  # Turn the Rigel Exposure Up
+  os.system(".\LFTool.exe xu set leap 30 " + str(6111) + "L")
 
 # Initialize 3D Visualizer
 frameCount = -3
@@ -41,15 +61,15 @@ stage      = 0
 key = cv2.waitKey(1)
 while (not (key & 0xFF == ord('q'))):
     key = cv2.waitKey(1)
+    print("getting a frame")
     
     # Capture frame-by-frame
-    newFrame, leftRightImage = cap.read()
+    newFrame, frame = cap.read()
+    print("got a frame at %f" % time.time())
     if (newFrame):
-        # Capture frame-by-frame
-        ret, frame = cap.read()
-
+        print("got a new frame")
         # Reshape our one-dimensional image into a two-channel side-by-side view of the Rigel's feed
-        frame       = np.reshape  (frame, (frameWidth, frameWidth * 2))
+        frame       = np.reshape  (frame, (frameHeight, frameWidth * 2))
         frame_color = cv2.cvtColor(frame , cv2.COLOR_GRAY2BGR)
         bitIndex = int((stage-1)/2)
         if frameCount%6 is 0 and frameCount > 0: #key & 0xFF == ord('z'): #
@@ -114,7 +134,7 @@ while (not (key & 0xFF == ord('q'))):
         
         # Display the resulting frame
         cv2.imshow('Frame', frame_color)#cv2.resize(frame_color,  (384*2,384)))
-        if (frameCount is 1):
+        if rigel and (frameCount is 1):
           # Turn the Rigel LED Off
           os.system(".\LFTool.exe xu set leap 27 0")
 

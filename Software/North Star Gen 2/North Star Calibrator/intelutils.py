@@ -7,7 +7,7 @@ import time
 
 class intelCamThread(threading.Thread):
     '''A thread that handles retrieving imagery from the Intel T265'''
-    def __init__(self, frame_callback, source = 0, frameWidth = 384, timeout = 6.0):
+    def __init__(self, frame_callback, source = 0, frameWidth = 384, timeout = 40.0):
         '''Initialize Rigel Image Capture'''
         threading.Thread.__init__(self)
         self.frame_callback = frame_callback
@@ -35,7 +35,7 @@ class intelCamThread(threading.Thread):
         self.success = False
         try:
             # Retrieve the stream and intrinsic properties for both cameras
-            profiles = self.pipe.get_active_profile()
+            profiles = self.pipe.get_active_profile() 
             streams =    {"left"  : profiles.get_stream(rs.stream.fisheye, 1).as_video_stream_profile(),
                           "right" : profiles.get_stream(rs.stream.fisheye, 2).as_video_stream_profile()}
             intrinsics = {"left"  : streams["left"] .get_intrinsics(),
@@ -72,8 +72,12 @@ class intelCamThread(threading.Thread):
                 self.kill()
 
     def run(self):
-        print("Beginning Video Capture Thread!")
-        while(time.time() - self.deadmansSwitch < self.timeout):
+        print("Beginning Video Capture Thread! (at %f)" % time.time())
+        while(True):
+            now = time.time()
+            if now - self.deadmansSwitch > self.timeout:
+                print(f"{now} - {self.deadmansSwitch} > {self.timeout}")
+                break
             # Check if the camera has acquired any new frames
             self.frame_mutex.acquire()
             valid = ((self.frame_data["timestamp_ms"] is not None) and self.frame_data["newFrame"])
@@ -88,31 +92,24 @@ class intelCamThread(threading.Thread):
                 self.frame_data["newFrame"] = False
                 self.frame_mutex.release()
 
-                # Undistort and crop the center of the frames
-                #print(frame_copy["left" ].shape)
-                center_undistorted = {"left" : cv2.remap(src = frame_copy["left" ],
-                                                         map1 = self.undistort_stereographify["left" ][0],
-                                                         map2 = self.undistort_stereographify["left" ][1],
-                                                         interpolation = cv2.INTER_LINEAR),
-                                      "right": cv2.remap(src = frame_copy["right"],
-                                                         map1 = self.undistort_stereographify["right"][0],
-                                                         map2 = self.undistort_stereographify["right"][1],
-                                                         interpolation = cv2.INTER_LINEAR)}
+                # leftRightImage = np.empty((frame_copy["left"].shape[0],
+                #                            frame_copy["left"].shape[1], 2), dtype=np.uint8)
+                # leftRightImage[:,:,0] = np.transpose(frame_copy["left"])
+                # leftRightImage[:,:,1] = np.transpose(frame_copy["right"])
 
-                leftRightImage = np.empty((center_undistorted["left"].shape[0], 
-                                           center_undistorted["left"].shape[1], 2), dtype=np.uint8)
-                leftRightImage[:,:,0] = center_undistorted["left"]
-                leftRightImage[:,:,1] = center_undistorted["right"]
+                # captureGraycodes.py expects it like this:
+                combinedImage = np.hstack([frame_copy["left"], frame_copy["right"]])
 
                 if (not self.paused):
-                    self.frame = leftRightImage
+                    self.frame = combinedImage
                     self.newFrame = True
 
                 self.frame_callback(self.frame)
+                time.sleep(0.1) # Sleep to allow the camera callback thread to butt in!
             else:
-                time.sleep(0.001) # Sleep to allow the camera callback thread to butt in!
+                time.sleep(0.1) # Sleep to allow the camera callback thread to butt in!
 
-        print("Exiting Video Capture Thread!")
+        print("Exiting Video Capture Thread! (at %f)" % time.time())
         if(self.success):
             self.pipe.stop()
 
