@@ -6,9 +6,9 @@ description: The open-source files comprising Leap Motion's Project North Star A
 
 ![Project North Star Headset](http://blog.leapmotion.com/wp-content/uploads/2018/04/hero-unveil.png)
 
-Hardware procurement, fabrication, and assembly instructions start here
+Hardware procurement, fabrication, and assembly instructions start in [/mechanical](mechanical/mechanical.md).
 
-Software setup and calibration starts here: 
+Software setup and calibration start in [/software](software/software.md).
 
 {% embed url="https://discord.com/invite/NghjdX7" %}
 
