@@ -13,12 +13,12 @@ if rigel:
   frameWidth  = 800
   frameHeight = 800
 elif realsense:
-  (frameWidth, 
-   frameHeight) = (
-   848,
-   800,
-  )
+  frameWidth = 848
+  frameHeight = 800
+
 northStarSize = (2880, 1600)
+
+whiteBrightness = 127
 
 allWhite           = np.ones      ((northStarSize[1], northStarSize[0]), dtype=np.uint8) * 100
 continuum          = np.arange    (0, 256,         dtype=np.float)
@@ -33,6 +33,7 @@ heightMeasuredBits = np.zeros ((frameHeight, frameWidth * 2, 8), dtype=np.uint8)
 displayedBuffer    = 100 - allWhite
 
 cv2.namedWindow      ("Graycode Viewport", 0)#cv2.WINDOW_NORMAL)
+cv2.moveWindow       ("Graycode Viewport", 1920, 0)
 cv2.setWindowProperty("Graycode Viewport", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 darkFrameBuffer    = np.zeros((720, 1280), dtype=np.uint8)
 
@@ -52,6 +53,8 @@ elif realsense:
 if rigel:
   # Turn the Rigel Exposure Up
   os.system(".\LFTool.exe xu set leap 30 " + str(6111) + "L")
+# if realsense:
+
 
 # Initialize 3D Visualizer
 frameCount = -3
@@ -82,22 +85,22 @@ while (not (key & 0xFF == ord('q'))):
           elif stage is 1:
             # Calculate the Monitor Mask and display it
             mask = cv2.threshold(cv2.subtract(frame, darkFrameBuffer), thresh=53, maxval=1, type=cv2.THRESH_BINARY)[1]
-            #cv2.imshow("Graycode Display", mask * 255)
+            #cv2.imshow("Graycode Display", mask * whiteBrightness)
             
             # Begin displaying the Width Bits
-            displayedBuffer = widthBits [:, :, bitIndex] * 255
+            displayedBuffer = widthBits [:, :, bitIndex] * whiteBrightness
           elif stage < 17:
             if stage % 2 is 0:
               darkFrameBuffer = frame.copy()
-              displayedBuffer = (1 - widthBits [:, :, bitIndex]) * 255
+              displayedBuffer = (1 - widthBits [:, :, bitIndex]) * whiteBrightness
             else:
               bitmask = cv2.threshold(cv2.subtract(frame, darkFrameBuffer), thresh=1, maxval=1, type=cv2.THRESH_BINARY)[1]
-              #cv2.imshow("Graycode Display", bitmask.copy() * mask * 255)
+              #cv2.imshow("Graycode Display", bitmask.copy() * mask * whiteBrightness)
 
               # Add this bitmask to the built up bitmask
               widthMeasuredBits[:, :, bitIndex-1] = bitmask
 
-              displayedBuffer =      widthBits [:, :, bitIndex]  * 255
+              displayedBuffer =      widthBits [:, :, bitIndex]  * whiteBrightness
           elif stage < 33:
             if stage is 17:
               # The Width Bits have finished displaying, we can now pack the graycode bits back into a byte mapping
@@ -109,14 +112,14 @@ while (not (key & 0xFF == ord('q'))):
             if stage % 2 is 0:
               if stage is not 17:
                 darkFrameBuffer = frame.copy()
-              displayedBuffer = (1 - heightBits [:, :, bitIndex-8]) * 255
+              displayedBuffer = (1 - heightBits [:, :, bitIndex-8]) * whiteBrightness
             else:
               bitmask = cv2.threshold(cv2.subtract(frame, darkFrameBuffer), thresh=1, maxval=1, type=cv2.THRESH_BINARY)[1]
-              #cv2.imshow("Graycode Display", bitmask.copy() * mask * 255)
+              #cv2.imshow("Graycode Display", bitmask.copy() * mask * whiteBrightness)
 
               heightMeasuredBits[:, :, bitIndex-9] = bitmask
 
-              displayedBuffer =      heightBits [:, :, bitIndex-8]  * 255
+              displayedBuffer =      heightBits [:, :, bitIndex-8]  * whiteBrightness
               
           else:
               # The Width Bits have finished displaying, we can now pack the graycode bits back into a byte mapping

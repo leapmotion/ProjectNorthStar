@@ -29,8 +29,15 @@ class intelCamThread(threading.Thread):
         self.pipe = rs.pipeline()
         # Build config object and stream everything
         self.cfg = rs.config()
+        # Manually set exposure
+        prof = self.cfg.resolve(self.pipe)
+        s = prof.get_device().query_sensors()[0]
+        s.set_option(rs.option.enable_auto_exposure, 0)
+        s.set_option(rs.option.exposure, 21500)
+        s.set_option(rs.option.gain,2)
         # Start streaming with our callback
         self.pipe.start(self.cfg, self.callback)
+
 
         self.success = False
         try:
@@ -92,11 +99,6 @@ class intelCamThread(threading.Thread):
                 self.frame_data["newFrame"] = False
                 self.frame_mutex.release()
 
-                # leftRightImage = np.empty((frame_copy["left"].shape[0],
-                #                            frame_copy["left"].shape[1], 2), dtype=np.uint8)
-                # leftRightImage[:,:,0] = np.transpose(frame_copy["left"])
-                # leftRightImage[:,:,1] = np.transpose(frame_copy["right"])
-
                 # captureGraycodes.py expects it like this:
                 combinedImage = np.hstack([frame_copy["left"], frame_copy["right"]])
 
@@ -105,9 +107,10 @@ class intelCamThread(threading.Thread):
                     self.newFrame = True
 
                 self.frame_callback(self.frame)
-                time.sleep(0.1) # Sleep to allow the camera callback thread to butt in!
+                # time.sleep(0.05) # Sleep to allow the camera callback thread to butt in - also save CPU?
             else:
-                time.sleep(0.1) # Sleep to allow the camera callback thread to butt in!
+                # time.sleep(0.05) # Sleep to allow the camera callback thread to butt in - also save CPU?
+                time.sleep(0.001) # Sleep to allow the camera callback thread to butt in!
 
         print("Exiting Video Capture Thread! (at %f)" % time.time())
         if(self.success):

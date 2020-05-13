@@ -10,3 +10,6 @@ Electronics/Firmware/src/Program/Debug/
 # Visual Studio 2015/2017 cache/options directory
 .vs/
 
+Software/North Star Gen 2/North Star Calibrator/.vscode/launch.json
+Software/North Star Gen 2/North Star Calibrator/.vscode/settings.json
+Software/North Star Gen 2/North Star Calibrator/__pycache__/
