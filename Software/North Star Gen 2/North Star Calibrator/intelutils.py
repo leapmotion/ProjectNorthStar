@@ -73,6 +73,11 @@ class intelCamThread(threading.Thread):
             (lm1, lm2) = self.constructStereographicWarpMap(self.frameWidth, K_left,  D_left,  R_left)
             (rm1, rm2) = self.constructStereographicWarpMap(self.frameWidth, K_right, D_right, R_right)
             self.undistort_stereographify = {"left" : (lm1, lm2), "right" : (rm1, rm2)}
+
+            np.savez("cameraCalibration_rs.npz", leftCameraMatrix  = K_left,  leftDistCoeffs   = D_left, 
+                                                 rightCameraMatrix = K_right, rightDistCoeffs  = D_right, 
+                                                 R1 = R_left, R2 = R_right, baseline = np.linalg.norm(T))
+
             self.success = True
         finally:
             if(not self.success):

@@ -4,3 +4,5 @@
 /LFTool.exe
 /chessboardImages/*.png
 /testCalibration.py
+/cameraCalibration_rs.npz
+/NorthStarCalibration.json
