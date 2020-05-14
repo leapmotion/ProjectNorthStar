@@ -27,11 +27,11 @@ if mock:
 whiteBrightness = 127
 
 allWhite           = np.ones      ((northStarSize[1], northStarSize[0]), dtype=np.uint8) * 100
-continuum          = np.arange    (0, 256,         dtype=np.float)
-widthContinuum     = np.zeros     (allWhite.shape, dtype=np.float)
-widthContinuum[:, : int(northStarSize[0] / 2)]   = cv2.resize(continuum[None, :], (int(northStarSize[0] / 2), northStarSize[1]), interpolation=cv2.INTER_LINEAR_EXACT)
+continuum          = np.arange    (0, 256,         dtype=np.uint8)
+widthContinuum     = np.zeros     (allWhite.shape, dtype=np.uint8)
+widthContinuum[:, : int(northStarSize[0] / 2)]   = cv2.resize(continuum[None, :], (int(northStarSize[0] / 2), northStarSize[1]), interpolation=cv2.INTER_NEAREST)
 widthContinuum[:,   int(northStarSize[0] / 2) :] = widthContinuum[:, : int(northStarSize[0] / 2)]
-heightContinuum    = cv2.resize   (continuum      [:, None      ], northStarSize, interpolation=cv2.INTER_LINEAR_EXACT)
+heightContinuum    = cv2.resize   (continuum      [:, None      ], northStarSize, interpolation=cv2.INTER_NEAREST)
 widthBits          = np.unpackbits(widthContinuum [:,    :, None].astype(np.uint8), axis=-1)
 heightBits         = np.unpackbits(heightContinuum[:,    :, None].astype(np.uint8), axis=-1)
 widthMeasuredBits  = np.zeros ((frameHeight, frameWidth * 2, 8), dtype=np.uint8)
