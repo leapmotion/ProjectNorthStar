@@ -2,7 +2,7 @@
 description: FOLLOW THESE DIRECTIONS TO CALIBRATE YOUR NORTH STAR
 ---
 
-# Calibration
+# Calibration V1
 
 Take a deep breath and...
 
