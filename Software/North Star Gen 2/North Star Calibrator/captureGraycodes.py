@@ -8,6 +8,7 @@ import intelutils
 
 rigel = False
 realsense = True
+mock = False
 
 if rigel:
   frameWidth  = 800
@@ -15,8 +16,13 @@ if rigel:
 elif realsense:
   frameWidth = 848
   frameHeight = 800
+elif mock:
+  frameWidth = 512
+  frameHeight = 512
 
 northStarSize = (2880, 1600)
+if mock:
+  northStarSize = (1024, 512)
 
 whiteBrightness = 127
 
@@ -49,6 +55,11 @@ elif realsense:
   print("starting intel thread (at %f)" % time.time())
   cap.start()
   print("started intel thread (at %f)" % time.time())
+elif mock:
+  class MockCapture:
+    def read(self):
+      return True, displayedBuffer
+  cap = MockCapture()
 
 if rigel:
   # Turn the Rigel Exposure Up
@@ -70,6 +81,7 @@ while (not (key & 0xFF == ord('q'))):
     newFrame, frame = cap.read()
     print("got a frame at %f" % time.time())
     if (newFrame):
+        time.sleep(0.1)
         print("got a new frame")
         # Reshape our one-dimensional image into a two-channel side-by-side view of the Rigel's feed
         frame       = np.reshape  (frame, (frameHeight, frameWidth * 2))
