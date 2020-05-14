@@ -8,10 +8,13 @@ import sys
 import json
 np.set_printoptions(suppress = True, precision=8)
 
+rigel = False
+realsense = True
+
 # Check to see if an existing calibration exists
 calibrated = False
 try:
-    calibrations = np.load(".\cameraCalibration.npz", )
+    calibrations = np.load(f".\cameraCalibration{'_rs' if realsense else ''}.npz", )
     calibrated = True
 except:
     traceback.print_exc(file=sys.stdout)
@@ -78,18 +81,18 @@ def createMask(data):
   # Create the "Raw Mask" from the measurements
   mask = np.clip(data[..., 1] * data[..., 2], 0, 1)
 
-  ## Find the largest contour and extract it
-  #contours, hierarchy = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
-  #maxContour = 0
-  #for contour in contours:
-  #  contourSize = cv2.contourArea(contour)
-  #  if contourSize > maxContour:
-  #    maxContour     = contourSize
-  #    maxContourData = contour
-  #
-  ## Create a mask from the largest contour
-  #mask = np.zeros_like(mask)
-  #mask = cv2.fillPoly(mask, [maxContourData], 1)
+  # Find the largest contour and extract it
+  contours, hierarchy = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+  maxContour = 0
+  for contour in contours:
+   contourSize = cv2.contourArea(contour)
+   if contourSize > maxContour:
+     maxContour     = contourSize
+     maxContourData = contour
+  
+  # Create a mask from the largest contour
+  mask = np.zeros_like(mask)
+  mask = cv2.fillPoly(mask, [maxContourData], 1)
   return mask
 
 def processData(data, cameraMatrix, distCoeffs, rot, polynomialDegree=3):
@@ -98,10 +101,11 @@ def processData(data, cameraMatrix, distCoeffs, rot, polynomialDegree=3):
   mask = createMask(data)
   data *= mask[...,None]
 
+
   # Extract the Valid Measurements and arrange into a flat array
   coordinates          = np.zeros((data.shape[0], data.shape[1], 2), dtype=np.int)  
-  coordinates[:, :, 0] = np.arange(0, data.shape[0])[None, :]  # Prepare the coordinates
-  coordinates[:, :, 1] = np.arange(0, data.shape[1])[:, None]  # Prepare the coordinates
+  coordinates[:, :, 0] = np.arange(0, data.shape[0])[:, None]  # Prepare the coordinates
+  coordinates[:, :, 1] = np.arange(0, data.shape[1])[None, :]  # Prepare the coordinates
 
   # Sample the non-zero indices from the flattened coordinates and data arrays
   non_zero_indices     = np.nonzero(mask.reshape(-1))[0] # Get non-zero mask indices
@@ -146,7 +150,7 @@ fitPolynomialR = processData(rightData, calibrations['rightCameraMatrix'], calib
 
 # Save the Calibrations to a .json
 with open("NorthStarCalibration.json", 'w') as outfile:
-  json.dump(outputCalibration, "NorthStarCalibration.json")
+  json.dump(outputCalibration, outfile)
 
 # All this to normalize the view of the polynomial (to enhance contrast...)
 polynomialToDraw = fitPolynomialL.copy()
