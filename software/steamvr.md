@@ -1,57 +1,97 @@
 ---
 description: >-
-  The SteamVR Driver is comprised of a Launcher, Northstar HMD Driver, intel Realsense t265 Driver, and SDraw's LeapDriver. 
+  This page will walk you through installing and running the steamVR driver. It
+  is currently supported on windows, with linux support in progress. A
+  Launcher/Installer is also in progress.
 ---
 
 # SteamVR
-The steamvr repo is [**here**](https://github.com/druidsbane/openvr-northstar).
-You will need to have [**SteamVR**](Steam/Steamvr##](https://store.steampowered.com/about/) installed in order for the launcher to work properly. 
 
-## Known issue
-Currently due to the use of extended mode, tracking doesn't fully work as intended, you can read more about [**here**](https://github.com/ValveSoftware/openvr/issues/1336). Unfortunately this issue is out of our hands as driver devlopers and is and underlying issue with steamvr. 
+this is a work in progress
 
-## Rationale
+#### Working with some polish needed
 
-The driver is currently divided into multiple parts to reflect the modularity of the northstar project. The launcher provides a single place to configure steamvr with the proper settings. It has a field to allow you to input your device specific calibration file, as well as options to enable or disable drivers, which can be useful if you're using a device other than the realsense t265. 
+- Head Tracking  
+- Hand Tracking  
+- View Projection  
+- Skeletal tracking  
+- Basic input  
+- T265 Sensor integration
 
-## Modules
-* Launcher- allows configuration of driver files and input calibration file.
-* Northstar HMD Driver -Handles HMD functions, image distortion. 
-* T265 Driver- Handles 6dof tracking via tracking overrides. 
-* SDraw's [**LeapDriver**](https://github.com/SDraw/driver_leap), simulates valve index controllers with leap motion input.
+#### Notable unfinished parts
 
-## Compatibility
+- Gesture recognizer
 
-The steamvr launcher currently runs on both windows and linux. It is unsupported on MacOS due to steamvr's lack of support for the platform. 
+## Prerequisites
 
-Note: Leapmotion v4 software is only available on windows, there are plans for the next version, v5 to have support for linux, currently to run leap hand tracking on linux you'll have to use v2 software.
+Versions of vendored libraries not included and where to get them:
 
-## Installing the launcher
+You will need to install the leap motion multi-device drivers in order for this driver to work.  
+[- LeapDeveloperKit 4.0.0+52238](https://github.com/leapmotion/UnityModules/blob/feat-multi-device/Multidevice%20Service/LeapDeveloperKit_4.0.0%2B52238_win.zip)
 
-We have included a pre-built version of the steamvr driver under [**releases**](https://github.com/druidsbane/openvr-northstar/releases). You will need to install and run steamVR at least once before running the launcher for the first time.
+If using the structure core you will need the CrossPlatform SDK 0.7.1 and the Perception Engine 0.7.1  
+[https://structure.io/](https://structure.io)
 
-## Prerequisites for building from source
+- CrossPlatform SDK 0.7.1
 
-If you wish to build from source, simply follow these steps:
-Instsall the following prerequisistes:
-* [##Visual studio 2019##](https://visualstudio.microsoft.com/vs/) (be sure to select Desktop development with C++ and .Net Development)
-* [##cmake##](https://cmake.org/download/)
-* [##Git##](https://git-scm.com/download/win/)
+- PerceptionEngine 0.7.1
 
-## Building from source on Windows 10
+## Generating Project Files
 
-* Launch the windows command prompt
-* Run the following:
-``git clone --recurse-submodules https://github.com/druidsbane/openvr-northstar.git
-cd openvr-northstar
-build.bat``
+_**All commands below are run in windows command prompt**_
 
-## Building from source on Linux (PopOS/Ubuntu 19.10)
+In the folder in which you want the repo to exist, run the following commands:
 
-* Install Steam and Steamvr
-* Launch SteamVR at least once
-* Launch a terminal window
-* Run the following
-``git clone --recurse-submodules https://github.com/druidsbane/openvr-northstar.git
-cd openvr-northstar
-./linux.sh``
+```text
+git clone git@github.com:fuag15/project_northstar_openvr_driver.git
+```
+
+```text
+cd project_northstar_openvr_driver
+```
+
+```text
+mkdir build
+```
+
+```text
+cd build
+```
+
+```text
+cmake -G "Visual Studio 16 2019" -A x64 ..
+```
+
+## Building the driver in Visual Studio 2019
+
+- Open the generated solution and set northstar to the startup project \(right click the project and choose the set as startup where the gear icon is\) and build. 
+
+**Make sure to target x64 and a Release build to remove any object creation slowness.**
+
+- The release will be in ```build/Release/```and will be comprised of dll files.
+
+- Copy all the dll's to wherever you want to install from, they should be combined into the ```resources/northstar/bin/win64``` directory, make this if it does not exist and put all generated dll's inside.
+
+- Next register the driver with steamVR \(using **vrpathreg** tool found in SteamVR bin folder\). This is located at 
+
+`C:\Program Files (x86)\Steam\steamapps\common\SteamVR\bin\win64\vrpathreg.exe`
+
+**vrpathreg is a command line tool, you have to run it via the command prompt. To do this, follow these steps.** 
+
+        1\) open command prompt
+
+        2\) run `cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\bin\win64\`
+
+        3\) run `vrpathreg adddriver <full_path_to>/resources/northstar`
+
+        4\) you can verify the driver has been added by typing `vrpathreg` in command prompt, it will show you a list of drivers installed. 
+
+- at this point vrpathreg should show it registered under "external drivers", to disable it you can either disable in StamVR developer options under startup and manage addons, or by using `vrpathreg removedriver <full_path_to>/resources/northstar`
+
+- Running steamvr with the northstar connected \(and no other hmd's connected\) should work at this point but probably not have the right configuration for your hmd. Take the .json file from calibrating your nothstar and convert it to the format found in`resources/northstar/resources/settings/default.vrsettings`
+
+- restart steamvr. If driver is taking a long time to start, chances are it got built in debug mode, Release mode optimizes a way a bunch of intermediate object creation during the lens distortion solve that happens at startup. If things are still going south please maka a bug, I'll do my best to get to them asap.
+
+- if you wish to remove controller emulation, disable the leap driver in SteamVR developer settings.  
+
+
