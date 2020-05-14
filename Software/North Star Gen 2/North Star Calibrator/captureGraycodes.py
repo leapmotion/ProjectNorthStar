@@ -26,9 +26,10 @@ if mock:
 
 whiteBrightness = 127
 
-allWhite           = np.ones      ((northStarSize[1], northStarSize[0]), dtype=np.uint8) * 100
-continuum          = np.arange    (0, 256,         dtype=np.uint8)
-widthContinuum     = np.zeros     (allWhite.shape, dtype=np.uint8)
+allWhite           = np.ones       ((northStarSize[1], northStarSize[0]), dtype=np.uint8) * 100
+continuum          = np.arange     (0, 256,         dtype=np.uint8)
+continuum          = np.bitwise_xor(continuum, continuum//2) # Binary to Gray
+widthContinuum     = np.zeros      (allWhite.shape, dtype=np.uint8)
 widthContinuum[:, : int(northStarSize[0] / 2)]   = cv2.resize(continuum[None, :], (int(northStarSize[0] / 2), northStarSize[1]), interpolation=cv2.INTER_NEAREST)
 widthContinuum[:,   int(northStarSize[0] / 2) :] = widthContinuum[:, : int(northStarSize[0] / 2)]
 heightContinuum    = cv2.resize   (continuum      [:, None      ], northStarSize, interpolation=cv2.INTER_NEAREST)
@@ -36,6 +37,7 @@ widthBits          = np.unpackbits(widthContinuum [:,    :, None].astype(np.uint
 heightBits         = np.unpackbits(heightContinuum[:,    :, None].astype(np.uint8), axis=-1)
 widthMeasuredBits  = np.zeros ((frameHeight, frameWidth * 2, 8), dtype=np.uint8)
 heightMeasuredBits = np.zeros ((frameHeight, frameWidth * 2, 8), dtype=np.uint8)
+lastResult         = np.zeros ((frameHeight, frameWidth * 2))
 displayedBuffer    = 100 - allWhite
 
 cv2.namedWindow      ("Graycode Viewport", 0)#cv2.WINDOW_NORMAL)
@@ -110,7 +112,8 @@ while (not (key & 0xFF == ord('q'))):
               #cv2.imshow("Graycode Display", bitmask.copy() * mask * whiteBrightness)
 
               # Add this bitmask to the built up bitmask
-              widthMeasuredBits[:, :, bitIndex-1] = bitmask
+              lastResult = bitmask == lastResult # xor with last bitmask - Grey -> binary
+              widthMeasuredBits[:, :, bitIndex-1] = lastResult
 
               displayedBuffer =      widthBits [:, :, bitIndex]  * whiteBrightness
           elif stage < 33:
@@ -121,15 +124,20 @@ while (not (key & 0xFF == ord('q'))):
               #cv2.imshow("Graycode Width Continuum", cv2.applyColorMap(calculatedWidthContinuum, cv2.COLORMAP_JET))
               cv2.imwrite("./WidthCalibration.png", calculatedWidthContinuum)
 
+              # reset everything - easiest to do here
+              lastResult.fill(0)
+              darkFrameBuffer.fill(0)
+              frame.fill(0)
+
             if stage % 2 is 0:
-              if stage is not 17:
-                darkFrameBuffer = frame.copy()
+              darkFrameBuffer = frame.copy()
               displayedBuffer = (1 - heightBits [:, :, bitIndex-8]) * whiteBrightness
             else:
               bitmask = cv2.threshold(cv2.subtract(frame, darkFrameBuffer), thresh=1, maxval=1, type=cv2.THRESH_BINARY)[1]
               #cv2.imshow("Graycode Display", bitmask.copy() * mask * whiteBrightness)
 
-              heightMeasuredBits[:, :, bitIndex-9] = bitmask
+              lastResult = bitmask == lastResult # xor with last bitmask - Grey -> binary
+              heightMeasuredBits[:, :, bitIndex-9] = lastResult
 
               displayedBuffer =      heightBits [:, :, bitIndex-8]  * whiteBrightness
               
