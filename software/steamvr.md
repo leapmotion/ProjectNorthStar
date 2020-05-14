@@ -7,7 +7,7 @@ description: >-
 
 # SteamVR
 
-this is a work in progress
+This [steamVR driver](https://github.com/fuag15/project_northstar_openvr_driver) is still a work in progress, if you run into any issues, please reach out on [Discord](https://discord.gg/9TtZhb4). 
 
 #### Working with some polish needed
 
@@ -72,6 +72,8 @@ cmake -G "Visual Studio 16 2019" -A x64 ..
 
 - Copy all the dll's to wherever you want to install from, they should be combined into the ```resources/northstar/bin/win64``` directory, make this if it does not exist and put all generated dll's inside.
 
+## Initializing the Driver in SteamVR
+
 - Next register the driver with steamVR \(using **vrpathreg** tool found in SteamVR bin folder\). This is located at 
 
 `C:\Program Files (x86)\Steam\steamapps\common\SteamVR\bin\win64\vrpathreg.exe`
@@ -90,7 +92,7 @@ cmake -G "Visual Studio 16 2019" -A x64 ..
 
 - Running steamvr with the northstar connected \(and no other hmd's connected\) should work at this point but probably not have the right configuration for your hmd. Take the .json file from calibrating your nothstar and convert it to the format found in`resources/northstar/resources/settings/default.vrsettings`
 
-- restart steamvr. If driver is taking a long time to start, chances are it got built in debug mode, Release mode optimizes a way a bunch of intermediate object creation during the lens distortion solve that happens at startup. If things are still going south please maka a bug, I'll do my best to get to them asap.
+- restart steamvr. If driver is taking a long time to start, chances are it got built in debug mode, Release mode optimizes a way a bunch of intermediate object creation during the lens distortion solve that happens at startup. If things are still going south please issue a bug report here: 
 
 - if you wish to remove controller emulation, disable the leap driver in SteamVR developer settings.  
 
