@@ -4,7 +4,7 @@ description: >-
   Star AR Headset with calibration stand.
 ---
 
-# Mechanical
+# Northstar 3.1 Design
 
 Mechanical Release 3 bundles together all the lessons we learned into a new set of 3D files and drawings. Its principle objective is to be more inviting, less hacked together, and more reliable. The design includes more adjustments and mechanisms for a larger variety of heads and facial geometries. Overall, the assembly is lighter, more balanced, and stiffer.
 

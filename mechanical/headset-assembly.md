@@ -1,4 +1,4 @@
-# Headset Assembly
+# Headset Assembly Instructions
 
 This guide is also available as a PDF:
 
