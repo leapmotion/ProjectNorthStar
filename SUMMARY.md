@@ -32,7 +32,7 @@
 
 ## Community Links
 
-* [Discord Commuity](https://discordapp.com/invite/NghjdX7)
+* [Discord Community](https://discordapp.com/invite/NghjdX7)
 * [\#ProjectNorthStar On Twitter](https://twitter.com/search?q=%23ProjectNorthStar)
 * [Reddit Community](https://www.reddit.com/r/ProjectNorthStar/)
 * [Leap Motion Forums](https://forums.leapmotion.com/t/project-north-star/7071)

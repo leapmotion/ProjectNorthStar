@@ -32,18 +32,18 @@ You will need to install the leap motion multi-device drivers in order for this 
 If using the structure core you will need the CrossPlatform SDK 0.7.1 and the Perception Engine 0.7.1  
 [https://structure.io/](https://structure.io)
 
-- CrossPlatform SDK 0.7.1
-
-- PerceptionEngine 0.7.1
+If using the intel realsense t265, you should install the [Intel® RealSense™ SDK 2.0](https://www.intelrealsense.com/sdk-2/)
 
 ## Generating Project Files
+
+In order to build from source you will need to install [visual studio 2019](https://visualstudio.microsoft.com/downloads/) with c++, .net and C++ modules v124. In addition you'll also need to install [git](https://git-scm.com/downloads) and [cmake](https://cmake.org/download/).
 
 _**All commands below are run in windows command prompt**_
 
 In the folder in which you want the repo to exist, run the following commands:
 
 ```text
-git clone git@github.com:fuag15/project_northstar_openvr_driver.git
+git clone https://github.com/fuag15/project_northstar_openvr_driver
 ```
 
 ```text
