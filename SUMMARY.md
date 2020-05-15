@@ -17,7 +17,10 @@
 
 * [Software](software/software.md)
 * [SteamVR](software/steamvr.md)
-* [Calibration V1](software/calibration-guide.md)
+
+## Calibration
+
+* [Calibration V1](calibration/calibration-guide.md)
 
 ## Electronics
 
