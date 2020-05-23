@@ -17,17 +17,17 @@ Major sections are missing. Assembly requires care and patience. Nothing worth h
 
 ## Getting Started
 
-Open the [Headset Mechanical Assembly](headset-assembly/) and construct each sub-assembly as illustrated. A full list of the parts needed can be found in the [Headset Bill of Materials \(BOM\)](headset-assembly/headset-bom.md). Not all sub-assemblies are required as there are multiple designs to choose from. Additionally, the CAD files are included in STEP format to help design new parts.
+Open the [Headset Mechanical Assembly](headset-assembly.md) and construct each sub-assembly as illustrated. A full list of the parts needed can be found in the [Headset Bill of Materials \(BOM\)](headset-bom.md). Not all sub-assemblies are required as there are multiple designs to choose from. Additionally, the CAD files are included in STEP format to help design new parts.
 
 ## Design Overview
 
-The headset consists of two basic sections: the optics [`#100-000`](headset-assembly/#100-000) and headgear [`#200-000`](headset-assembly/#120-000). The optics subassembly currently has two variants: Release 3 optics and Update 3.1 \(i.e. the simplified optics assembly\). The headgear assembly utilizes the rear adjustment mechanism from a Miller branded welder’s helmet, but several models can be made to work.
+The headset consists of two basic sections: the optics [`#100-000`](headset-assembly.md#100-000) and headgear [`#200-000`](headset-assembly.md#120-000). The optics subassembly currently has two variants: Release 3 optics and Update 3.1 \(i.e. the simplified optics assembly\). The headgear assembly utilizes the rear adjustment mechanism from a Miller branded welder’s helmet, but several models can be made to work.
 
 ![Overview](../../.gitbook/assets/overview.png)
 
 ### Optics assembly: Release 3 vs 3.1
 
-Functionally, the two optics assemblies are the same. Release 3 is closer to the original design aesthetic and it’s marginally \(8g\) more lightweight. On the other hand, Update 3.1 halves the print time by removing the need for supports on the sides. Overall, the simplified 3.1 bracket is easier to print with lower print failures and stiffer too. It’s recommended to start with the simplified Release 3.1 optics assembly for the first build. See drawing [`#100-000`](headset-assembly/#100-000) for more information.
+Functionally, the two optics assemblies are the same. Release 3 is closer to the original design aesthetic and it’s marginally \(8g\) more lightweight. On the other hand, Update 3.1 halves the print time by removing the need for supports on the sides. Overall, the simplified 3.1 bracket is easier to print with lower print failures and stiffer too. It’s recommended to start with the simplified Release 3.1 optics assembly for the first build. See drawing [`#100-000`](headset-assembly.md#100-000) for more information.
 
 ![Overview](../../.gitbook/assets/img_8601.jpg)
 
@@ -57,8 +57,8 @@ Demonstration of using a soldering iron to install brass inserts. The wire cutte
 Parts that require inserts:
 
 {% hint style="info" %}
-Display trays \(4 inserts each\) - [`#111-00x`](headset-assembly/#111-000) and [`#112-00x`](headset-assembly/#110-000)  
-Driver board mount \(2 inserts\) - [`#121-001`](headset-assembly/#121-000)/[`#131-001`](headset-assembly/#131-000)\`\`
+Display trays \(4 inserts each\) - [`#111-00x`](headset-assembly.md#111-000) and [`#112-00x`](headset-assembly.md#110-000)  
+Driver board mount \(2 inserts\) - [`#121-001`](headset-assembly.md#121-000)/[`#131-001`](headset-assembly.md#131-000)\`\`
 {% endhint %}
 
 Installing brass inserts into the optics bracket is optional. They're intended as mounting points for future testing.
