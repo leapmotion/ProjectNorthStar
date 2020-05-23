@@ -36,7 +36,7 @@ If using the intel realsense t265, you should install the [Intel® RealSense™ 
 
 ## Generating Project Files
 
-In order to build from source you will need to install [visual studio 2019](https://visualstudio.microsoft.com/downloads/) with c++, .net and C++ modules v124. In addition you'll also need to install [git](https://git-scm.com/downloads) and [cmake](https://cmake.org/download/).
+In order to build from source you will need to install [visual studio 2019](https://visualstudio.microsoft.com/downloads/) with c++, .net and C++ modules v142. In addition you'll also need to install [git](https://git-scm.com/downloads) and [cmake](https://cmake.org/download/).
 
 _**All commands below are run in windows command prompt**_
 
