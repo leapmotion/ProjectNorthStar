@@ -1,10 +1,8 @@
 ---
-description: FOLLOW THESE DIRECTIONS TO CALIBRATE YOUR NORTH STAR
+description: The following instructions can be used for version 1 of the calibration rig
 ---
 
 # Calibration V1
-
-Take a deep breath and...
 
 ## 1. Build the Calibration Rig
 
