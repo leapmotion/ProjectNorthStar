@@ -4,6 +4,8 @@ description: FOLLOW THESE DIRECTIONS TO CALIBRATE YOUR NORTH STAR
 
 # Calibration V1
 
+Note that hand position is totally seperate from image distortion calibration, if you're trying to line up your hands use this tool here: https://github.com/fmaurer/NorthStarToolbox
+
 Take a deep breath and...
 
 ## 1. Build the Calibration Rig
