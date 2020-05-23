@@ -2,7 +2,7 @@
 
 
 
-{% file src="../.gitbook/assets/bom\_north-star-calibration-stand.tsv" %}
+{% file src="../../.gitbook/assets/bom\_north-star-calibration-stand.tsv" %}
 
 | Part number | Quantity | Description | Source |
 | :--- | :--- | :--- | :--- |

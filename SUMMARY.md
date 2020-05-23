@@ -4,14 +4,15 @@
 
 ## Mechanical
 
-* [Northstar 3.1 Design](mechanical/mechanical.md)
-* [Headset Bill of Materials](mechanical/headset-bom.md)
-* [Headset Assembly Instructions](mechanical/headset-assembly.md)
-* [Calibration Stand Bill of Materials](mechanical/calibration-stand-bom.md)
-* [Calibration Stand Assembly](mechanical/calibration-stand-assembly.md)
-* [Initial Release Assembly Guide](mechanical/initial-release-assembly-guide.md)
-* [Initial Release 3D Printing Reference](mechanical/initial-release-3d-printing-reference.md)
-* [Changelog](mechanical/changelog.md)
+* [Northstar 3.1 Design](mechanical/mechanical/README.md)
+  * [Headset Assembly Instructions](mechanical/mechanical/headset-assembly/README.md)
+    * [Headset Bill of Materials](mechanical/mechanical/headset-assembly/headset-bom.md)
+  * [Changelog](mechanical/mechanical/changelog.md)
+* [Northstar V1](mechanical/northstar-v1/README.md)
+  * [Initial Release 3D Printing Reference](mechanical/northstar-v1/initial-release-3d-printing-reference.md)
+  * [Initial Release Assembly Guide](mechanical/northstar-v1/initial-release-assembly-guide.md)
+* [Calibration Stand Assembly](mechanical/calibration-stand-assembly/README.md)
+  * [Calibration Stand Bill of Materials](mechanical/calibration-stand-assembly/calibration-stand-bom.md)
 
 ## Software
 
