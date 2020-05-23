@@ -1,5 +1,7 @@
 ---
-description: This page describes the new method for calibrating optics.
+description: >-
+  This page describes both existing calibration methods, as well as how to align
+  the LeapMotion Controller properly.
 ---
 
 # Calibration Setup
