@@ -11,8 +11,6 @@
 * [Northstar V1](mechanical/northstar-v1/README.md)
   * [Initial Release 3D Printing Reference](mechanical/northstar-v1/initial-release-3d-printing-reference.md)
   * [Initial Release Assembly Guide](mechanical/northstar-v1/initial-release-assembly-guide.md)
-* [Calibration Stand Assembly](mechanical/calibration-stand-assembly/README.md)
-  * [Calibration Stand Bill of Materials](mechanical/calibration-stand-assembly/calibration-stand-bom.md)
 
 ## Software
 
@@ -21,8 +19,10 @@
 
 ## Calibration
 
-* [Calibration V1](calibration/calibration-guide.md)
-* [Calibration V2](calibration/calibration-v2.md)
+* [Calibration Setup](calibration/calibration-v2/README.md)
+  * [Calibration V1](calibration/calibration-v2/calibration-guide.md)
+  * [Calibration V2](calibration/calibration-v2/calibration-v2-1.md)
+  * [Calibration Stand Bill of Materials](calibration/calibration-v2/calibration-stand-bom.md)
 
 ## Electronics
 
