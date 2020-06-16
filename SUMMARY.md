@@ -27,7 +27,6 @@
 ## Electronics
 
 * [Electronics](electronics/electronics.md)
-* [Bill of Materials](electronics/bill-of-materials.md)
 * [Firmware](electronics/firmware.md)
 * [Schematics](electronics/schematics.md)
 
