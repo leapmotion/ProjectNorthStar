@@ -24,7 +24,7 @@ This [steamVR driver](https://github.com/fuag15/project_northstar_openvr_driver)
 
 ## Prerequisites
 
-Versions of vendored libraries not included and where to get them:
+Versions of vendored libraries not included, here is where to get them:
 
 You will need to install the leap motion multi-device drivers in order for this driver to work.  
 [- LeapDeveloperKit 4.0.0+52238](https://github.com/leapmotion/UnityModules/blob/feat-multi-device/Multidevice%20Service/LeapDeveloperKit_4.0.0%2B52238_win.zip)
