@@ -4,7 +4,7 @@ description: 'A list of parts, and where to buy/order them from'
 
 # Headset Bill of Materials
 
-You can source all your parts from kits at [https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles), if you want to source your parts from elswhere, or want replacement parts they are linked below. 
+You can source all your parts from kits at [https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles), if you want to source your parts from elsewhere, or want replacement parts they are linked below. 
 
 {% file src="../../.gitbook/assets/bom-north-star-release-3.tsv" %}
 
