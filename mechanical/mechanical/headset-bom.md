@@ -46,8 +46,7 @@ You can source all your parts from kits at [https://www.smart-prototyping.com/AR
 | \#240-002 | 1 | RIGHT BRAKE HOUSING | 3DPRINT |
 | \#240-003 | 1 | RIGHT BRAKE BUTTON | 3DPRINT |
 | \#240-004 | 1 | RIGHT CABLE GUIDE | 3DPRINT |
-| \#500-001 | 1 | LEFT REFLECTOR | [Polaris AR](https://www.smart-prototyping.com/Project-North-Star-Lens) |
-| \#500-002 | 1 | RIGHT REFLECTOR | [Polaris AR](https://www.smart-prototyping.com/Project-North-Star-Lens) |
+| \#500-001 | 1 | REFLECTORS | [CombineReality](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Module/Project-North-Star-Lenses-Single-Piece-Set-v3_1-SPC) |
 | \#630-001 | 1 | 0.304-in OD TORSION SPRING 180 DEG. L-HAND WOUND | [McMaster \#9271K603](https://www.mcmaster.com/9271k6) |
 | \#630-002 | 1 | 0.304-in OD TORSION SPRING 180 DEG. R-HAND WOUND | [McMaster \#9271K668](https://www.mcmaster.com/9271k668) |
 | \#640-001 | 28 | M2.5x0.45 6mm LONG STEEL FLAT HEAT SCREW 90 DEG CS | [McMaster \#91420a016](https://www.mcmaster.com/91420a016) |
