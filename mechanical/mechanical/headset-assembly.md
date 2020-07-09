@@ -1,4 +1,4 @@
-# Headset Assembly Instructions
+# Version 3 Assembly Guide
 
 This guide is also available as a PDF:
 

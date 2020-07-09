@@ -6,7 +6,7 @@
 
 * [Northstar 3.1 Design](mechanical/mechanical/README.md)
   * [Headset Bill of Materials](mechanical/mechanical/headset-bom.md)
-  * [Headset Assembly Instructions](mechanical/mechanical/headset-assembly.md)
+  * [Version 3 Assembly Guide](mechanical/mechanical/headset-assembly.md)
   * [Changelog](mechanical/mechanical/changelog.md)
 * [Northstar V1](mechanical/northstar-v1/README.md)
   * [Initial Release 3D Printing Reference](mechanical/northstar-v1/initial-release-3d-printing-reference.md)
