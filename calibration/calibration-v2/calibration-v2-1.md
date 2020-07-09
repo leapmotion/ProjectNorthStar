@@ -6,6 +6,10 @@ description: >-
 
 # Calibration V2
 
+{% hint style="info" %}
+These Modules require python 3 in order to work
+{% endhint %}
+
 ## Setup
 
 1. Download the **Feat-Gen-2-software** branch of the following repo: [https://github.com/BryanChrisBrown/ProjectNorthStar/tree/feat-gen-2-software](https://github.com/BryanChrisBrown/ProjectNorthStar/tree/feat-gen-2-software)
