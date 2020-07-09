@@ -41,14 +41,7 @@ Version One and Version Two of the calibration setup share the same 3D printable
 
 
 
-## Setup Calibration V1
+## [Setup Calibration V1](calibration-guide.md)
 
-This requires:
-
-* 3D Printing the mechanical assembly, search for it here: [https://leapmotion.github.io/ProjectNorthStar/](https://leapmotion.github.io/ProjectNorthStar/)
-* Affixing TWO of these Stereo Cameras to it: [https://www.amazon.com/ELP- Industrial- Application- Synchronized- ELP- 960P2CAM- V90- VC/dp/B078TDLHCP/](https://www.amazon.com/ELP-Industrial-Application-Synchronized-ELP-960P2CAM-V90-VC/dp/B078TDLHCP/)
-* Acquiring a large secondary monitor to use as the calibration target
-* Find the exact model and active area of the screen for this monitor; we'll need it in 3\)
-
-## Setup Calibration V2
+## [Setup Calibration V2](calibration-v2-1.md)
 
