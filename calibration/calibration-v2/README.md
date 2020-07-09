@@ -28,6 +28,9 @@ There are currently two ways to calibrate a northstar headset. The first method 
 | T265 Support | No | Yes |
 | Cameras | 2 \(stereo\) | 1 \(stereo\) |
 | Camera Calibration | Checkerboard Process | Built In or Checkerboard |
+| Unity | Yes | Yes |
+| OpenVR/Unreal | Yes | In Progress |
+|  |  |  |
 
 ## Calibration Stand Assembly
 

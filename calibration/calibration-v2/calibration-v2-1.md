@@ -32,6 +32,8 @@ Run through the following steps to calibrate your headset.
 
 When you are finished, you may paste the output of the calibrateGraycodes.py into [this diagnostic shadertoy](https://www.shadertoy.com/view/wsscD4) to check for alignment.
 
+![The shader toy should look like this when viewed through the headset](../../.gitbook/assets/unknown-2.png)
+
 Additionally, there should be a `NorthStarCalibration.json` in this directory which you may use in the Unity implementation.
 
 
