@@ -4,7 +4,7 @@ description: >-
   Star AR Headset with calibration stand.
 ---
 
-# Northstar 3.1 Design
+# Northstar Release 3
 
 Mechanical Release 3 bundles together all the lessons we learned into a new set of 3D files and drawings. Its principle objective is to be more inviting, less hacked together, and more reliable. The design includes more adjustments and mechanisms for a larger variety of heads and facial geometries. Overall, the assembly is lighter, more balanced, and stiffer.
 
@@ -21,13 +21,13 @@ Open the [Headset Mechanical Assembly](headset-assembly.md) and construct each s
 
 ## Design Overview
 
-The headset consists of two basic sections: the optics [`#100-000`](headset-assembly.md#100-000) and headgear [`#200-000`](headset-assembly.md#120-000). The optics subassembly currently has two variants: Release 3 optics and Update 3.1 \(i.e. the simplified optics assembly\). The headgear assembly utilizes the rear adjustment mechanism from a Miller branded welder’s helmet, but several models can be made to work.
+The headset consists of two basic sections: the optics [`#100-000`](headset-assembly.md#100-000) and headgear [`#200-000`](headset-assembly.md#120-000). The optics subassembly currently has two variants: Release 3 optics and Update 3-1 \(i.e. the simplified optics assembly\). The headgear assembly utilizes the rear adjustment mechanism from a Miller branded welder’s helmet, but several models can be made to work.
 
 ![Overview](../../.gitbook/assets/overview.png)
 
-### Optics assembly: Release 3 vs 3.1
+### Optics assembly: Release 3 vs 3-1
 
-Functionally, the two optics assemblies are the same. Release 3 is closer to the original design aesthetic and it’s marginally \(8g\) more lightweight. On the other hand, Update 3.1 halves the print time by removing the need for supports on the sides. Overall, the simplified 3.1 bracket is easier to print with lower print failures and stiffer too. It’s recommended to start with the simplified Release 3.1 optics assembly for the first build. See drawing [`#100-000`](headset-assembly.md#100-000) for more information.
+Functionally, the two optics assemblies are the same. Release 3 is closer to the original design aesthetic and it’s marginally \(8g\) more lightweight. On the other hand, Update 3-1 halves the print time by removing the need for supports on the sides. Overall, the simplified 3-1 bracket is easier to print with lower print failures and stiffer too. It’s recommended to start with the simplified Release 3-1 optics assembly for the first build. See drawing [`#100-000`](headset-assembly.md#100-000) for more information.
 
 ![Overview](../../.gitbook/assets/img_8601.jpg)
 

@@ -4,7 +4,7 @@
 
 ## Mechanical
 
-* [Northstar 3.1 Design](mechanical/mechanical/README.md)
+* [Northstar Release 3](mechanical/mechanical/README.md)
   * [Headset Bill of Materials](mechanical/mechanical/headset-bom.md)
   * [Version 3 Assembly Guide](mechanical/mechanical/headset-assembly.md)
   * [Changelog](mechanical/mechanical/changelog.md)
