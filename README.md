@@ -12,7 +12,7 @@ Project Northstar is an open source Augmented Reality headset originally designe
 
 There's also a large community of Northstar developers and builders on Discord, you can join the server and share your build, ask questions, or get help with your projects by [joining the server](https://discord.gg/9TtZhb4)!
 
-Hardware procurement, fabrication, and assembly instructions start in [/mechanical](mechanical/mechanical/).
+Hardware procurement, fabrication, and assembly instructions start in [/mechanical](mechanical/release-3/).
 
 Software setup and calibration start in [/software](software/software.md).
 

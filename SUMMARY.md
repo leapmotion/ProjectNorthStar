@@ -4,11 +4,11 @@
 
 ## Mechanical
 
-* [Northstar Release 3](mechanical/mechanical/README.md)
-  * [Headset Bill of Materials](mechanical/mechanical/headset-bom.md)
-  * [Version 3 Assembly Guide](mechanical/mechanical/headset-assembly.md)
-  * [Changelog](mechanical/mechanical/changelog.md)
-* [Northstar V1](mechanical/northstar-v1/README.md)
+* [Northstar Release 3](mechanical/release-3/README.md)
+  * [Headset Bill of Materials](mechanical/release-3/headset-bom.md)
+  * [Version 3 Assembly Guide](mechanical/release-3/headset-assembly.md)
+  * [Changelog](mechanical/release-3/changelog.md)
+* [Northstar Release 1](mechanical/northstar-v1/README.md)
   * [Initial Release 3D Printing Reference](mechanical/northstar-v1/initial-release-3d-printing-reference.md)
   * [Initial Release Assembly Guide](mechanical/northstar-v1/initial-release-assembly-guide.md)
 
