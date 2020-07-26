@@ -6,6 +6,14 @@ This guide is also available as a PDF:
 
 
 
+A video guide from [Tasuku Takahashi](https://twitter.com/supertask_jp) is available below, it's best to supplement the written documentation with this video. If you run into problems or have questions, feel free to reach out on the [discord](https://discord.gg/9TtZhb4). 
+
+{% embed url="https://www.youtube.com/watch?v=J-OowCNcR8A" %}
+
+
+
+
+
 ## 000-000
 
 ![North Star Release 3](../../.gitbook/assets/assm-drawing-north-star-release-3-01.png)
