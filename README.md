@@ -10,7 +10,7 @@ Welcome to the [community built documentation](https://project-north-star.gitboo
 
 Project Northstar is an open source Augmented Reality headset originally designed by LeapMotion \(now UltraLeap\) in June, 2017. The headset is almost entirely 3D printable, with a handful of components like reflectors, circuit boards, cables, sensors and screws that need to be sourced seperately. Luckily through the help of Noah Zerkin, all the parts to make North Star headsets are easily accessible through \[[Smart Prototyping](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles)\].
 
-There's also a large community of Northstar developers and builders on Discord, you can join the server and share your build, ask questions, or get help with your projects by [joining the server](https://discord.gg/9TtZhb4)!
+There's also a large community of Northstar developers and builders on Discord, you can join the server and share your build, ask questions, or get help with your projects by [joining the server](https://discord.gg/9TtZhb4)! The project has had many variations since its inception, by both UltraLeap and the open source community. Some of the variations are documented and linked to here, but visit the discord server for more to-the-moment information.
 
 Hardware procurement, fabrication, and assembly instructions start in [/mechanical](mechanical/release-3/).
 
