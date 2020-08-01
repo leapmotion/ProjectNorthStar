@@ -1,7 +1,13 @@
 # Table of contents
 
 * [Project North Star](README.md)
-* [FAQ](faq.md)
+
+## FAQ <a id="faq-1"></a>
+
+* [General FAQ](faq-1/faq.md)
+* [FAQ Smart Prototyping Kits](faq-1/faq-smart-prototyping-kits.md)
+* [FAQ Mechanical](faq-1/faq-mechanical.md)
+* [FAQ Software](faq-1/faq-software.md)
 
 ## Mechanical
 
