@@ -16,7 +16,7 @@ Project North Star is an open source augmented reality headset meant as a develo
 
 ### How can I build it?
 
-Good Question! There are multiple variations of the reference design from leap motion. The reference design can be found here: 
+Good Question! There are multiple variations of the reference design from leap motion. The reference design can be found on [this page ](../mechanical/release-3/)
 
 {% embed url="https://github.com/leapmotion/ProjectNorthStar" caption="Link to the main GitHub repo" %}
 
