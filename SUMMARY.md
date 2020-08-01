@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Project North Star](README.md)
+* [FAQ](faq.md)
 
 ## Mechanical
 
@@ -37,7 +38,6 @@
 * [Reddit Community](https://www.reddit.com/r/ProjectNorthStar/)
 * [Leap Motion Forums](https://forums.leapmotion.com/t/project-north-star/7071)
 * [Helpful Content](community-links/community-links.md)
-* [FAQ](community-links/faq.md)
 
 ## Leap Motion Blogs <a id="blogs"></a>
 
