@@ -1,5 +1,9 @@
 # FAQ Smart Prototyping Kits
 
+{% hint style="success" %}
+[https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles)
+{% endhint %}
+
 ####  **What kind of screws are in the kit? What tools do I need for assembly \(what is included in the kit and what is not for putting everything together\)?**
 
 The smart prototyping kits come with a full screwdriver kit, and all the screws you'll need to build the headset, aside from a soldering iron. A soldering iron is used for heating up the heat-threaded inserts and can be found at any local electronics store for around $10 USD.  
@@ -10,7 +14,7 @@ The smart prototyping kits come with a full screwdriver kit, and all the screws 
 These numbers refer to the focal distance that the images appear from the user. The only difference between the two is the location of the screens relative to the combiner. The focal distances can be switched by replacing the display tray.   
   
 Typically, we recommend starting with a 25cm build since they are easier to get started with.   
-Kit B ships with both 25cm and 75cm trays so you can choose which method you want when you build your headset. Kit C, the preassembled version requires you to choose which version you want before ordering as these headset are pre-calibrated.   
+[Kit B](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles/Project-North-Star-Kit-B) ships with both 25cm and 75cm trays so you can choose which method you want when you build your headset. [Kit C](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles/Project-North-Star-Kit-C), the preassembled version requires you to choose which version you want before ordering as these headset are pre-calibrated.   
   
  ****25cm is sharper for items attached to your hand or right in front of your face.
 
@@ -42,7 +46,7 @@ A detailed and descriptive video is available here, elaborating on how to carefu
 
 #### How do I insert the displays into the display tray and attach the unit to the headset?
 
-make sure you DO NOT force the screen inside the screen holder under any circumstance. The screen holder has a tray that goes all around which will allow the screen to slide in smoothly. The screen is very sensitive and damage to it is in many cases irreparable and will require a re-order of a new component.  
+Make sure you DO NOT force the screen inside the screen holder under any circumstance. The screen holder has a tray that goes all around which will allow the screen to slide in smoothly. The screen is very sensitive and damage to it is in many cases irreparable and will require a re-order of a new component.  
 
 
 #### What are the cables connecting to the display driver board?
