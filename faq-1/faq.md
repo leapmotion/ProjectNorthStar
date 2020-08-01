@@ -7,7 +7,7 @@ description: >-
 # General FAQ
 
 {% hint style="success" %}
-have a question not mentioned here? Feel free to ask on the community Discord
+have a question not mentioned here? Feel free to ask on the community [Discord](https://discord.gg/9TtZhb4)
 {% endhint %}
 
 ### What is Project North Star?
