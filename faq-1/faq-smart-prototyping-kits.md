@@ -39,24 +39,20 @@ Typically, we recommend starting with a 25cm build since they are easier to get 
 
 In general, 75 cm is better if a lot of things you’re dealing with are further away, while 25 cm is best if you’re prototyping hand interactions. You can still tell how far away things are with either of the focal distances via stereo overall. 
 
-So to conclude, whichever decision you opt for will work depending on what you plan on doing. However, something to keep in mind is that if you wish to switch between the two display holders, you have to put the screens into the new trays and recalibrate the headset using the stand.  
-
+So to conclude, whichever decision you opt for will work depending on what you plan on doing. However, something to keep in mind is that if you wish to switch between the two display holders, you have to put the screens into the new trays and recalibrate the headset using the stand.
 
 ### **If I already have a calibration JSON file for my headset, can I not simply reuse that in the event that I reprint the display trays / change them from 25 cm to 75 cm or vice versa?**
 
-Just switching or reusing past calibration JSONs isn’t enough. Simply knocking a set of combiners in an optics bracket into a different position by a fraction of a mm is enough to invalidate the calibration. The same goes for repositioning, or removing and reinserting the display in the same tray. Displays and combiners cannot move relative to each other without needing recalibration. There’s also a lot of imprecision in FDM printing and hand assembly. The positioning of the headset inserts in the back of the trays is, alone, imprecise enough that most headsets are imperfect by nature for the level of quality that is required for this project if you want the best experience that North Star is capable of producing.  
-
+Just switching or reusing past calibration JSONs isn’t enough. Simply knocking a set of combiners in an optics bracket into a different position by a fraction of a mm is enough to invalidate the calibration. The same goes for repositioning, or removing and reinserting the display in the same tray. Displays and combiners cannot move relative to each other without needing recalibration. There’s also a lot of imprecision in FDM printing and hand assembly. The positioning of the headset inserts in the back of the trays is, alone, imprecise enough that most headsets are imperfect by nature for the level of quality that is required for this project if you want the best experience that North Star is capable of producing.
 
 ### **My displays have arrived but the connector ribbon is strongly attached to the back. Do I peel it off before inserting it into the screen holder? What about the small circuit boards attached to it? Do they come off with the ribbon cable or do they stay attached to the ribbon cable?**
 
 Currently you have to peel the cable \*_**carefully and patiently**_\* from the back of the display.   
-A detailed and descriptive video is available here, elaborating on how to carefully handle this item here: [https://youtu.be/YsGSf7lwdCs](https://youtu.be/YsGSf7lwdCs)  
-
+A detailed and descriptive video is available here, elaborating on how to carefully handle this item here: [https://youtu.be/YsGSf7lwdCs](https://youtu.be/YsGSf7lwdCs)
 
 ### How do I insert the displays into the display tray and attach the unit to the headset?
 
-Make sure you DO NOT force the screen inside the screen holder under any circumstance. The screen holder has a tray that goes all around which will allow the screen to slide in smoothly. The screen is very sensitive and damage to it is in many cases irreparable and will require a re-order of a new component.  
-
+Make sure you DO NOT force the screen inside the screen holder under any circumstance. The screen holder has a tray that goes all around which will allow the screen to slide in smoothly. The screen is very sensitive and damage to it is in many cases irreparable and will require a re-order of a new component.
 
 ### What are the cables connecting to the display driver board?
 
