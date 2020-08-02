@@ -16,8 +16,7 @@ You can also choose which set of cables you'd like with your headset on the chec
 
 ###  **What kind of screws are in the kit? What tools do I need for assembly \(what is included in the kit and what is not for putting everything together\)?**
 
-The smart prototyping kits come with a full screwdriver kit, and all the screws you'll need to build the headset, aside from a soldering iron. A soldering iron is used for heating up the heat-threaded inserts and can be found at any local electronics store for around $10 USD.  
-
+The smart prototyping kits come with a full screwdriver kit, and all the screws you'll need to build the headset, aside from a soldering iron. A soldering iron is used for heating up the heat-threaded inserts and can be found at any local electronics store for around $10 USD.
 
 ### What is the difference between the 25cm and 75cm version of the headset?
 
