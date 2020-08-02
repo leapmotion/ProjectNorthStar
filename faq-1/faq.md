@@ -46,3 +46,9 @@ If you have a windows PC with a 1070 or above you can use the Zed Mini, but it o
 
 If you have a Vive already, you can use a vive tracker for 6dof tracking, however the vive tracker requires external "lighthouse" base stations in order to function, making it more difficult to transport the headset or use it in different environments without extra setup.
 
+### What is Calibration?
+
+Due to the nature of 3D printing and assembly each headset is going to be slightly unique and will require going through [a calibration process](../calibration/calibration-v2/) to display the image correctly.   
+  
+There are currently two ways to calibrate a northstar headset. The first method uses two stereo cameras to calculate the 3D position of the displays and reflectors. The second method uses a single stereo camera, and is currently setup to be able to use the intel t265 camera, which we currently recommend for 6DOF. This allows northstar developers to reuse the t265 rather than purchase two seperate stereo cameras. 
+
