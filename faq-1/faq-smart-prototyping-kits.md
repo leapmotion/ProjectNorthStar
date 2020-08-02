@@ -4,6 +4,16 @@
 [https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles)
 {% endhint %}
 
+### What are the differences between the kits? Which should I get?
+
+Smart Prototyping offers multiple kits. 
+
+* **Kit A** contains all the electronics and mechanical pieces to get you started with your build, but does NOT come with 3D printed parts. You'll have to print them, and assemble the headset. 
+* **Kit B** contains all the electronics and mechanical parts, along with the 3D printed parts. You'll still need to assemble and calibrate the headset. 
+* **Kit C** contains the headset fully assembled and pre-calibrated.
+
+You can also choose which set of cables you'd like with your headset on the checkout page, or order extra parts or upgrade kits as the project continues development. 
+
 ###  **What kind of screws are in the kit? What tools do I need for assembly \(what is included in the kit and what is not for putting everything together\)?**
 
 The smart prototyping kits come with a full screwdriver kit, and all the screws you'll need to build the headset, aside from a soldering iron. A soldering iron is used for heating up the heat-threaded inserts and can be found at any local electronics store for around $10 USD.  
