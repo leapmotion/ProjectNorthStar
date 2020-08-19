@@ -2,12 +2,13 @@
 
 * [Project North Star](README.md)
 
-## FAQ <a id="faq-1"></a>
+## Getting Started! <a id="faq-1"></a>
 
 * [General FAQ](faq-1/faq.md)
 * [FAQ Smart Prototyping Kits](faq-1/faq-smart-prototyping-kits.md)
 * [FAQ Mechanical](faq-1/faq-mechanical.md)
 * [FAQ Software](faq-1/faq-software.md)
+* [Helpful Content](faq-1/community-links.md)
 
 ## Mechanical
 
@@ -43,7 +44,6 @@
 * [\#ProjectNorthStar On Twitter](https://twitter.com/search?q=%23ProjectNorthStar)
 * [Reddit Community](https://www.reddit.com/r/ProjectNorthStar/)
 * [Leap Motion Forums](https://forums.leapmotion.com/t/project-north-star/7071)
-* [Helpful Content](community-links/community-links.md)
 
 ## Leap Motion Blogs <a id="blogs"></a>
 

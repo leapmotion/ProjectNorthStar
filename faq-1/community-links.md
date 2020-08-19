@@ -4,7 +4,13 @@ description: 'Pulled from the #helpful-content channel in the North Star Discord
 
 # Helpful Content
 
-## **Polaris AR Kits!**
+## Join The Discord!
+
+{% embed url="https://discord.gg/9TtZhb4" %}
+
+Joining the \#ProjectNorthStar discord server is the **best** way to get help with any troubles you run into! It's also a fun and friendly community, come hang out!
+
+## **CombineReality Kits!**
 
 You can order lenses, screens, mechanical bits, ready to build kits, or prebuilt kits here!
 
