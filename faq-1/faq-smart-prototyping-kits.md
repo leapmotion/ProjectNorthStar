@@ -1,3 +1,10 @@
+---
+description: >-
+  This page is intended to be specifically about the purchasable kits, there
+  will be some overlap with general FAQ. Check the sidebar on the right to jump
+  to the correct question
+---
+
 # FAQ Smart Prototyping Kits
 
 {% hint style="success" %}
