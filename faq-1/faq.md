@@ -28,7 +28,7 @@ While most of the design is 3d printable, there are components, like the screens
 
 ### What 3d printer should I get?
 
-Most components fit within a print volume of 130mm\*130mm\*130mm, however the two largest prints will need a print volume of 250mm\*200mm\*120mm. It is possible for the parts to be split, using [MeshMaker ](https://www.youtube.com/watch?v=afLolx2OEKE&feature=youtu.be&t=93)to allow them to fit on smaller print volumes.   
+Most components fit within a print volume of 130mm\*130mm\*130mm, however the two largest prints will need a print volume of 220mm\*200mm\*120mm. It is possible for the parts to be split, using [MeshMaker ](https://www.youtube.com/watch?v=afLolx2OEKE&feature=youtu.be&t=93)to allow them to fit on smaller print volumes.   
   
 The ender series \(220 x 220 x 250mm\) by creality seems to be a fan favorite among the discord if you're just getting started with 3d printing. If you want something that has a larger print area, check out the creality pro \(300 x 300 x 400mm\). If you want other recommendations, feel free to ask on the discord.
 
