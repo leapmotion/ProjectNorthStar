@@ -12,6 +12,7 @@
 
 ## Mechanical
 
+* [Combine Reality Deck X](mechanical/combine-reality-deck-x.md)
 * [Northstar Release 3](mechanical/release-3/README.md)
   * [Headset Bill of Materials](mechanical/release-3/headset-bom.md)
   * [Release 3 Assembly Guide](mechanical/release-3/headset-assembly.md)
