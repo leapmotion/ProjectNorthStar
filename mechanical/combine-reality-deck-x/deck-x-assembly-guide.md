@@ -82,7 +82,7 @@ You will need the following
 
 1. **Optics Bracket Assembly**
 2. **Power Filter Board**
-3. **M2.5x0.45 5mm Button Head Socket Screw \(1\)**
+3. **M2.5x0.45 5mm Button Head Phillips Screw \(1\)**
 
 {% tabs %}
 {% tab title="2-1" %}
