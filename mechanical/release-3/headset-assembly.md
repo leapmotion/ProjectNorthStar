@@ -62,6 +62,12 @@ A video guide from [Tasuku Takahashi](https://twitter.com/supertask_jp) is avail
 
 ![Left Brake Assembly](../../.gitbook/assets/assm-drawing-north-star-release-3-12.png)
 
+{% hint style="warning" %}
+Item No 6 (#230-004) of the Left Brake Assembly was removed and thus no longer packaged 
+due to undesired cable catching. The new method of managing cables is by attaching a 
+zip tie to the end cap.
+{% endhint %}
+
 ## 900-005
 
 ![3x10x165mm 6061 Aluminium Bar Slide](../../.gitbook/assets/assm-drawing-north-star-release-3-13.png)
