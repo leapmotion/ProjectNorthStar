@@ -4,15 +4,13 @@ This guide is also available as a PDF:
 
 {% file src="../../.gitbook/assets/assm-drawing-north-star-release-3 \(2\).pdf" %}
 
+A video guide from [Tasuku Takahashi](https://twitter.com/supertask_jp) is available below, it's best to supplement the written documentation with this video. If you run into problems or have questions, feel free to reach out on the [discord](https://discord.gg/9TtZhb4).
 
+{% embed url="https://www.youtube.com/watch?v=J-OowCNcR8A" caption="" %}
 
-A video guide from [Tasuku Takahashi](https://twitter.com/supertask_jp) is available below, it's best to supplement the written documentation with this video. If you run into problems or have questions, feel free to reach out on the [discord](https://discord.gg/9TtZhb4). 
-
-{% embed url="https://www.youtube.com/watch?v=J-OowCNcR8A" %}
-
-
-
-
+{% hint style="info" %}
+Item No 6 \(**\#230-004**\) of the Left Brake Assembly was removed and thus no longer packaged due to undesired cable catching. The new method of managing cables is by attaching a zip tie to the end cap.
+{% endhint %}
 
 ## 000-000
 
@@ -63,9 +61,7 @@ A video guide from [Tasuku Takahashi](https://twitter.com/supertask_jp) is avail
 ![Left Brake Assembly](../../.gitbook/assets/assm-drawing-north-star-release-3-12.png)
 
 {% hint style="warning" %}
-Item No 6 (#230-004) of the Left Brake Assembly was removed and thus no longer packaged 
-due to undesired cable catching. The new method of managing cables is by attaching a 
-zip tie to the end cap.
+Item No 6 \(\#230-004\) of the Left Brake Assembly was removed and thus no longer packaged due to undesired cable catching. The new method of managing cables is by attaching a zip tie to the end cap.
 {% endhint %}
 
 ## 900-005
