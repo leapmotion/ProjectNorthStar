@@ -69,7 +69,7 @@ There are a total of four cables connecting to the board \(see picture below\):
  one for the mini display port \(for transferring data\) 
 
 {% hint style="warning" %}
-Note that the board will only work with display port connections that support 4k@60hz, hdmi -&gt; displayport adapters will not work. usb-c with displayport functionality or displayport to mini-displayport adapters work fine, as long as they support 4k@60hz.
+Note that the board will only work with display port connections that support 4k@60hz, **hdmi -&gt; displayport adapters will not work.** usb-c with displayport functionality or displayport to mini-displayport adapters work fine, as long as they support 4k@60hz.
 {% endhint %}
 
 {% hint style="warning" %}
