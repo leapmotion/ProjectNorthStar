@@ -4,11 +4,9 @@
 
 ## Getting Started! <a id="faq-1"></a>
 
+* [Helpful Content](faq-1/community-links.md)
 * [General FAQ](faq-1/faq.md)
 * [FAQ Smart Prototyping Kits](faq-1/faq-smart-prototyping-kits.md)
-* [FAQ Mechanical](faq-1/faq-mechanical.md)
-* [FAQ Software](faq-1/faq-software.md)
-* [Helpful Content](faq-1/community-links.md)
 
 ## Mechanical
 
@@ -22,15 +20,18 @@
 * [Northstar Release 1](mechanical/northstar-v1/README.md)
   * [Initial Release 3D Printing Reference](mechanical/northstar-v1/initial-release-3d-printing-reference.md)
   * [Initial Release Assembly Guide](mechanical/northstar-v1/initial-release-assembly-guide.md)
+* [Calibration Stand Assembly Guide](mechanical/calibration-stand-assembly-guide.md)
+* [FAQ Mechanical](mechanical/faq-mechanical.md)
 
 ## Software
 
 * [Software](software/software.md)
 * [SteamVR](software/steamvr.md)
+* [FAQ Software](software/faq-software.md)
 
 ## Calibration
 
-* [Calibration Setup](calibration/calibration-v2/README.md)
+* [Getting Started with Calibration](calibration/calibration-v2/README.md)
   * [Calibration V1](calibration/calibration-v2/calibration-guide.md)
   * [Calibration V2](calibration/calibration-v2/calibration-v2-1.md)
   * [Calibration Stand Bill of Materials](calibration/calibration-v2/calibration-stand-bom.md)
