@@ -46,7 +46,7 @@ If you have a Vive already, you can use a vive tracker for 6dof tracking, howeve
 
 ### What is Calibration?
 
-Due to the nature of 3D printing and assembly each headset is going to be slightly unique and will require going through [a calibration process](../calibration/calibration-v2/) to display the image correctly.   
+Due to the nature of 3D printing and assembly each headset is going to be slightly unique and will require going through [a calibration process](../calibration/getting-started/) to display the image correctly.   
   
 There are currently two ways to calibrate a northstar headset. The first method uses two stereo cameras to calculate the 3D position of the displays and reflectors. The second method uses a single stereo camera, and is currently setup to be able to use the intel t265 camera, which we currently recommend for 6DOF. This allows northstar developers to reuse the t265 rather than purchase two seperate stereo cameras. 
 

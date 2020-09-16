@@ -31,10 +31,10 @@
 
 ## Calibration
 
-* [Getting Started with Calibration](calibration/calibration-v2/README.md)
-  * [3D Optical Calibration](calibration/calibration-v2/calibration-guide.md)
-  * [2D Optical Calibration](calibration/calibration-v2/calibration-v2-1.md)
-  * [Calibration Stand Bill of Materials](calibration/calibration-v2/calibration-stand-bom.md)
+* [Getting Started with Calibration](calibration/getting-started/README.md)
+  * [3D Optical Calibration](calibration/getting-started/3d-calibration.md)
+  * [2D Optical Calibration](calibration/getting-started/2d-calibration.md)
+  * [Calibration Stand Bill of Materials](calibration/getting-started/calibration-stand-bom.md)
 
 ## Electronics
 

@@ -54,7 +54,7 @@ Version One and Version Two of the calibration setup share the same 3D printable
 
 
 
-## [3D Optical Calibration](calibration-guide.md)
+## [3D Optical Calibration](3d-calibration.md)
 
-## [2D Optical Calibration](calibration-v2-1.md)
+## [2D Optical Calibration](2d-calibration.md)
 
