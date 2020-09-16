@@ -4,19 +4,23 @@ description: 'Pulled from the #helpful-content channel in the North Star Discord
 
 # Helpful Content
 
-## Join The Discord!
+## Helpful Content
+
+This page has a handful of links that will help you learn more about \#ProjectNorthstar and connect with the community, we highly recommend checking out the discord and hanging out with some of the awesome people there! It's the quickest way to get your questions answered. 
+
+### Join The Discord!
 
 {% embed url="https://discord.gg/9TtZhb4" %}
 
-Joining the \#ProjectNorthStar discord server is the **best** way to get help with any troubles you run into! It's also a fun and friendly community, come hang out!
+Joining the \#ProjectNorthstar discord server is the **best** way to get help with any troubles you run into! It's also a fun and friendly community, come hang out!
 
-## **CombineReality Kits!**
+### **CombineReality Kits!**
 
 You can order lenses, screens, mechanical bits, ready to build kits, or prebuilt kits here!
 
 {% embed url="https://www.smart-prototyping.com/AR-VR-MR-XR" %}
 
-## **Official Leap Motion Links and Guides**
+### **Official Leap Motion Links and Guides**
 
 GitHub Build Guide
 

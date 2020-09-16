@@ -4,7 +4,7 @@ description: >-
   with a single stereo camera
 ---
 
-# Calibration V2
+# 2D Optical Calibration
 
 {% hint style="info" %}
 These Modules require python 3 in order to work

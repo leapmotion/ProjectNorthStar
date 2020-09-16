@@ -2,7 +2,7 @@
 description: The following instructions can be used for version 1 of the calibration rig
 ---
 
-# Calibration V1
+# 3D Optical Calibration
 
 ## 1. Build the Calibration Rig
 
