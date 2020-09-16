@@ -6,7 +6,7 @@ description: >-
 
 # Northstar Release 3
 
-Mechanical Release 3 bundles together all the lessons we learned into a new set of 3D files and drawings. Its principle objective is to be more inviting, less hacked together, and more reliable. The design includes more adjustments and mechanisms for a larger variety of heads and facial geometries. Overall, the assembly is lighter, more balanced, and stiffer.
+Mechanical Release 3 bundles together all the lessons we learned into a new set of 3D files and drawings. Its main objective is to be more inviting, less hacked together, and more reliable. The design includes more adjustments and mechanisms for a larger variety of heads and facial geometries. Overall, the assembly is lighter, more balanced, and stiffer.The parts were designed for an FDM style 3D printer
 
 {% hint style="danger" %}
 This is a work in progress. This is not a finished guide, nor end-user friendly.  
@@ -33,8 +33,7 @@ Functionally, the two optics assemblies are the same. Release 3 is closer to the
 
 ## Notes on 3D printed parts
 
-* The parts were designed for a FDM style 3D printer
-* All development was done using [eSun's PLA Pro / PLA+](https://www.amazon.com/eSUN-1-75mm-Printer-Filament-Colors/dp/B07K642RQP) filament. We've found it to be strong, easy to print, and have great surface finish.
+* * All development was done using [eSun's PLA Pro / PLA+](https://www.amazon.com/eSUN-1-75mm-Printer-Filament-Colors/dp/B07K642RQP) filament. We've found it to be strong, easy to print, and have great surface finish.
 * A build plate of approximately 250x200mm is recommended for the largest parts
 * Parts may need to be rotated to align with print bed.
 * Some parts have optimized versions \(labeled “FDM OPTIMIZED”\) with extra plastic tabs that need removing. These versions aid in minimizing warping and gripping the print surface.

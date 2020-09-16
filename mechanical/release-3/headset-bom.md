@@ -2,7 +2,7 @@
 description: 'A list of parts, and where to buy/order them from'
 ---
 
-# Headset Bill of Materials
+# Release 3 Bill of Materials
 
 You can source all your parts from kits at [https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles), if you want to source your parts from elsewhere, or want replacement parts they are linked below. 
 

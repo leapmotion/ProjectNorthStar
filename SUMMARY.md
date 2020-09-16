@@ -14,8 +14,9 @@
 
 * [Combine Reality Deck X](mechanical/combine-reality-deck-x/README.md)
   * [Deck X Assembly Guide](mechanical/combine-reality-deck-x/deck-x-assembly-guide.md)
+  * [Deck X Bill of Materials](mechanical/combine-reality-deck-x/deck-x-bill-of-materials.md)
 * [Northstar Release 3](mechanical/release-3/README.md)
-  * [Headset Bill of Materials](mechanical/release-3/headset-bom.md)
+  * [Release 3 Bill of Materials](mechanical/release-3/headset-bom.md)
   * [Release 3 Assembly Guide](mechanical/release-3/headset-assembly.md)
   * [Changelog](mechanical/release-3/changelog.md)
 * [Northstar Release 1](mechanical/northstar-v1/README.md)

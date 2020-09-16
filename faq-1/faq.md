@@ -18,8 +18,6 @@ Project North Star is an open source augmented reality headset meant as a develo
 
 Good Question! There are multiple variations of the reference design from leap motion. The reference design can be found on [this page ](../mechanical/release-3/)
 
-{% embed url="https://github.com/leapmotion/ProjectNorthStar" caption="Link to the main GitHub repo" %}
-
 ### Where can I get the lenses and electronic components?
 
 While most of the design is 3d printable, there are components, like the screens, driver board, combiners, and leap motion controller that you will have to order. You can order your parts, upgrade kits, or fully assembled headsets here: 
@@ -30,7 +28,7 @@ While most of the design is 3d printable, there are components, like the screens
 
 Most components fit within a print volume of 130mm\*130mm\*130mm, however the two largest prints will need a print volume of 220mm\*200mm\*120mm. It is possible for the parts to be split, using [MeshMaker ](https://www.youtube.com/watch?v=afLolx2OEKE&feature=youtu.be&t=93)to allow them to fit on smaller print volumes.   
   
-The ender series \(220 x 220 x 250mm\) by creality seems to be a fan favorite among the discord if you're just getting started with 3d printing. If you want something that has a larger print area, check out the creality pro \(300 x 300 x 400mm\). If you want other recommendations, feel free to ask on the discord.
+The ender series \(220 x 220 x 250mm\) by Creality seems to be a fan favorite among the discord if you're just getting started with 3d printing. If you want something that has a larger print area, check out the creality pro \(300 x 300 x 400mm\). If you want other recommendations, feel free to ask on the discord.
 
 {% embed url="https://www.creality3d.shop/collections/3d-printer/products/creality-ender-3-3d-printer-economic-ender-diy-kits-with-resume-printing-function-v-slot-prusa-i3-220x220x250mm" caption="Ender3d" %}
 
