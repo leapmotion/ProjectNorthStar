@@ -30,7 +30,7 @@ The smart prototyping kits come with a full screwdriver kit, and all the screws 
 These numbers refer to the focal distance that the images appear from the user. The only difference between the two is the location of the screens relative to the combiner. The focal distances can be switched by replacing the display tray.   
   
 Typically, we recommend starting with a 25cm build since they are easier to get started with.   
-[Kit B](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles/Project-North-Star-Kit-B) ships with both 25cm and 75cm trays so you can choose which method you want when you build your headset. [Kit C](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles/Project-North-Star-Kit-C), the preassembled version requires you to choose which version you want before ordering as these headset are pre-calibrated.   
+[Kit B](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles/Project-North-Star-Kit-B) ships with both 25cm and 75cm trays so you can choose which method you want when you build your headset. [Kit C](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles/Project-North-Star-Kit-C), the preassembled version requires you to choose which version you want before ordering as these headsets are pre-calibrated.   
   
  ****25cm is sharper for items attached to your hand or right in front of your face.
 
@@ -50,11 +50,11 @@ So to conclude, whichever decision you opt for will work depending on what you p
 
 ### **If I already have a calibration JSON file for my headset, can I not simply reuse that in the event that I reprint the display trays / change them from 25 cm to 75 cm or vice versa?**
 
-Just switching or reusing past calibration JSONs isn’t enough. Simply knocking a set of combiners in an optics bracket into a different position by a fraction of a mm is enough to invalidate the calibration. The same goes for repositioning, or removing and reinserting the display in the same tray. Displays and combiners cannot move relative to each other without needing recalibration. There’s also a lot of imprecision in FDM printing and hand assembly. The positioning of the headset inserts in the back of the trays is, alone, imprecise enough that most headsets are imperfect by nature for the level of quality that is required for this project if you want the best experience that North Star is capable of producing.
+Just switching or reusing past calibration JSON files isn’t enough. Simply knocking a set of combiners in an optics bracket into a different position by a fraction of a millimeter is enough to invalidate the calibration. The same goes for repositioning, or removing and reinserting the display in the same tray. Displays and combiners cannot move relative to each other without needing recalibration. There’s also a lot of imprecision in FDM printing and hand assembly. The positioning of the headset inserts in the back of the trays is, alone, imprecise enough that most headsets are imperfect by nature for the level of quality that is required for this project if you want the best experience that North Star is capable of producing.
 
 ### **My displays have arrived but the connector ribbon is strongly attached to the back. Do I peel it off before inserting it into the screen holder? What about the small circuit boards attached to it? Do they come off with the ribbon cable or do they stay attached to the ribbon cable?**
 
-Currently you have to peel the cable \*_**carefully and patiently**_\* from the back of the display.   
+Currently, you have to peel the cable \*_**carefully and patiently**_\* from the back of the display.   
 A detailed and descriptive video is available here, elaborating on how to carefully handle this item here: [https://youtu.be/YsGSf7lwdCs](https://youtu.be/YsGSf7lwdCs)
 
 ### How do I insert the displays into the display tray and attach the unit to the headset?
