@@ -30,7 +30,7 @@ Unlike the 3D Optical Calibration, 2D Optical Calibration only calculates the 2D
 
 Hand position is dependent on the position of the leap motion sensor, make sure your Leap motion sensor has the bottom metal bezel hidden behind the 3d printed housing. You can use this application to set up your hand position: [https://github.com/fmaurer/NorthStarToolbox](https://github.com/fmaurer/NorthStarToolbox)
 
-## Calibration V1 and V2 Comparison
+## 3D and 2D Calibration Feature Comparison
 
 | **Features** | **3D Optical Calibration** | **2D Optical Calibration** |
 | :--- | :--- | :--- |
