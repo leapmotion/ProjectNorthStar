@@ -7,7 +7,7 @@ description: >-
 # 2D Optical Calibration
 
 {% hint style="info" %}
-These Modules require python 3 in order to work
+These Modules require python 3.7 in order to work
 {% endhint %}
 
 ## Setup
