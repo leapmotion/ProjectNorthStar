@@ -13,7 +13,7 @@ These Modules require python 3.7 in order to work
 ## Setup
 
 1. Download the **Feat-Gen-2-software** branch of the following repo: [https://github.com/BryanChrisBrown/ProjectNorthStar/tree/feat-gen-2-software](https://github.com/BryanChrisBrown/ProjectNorthStar/tree/feat-gen-2-software)
-2. Setup python with the following dependencies:  1\) Pyrealsense2 2\) OpenCV2 3\) Numpy
+2. Setup python with the following dependencies:  1\) Pyrealsense2 2\) opencv-contrib-python 3\) numpy
 3. Print the calibration stand and [intel realsense mount](https://drive.google.com/file/d/1emnKXaevUyY_jEExWeCeesK_AUDbetcu/view?usp=sharing), the mount is friction based and requires no screws outside of the two m5 screws to mount the t265 itself.
 
 ## Calibrating your headset
