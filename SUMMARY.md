@@ -4,8 +4,8 @@
 
 ## Getting Started! <a id="faq-1"></a>
 
-* [Helpful Content](faq-1/community-links.md)
 * [General FAQ](faq-1/faq.md)
+* [Helpful Content](faq-1/community-links.md)
 * [FAQ Smart Prototyping Kits](faq-1/faq-smart-prototyping-kits.md)
 
 ## Mechanical
