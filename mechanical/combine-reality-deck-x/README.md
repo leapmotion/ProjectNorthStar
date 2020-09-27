@@ -10,5 +10,9 @@ The Combine Reality Deck X is a variant of Release 3 designed by Noah Zerkin's t
 
 {% page-ref page="deck-x-assembly-guide.md" %}
 
+{% page-ref page="deck-x-bill-of-materials.md" %}
+
+
+
 
 

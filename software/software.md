@@ -19,7 +19,7 @@ These assets are dependent on [Release 4.4.0](https://github.com/leapmotion/Unit
 * Make sure your North Star AR Headset is plugged in
 * In windows display settings make sure the headset is showing at the correct resolution \(2880x1600\) and is to the right of the main monitor.
 * Create a new Project in Unity 2018.4 LTS
-* Import "LeapAR.unitypackage"
+* Import "LeapAR.unitypackage" from the [Github Repo](https://github.com/leapmotion/ProjectNorthStar/blob/master/Software/LeapAR.unitypackage)
 * Navigate to `LeapMotion/North Star/Scenes/NorthStar.unity`
 * Click on the `ARCameraRig` game object and look for the `WindowOffsetManager` component
 * Here, you can adjust the X and Y Shift that should be applied to the Unity Game View for it to appear on the North Star's display
