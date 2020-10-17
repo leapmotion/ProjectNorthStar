@@ -42,7 +42,7 @@ Hand position is dependent on the position of the leap motion sensor, make sure 
 | Camera Calibration | Checkerboard Process | Built In or Checkerboard |
 | Unity | Yes | Yes |
 | SteamVR | Yes | In Progress |
-|  |  |  |
+| Monado/Linux | Yes | Yes \(Beta\) |
 
 ## Calibration Stand Assembly
 
