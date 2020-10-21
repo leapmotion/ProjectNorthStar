@@ -716,10 +716,14 @@ Starting to look impressive right? Only a few more steps now, Your headset shoul
 
 {% tabs %}
 {% tab title="17-1" %}
+Locate your usb A to usb C cable, you'll be using the usb C connector to plug into the headset.
+
 ![](../../.gitbook/assets/133-step19.jpg)
 {% endtab %}
 
 {% tab title="17-2" %}
+Plug the cable in as shown below, note that the cable will have to loop around in order to be mounted properly, this is due to space constraints inside the lid of the headset.
+
 ![](../../.gitbook/assets/134.jpg)
 {% endtab %}
 {% endtabs %}
@@ -728,32 +732,46 @@ Starting to look impressive right? Only a few more steps now, Your headset shoul
 
 {% tabs %}
 {% tab title="18-1" %}
+Locate your Lid, D-Pad, and two round buttons, for this step we'll be installing the buttons and button control board. 
+
 ![](../../.gitbook/assets/136-step20.jpg)
 {% endtab %}
 
 {% tab title="18-2" %}
+Take note of the alignment pin, this will help you position the D-Pad in the correct orientation, as well as the circuit board for the buttons.
+
 ![](../../.gitbook/assets/137.jpg)
 {% endtab %}
 
 {% tab title="18-3" %}
+The button with the small round circle goes in the top slot, and the larger round circle goes in the bottom slot, each button is unique, and switching them around will result in buttons that are difficult to push, so make sure to put them in properly. 
+
 ![](../../.gitbook/assets/138.jpg)
 {% endtab %}
 
 {% tab title="18-4" %}
+After you've got your buttons installed, go ahead and locate your button board, four m.2 button head screws, and the two cables shown below.
+
 ![](../../.gitbook/assets/139-step21.jpg)
 {% endtab %}
 
 {% tab title="18-5" %}
+Before installing the board, you'll need to plug the cables in. This is similar to how we plugged the fan cable in earlier. 
+
 ![](../../.gitbook/assets/140.jpg)
 {% endtab %}
 
 {% tab title="18-6" %}
+The metal pin on the bottom of the board is for power delivery, make sure the jumper is connected properly, it should slide right onto the connector.
+
 ![](../../.gitbook/assets/141.jpg)
 
 ![](../../.gitbook/assets/142.jpg)
 {% endtab %}
 
 {% tab title="18.7" %}
+After you've got your cables connected screw the button board into the headset as shown below, take not to align it with properly, the two pins are there to help with that. 
+
 ![](../../.gitbook/assets/144.jpg)
 {% endtab %}
 {% endtabs %}
@@ -762,32 +780,46 @@ Starting to look impressive right? Only a few more steps now, Your headset shoul
 
 {% tabs %}
 {% tab title="19-1" %}
+Attaching the lid is pretty simple, though there are a lot of screws to keep track of. You'll need four m.2 screws to attach to the heat threaded inserts, and two self threading screws.
+
 ![](../../.gitbook/assets/145-step22.jpg)
 {% endtab %}
 
 {% tab title="19-2" %}
+before screwing the lid on, you'll need to connect the button board cables, first up is the power jumper, the connection type is the same as it was on the button board. simply slide the jumper onto the metal rod on the integrator board.
+
 ![](../../.gitbook/assets/146.jpg)
 {% endtab %}
 
 {% tab title="19-3" %}
+next up attach the input cable to the integrator board as shown.
+
 ![](../../.gitbook/assets/148.jpg)
 {% endtab %}
 
 {% tab title="19-4" %}
+Once both cables are connected your headset should look like this.
+
 ![](../../.gitbook/assets/149.jpg)
 {% endtab %}
 
 {% tab title="19-5" %}
+slide the lid over the t261 and then push inwards lightly so that the circular cutouts go around the camera lenses. It's a good idea to keep your lens caps on until after the lid is secure.
+
 ![](../../.gitbook/assets/150.jpg)
 {% endtab %}
 
 {% tab title="19-6" %}
+Once you've got the lid in position, maneuver the display and power cables so that they slide into the cutout on the lid. These can take a bit of pressure, but try to make sure not to wiggle the display cable too much, a lose connection to the driver board could mean your displays won't function properly. This can be resolved by re-seating the display cable, but we want to avoid having to do that.
+
 ![](../../.gitbook/assets/153.jpg)
 
 ![](../../.gitbook/assets/154.jpg)
 {% endtab %}
 
 {% tab title="19-7" %}
+Yay more screws! Locate the screw holes shown below and apply the proper screws to each, if the hole has a heat threaded insert, use a flat m.2 screw, if it does not, use the self threading screws that we identified earlier.
+
 ![](../../.gitbook/assets/157.jpg)
 {% endtab %}
 
@@ -802,20 +834,28 @@ Congrats! We're almost there! Just two parts left!!
 
 {% tabs %}
 {% tab title="20-1" %}
+Don't skip this step! Padding is important, and 3D prints are not comfortable when applied directly to your forehead.
+
 ![](../../.gitbook/assets/159-step23.jpg)
 {% endtab %}
 
 {% tab title="20-2" %}
+This step is pretty self explanatory, just like a sticker, remove the film from the adhesive side of the velcro and apply as shown.
+
 ![](../../.gitbook/assets/160.jpg)
 {% endtab %}
 
 {% tab title="20-3" %}
+Remove the backing from the 3M foam strip and apply to the forehead rest. 
+
 ![](../../.gitbook/assets/162.jpg)
 
 ![](../../.gitbook/assets/164.jpg)
 {% endtab %}
 
 {% tab title="20-4" %}
+Once the padding is applied, it should look like this, use two thread forming screws to attach the forehead rest to the headset. 
+
 ![](../../.gitbook/assets/166.jpg)
 
 ![](../../.gitbook/assets/167.jpg)
@@ -826,18 +866,26 @@ Congrats! We're almost there! Just two parts left!!
 
 {% tabs %}
 {% tab title="21-1" %}
+Installing the combiners is one of the easiest steps, no screws, no glue, just form fitting polycarbonate!
+
 ![](../../.gitbook/assets/169-step25.jpg)
 {% endtab %}
 
 {% tab title="21-2" %}
+Line the combiner up so that the tabs on the top of the combiner are in sync with the tab cutouts in the 3D print.
+
 ![](../../.gitbook/assets/170.jpg)
 {% endtab %}
 
 {% tab title="21-3" %}
+once you've done that you can apply a small amount of force to the optics bracket and the combiners to fit the side tabs in. As always, don't go crazy with pressure here, they'll snap in with little resistance. 
+
 ![](../../.gitbook/assets/171.jpg)
 {% endtab %}
 
 {% tab title="21-4" %}
+Once you've got the combiner in, it should look like this, note the lack of gaps shown on the edges. 
+
 ![](../../.gitbook/assets/172.jpg)
 {% endtab %}
 {% endtabs %}
@@ -852,13 +900,15 @@ Now that the Combiners are in place it's time to lock in the optics bracket. Get
 {% endtab %}
 
 {% tab title="22-2" %}
+Once you've got the screws in your headset should like the photos below, note that the display trays aren't completely flush with the headset. 
+
 ![](../../.gitbook/assets/175.jpg)
 
 ![](../../.gitbook/assets/174.jpg)
 {% endtab %}
 
 {% tab title="22-3" %}
-All Done! Congrats on making it through the build process!
+All Done! Congrats on making it through the build process! To get started with software, check out the [Software](../../software/software.md) page, and the \#First-Steps channel on the discord!
 
 ![](../../.gitbook/assets/176.jpg)
 {% endtab %}
