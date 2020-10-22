@@ -25,7 +25,7 @@
 
 ## Software
 
-* [Software](software/software.md)
+* [Unity](software/software.md)
 * [SteamVR](software/steamvr.md)
 * [FAQ Software](software/faq-software.md)
 
@@ -33,7 +33,8 @@
 
 * [Getting Started with Calibration](calibration/getting-started/README.md)
   * [Calibration Stand Bill of Materials](calibration/getting-started/calibration-stand-bom.md)
-* [3D Optical Calibration](calibration/3d-calibration.md)
+* [3D Optical Calibration](calibration/3d-calibration/README.md)
+  * [Bending Reality: North Star’s Calibration System](calibration/3d-calibration/bending-reality-north-stars-calibration-system.md)
 * [2D Optical Calibration](calibration/2d-calibration.md)
 
 ## Electronics
@@ -58,5 +59,4 @@
 * [Project North Star: Mechanical Update 1](blogs/project-north-star-mechanical-update-1.md)
 * [Project North Star: Mechanical and Calibration Update 3.1](blogs/project-north-star-mechanical-and-calibration-update-3.1.md)
 * [Project North Star: Mechanical Update 3](blogs/project-north-star-mechanical-update-3.md)
-* [Bending Reality: North Star’s Calibration System](blogs/bending-reality-north-stars-calibration-system.md)
 
