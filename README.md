@@ -4,7 +4,7 @@ description: The open-source files comprising Leap Motion's Project North Star A
 
 # Project North Star
 
-## Welcome to the [community built documentation](https://project-north-star.gitbook.io/project-north-star/) for Project North Star!
+## Welcome to the [Community Built Documentation](https://project-north-star.gitbook.io/project-north-star/) for Project North Star!
 
 > _We envision a future where the physical and virtual worlds blends together into a single magical experience. At the heart of this experience is hand tracking, which unlocks interactions uniquely suited to virtual and augmented reality.   
 >   
