@@ -22,7 +22,7 @@ There's also a large community of Northstar developers and builders on Discord, 
 
 ## Variations
 
-So! We've got a few different builds, as you've probably guessed. To clear up any ambiguity from the outset, Release 1 was an internal release. Release 2, the first public open-source release \(sometimes referred to as the initial release\), was in 2018. Release 3 came in 2019 and improved on the mechanical design in many ways. As shown from the cable below, the newly released Deck X is probably what new users will want to start with. It uses an integrated circuit board to reduce cables from the headset to just two, \(usb C /mini DP\), by combining usb devices into a custom built usb hub + arduino module. 
+So! We've got a few different builds, as you've probably guessed. To clear up any ambiguity from the outset, Release 1 was an internal release. Release 2, the first public open-source release \(sometimes referred to as the initial release\), was in 2018. Release 3 came in 2019 and improved on the mechanical design in many ways. As shown from the cable below, the newly released Deck X is probably what new users will want to start with. It uses an integrated circuit board to reduce cables from the headset to just two, \(USB 3 /mini DP\), by combining usb devices into a custom built usb hub + arduino module. 
 
 | Name | Status | Date | Developer | Spatial Tracking | Headgear | Bracket |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
