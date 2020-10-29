@@ -10,6 +10,10 @@ description: >-
 These Modules require python 3.7 in order to work
 {% endhint %}
 
+{% embed url="https://www.youtube.com/watch?v=0JzzaQhaRtU" %}
+
+Above: A video walking you through the 2D calibration process for northstar.
+
 ## Setup
 
 1. Download the **Feat-Gen-2-software** branch of the following repo: [https://github.com/BryanChrisBrown/ProjectNorthStar/tree/feat-gen-2-software](https://github.com/BryanChrisBrown/ProjectNorthStar/tree/feat-gen-2-software)
