@@ -24,7 +24,7 @@ This [steamVR driver](https://github.com/fuag15/project_northstar_openvr_driver)
 
 ## Prerequisites
 
-Versions of vendored libraries not included, here is where to get them:
+Versions of vendor libraries not included, here is where to get them:
 
 You will need to install the leap motion multi-device drivers in order for this driver to work.  
 [- LeapDeveloperKit 4.0.0+52238](https://github.com/leapmotion/UnityModules/blob/feat-multi-device/Multidevice%20Service/LeapDeveloperKit_4.0.0%2B52238_win.zip)
@@ -33,6 +33,18 @@ If using the structure core you will need the CrossPlatform SDK 0.7.1 and the Pe
 [https://structure.io/](https://structure.io)
 
 If using the intel realsense t265, you should install the [Intel® RealSense™ SDK 2.0](https://www.intelrealsense.com/sdk-2/)
+
+## Using prebuilt binaries
+
+We have a prebuilt version of the driver available [here](https://github.com/fuag15/project_northstar_openvr_driver/releases). You can place it in the following directory, or use vrpathreg as shown below. 
+
+```text
+C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers
+```
+
+```text
+vrpathreg adddriver <full_path_to>/resources/northstar
+```
 
 ## Generating Project Files
 
