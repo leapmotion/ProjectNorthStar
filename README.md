@@ -26,8 +26,8 @@ So! We've got a few different builds, as you've probably guessed. To clear up an
 
 | Name | Status | Date | Developer | Spatial Tracking | Headgear | Bracket |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Deck X](mechanical/combine-reality-deck-x/) | Stable | 21 AUG 2020 | CombineReality | Realsense T261 | 3.1 | 3.2 |
-| Release 3-2 | Dev | TBD | LeapMotion | Realsense T265 | 3.2 | 3.2 |
+| [Deck X](mechanical/combine-reality-deck-x/) | Active | 21 AUG 2020 | CombineReality | Realsense T261 | 3.1 | 3.2 |
+| Release 3-2 | InDev | TBD | LeapMotion | Realsense T265 | 3.2 | 3.2 |
 | [Release 3-1](mechanical/release-3/) | Stable | 3 APR 2019 | LeapMotion | Realsense T265 | 3.1 | 3.1 |
 | [Release 3](mechanical/release-3/) | Stable | 23 JAN 2019 | LeapMotion | Realsense T265 | 3 | 3 |
 | Release 2 | Outdated | 6 JUN 2018 | LeapMotion | N/A | 1 | 1 |
