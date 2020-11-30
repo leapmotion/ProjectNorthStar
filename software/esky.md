@@ -19,11 +19,11 @@ description: >-
 In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../calibration/2d-calibration.md) file. 
 {% endhint %}
 
-* [ ] Copy the contents of your _**NorthStarCalibration.json**_ file into Esky's _**DisplayCalibration.json**_ file
-* [ ] Make sure your northstar monitor is located the right most of your monitor setup, and that it is **not** flipped via windows display manager. 
-* [ ] Adjust the _**focusDistance**_ parameter in **DisplayCalibration.json** so that it matches your headset's configuration. The number refers to the focal distance trays you have installed. 
-* [ ] Save the file and then open the _**DisplaySettings.json**_ file, edit the DisplayXLoc and DisplayYLoc to reflect the position of your northstar display relative to your main monitors. For example, if your northstar display is to the right of your main monitor, you'll want to input the monitor's pixel width, for a 4k monitor this would be 3840.
-* [ ] Save the DisplaySettings.json file, then open the unity project and click play. You should see a window open on your northstar headset and be able to interact with the MRTK scene provided. 
+* Copy the contents of your _**NorthStarCalibration.json**_ file into Esky's _**DisplayCalibration.json**_ file 
+* Make sure your northstar monitor is located the far right of your monitor setup, and that it is **not** flipped via windows display manager.  
+* Adjust the _**focusDistance**_ parameter in **DisplayCalibration.json** so that it matches your headset's configuration. The number refers to the focal distance trays you have installed.  
+* Save the file and then open the _**DisplaySettings.json**_ file, edit the DisplayXLoc and DisplayYLoc to reflect the position of your northstar display relative to your main monitors. For example, if your northstar display is to the right of your main monitor, you'll want to input the monitor's pixel width, for a 4k monitor this would be 3840. 
+* Save the DisplaySettings.json file, then open the unity project and click play. You should see a window open on your northstar headset and be able to interact with the MRTK scene provided. 
 
 #### Below is an Example of the _**DisplayCalibration.Json**_ File.
 
