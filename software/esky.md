@@ -21,7 +21,7 @@ In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibrati
 
 * Copy the contents of your _**NorthStarCalibration.json**_ file into Esky's _**DisplayCalibration.json**_ file 
 * Make sure Northstar Display is **not** flipped via windows display manager, additionally it can be helpful to have your Northstar Display setup to the far right of your monitor setup, though if necessary it can be placed anywhere, you'll just need to take note of the position for later.  
-* Adjust the _**focusDistance**_ parameter in **DisplayCalibration.json** so that it matches your headset's configuration. The number refers to the focal distance trays you have installed.  
+* Adjust the _**focusDistance**_ parameter in _**DisplayCalibration.json**_ ****so that it matches your headset's configuration. The number refers to the focal distance trays you have installed.  
 * Save the file and then open the _**DisplaySettings.json**_ file, edit the DisplayXLoc and DisplayYLoc to reflect the position of your northstar display relative to your main monitors. For example, if your northstar display is to the right of your main monitor, you'll want to input the monitor's pixel width, for a 4k monitor this would be 3840. 
 * Save the DisplaySettings.json file, then open the unity project and click play. You should see a window open on your northstar headset and be able to interact with the MRTK scene provided. 
 
