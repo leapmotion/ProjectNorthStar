@@ -26,7 +26,7 @@ While most of the design is 3d printable, there are components, like the screens
 
 ### What are the Minimum System Requirements?
 
-The minimum system requirements for Northstar can vary based on the type of application you want to run. Your system will need a display port connection that can output 4k@60hz. 
+The minimum system requirements for Northstar can vary based on the type of application you want to run. _**Your system will need a display port connection that can output 4k@60hz.**_ 
 
 | Minimum Requirements | Recommended Requirements |
 | :--- | :--- |
