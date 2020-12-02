@@ -24,6 +24,16 @@ While most of the design is 3d printable, there are components, like the screens
 
 {% embed url="https://www.smart-prototyping.com/AR-VR-MR-XR/Project-North-Star-Lens" %}
 
+### What are the Minimum System Requirements?
+
+The minimum system requirements for Northstar can vary based on the type of application you want to run. Your system will need a display port connection that can output 4k@60hz. 
+
+| Minimum Requirements | Recommended Requirements |
+| :--- | :--- |
+| AMD Ryzen Quad Core or Equivalent | AMD Ryzen 6 or 8 Core Processor |
+| 8GB Ram | 16GB Ram |
+| Vega 8 GPU or MX150 | Nvidia 1060 6GB or higher |
+
 ### What 3d printer should I get?
 
 Most components fit within a print volume of 130mm\*130mm\*130mm, however the two largest prints will need a print volume of 220mm\*200mm\*120mm. It is possible for the parts to be split, using [MeshMaker ](https://www.youtube.com/watch?v=afLolx2OEKE&feature=youtu.be&t=93)to allow them to fit on smaller print volumes.   
