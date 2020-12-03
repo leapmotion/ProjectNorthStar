@@ -18,6 +18,34 @@ Project North Star is an open source augmented reality headset meant as a develo
 
 Good Question! There are multiple variations of the reference design from leap motion. The reference design can be found on [this page ](../mechanical/release-3/)
 
+### How does project Northstar compare to other AR Platforms?
+
+Project Northstar uses the same displays commonly used in VR headsets to provide a high resolution and high field of view experience. 
+
+#### Hardware Comparison
+
+| Specifications | Northstar | Hololens 2 | MagicLeap | ARKit | ARCore |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Operating System** | Windows, Linux | Windows Holographic | Lumin | iOS | Android |
+| **Stand Alone** | Compute Pack\* | Headset | Compute Pack | Phone/Mobile | Phone/Mobile |
+| **FOV** | ~110x70 | ~52 Diagonal | ~40 Diagonal | N/A | N/A |
+
+#### Software Comparison
+
+| Functionality | Northstar | Hololens 2 | MagicLeap | ARKit | ARCore |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Device Tracking** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Hand Tracking** | ✅ | ✅ | ✅ | ✅ | ❌ |
+| **SteamVR** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Plane Tracking** | ❌ | ✅ | ✅ | ✅ | ✅ |
+| **Anchors** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Light Estimation** | ❌ | ❌ | ❌ | ✅ | ✅ |
+| **Environment Probes** | ❌ | ❌ |  | ✅ | ✅ |
+| **Face tracking** | ❌ | ❌ | ❌ | ✅ | ✅ |
+| **Meshing** | Zed Mini | ✅ | ✅ | lidar\* | DepthKit |
+| **2D image tracking** | Aruco | ✅ | ✅ | ✅ | ✅ |
+| **Speech Input** | ❌ | ✅ | ✅ |  |  |
+
 ### Where can I get the lenses and electronic components?
 
 While most of the design is 3d printable, there are components, like the screens, driver board, combiners, and leap motion controller that you will have to order. You can order your parts, upgrade kits, or fully assembled headsets here: 
