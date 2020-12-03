@@ -2,11 +2,11 @@
 
 * [Project North Star](README.md)
 
-## Getting Started! <a id="faq-1"></a>
+## Getting Started!
 
-* [General FAQ](faq-1/faq.md)
-* [Helpful Content](faq-1/community-links.md)
-* [FAQ Smart Prototyping Kits](faq-1/faq-smart-prototyping-kits.md)
+* [General FAQ](getting-started/faq.md)
+* [Helpful Content](getting-started/community-links.md)
+* [FAQ Smart Prototyping Kits](getting-started/faq-smart-prototyping-kits.md)
 
 ## Mechanical
 
