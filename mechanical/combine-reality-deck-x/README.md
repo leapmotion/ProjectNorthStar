@@ -9,6 +9,10 @@ description: This is the homepage for the Combine Reality Deck-X variant of Nort
 The Combine Reality Deck X is a variant of Release 3 designed by Noah Zerkin's team at smart-prototyping. It includes a new hub called "The Integrator" which includes microSD card storage, an Arduino and USB hub, an embedded Intel Realsense t261 sensor, and a control board for adjusting ergonomics like IPD and eye relief. 
 
 {% hint style="info" %}
+Deck X Kits are available through ****[**Smart Prototyping**](https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles)\*\*\*\*
+{% endhint %}
+
+{% hint style="info" %}
 \*\*\*\*[**GitHub Repository**](https://github.com/CombineReality/ProjectNorthStar)
 {% endhint %}
 
