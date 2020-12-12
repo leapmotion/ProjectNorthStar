@@ -1,11 +1,18 @@
 ---
 description: >-
-  Project Esky aims to be the software companion to allow developing with the
+  Project Esky aims to be the software companion to allow development with the
   Deck X/North Star Display system out of the box! (Utilizing the t265/1 or a
-  ZED system for 6DoF tracking) This includes a un
+  ZED system for 6DoF tracking)
 ---
 
 # Esky
+
+This includes a unity package that handles
+
+* Rendering \(with 2D and 3D ****[**Optical Calibration**](../calibration/getting-started/) files\)
+* MRTK Integration with the Leap Motion controller \(aligned with the user's view\)
+* 6DoF Head Tracking + Re-Localization events \(Save map, load map, add persistence, callbacks, etc.\)
+* Spatial mapping \(Via the ZED SDK, with future plans to generate point clouds via the t261/t265 sensor\)
 
 ## Relevant Links
 
