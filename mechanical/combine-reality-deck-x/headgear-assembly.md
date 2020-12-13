@@ -2,7 +2,7 @@
 description: This page was contributed by Guillermo Guillesanbri.
 ---
 
-# Headgear Assembly
+# Headgear Assembly Guide
 
 The Deck X headset uses the same headgear from release 3. The build process is documented below with photos.
 
