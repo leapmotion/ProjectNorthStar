@@ -30,7 +30,7 @@ To put the spring in place, you will have to turn it 180 degrees loading it, thi
 
 ![](../../.gitbook/assets/image%20%2815%29.png)
 
-First, we need to bend the forehead headgear span, to do this, it’s recommended to turn the heated bed of your 3D printer to 70 °C, which is enough to shape the part, if you don’t have access to a heated bed, don’t worry, other options are:
+First, we need to bend the forehead headgear span, to do this, it’s recommended to turn the heated bed of your 3D printer to 70 °C, which is enough to shape the part if you don’t have access to a heated print bed, don’t worry, other options are:
 
 * Using a Heat Gun.
 * Using hot water.
