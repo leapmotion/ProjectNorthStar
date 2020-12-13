@@ -20,7 +20,6 @@
 * [Northstar Release 1](mechanical/northstar-v1/README.md)
   * [Initial Release 3D Printing Reference](mechanical/northstar-v1/initial-release-3d-printing-reference.md)
   * [Initial Release Assembly Guide](mechanical/northstar-v1/initial-release-assembly-guide.md)
-* [Calibration Stand Assembly Guide](mechanical/calibration-stand-assembly-guide.md)
 * [FAQ Mechanical](mechanical/faq-mechanical.md)
 
 ## Software
@@ -37,6 +36,7 @@
 * [3D Optical Calibration](calibration/3d-calibration/README.md)
   * [Bending Reality: North Star’s Calibration System](calibration/3d-calibration/bending-reality-north-stars-calibration-system.md)
 * [2D Optical Calibration](calibration/2d-calibration.md)
+* [Calibration Stand Assembly Guide](calibration/calibration-stand-assembly-guide.md)
 
 ## Electronics
 
