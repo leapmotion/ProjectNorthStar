@@ -10,8 +10,6 @@ The Deck X headset uses the same headgear from release 3. The build process is d
 
 This page was contributed by [**Guillermo Guillesbrani.** ](https://guillesanbri.github.io/)
 
-## 230-000 and 240-000 - Left and Right Brake <a id="230-000-and-240-000---left-and-right-brake"></a>
-
 If we take a look at the first page with instructions starting from the end of the document, we will find the 230-000 instructions.
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
