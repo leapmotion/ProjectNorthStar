@@ -8,7 +8,7 @@ The Deck X headset uses the same headgear from release 3. The build process is d
 
 ### Contribution & Credits
 
-This page was contributed by [**Guillermo Guillesbrani.** ](https://guillesanbri.github.io/)
+This page was contributed by [**Guillermo Guillesanbri**](https://guillesanbri.github.io/)\*\*\*\*
 
 If we take a look at the first page with instructions starting from the end of the document, we will find the 230-000 instructions.
 
