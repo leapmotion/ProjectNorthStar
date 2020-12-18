@@ -7,7 +7,7 @@ description: >-
 # 2D Optical Calibration
 
 {% hint style="info" %}
-These Modules require python 3.7 in order to work
+These Modules require python 3.6 in order to work
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=0JzzaQhaRtU" %}
@@ -17,7 +17,7 @@ Above: A video walking you through the 2D calibration process for northstar.
 ## Setup
 
 1. Download the **Feat-Gen-2-software** branch of the following repo: [https://github.com/BryanChrisBrown/ProjectNorthStar/tree/feat-gen-2-software](https://github.com/BryanChrisBrown/ProjectNorthStar/tree/feat-gen-2-software)
-2. Setup python with the following dependencies:  1\) Pyrealsense2 2\) opencv-contrib-python 3\) numpy
+2. Setup python with the following dependencies:  `1) Pyrealsense2 2) opencv-contrib-python 3) numpy`
 3. Print the calibration stand and [intel realsense mount](https://drive.google.com/file/d/1emnKXaevUyY_jEExWeCeesK_AUDbetcu/view?usp=sharing) **m3x12mm** screws to mount the t265 itself.
 
 ## Calibrating your headset
