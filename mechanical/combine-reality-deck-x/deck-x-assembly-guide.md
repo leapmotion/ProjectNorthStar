@@ -482,6 +482,8 @@ Great Job! The headset should look like this currently! Next, we'll be installin
 
 ### Step 10- Preparing the T261 mounting bracket
 
+Newer headset kits come with a piece that does not use the heat set inserts, you can skip this step if your part t261 mount looks different from the one shown below.
+
 {% tabs %}
 {% tab title="10-1" %}
 Locate the t261/Integrator Mounting bracket, this part is printed using PETG, which has a higher thermal threshold than the previous PLA prints, as such you will need to make sure your soldering iron is at a higher temperature. 
