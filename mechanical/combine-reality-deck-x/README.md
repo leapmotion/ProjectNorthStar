@@ -18,13 +18,17 @@ Deck X Kits are available through ****[**Smart Prototyping**](https://www.smart-
 
 ## 3D Printing Variants
 
-Please note that the github repo for the CombineReality Deck X headset has three versions.   
+Please note that the Github repo for the CombineReality Deck X headset has three versions.   
 [**3.1.1**](https://github.com/CombineReality/ProjectNorthStar/tree/master/Mechanical/CombineReality_Variants/3.1.1)  
 The Prints in the 3.1.1 folder are intended for users who want to upgrade their existing 3.1 headset and also use a t265 sensor.  
 [**Deck X - with Heat Set Inserts**](https://github.com/CombineReality/ProjectNorthStar/tree/master/Mechanical/CombineReality_Variants/Deck_X)  
  The Prints in the Deck X folder are intended for most users who are building a headset using the t261 sensor.   
 [**Deck X - without Heat Set Inserts**](https://github.com/CombineReality/ProjectNorthStar/tree/master/Mechanical/CombineReality_Variants/Deck_X_Without_Threaded_Inserts)  
-There's also a version of the Deck X for users that don't want to use heat set inserts. Please note that if you only intend to adjust or rebuild the headset once or twice maximum. Taking the headset apart and putting it back together without heat set inserts will cause the mounting points to deteriorate over time. 
+There's also a version of the Deck X for users that don't want to use heat-set inserts. Please note that if you only intend to adjust or rebuild the headset once or twice maximum. Taking the headset apart and putting it back together without heat-set inserts will cause the mounting points to deteriorate over time.   
+[**Headgear**](https://github.com/CombineReality/ProjectNorthStar/blob/master/Mechanical/3D%20Prints.zip)  
+Headgear is currently located in the 3Dprints.zip folder inside the /mechanical folder on the repo. This is because the Deck X headset currently shares the same headgear as the previous Northstar 3.1 design.
+
+ 
 
 {% page-ref page="deck-x-assembly-guide.md" %}
 
