@@ -23,7 +23,7 @@ This includes a unity package that handles
 ##  Getting Started with Esky
 
 {% hint style="info" %}
-In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../../calibration/2d-calibration.md) file. 
+In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../../calibration/2d-calibration.md) or [3D Calibration](../../calibration/3d-calibration/) file. 
 {% endhint %}
 
 * Copy the contents of your _**NorthStarCalibration.json**_ file into Esky's _**DisplayCalibration.json**_ file 
