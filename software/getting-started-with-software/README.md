@@ -22,6 +22,8 @@ Your Northstar display will show up as a normal monitor and will look "**upside-
 
 There are a handful of demos that require leap motion's multi-device beta driver, located [**here**](https://github.com/leapmotion/UnityModules/blob/feat-multi-device/Multidevice%20Service/LeapDeveloperKit_4.0.0%2B52238_win.zip). If you're having issues with getting your leap working in demos or unity this is probably the reason. Once you have the drivers installed open the leap motion control panel and make sure that the connection is "good", as shown in the figure below. 
 
+![](../../.gitbook/assets/image%20%2823%29.png)
+
 #### Realsense SDK
 
 In order to use your t261/t265 sensor you'll need to install the realsense sdk, located [**here**](https://www.intelrealsense.com/sdk-2/)**.** Once you are finished installing the sdk, open the realsense viewer application to ensure that your realsense device is connected.   
