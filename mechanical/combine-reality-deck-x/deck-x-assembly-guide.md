@@ -14,6 +14,8 @@ description: >-
 2. **Heat Threaded Inserts \(x8\)**
 3. **Soldering Iron**
 
+You may also find it helpful to acquire these special [soldering iron tips](https://www.amazon.com/Heat-Set-Installation-Compatible-Soldering-Connecting/dp/B078K72615) specifically for inserts.
+
 {% tabs %}
 {% tab title="1-1" %}
 Locate the Optics Bracket
