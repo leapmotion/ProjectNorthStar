@@ -26,7 +26,7 @@ This includes a unity package that handles
 In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../../calibration/2d-calibration.md) or [3D Calibration](../../calibration/3d-calibration/) file. 
 {% endhint %}
 
-* Copy the contents of your _**NorthStarCalibration.json**_ file into Esky's _**DisplayCalibration.json**_ file 
+* Copy the contents of your _**NorthStarCalibration.json**_ file into Esky's _**DisplayCalibration.json**_ file Note that the _**DisplayCalibration.json**_ file is located in the root of your unity project folder. Use file explorer in windows to navigate to the _OpticalCalibrations/v2/DisplayCalibration.json_ file 
 * Make sure Northstar Display is **not** flipped via windows display manager, additionally it can be helpful to have your Northstar Display setup to the far right of your monitor setup, though if necessary it can be placed anywhere, you'll just need to take note of the position for later.  
 * Adjust the _**focusDistance**_ parameter in _**DisplayCalibration.json**_ ****so that it matches your headset's configuration. The number refers to the focal distance trays you have installed.  
 * Save the file and then open the _**DisplaySettings.json**_ file, edit the DisplayXLoc and DisplayYLoc to reflect the position of your northstar display relative to your main monitors. For example, if your northstar display is to the right of your main monitor, you'll want to input the monitor's pixel width, for a 4k monitor this would be 3840. 
