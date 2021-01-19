@@ -25,11 +25,10 @@
 
 ## Software
 
-* [Getting Started with Software](software/getting-started-with-software/README.md)
-  * [SteamVR](software/getting-started-with-software/steamvr.md)
-  * [Esky](software/getting-started-with-software/esky.md)
-  * [Unity](software/getting-started-with-software/software.md)
-* [FAQ Software](software/faq-software.md)
+* [Getting Started with Software](software/getting-started-with-software.md)
+* [Esky](software/esky.md)
+* [SteamVR](software/steamvr.md)
+* [Unity](software/software.md)
 
 ## Calibration
 

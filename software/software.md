@@ -12,7 +12,7 @@ description: >-
 
 These assets are dependent on [Release 4.4.0](https://github.com/leapmotion/UnityModules/pull/1010) of the [Leap Motion Unity Modules](https://github.com/leapmotion/UnityModules) \(included in the package\).
 
-[![North Star Starting Scene](../../.gitbook/assets/unitynorthstarrig.png)](https://github.com/leapmotion/ProjectNorthStar/tree/master/Software)
+[![North Star Starting Scene](../.gitbook/assets/unitynorthstarrig.png)](https://github.com/leapmotion/ProjectNorthStar/tree/master/Software)
 
 ## Getting Started:
 

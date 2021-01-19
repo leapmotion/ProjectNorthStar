@@ -14,7 +14,7 @@ You'll want to make sure that your headset works properly, plug in the power to 
 
 Your Northstar display will show up as a normal monitor and will look "**upside-down**" if viewed through the headset. This is normal, we compensate for this in software written for the headset. Make sure your headset is set up so it's to the **right of your main display\(s\)**, and that the resolution is 2880x1600. You'll also want to make sure that the scale and layout section is set to 100%. By default, the headset will run at 90hz. You'll also want to ensure that your headset is set to extended mode and not mirrored. 
 
-![](../../.gitbook/assets/image%20%2822%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 ### Install Drivers
 
@@ -22,7 +22,7 @@ Your Northstar display will show up as a normal monitor and will look "**upside-
 
 There are a handful of demos that require leap motion's multi-device beta driver, located [**here**](https://github.com/leapmotion/UnityModules/blob/feat-multi-device/Multidevice%20Service/LeapDeveloperKit_4.0.0%2B52238_win.zip). If you're having issues with getting your leap working in demos or unity this is probably the reason. Once you have the drivers installed open the leap motion control panel and make sure that the connection is "good", as shown in the figure below. 
 
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2823%29.png)
 
 #### Realsense SDK
 

@@ -9,7 +9,7 @@ description: >-
 
 This includes a unity package that handles
 
-* Rendering \(with 2D and 3D ****[**Optical Calibration**](../../calibration/getting-started/) files\)
+* Rendering \(with 2D and 3D ****[**Optical Calibration**](../calibration/getting-started/) files\)
 * MRTK Integration with the Leap Motion controller \(aligned with the user's view\)
 * 6DoF Head Tracking + Re-Localization events \(Save map, load map, add persistence, callbacks, etc.\)
 * Spatial mapping \(Via the ZED SDK, with future plans to generate point clouds via the t261/t265 sensor\)
@@ -23,7 +23,7 @@ This includes a unity package that handles
 ##  Getting Started with Esky
 
 {% hint style="info" %}
-In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../../calibration/2d-calibration.md) or [3D Calibration](../../calibration/3d-calibration/) file. 
+In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../calibration/2d-calibration.md) or [3D Calibration](../calibration/3d-calibration/) file. 
 {% endhint %}
 
 * Copy the contents of your _**NorthStarCalibration.json**_ file into Esky's _**DisplayCalibration.json**_ file Note that the _**DisplayCalibration.json**_ file is located in the root of your unity project folder. Use file explorer in windows to navigate to the _OpticalCalibrations/v2/DisplayCalibration.json_ file 

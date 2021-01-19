@@ -912,7 +912,7 @@ Once you've got the screws in your headset should like the photos below, note th
 {% endtab %}
 
 {% tab title="22-3" %}
-All Done! Congrats on making it through the build process! To get started with software, check out the [Software](../../software/getting-started-with-software/software.md) page, and the \#First-Steps channel on the discord!
+All Done! Congrats on making it through the build process! To get started with software, check out the [Software](../../software/software.md) page, and the \#First-Steps channel on the discord!
 
 ![](../../.gitbook/assets/176.jpg)
 {% endtab %}
