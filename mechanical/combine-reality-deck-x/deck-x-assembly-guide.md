@@ -6,6 +6,10 @@ description: >-
 
 # Deck X Assembly Guide
 
+{% hint style="info" %}
+Your Deck X Kit already comes with the integrator/t261 mount. This is because this part is printed in carbon fiber to better handle the temperatures of the realsense t261, you do not need to print it yourself. 
+{% endhint %}
+
 ### Step 1- Set up the Optics Bracket 
 
 #### You will need the following
