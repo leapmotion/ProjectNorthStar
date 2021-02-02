@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<doc>
+  <members>
+    <assembly>
+      <name>UnityEngine.AssetBundleModule</name>
+    </assembly>
+    <member name="T:UnityEngine.AssetBundle">
+      <summary>
+        <para>AssetBundles let you stream additional assets via the UnityWebRequest class and instantiate them at runtime. AssetBundles are created via BuildPipeline.BuildAssetBundle.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.AssetBundle.isStreamedSceneAssetBundle">
+      <summary>
+        <para>Return true if the AssetBundle is a streamed scene AssetBundle.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.AssetBundle.mainAsset">
+      <summary>
+        <para>Main asset that was supplied when building the asset bundle (Read Only).</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.Contains(System.String)">
+      <summary>
+        <para>Check if an AssetBundle contains a specific object.</para>
+      </summary>
+      <param name="name"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.GetAllAssetNames">
+      <summary>
+        <para>Return all asset names in the AssetBundle.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.GetAllLoadedAssetBundles">
+      <summary>
+        <para>To use when you need to get a list of all the currently loaded Asset Bundles.</para>
+      </summary>
+      <returns>
+        <para>Returns IEnumerable&lt;AssetBundle&gt; of all currently loaded Asset Bundles.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.GetAllScenePaths">
+      <summary>
+        <para>Return all the scene asset paths (paths to *.unity assets) in the AssetBundle.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAllAssets(System.Type)">
+      <summary>
+        <para>Loads all assets contained in the asset bundle that inherit from type.</para>
+      </summary>
+      <param name="type"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAllAssets">
+      <summary>
+        <para>Loads all assets contained in the asset bundle.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAllAssets">
+      <summary>
+        <para>Loads all assets contained in the asset bundle that inherit from type T.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAllAssetsAsync">
+      <summary>
+        <para>Loads all assets contained in the asset bundle asynchronously.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAllAssetsAsync">
+      <summary>
+        <para>Loads all assets contained in the asset bundle that inherit from T asynchronously.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAllAssetsAsync(System.Type)">
+      <summary>
+        <para>Loads all assets contained in the asset bundle that inherit from type asynchronously.</para>
+      </summary>
+      <param name="type"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAsset(System.String)">
+      <summary>
+        <para>Loads asset with name from the bundle.</para>
+      </summary>
+      <param name="name"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAsset(System.String,System.Type)">
+      <summary>
+        <para>Loads asset with name of a given type from the bundle.</para>
+      </summary>
+      <param name="name"></param>
+      <param name="type"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAsset(System.String)">
+      <summary>
+        <para>Loads asset with name of type T from the bundle.</para>
+      </summary>
+      <param name="name"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAssetAsync(System.String)">
+      <summary>
+        <para>Asynchronously loads asset with name from the bundle.</para>
+      </summary>
+      <param name="name"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAssetAsync(System.String)">
+      <summary>
+        <para>Asynchronously loads asset with name of a given T from the bundle.</para>
+      </summary>
+      <param name="name"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAssetAsync(System.String,System.Type)">
+      <summary>
+        <para>Asynchronously loads asset with name of a given type from the bundle.</para>
+      </summary>
+      <param name="name"></param>
+      <param name="type"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAssetWithSubAssets(System.String)">
+      <summary>
+        <para>Loads asset and sub assets with name from the bundle.</para>
+      </summary>
+      <param name="name"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAssetWithSubAssets(System.String,System.Type)">
+      <summary>
+        <para>Loads asset and sub assets with name of a given type from the bundle.</para>
+      </summary>
+      <param name="name"></param>
+      <param name="type"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAssetWithSubAssets(System.String)">
+      <summary>
+        <para>Loads asset and sub assets with name of type T from the bundle.</para>
+      </summary>
+      <param name="name"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAssetWithSubAssetsAsync(System.String)">
+      <summary>
+        <para>Loads asset with sub assets with name from the bundle asynchronously.</para>
+      </summary>
+      <param name="name"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAssetWithSubAssetsAsync(System.String)">
+      <summary>
+        <para>Loads asset with sub assets with name of type T from the bundle asynchronously.</para>
+      </summary>
+      <param name="name"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadAssetWithSubAssetsAsync(System.String,System.Type)">
+      <summary>
+        <para>Loads asset with sub assets with name of a given type from the bundle asynchronously.</para>
+      </summary>
+      <param name="name"></param>
+      <param name="type"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadFromFile(System.String,System.UInt32,System.UInt64)">
+      <summary>
+        <para>Synchronously loads an AssetBundle from a file on disk.</para>
+      </summary>
+      <param name="path">Path of the file on disk.</param>
+      <param name="crc">An optional CRC-32 checksum of the uncompressed content. If this is non-zero, then the content will be compared against the checksum before loading it, and give an error if it does not match.</param>
+      <param name="offset">An optional byte offset. This value specifies where to start reading the AssetBundle from.</param>
+      <returns>
+        <para>Loaded AssetBundle object or null if failed.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadFromFile">
+      <summary>
+        <para>Synchronously loads an AssetBundle from a file on disk.</para>
+      </summary>
+      <param name="path">Path of the file on disk.</param>
+      <param name="crc">An optional CRC-32 checksum of the uncompressed content. If this is non-zero, then the content will be compared against the checksum before loading it, and give an error if it does not match.</param>
+      <param name="offset">An optional byte offset. This value specifies where to start reading the AssetBundle from.</param>
+      <returns>
+        <para>Loaded AssetBundle object or null if failed.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadFromFileAsync(System.String,System.UInt32,System.UInt64)">
+      <summary>
+        <para>Asynchronously loads an AssetBundle from a file on disk.</para>
+      </summary>
+      <param name="path">Path of the file on disk.</param>
+      <param name="crc">An optional CRC-32 checksum of the uncompressed content. If this is non-zero, then the content will be compared against the checksum before loading it, and give an error if it does not match.</param>
+      <param name="offset">An optional byte offset. This value specifies where to start reading the AssetBundle from.</param>
+      <returns>
+        <para>Asynchronous create request for an AssetBundle. Use AssetBundleCreateRequest.assetBundle property to get an AssetBundle once it is loaded.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadFromMemory(System.Byte[],System.UInt32)">
+      <summary>
+        <para>Synchronously create an AssetBundle from a memory region.</para>
+      </summary>
+      <param name="binary">Array of bytes with the AssetBundle data.</param>
+      <param name="crc">An optional CRC-32 checksum of the uncompressed content. If this is non-zero, then the content will be compared against the checksum before loading it, and give an error if it does not match.</param>
+      <returns>
+        <para>Loaded AssetBundle object or null if failed.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadFromMemoryAsync(System.Byte[],System.UInt32)">
+      <summary>
+        <para>Asynchronously create an AssetBundle from a memory region.</para>
+      </summary>
+      <param name="binary">Array of bytes with the AssetBundle data.</param>
+      <param name="crc">An optional CRC-32 checksum of the uncompressed content. If this is non-zero, then the content will be compared against the checksum before loading it, and give an error if it does not match.</param>
+      <returns>
+        <para>Asynchronous create request for an AssetBundle. Use AssetBundleCreateRequest.assetBundle property to get an AssetBundle once it is loaded.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadFromStream(System.IO.Stream,System.UInt32,System.UInt32)">
+      <summary>
+        <para>Synchronously loads an AssetBundle from a managed Stream.</para>
+      </summary>
+      <param name="stream">The managed Stream object. Unity calls Read(), Seek() and the Length property on this object to load the AssetBundle data.</param>
+      <param name="crc">An optional CRC-32 checksum of the uncompressed content.</param>
+      <param name="managedReadBufferSize">An optional overide for the size of the read buffer size used whilst loading data. The default size is 32KB.</param>
+      <returns>
+        <para>The loaded AssetBundle object or null when the object fails to load.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.LoadFromStreamAsync(System.IO.Stream,System.UInt32,System.UInt32)">
+      <summary>
+        <para>Asynchronously loads an AssetBundle from a managed Stream.</para>
+      </summary>
+      <param name="stream">The managed Stream object. Unity calls Read(), Seek() and the Length property on this object to load the AssetBundle data.</param>
+      <param name="crc">An optional CRC-32 checksum of the uncompressed content.</param>
+      <param name="managedReadBufferSize">An optional overide for the size of the read buffer size used whilst loading data. The default size is 32KB.</param>
+      <returns>
+        <para>Asynchronous create request for an AssetBundle. Use AssetBundleCreateRequest.assetBundle property to get an AssetBundle once it is loaded.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.Unload(System.Boolean)">
+      <summary>
+        <para>Unloads all assets in the bundle.</para>
+      </summary>
+      <param name="unloadAllLoadedObjects"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.UnloadAllAssetBundles(System.Boolean)">
+      <summary>
+        <para>Unloads all currently loaded Asset Bundles.</para>
+      </summary>
+      <param name="unloadAllObjects">Determines whether the current instances of objects loaded from Asset Bundles will also be unloaded.</param>
+    </member>
+    <member name="T:UnityEngine.AssetBundleCreateRequest">
+      <summary>
+        <para>Asynchronous create request for an AssetBundle.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.AssetBundleCreateRequest.assetBundle">
+      <summary>
+        <para>Asset object being loaded (Read Only).</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.AssetBundleManifest">
+      <summary>
+        <para>Manifest for all the AssetBundles in the build.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.AssetBundleManifest.GetAllAssetBundles">
+      <summary>
+        <para>Get all the AssetBundles in the manifest.</para>
+      </summary>
+      <returns>
+        <para>An array of asset bundle names.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundleManifest.GetAllAssetBundlesWithVariant">
+      <summary>
+        <para>Get all the AssetBundles with variant in the manifest.</para>
+      </summary>
+      <returns>
+        <para>An array of asset bundle names.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundleManifest.GetAllDependencies(System.String)">
+      <summary>
+        <para>Get all the dependent AssetBundles for the given AssetBundle.</para>
+      </summary>
+      <param name="assetBundleName">Name of the asset bundle.</param>
+    </member>
+    <member name="M:UnityEngine.AssetBundleManifest.GetAssetBundleHash(System.String)">
+      <summary>
+        <para>Get the hash for the given AssetBundle.</para>
+      </summary>
+      <param name="assetBundleName">Name of the asset bundle.</param>
+      <returns>
+        <para>The 128-bit hash for the asset bundle.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AssetBundleManifest.GetDirectDependencies(System.String)">
+      <summary>
+        <para>Get the direct dependent AssetBundles for the given AssetBundle.</para>
+      </summary>
+      <param name="assetBundleName">Name of the asset bundle.</param>
+      <returns>
+        <para>Array of asset bundle names this asset bundle depends on.</para>
+      </returns>
+    </member>
+    <member name="T:UnityEngine.AssetBundleRequest">
+      <summary>
+        <para>Asynchronous load request from an AssetBundle.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.AssetBundleRequest.allAssets">
+      <summary>
+        <para>Asset objects with sub assets being loaded. (Read Only)</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.AssetBundleRequest.asset">
+      <summary>
+        <para>Asset object being loaded (Read Only).</para>
+      </summary>
+    </member>
+    <member name="A:UnityEngine.AssetBundleModule">
+      <summary>
+        <para>The AssetBundle module implements the AssetBundle class and related APIs to load data from AssetBundles.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

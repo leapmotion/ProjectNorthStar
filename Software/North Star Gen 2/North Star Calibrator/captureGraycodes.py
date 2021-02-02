@@ -7,8 +7,9 @@ import pyrealsense2 as rs2
 import intelutils
 
 rigel = False
-realsense = True
-mock = False
+realsense = False
+loopback = False
+blender = True
 
 if rigel:
   frameWidth  = 800
@@ -16,15 +17,18 @@ if rigel:
 elif realsense:
   frameWidth = 848
   frameHeight = 800
-elif mock:
+elif loopback:
   frameWidth = 512
   frameHeight = 512
+elif blender:
+  frameWidth = 1000
+  frameHeight = 1000
 
 northStarSize = (2880, 1600)
-if mock:
+if loopback:
   northStarSize = (1024, 512)
 
-whiteBrightness = 127
+whiteBrightness = 255
 
 allWhite           = np.ones       ((northStarSize[1], northStarSize[0]), dtype=np.uint8) * 100
 continuum          = np.arange     (0, 256,         dtype=np.uint8)
@@ -57,11 +61,20 @@ elif realsense:
   print("starting intel thread (at %f)" % time.time())
   cap.start()
   print("started intel thread (at %f)" % time.time())
-elif mock:
-  class MockCapture:
+elif loopback:
+  class LoopbackCapture:
     def read(self):
       return True, displayedBuffer
-  cap = MockCapture()
+  cap = LoopbackCapture()
+elif blender:
+  cv2.namedWindow      ("Blender Render", cv2.WINDOW_NORMAL)
+  class BlenderCapture:
+    def read(self, index):
+      blenderImage = cv2.imread(f"./Blender_Output/Output-72cm/GrayCode{index+1:04}.png", cv2.IMREAD_GRAYSCALE)
+      cv2.imshow("Blender Render", blenderImage)
+      return True, blenderImage
+  cap = BlenderCapture()
+
 
 if rigel:
   # Turn the Rigel Exposure Up
@@ -80,15 +93,15 @@ while (not (key & 0xFF == ord('q'))):
     print("getting a frame")
     
     # Capture frame-by-frame
-    newFrame, frame = cap.read()
+    bitIndex = int((stage-1)/2)
+    newFrame, frame = cap.read(index=stage)
     print("got a frame at %f" % time.time())
     if (newFrame):
-        time.sleep(0.1)
+        time.sleep(1)
         print("got a new frame")
         # Reshape our one-dimensional image into a two-channel side-by-side view of the Rigel's feed
         frame       = np.reshape  (frame, (frameHeight, frameWidth * 2))
         frame_color = cv2.cvtColor(frame , cv2.COLOR_GRAY2BGR)
-        bitIndex = int((stage-1)/2)
         if frameCount%6 is 0 and frameCount > 0: #key & 0xFF == ord('z'): #
           if stage is 0:
             # Capture all Black Buffer
@@ -98,7 +111,7 @@ while (not (key & 0xFF == ord('q'))):
             displayedBuffer = allWhite
           elif stage is 1:
             # Calculate the Monitor Mask and display it
-            mask = cv2.threshold(cv2.subtract(frame, darkFrameBuffer), thresh=53, maxval=1, type=cv2.THRESH_BINARY)[1]
+            mask = cv2.threshold(cv2.subtract(frame, darkFrameBuffer), thresh=32, maxval=1, type=cv2.THRESH_BINARY)[1]
             #cv2.imshow("Graycode Display", mask * whiteBrightness)
             
             # Begin displaying the Width Bits

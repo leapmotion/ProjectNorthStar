@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<doc>
+  <members>
+    <assembly>
+      <name>UnityEngine.ParticlesLegacyModule</name>
+    </assembly>
+    <member name="T:UnityEngine.EllipsoidParticleEmitter">
+      <summary>
+        <para>Class used to allow GameObject.AddComponent / GameObject.GetComponent to be used.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.MeshParticleEmitter">
+      <summary>
+        <para>Class used to allow GameObject.AddComponent / GameObject.GetComponent to be used.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.ParticleAnimator">
+      <summary>
+        <para>(Legacy Particles) Particle animators move your particles over time, you use them to apply wind, drag &amp; color cycling to your particle emitters.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.ParticleEmitter">
+      <summary>
+        <para>(Legacy Particles) Script interface for particle emitters.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.ParticleRenderer">
+      <summary>
+        <para>(Legacy Particles) Renders particles on to the screen.</para>
+      </summary>
+    </member>
+    <member name="A:UnityEngine.ParticlesLegacyModule">
+      <summary>
+        <para>The ParticlesLegacy module implements the legacy particle system in Unity.</para>
+      </summary>
+    </member>
+  </members>
+</doc>
