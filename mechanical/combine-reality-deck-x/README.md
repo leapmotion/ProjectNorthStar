@@ -13,7 +13,7 @@ Deck X Kits are available through ****[**Smart Prototyping**](https://www.smart-
 {% endhint %}
 
 {% hint style="info" %}
-\*\*\*\*[**GitHub Repository**](https://github.com/CombineReality/ProjectNorthStar)
+\*\*\*\*[**GitHub Repository**](https://github.com/CombineReality/Deck-X/)
 {% endhint %}
 
 ## 3D Printing Variants
