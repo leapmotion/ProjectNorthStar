@@ -18,6 +18,16 @@ Project North Star is an open source augmented reality headset meant as a develo
 
 Good Question! There are multiple variations of the reference design from leap motion. The reference design can be found on [this page ](../mechanical/release-3/)
 
+### What are the Minimum System Requirements?
+
+The minimum system requirements for Northstar can vary based on the type of application you want to run. _**Your system will need a display port connection that can output 4k@60hz.**_ 
+
+| Minimum Requirements | Recommended Requirements |
+| :--- | :--- |
+| AMD Ryzen Quad Core or Equivalent | AMD Ryzen 6 or 8 Core Processor |
+| 8GB Ram | 16GB Ram |
+| Vega 8 GPU or MX150 | Nvidia 1060 6GB or higher |
+
 ### How does project Northstar compare to other AR Platforms?
 
 Project Northstar uses the same displays commonly used in VR headsets to provide a high resolution and high field of view experience. 
@@ -51,16 +61,6 @@ Project Northstar uses the same displays commonly used in VR headsets to provide
 While most of the design is 3d printable, there are components, like the screens, driver board, combiners, and leap motion controller that you will have to order. You can order your parts, upgrade kits, or fully assembled headsets here: 
 
 {% embed url="https://www.smart-prototyping.com/AR-VR-MR-XR/Project-North-Star-Lens" %}
-
-### What are the Minimum System Requirements?
-
-The minimum system requirements for Northstar can vary based on the type of application you want to run. _**Your system will need a display port connection that can output 4k@60hz.**_ 
-
-| Minimum Requirements | Recommended Requirements |
-| :--- | :--- |
-| AMD Ryzen Quad Core or Equivalent | AMD Ryzen 6 or 8 Core Processor |
-| 8GB Ram | 16GB Ram |
-| Vega 8 GPU or MX150 | Nvidia 1060 6GB or higher |
 
 ### What 3d printer should I get?
 
