@@ -20,7 +20,6 @@ A supplemental goal of this Code of Conduct is to increase open \[source/culture
 * Attempt collaboration before a conflict.
 * Refrain from demeaning, discriminatory, or harassing behavior and speech.
 * Be mindful of your surroundings and your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
-* See something, say something!
 
 _**The following actions are considered harassment and are unacceptable within our community:**_
 
