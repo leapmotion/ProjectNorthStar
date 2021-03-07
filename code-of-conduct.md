@@ -6,9 +6,8 @@ description: >-
 
 # Code of Conduct
 
-A primary goal of Project NorthStar is to think and work in collaboration, so we can transcend the potential of each of us, and others. We aim to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. We are committed to providing a friendly, safe, and welcoming environment for all, regardless of gender, sexual orientation, skills and education, ability, ethnicity, socioeconomic status, and religion \(or lack thereof\). Reality Hack prides itself on being an open, respectful, and inclusive community that leads by example. That means ****[**jerky behavior**](https://meta.wikimedia.org/wiki/Don%27t_be_a_jerk) isn’t allowed.  
+A primary goal of Project NorthStar is to think and work in collaboration, so we can transcend the potential of each of us, and others. We aim to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. We are committed to providing a friendly, safe, and welcoming environment for all, regardless of gender, sexual orientation, skills and education, ability, ethnicity, socioeconomic status, and religion \(or lack thereof\).   
   
-This goal and policy is applied to any and all events run by Reality Hack. All attendees are expected to comply in full to this policy.  
   
 This Code of Conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior. We invite all those to help us create safe and positive experiences for everyone, and we also include ways for our attendees to report any violations. Together we can make a fun, harassment-free, magical experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion.
 
@@ -40,7 +39,7 @@ _**Don't be that person. We help people help people.**_
 
 Unacceptable behavior from any community member, including sponsors and those with decision-making authority, will not be tolerated.  
   
-Anyone asked to stop unacceptable behavior is expected to comply immediately. If a community member engages in unacceptable behavior, Reality Hack organizers may take any action they deem appropriate, up to and including a warning, temporary ban, or permanent expulsion from the community/event without warning.   
+Anyone asked to stop unacceptable behavior is expected to comply immediately. If a community member engages in unacceptable behavior, moderators may take any action they deem appropriate, up to and including a warning, temporary ban, or permanent expulsion from the community/event without warning.   
   
 You can make a report either personally or anonymously.
 
