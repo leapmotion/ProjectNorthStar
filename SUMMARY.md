@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Project North Star](README.md)
+* [Code of Conduct](code-of-conduct.md)
 
 ## Getting Started!
 
