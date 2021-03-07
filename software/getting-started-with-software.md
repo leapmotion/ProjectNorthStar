@@ -8,7 +8,7 @@ description: >-
 
 ### Verify your headset is working properly. 
 
-You'll want to make sure that your headset works properly, plug in the power to the integrator board or driver board first, then display. On newer headsets \(Deck X and beyond\)  this is not an issue, however, there can be an issue where plugging the display in first causes the driver board to get enough power through the display port connection to boot, but not enough power to run properly. If you run into this issue unplug your headset and then **plug-in power first, then the display connection.** 
+You'll want to make sure that your headset works properly, plug in the power to the integrator board or driver board first, then the display port conection. On some headsets there can be an issue where plugging the display in first causes the driver board to get enough power through the display port connection to boot, but not enough power to run properly. If you run into this issue unplug your headset and then **plug-in power first, then the display connection.** 
 
 ### **Set Windows Display Settings**
 
