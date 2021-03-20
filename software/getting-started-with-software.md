@@ -6,9 +6,18 @@ description: >-
 
 # Getting Started with Software
 
+### Northstar Development Platforms
+
+There are currently three methods of developing software on Northstar headsets. 
+
+1. \*\*\*\*[**Esky**](esky.md) ****This is the recommended developer experience. It has video passthrough with the t261/t265, built-in support for the mixed reality toolkit and support for both 2D and 3D calibration methods.  
+2.  [**Unity**](software.md) This is the default unity experience, it's barebones and built for the 3D calibration rig. If you're experienced with unity and want to tinker with the original source code for Northstar this is the place for you. 
+3. \*\*\*\*[**SteamVR**](steamvr.md) The SteamVR integration allows any SteamVR game to run on a Northstar headset. Hand tracking isn't a replacement for controllers yet so you won't have a fun time in beat saber, but for demos like cat explorer or the infamous cubes demo you'll have full support for hand tracking. 
+4. **Prebuilt Examples** There are a handful of prebuilt demos for Northstar including LeapPaint, Galaxies and others. These will be linked on a separate page/database at a future date, for now, [**join the discord**](https://discord.com/invite/NghjdX7) and check the \#showcase channel. 
+
 ### Verify your headset is working properly. 
 
-You'll want to make sure that your headset works properly, plug in the power to the integrator board or driver board first, then the display port conection. On some headsets there can be an issue where plugging the display in first causes the driver board to get enough power through the display port connection to boot, but not enough power to run properly. If you run into this issue unplug your headset and then **plug-in power first, then the display connection.** 
+You'll want to make sure that your headset works properly, plug in the power to the integrator board or driver board first, then the display port connection. On some headsets there can be an issue where plugging the display in first causes the driver board to get enough power through the display port connection to boot, but not enough power to run properly. If you run into this issue unplug your headset and then **plug-in power first, then the display connection.** 
 
 ### **Set Windows Display Settings**
 
@@ -24,13 +33,13 @@ There are a handful of demos that require leap motion's multi-device beta driver
 
 ![](../.gitbook/assets/image%20%2823%29.png)
 
-#### Realsense SDK
+### RealSense SDK
 
-In order to use your t261/t265 sensor you'll need to install the realsense sdk, located [**here**](https://www.intelrealsense.com/sdk-2/)**.** Once you are finished installing the sdk, open the realsense viewer application to ensure that your realsense device is connected.   
+In order to use your t261/t265 sensor you'll need to install the RealSense SDK, located [**here**](https://www.intelrealsense.com/sdk-2/)**.** Once you are finished installing the SDK, open the RealSense viewer application to ensure that your RealSense device is connected.   
   
 **If you are using the Deck X headset and your t261 is not showing up you can take the following actions to resolve it:**
 
-1. Push down on both circular buttons on the headset for two seconds to power cycle the integrator board. This should cause the realsense device to enumerate and cause windows to detect it. 
+1. Push down on both circular buttons on the headset for two seconds to power cycle the integrator board. This should cause the RealSense device to enumerate and cause windows to detect it. 
 2. If step 1 did not work you can try unplugging the headset and plugging it back in, make sure your USB connection is plugged into a USB 3.1 port. 
 3. If both of the above steps did not work you can try resetting the USB hub in device manager. This solution has solved most edge cases we've seen so far. 
 
