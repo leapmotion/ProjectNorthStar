@@ -6,6 +6,10 @@ description: >-
 
 # Unity
 
+{% hint style="info" %}
+Make sure to check the [**Getting Started with Software**](getting-started-with-software.md) page before following the instructions on this page. 
+{% endhint %}
+
 ## Compatibility
 
 **These assets require the** [**Multi-Device Beta Service**](https://github.com/leapmotion/UnityModules/tree/feat-multi-device/Multidevice%20Service) **to display hands.**
