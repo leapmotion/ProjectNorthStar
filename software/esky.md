@@ -7,20 +7,24 @@ description: >-
 
 # Esky
 
-This includes a unity package that handles
+Project Esky includes a unity package that handles
 
 * Rendering \(with 2D and 3D ****[**Optical Calibration**](../calibration/getting-started/) files\)
 * MRTK Integration with the Leap Motion controller \(aligned with the user's view\)
 * 6DoF Head Tracking + Re-Localization events \(Save map, load map, add persistence, callbacks, etc.\)
 * Spatial mapping \(Via the ZED SDK, with future plans to generate point clouds via the t261/t265 sensor\)
+* Temporal Reprojection \(2D calibration only\)
 
-## Relevant Links
+[Project Esky on Github](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration)  
+[Project Esky on Research Gate](https://www.researchgate.net/publication/344337571_Project_Esky_Enabling_High_Fidelity_Augmented_Reality_Content_on_an_Open_Source_Platform)
 
-### [Project Esky on Github](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration)
+## Video Guide
 
-### [Project Esky on Research Gate](https://www.researchgate.net/publication/344337571_Project_Esky_Enabling_High_Fidelity_Augmented_Reality_Content_on_an_Open_Source_Platform)
+Below is a video guide walking you through all the steps necessary to get your headset working with Esky. We've also provided written instructions in the documentation below.
 
-##  Getting Started with Esky
+{% embed url="https://www.youtube.com/watch?v=V8Mpl4e0OPI" %}
+
+##  Written Guide
 
 {% hint style="info" %}
 In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../calibration/2d-calibration.md) or [3D Calibration](../calibration/3d-calibration/) file. 
