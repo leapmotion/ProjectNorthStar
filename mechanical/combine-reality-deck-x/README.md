@@ -32,6 +32,10 @@ The Prints in the 3.1.1 folder are intended for users who want to upgrade their 
 
 {% page-ref page="deck-x-bill-of-materials.md" %}
 
+{% page-ref page="../headgear-assembly.md" %}
+
+
+
 
 
 
