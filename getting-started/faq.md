@@ -60,7 +60,7 @@ Project Northstar uses the same displays commonly used in VR headsets to provide
 
 While most of the design is 3d printable, there are components, like the screens, driver board, combiners, and leap motion controller that you will have to order. You can order your parts, upgrade kits, or fully assembled headsets here: 
 
-{% embed url="https://www.smart-prototyping.com/AR-VR-MR-XR/Project-North-Star-Lens" %}
+{% embed url="https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles" %}
 
 ### What 3d printer should I get?
 
