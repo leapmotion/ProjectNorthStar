@@ -2,6 +2,7 @@
 
 * [Project North Star](README.md)
 * [Code of Conduct](code-of-conduct.md)
+* [Glossary](glossary.md)
 
 ## Getting Started!
 
