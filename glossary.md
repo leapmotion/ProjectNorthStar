@@ -12,7 +12,7 @@ This page is open to [**pull requests**](glossary.md#pull-request), please feel 
 
 ### XR
 
-XR is an umbrella term for Virtual Reality, Augmented Reality and Mixed Reality. Some say it stands for Extennded Reality, others say the X is a variable, check twitter if you want to see people argue about it for literal years. In general, XR is the term the northstar community uses when discussing VR/AR or MR. For more general discussions we tend to enjoy using "Spatial Computing".
+XR is an umbrella term for Virtual Reality, Augmented Reality and Mixed Reality. Some say it stands for Extended Reality, others say the X is a variable, check twitter if you want to see people argue about it for literal years. In general, XR is the term the northstar community uses when discussing VR/AR or MR. For more general discussions we tend to enjoy using "Spatial Computing".
 
 ### Combiner
 
