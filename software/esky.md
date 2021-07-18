@@ -165,7 +165,7 @@ Then simply hit 'play' and you're good to go :D
 
 ## Extras
 
-#### Below is an Example of the _**EskySettings.Json**_ File, with the updated V1 and V2 calibration for a 25cm focal length optical setup.
+#### Below is an Example of my complete _**EskySettings.Json**_ File, with the updated V1 and V2 calibration for a 25cm focal length optical setup.
 
 **Note: Some of the values you see are either controlled by the MRTK in editor, or not yet in use.**
 
