@@ -9,7 +9,7 @@ description: >-
 
 Project Esky is a complete unity framework that handles
 
-* Rendering \(with 2D and 3D ****[**Optical Calibration**](../calibration/getting-started/) files\)
+* Rendering \(with 2D and 3D \(V1 and V2\) ****[**Optical Calibration**](../calibration/getting-started/)**s**\)
 * MRTK Integration with the Leap Motion controller \(aligned with the user's view\)
 * 6DoF Head Tracking + Re-Localization events \(Save map, load map, add persistence, callbacks, etc.\)
 * Peer to Peer based co-localization and networking at the click of a button \(Provided devices are on the same local network\)
@@ -26,7 +26,7 @@ In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibrati
 
 Esky runs within the Unreal engine, but the Unity integration is more complete
 
-Esky's Unity Integration uses Unity 2020.3.X, if it complains 
+Esky's Unity Integration uses Unity 2020.3.X, if it complains that you're using a newer version, as long as you're using Unity 2020.3 it should be ok to upgrade. We currently use 2020.3.11f1
 {% endhint %}
 
 Note that the _**EskySettings.json**_ file is located in the root of your unity project folder. \(Not visible within Unity\)
@@ -53,7 +53,7 @@ Note that the _**EskySettings.json**_ file is located in the root of your unity 
 
 * Save the EskySettings.json file. You're now free to proceed to open the Unity Project to complete the calibration
 
-## Hand alignment and MRTK Setup
+## Hand Alignment and MRTK Setup
 
 Before you can begin doing cool northstar stuff, you'll need to align your hands so that the virtual image matches the real world, and configure the MRTK to your specific North Star Setup.
 
@@ -171,8 +171,8 @@ Then simply hit 'play' and you're good to go :D
 
 ```text
 {
-    "rigToUse": 2,
-    "targetFrameRate": 0,
+    "rigToUse": 0,
+    "targetFrameRate": 120,
     "reprojectionSettings": 0,
     "nativeShaderToUse": 0,
     "myOffsets": {
