@@ -82,7 +82,7 @@ Before you can begin doing cool northstar stuff, you'll need to align your hands
     }
   ```
 
-* You will need to copy the position, and rotation values into the following area within the EskySettings.json file:
+* You will need to copy the position, and rotation values into the following area within the EskySettings.json file. the position maps to TranslationEyeToLeapMotion, and the rotation maps to RotationEyeToLeapMotion.
   * ```text
     "myOffsets": {
             "TranslationEyeToLeapMotion": {
