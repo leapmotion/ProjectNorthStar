@@ -23,6 +23,10 @@ Project Esky is a complete unity framework that handles
 
 {% hint style="info" %}
 In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../calibration/2d-calibration.md) or [3D Calibration](../calibration/3d-calibration/) file. 
+
+Esky runs within the Unreal engine, but the Unity integration is more complete
+
+Esky's Unity Integration uses Unity 2020.3.X, if it complains 
 {% endhint %}
 
 Note that the _**EskySettings.json**_ file is located in the root of your unity project folder. \(Not visible within Unity\)
@@ -43,7 +47,7 @@ Note that the _**EskySettings.json**_ file is located in the root of your unity 
 
   * In the below example, Monitor \#2 is my NorthStar, and Monitor \#3 is marked as my 'Main Display'. Since my 'Main Display' is 1920x1080 pixels in size, my DisplayXLoc and DisplayYLoc values will be 0, and 1080, respectively
 
-  ![](../.gitbook/assets/image%20%2826%29.png)
+  ![](../.gitbook/assets/image%20%2832%29.png)
 
   
 
@@ -111,10 +115,53 @@ Before you can begin doing cool northstar stuff, you'll need to align your hands
 
 ## Setting up the MRTK Example
 
-Now we get to the fun stuff!   
+Now we get to the fun stuff! As of RC1, the MRTK handles all of the configuration for Project Esky!  
 Open Project Esky in Unity, then navigate to [Assets](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration/tree/master/Assets)/[Scenes](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration/tree/master/Assets/Scenes)/[Examples](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration/tree/master/Assets/Scenes/Examples)/**HandInteractionExamples.unity**
 
-\*\*\*\*
+If you look at the Scene Heirarchy, you will notice the MixedRealityToolkit gameobject. 
+
+
+
+![](../.gitbook/assets/image%20%2831%29.png)
+
+The inspector will show the Mixed Reality Toolkit configuration. Click Input -&gt; Input Data Providers  
+
+
+![](../.gitbook/assets/image%20%2828%29.png)
+
+You will see the following window for configuring all of esky's settings.  
+
+
+![](../.gitbook/assets/image%20%2830%29.png)
+
+The settings are explained as follows:
+
+**Rig To Use:** This controls which optical setup is used for your northstar \(V1, V2\), Project Ariel, or a custom rig can be selected.  
+  
+**Filter System to Use:** We work hard to develop Project Esky, and while we have a newer \(and in our opinion better designed\) pose filtering system, you can change this value to revert back to the old filtering pipeline here  
+  
+**Reprojection Settings \(V2/Ariel Only\):** This enables/disables the late-stage temporal reprojection built into Project Esky's native rendering pipeline.
+
+**Native Shader To Use \(V2/Ariel Only, Currently not implemented\):** This changes the undistortion method used by the native rendering pipeline, we recommend not editing this.
+
+**Target Frame Rate \(V2/Ariel Only\):** This changes the target frame rate for Unity. You can select 120, 90, 60, and 30 frames per second!  
+**NOTE: This frame rate is independent of the native rendering pipeline that handles composition, which always runs at 120 frames per second!**
+
+**Leap Controller Orientation:** This changes the way the MRTK handles the leapmotion controller, we recommend leaving this as 'Esky'
+
+**Enter/Exit pinch distance:** This changes the distance between the index and thumb before the MRTK considers a pinch start/finish action \(in meters\).
+
+**Save after stopping editor:** The default behaviour of Project Esky is to dump your current MRTK settings back into the EskySettings.json file, which is also copied to any build directory when you built your unity project. You can disable this behaviour but we don't recommend it!
+
+**Use Tracker Offsets \(Not Implemented\):** This places the virtual camera relative to the 6DoF tracker, good for external between-sensor calibrations.
+
+**Uses Camera Preview:** This changes whether you intend to use image passthrough preview with the t261, keep in mind you must have **USB 3.0 connected to your NorthStar in order to use it!**
+
+**Uses External RGB Camera:** For those with an RGB sensor, you can enable this to use the RGB image passthrough, unless you know what you're doing **Keep this disabled!!**
+
+## All Done?
+
+Then simply hit 'play' and you're good to go :D
 
 ## Extras
 
