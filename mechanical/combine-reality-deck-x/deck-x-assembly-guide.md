@@ -299,6 +299,10 @@ The end result should look like this:
 
 ### Step 7- Peeling back the display ribbon cables
 
+{% hint style="success" %}
+If you have the new ribbon cable extensions skip to [**Step 9B**](deck-x-assembly-guide.md#step-9-b-installing-the-displays-with-the-ribbon-cable-extensions)\*\*\*\*
+{% endhint %}
+
 It will be very helpful to read through this step in full before proceeding. Pay Careful Attention and exercise patience. This is the hardest step in assembly of the headset. **\(Note that step 7-4 has multiple photos, you have to scroll down to see them\)**
 
 1. **Patience**
@@ -430,7 +434,7 @@ Awesome! It should look like the following image! Now let's move on to the right
 {% endtab %}
 {% endtabs %}
 
-### Step 9b- Installing the Display Assembly \(Right Side\)
+### Step 9a- Installing the Display Assembly \(Right Side\)
 
 {% tabs %}
 {% tab title="9-1" %}
@@ -485,6 +489,12 @@ Great Job! The headset should look like this currently! Next, we'll be installin
 ![](../../.gitbook/assets/078.jpg)
 {% endtab %}
 {% endtabs %}
+
+### Step9b - Installing the Displays with the Ribbon Cable Extensions
+
+We recently introduced a new product to improve the installation and safety of the display process. The ribbon cable extensions remove the need to peel the display cable and provide a cleaner overall installation experience. Please see the following video for instructions: 
+
+{% embed url="https://www.youtube.com/watch?v=KuaIzV14c1s" %}
 
 ### Step 10- Preparing the T261 mounting bracket
 
