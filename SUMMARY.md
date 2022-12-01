@@ -10,7 +10,6 @@
 * [FAQ](getting-started/faq.md)
 * [Helpful Content](getting-started/community-links.md)
 * [FAQ Ahead.IO Kits](getting-started/faq-ahead.io-kits.md)
-* [FAQ Smart Prototyping Kits](getting-started/faq-smart-prototyping-kits.md)
 
 ## Mechanical
 
