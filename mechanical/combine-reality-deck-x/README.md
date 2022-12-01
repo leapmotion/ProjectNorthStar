@@ -36,7 +36,7 @@ The Integrator is our custom-built USB hub system originally created for the Com
 
 The Integrator uses a modified version of the lilyPadUSB-caterina Arduino bootloader Bootloader can be found here: [https://github.com/CombineReality/ArduinoCore-avr](https://github.com/CombineReality/ArduinoCore-avr)
 
-![](<../../.gitbook/assets/image (24).png>)
+![](<../../.gitbook/assets/image (25).png>)
 
 ![](../../.gitbook/assets/arduino\_pins.png)
 

@@ -9,47 +9,49 @@ description: >-
 
 Project Esky is a complete unity framework that handles
 
-* Rendering \(with 2D and 3D \(V1 and V2\) ****[**Optical Calibration**](../calibration/getting-started/)**s**\)
-* MRTK Integration with the Leap Motion controller \(aligned with the user's view\)
-* 6DoF Head Tracking + Re-Localization events \(Save map, load map, add persistence, callbacks, etc.\)
-* Peer to Peer based co-localization and networking at the click of a button \(Provided devices are on the same local network\)
-* Spatial mapping \(Via the ZED SDK, with future plans to generate point clouds via the t261/t265 sensor\)
-* Temporal Reprojection \(2D calibration only\)
+* Rendering (with 2D and 3D (V1 and V2) **** [**Optical Calibration**](../calibration/getting-started/)**s**)
+* MRTK Integration with the Leap Motion controller (aligned with the user's view)
+* 6DoF Head Tracking + Re-Localization events (Save map, load map, add persistence, callbacks, etc.)
+* Peer to Peer based co-localization and networking at the click of a button (Provided devices are on the same local network)
+* Spatial mapping (Via the ZED SDK, with future plans to generate point clouds via the t261/t265 sensor)
+* Temporal Reprojection (2D calibration only)
 
-[Project Esky on Github](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration)  
-[Project Esky on Research Gate](https://www.researchgate.net/publication/344337571_Project_Esky_Enabling_High_Fidelity_Augmented_Reality_Content_on_an_Open_Source_Platform)
+[Project Esky on Github](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration)\
+[Project Esky on Research Gate](https://www.researchgate.net/publication/344337571\_Project\_Esky\_Enabling\_High\_Fidelity\_Augmented\_Reality\_Content\_on\_an\_Open\_Source\_Platform)
 
-##  Written Guide \(Config File Setup\)
+## &#x20;Written Guide (Config File Setup)
 
 {% hint style="info" %}
-In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../calibration/2d-calibration.md) or [3D Calibration](../calibration/3d-calibration/) file. 
+In order to use Esky you'll need Unity, A Northstar headset, and a [2D Calibration](../calibration/2d-calibration.md) or [3D Calibration](../calibration/3d-calibration/) file.&#x20;
 
 Esky runs within the Unreal engine, but the Unity integration is more complete
 
 Esky's Unity Integration uses Unity 2020.3.X, if it complains that you're using a newer version, as long as you're using Unity 2020.3 it should be ok to upgrade. We currently use 2020.3.11f1
 {% endhint %}
 
-Note that the _**EskySettings.json**_ file is located in the root of your unity project folder. \(Not visible within Unity\)
+Note that the _**EskySettings.json**_ file is located in the root of your unity project folder. (Not visible within Unity)
 
-* For the V2 calibration, Copy the contents of your _**NorthStarCalibration.json**_ file into Esky's _**EskySettings.json**_ file, you will be replacing the following values within the **v2CalibrationValues** section:
+*   For the V2 calibration, Copy the contents of your _**NorthStarCalibration.json**_ file into Esky's _**EskySettings.json**_ file, you will be replacing the following values within the **v2CalibrationValues** section:
 
-  * left\_uv\_to\_rect\_x 
-  * left\_uv\_to\_rect\_y 
-  * right\_uv\_to\_rect\_x 
-  * right\_uv\_to\_rect\_y
+    * left\_uv\_to\_rect\_x&#x20;
+    * left\_uv\_to\_rect\_y&#x20;
+    * right\_uv\_to\_rect\_x&#x20;
+    * right\_uv\_to\_rect\_y
 
-* For the V1 calibration, Copy the contents of your NorthStarCalibration.json file into Esky's 
 
-  _**EskySettings.json**_ file, you will be replacing all of the values within the **v1CalibrationValues** section  
+*   For the V1 calibration, Copy the contents of your NorthStarCalibration.json file into Esky's&#x20;
 
-* Make sure Northstar Display is **not** flipped via windows display manager, additionally it can be helpful to have your Northstar Display setup to the far right of your monitor setup, though if necessary it can be placed anywhere, you'll just need to take note of the position for later.  
-* Then, within the EskySettings.Json file, edit the displayWindowSettings so that the DisplayXLoc and DisplayYLoc  reflect the position of your northstar display relative to your main monitors. 
+    _**EskySettings.json**_ file, you will be replacing all of the values within the **v1CalibrationValues** section\
 
-  * In the below example, Monitor \#2 is my NorthStar, and Monitor \#3 is marked as my 'Main Display'. Since my 'Main Display' is 1920x1080 pixels in size, my DisplayXLoc and DisplayYLoc values will be 0, and 1080, respectively
+* Make sure Northstar Display is **not** flipped via windows display manager, additionally it can be helpful to have your Northstar Display setup to the far right of your monitor setup, though if necessary it can be placed anywhere, you'll just need to take note of the position for later. \
 
-  ![](../.gitbook/assets/image%20%2832%29.png)
+*   Then, within the EskySettings.Json file, edit the displayWindowSettings so that the DisplayXLoc and DisplayYLoc  reflect the position of your northstar display relative to your main monitors.&#x20;
 
-  
+    * In the below example, Monitor #2 is my NorthStar, and Monitor #3 is marked as my 'Main Display'. Since my 'Main Display' is 1920x1080 pixels in size, my DisplayXLoc and DisplayYLoc values will be 0, and 1080, respectively
+
+    ![](<../.gitbook/assets/image (12).png>)
+
+    \
 
 * Save the EskySettings.json file. You're now free to proceed to open the Unity Project to complete the calibration
 
@@ -59,31 +61,30 @@ Before you can begin doing cool northstar stuff, you'll need to align your hands
 
 **For V1:**
 
-* Observe the following section of your V1 \(3D\) calibration json:  
+*   Observe the following section of your V1 (3D) calibration json:\
 
 
-  ```text
-  "leapTracker": {
-      "name": "Leap Odometry Origin",
-      "serial": "",
-      "localPose": {
-        "position": {
-          "x": 0.0,
-          "y": 0.039777886122465137,
-          "z": 0.0804821103811264
-        },
-        "rotation": {
-          "x": 0.30401188135147097,
-          "y": -0.016626091673970224,
-          "z": 0.00530654564499855,
-          "w": 0.9525083899497986
+    ```
+    "leapTracker": {
+        "name": "Leap Odometry Origin",
+        "serial": "",
+        "localPose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.039777886122465137,
+            "z": 0.0804821103811264
+          },
+          "rotation": {
+            "x": 0.30401188135147097,
+            "y": -0.016626091673970224,
+            "z": 0.00530654564499855,
+            "w": 0.9525083899497986
+          }
         }
       }
-    }
-  ```
-
+    ```
 * You will need to copy the position, and rotation values into the following area within the EskySettings.json file. the position maps to TranslationEyeToLeapMotion, and the rotation maps to RotationEyeToLeapMotion.
-  * ```text
+  * ```
     "myOffsets": {
             "TranslationEyeToLeapMotion": {
                 "x": -0.002040371298789978,
@@ -103,57 +104,58 @@ Before you can begin doing cool northstar stuff, you'll need to align your hands
 **For V2:**
 
 * Open the Unity project, then navigate to [Assets](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration/tree/master/Assets)/[Scenes](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration/tree/master/Assets/Scenes)/[Calibration](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration/tree/master/Assets/Scenes/Calibration)/**LMHandCalibration.unity**
-* Hit play, then, click on the unity Game window \(so that unity can receive the keyboard input\)
+* Hit play, then, click on the unity Game window (so that unity can receive the keyboard input)
 * Alignment is pretty straightforward, following the instructions displayed in your headset:
   * 1\) Hold your right hand up, so that the virtual hand appears in the center of the screen
   * 2\) Hold the space bar
-  * 3\) While holding space, translate your right hand so that it aligns with the frozen virtual hand,  **NOTE: Try not to move your fingers as you do this**
+  * 3\) While holding space, translate your right hand so that it aligns with the frozen virtual hand, \
+    **NOTE: Try not to move your fingers as you do this**
   * 4\) Once aligned, release the space bar
-  * 5\) Repeat steps 1-4 3 or 4 times, the alignment system will let you know when it has collected enough samples. 
-  * If you are happy with the alignment, hit 's' to save, if not, stop unity \(hit the play button again\) then hit play to start the process again, repeating steps 1-5
+  * 5\) Repeat steps 1-4 3 or 4 times, the alignment system will let you know when it has collected enough samples.&#x20;
+  * If you are happy with the alignment, hit 's' to save, if not, stop unity (hit the play button again) then hit play to start the process again, repeating steps 1-5
   * Further adjustment can be done with the arrow keys
 
 ## Setting up the MRTK Example
 
-Now we get to the fun stuff! As of RC1, the MRTK handles all of the configuration for Project Esky!  
+Now we get to the fun stuff! As of RC1, the MRTK handles all of the configuration for Project Esky!\
 Open Project Esky in Unity, then navigate to [Assets](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration/tree/master/Assets)/[Scenes](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration/tree/master/Assets/Scenes)/[Examples](https://github.com/HyperLethalVector/ProjectEsky-UnityIntegration/tree/master/Assets/Scenes/Examples)/**HandInteractionExamples.unity**
 
-If you look at the Scene Heirarchy, you will notice the MixedRealityToolkit gameobject. 
+If you look at the Scene Heirarchy, you will notice the MixedRealityToolkit gameobject.&#x20;
 
 
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](<../.gitbook/assets/image (10).png>)
 
-The inspector will show the Mixed Reality Toolkit configuration. Click Input -&gt; Input Data Providers  
-
-
-![](../.gitbook/assets/image%20%2828%29.png)
-
-You will see the following window for configuring all of esky's settings.  
+The inspector will show the Mixed Reality Toolkit configuration. Click Input -> Input Data Providers\
 
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](<../.gitbook/assets/image (3).png>)
+
+You will see the following window for configuring all of esky's settings.\
+
+
+![](<../.gitbook/assets/image (24).png>)
 
 The settings are explained as follows:
 
-**Rig To Use:** This controls which optical setup is used for your northstar \(V1, V2\), Project Ariel, or a custom rig can be selected.  
-  
-**Filter System to Use:** We work hard to develop Project Esky, and while we have a newer \(and in our opinion better designed\) pose filtering system, you can change this value to revert back to the old filtering pipeline here  
-  
-**Reprojection Settings \(V2/Ariel Only\):** This enables/disables the late-stage temporal reprojection built into Project Esky's native rendering pipeline.
+**Rig To Use:** This controls which optical setup is used for your northstar (V1, V2), Project Ariel, or a custom rig can be selected.\
+\
+**Filter System to Use:** We work hard to develop Project Esky, and while we have a newer (and in our opinion better designed) pose filtering system, you can change this value to revert back to the old filtering pipeline here\
+\
+**Reprojection Settings (V2/Ariel Only):** This enables/disables the late-stage temporal reprojection built into Project Esky's native rendering pipeline.
 
-**Native Shader To Use \(V2/Ariel Only, Currently not implemented\):** This changes the undistortion method used by the native rendering pipeline, we recommend not editing this.
+**Native Shader To Use (V2/Ariel Only, Currently not implemented):** This changes the undistortion method used by the native rendering pipeline, we recommend not editing this.
 
-**Target Frame Rate \(V2/Ariel Only\):** This changes the target frame rate for Unity. You can select 120, 90, 60, and 30 frames per second!  
+**Target Frame Rate (V2/Ariel Only):** This changes the target frame rate for Unity. You can select 120, 90, 60, and 30 frames per second!\
 **NOTE: This frame rate is independent of the native rendering pipeline that handles composition, which always runs at 120 frames per second!**
 
 **Leap Controller Orientation:** This changes the way the MRTK handles the leapmotion controller, we recommend leaving this as 'Esky'
 
-**Enter/Exit pinch distance:** This changes the distance between the index and thumb before the MRTK considers a pinch start/finish action \(in meters\).
+**Enter/Exit pinch distance:** This changes the distance between the index and thumb before the MRTK considers a pinch start/finish action (in meters).
 
 **Save after stopping editor:** The default behaviour of Project Esky is to dump your current MRTK settings back into the EskySettings.json file, which is also copied to any build directory when you built your unity project. You can disable this behaviour but we don't recommend it!
 
-**Use Tracker Offsets \(Not Implemented\):** This places the virtual camera relative to the 6DoF tracker, good for external between-sensor calibrations.
+**Use Tracker Offsets (Not Implemented):** This places the virtual camera relative to the 6DoF tracker, good for external between-sensor calibrations.
 
 **Uses Camera Preview:** This changes whether you intend to use image passthrough preview with the t261, keep in mind you must have **USB 3.0 connected to your NorthStar in order to use it!**
 
@@ -169,7 +171,7 @@ Then simply hit 'play' and you're good to go :D
 
 **Note: Some of the values you see are either controlled by the MRTK in editor, or not yet in use.**
 
-```text
+```
 {
     "rigToUse": 0,
     "targetFrameRate": 120,
@@ -456,6 +458,4 @@ Then simply hit 'play' and you're good to go :D
     "UseTrackerOffsets": true
 }
 ```
-
-
 

@@ -6,19 +6,23 @@ description: 'Pulled from the #helpful-content channel in the North Star Discord
 
 ## Helpful Content
 
-This page has a handful of links that will help you learn more about \#ProjectNorthstar and connect with the community, we highly recommend checking out the discord and hanging out with some of the awesome people there! It's the quickest way to get your questions answered. 
+This page has a handful of links that will help you learn more about #ProjectNorthstar and connect with the community, we highly recommend checking out the discord and hanging out with some of the awesome people there! It's the quickest way to get your questions answered.&#x20;
 
 ### Join The Discord!
 
 {% embed url="https://discord.gg/9TtZhb4" %}
 
-Joining the \#ProjectNorthstar discord server is the **best** way to get help with any troubles you run into! It's also a fun and friendly community, come hang out!
+Joining the #ProjectNorthstar discord server is the **best** way to get help with any troubles you run into! It's also a fun and friendly community, come hang out!
 
-### **CombineReality Kits!**
+### Ahead.IO Kits!
 
-You can order lenses, screens, mechanical bits, ready to build kits, or prebuilt kits here!
+You can order ready to build kits, or pre-built kits here!
 
-{% embed url="https://www.smart-prototyping.com/AR-VR-MR-XR" %}
+{% embed url="https://shop.ahead.io" %}
+
+### **Ali Heston's **_**"The Design of Virtual and Augmented Reality"**_
+
+[**Alexandria Heston**](https://twitter.com/ali\_heston) put together an incredible collection of knowledge about design for VR and AR. You can check it out here! [https://aliheston.gitbook.io/the-design-of-virtual-and-augmented-reality/](https://aliheston.gitbook.io/the-design-of-virtual-and-augmented-reality/)
 
 ### **Official Leap Motion Links and Guides**
 
@@ -36,11 +40,11 @@ Forums
 
 ## **Community Links**
 
-This medium article by @Tasuku is really good! Check it out for relevant links for Exii, 1-10.inc and other tweaks. 
+This medium article by @Tasuku is really good! Check it out for relevant links for Exii, 1-10.inc and other tweaks.&#x20;
 
 {% embed url="https://medium.com/@pythor/info-to-make-project-north-star-359291368e1f" %}
 
-@mdrjjn put together this guide on how to build Exii Version 1, He made a video too! 
+@mdrjjn put together this guide on how to build Exii Version 1, He made a video too!&#x20;
 
 {% embed url="https://github.com/mdrjjn/northStarAssemblyGuide" %}
 
@@ -54,7 +58,7 @@ Here's a link to Psychic Vr Lab's guide on going through the calibration process
 
 {% embed url="https://www.youtube.com/channel/UCkoJWd45XBRaFzc26jE7uEg" %}
 
-@eswar made this awesome calibration walkthrough 
+@eswar made this awesome calibration walkthrough&#x20;
 
 {% embed url="https://link.medium.com/okU9T2dcHU" %}
 
@@ -64,5 +68,4 @@ Here's a link to Psychic Vr Lab's guide on going through the calibration process
 
 Just joining? @callil made this awesome presentation for the New York meetup, it’s a great summary of what has happened so far**!**
 
-{% embed url="https://docs.google.com/presentation/d/1o0\_FDbAju-IpzgDfvCubK25x2weribIxgpIIZDmXaA4/edit?usp=sharing" %}
-
+{% embed url="https://docs.google.com/presentation/d/1o0_FDbAju-IpzgDfvCubK25x2weribIxgpIIZDmXaA4/edit?usp=sharing" %}

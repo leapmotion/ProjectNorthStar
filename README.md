@@ -1,5 +1,5 @@
 ---
-description: The open-source files comprising Leap Motion's Project North Star AR Headset.
+description: The future of spatial computing deserves to be open.
 ---
 
 # Project North Star
@@ -14,9 +14,9 @@ description: The open-source files comprising Leap Motion's Project North Star A
 
 Project North __ Star is an open-source Augmented Reality headset originally designed by LeapMotion (now UltraLeap) in June 2018. The project has had many variations since its inception, by both UltraLeap and the open-source community. Some of the variations are documented and linked to here but visit the discord server for more to-the-moment information. The headset is almost entirely 3D printable, with a handful of components like reflectors, circuit boards, cables, sensors, and screws that need to be sourced separately.&#x20;
 
-## ![](.gitbook/assets/77282ad5-ddca-4973-aa17-0e2b34dce0a5.jpeg) ![](.gitbook/assets/self-rated\_best\_shot.jpg)&#x20;
+## <img src=".gitbook/assets/77282AD5-DDCA-4973-AA17-0E2B34DCE0A5.jpeg" alt="" data-size="original"> <img src=".gitbook/assets/Self-Rated_Best_Shot.jpg" alt="" data-size="original">&#x20;
 
-**Project North Star at MIT Reality Hack 2020**, photo credit: [Matthew Daiter](https://daiter.dev)
+**Project North Star at MIT Reality Hack 2020**, photo credit: [Matthew Daiter](https://daiter.dev/)
 
 There's also a large community of Northstar developers and builders on Discord, you can join the server and share your build, ask questions, or get help with your projects by [joining the server](https://discord.gg/9TtZhb4)
 

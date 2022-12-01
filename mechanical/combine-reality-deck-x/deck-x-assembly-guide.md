@@ -7,15 +7,15 @@ description: >-
 # Deck X Assembly Guide
 
 {% hint style="info" %}
-Your Deck X Kit already comes with the integrator/t261 mount. This is because this part is printed in carbon fiber to better handle the temperatures of the realsense t261, you do not need to print it yourself. 
+Your Deck X Kit already comes with the integrator/t261 mount. This is because this part is printed in carbon fiber to better handle the temperatures of the realsense t261, you do not need to print it yourself.&#x20;
 {% endhint %}
 
-### Step 1- Set up the Optics Bracket 
+### Step 1- Set up the Optics Bracket&#x20;
 
 #### You will need the following
 
-1. **3D Printed Optics Bracket** 
-2. **Heat Threaded Inserts \(x8\)**
+1. **3D Printed Optics Bracket**&#x20;
+2. **Heat Threaded Inserts (x8)**
 3. **Soldering Iron**
 
 You may also find it helpful to acquire these special [soldering iron tips](https://www.amazon.com/Heat-Set-Installation-Compatible-Soldering-Connecting/dp/B078K72615) specifically for inserts.
@@ -24,7 +24,7 @@ You may also find it helpful to acquire these special [soldering iron tips](http
 {% tab title="1-1" %}
 Locate the Optics Bracket
 
-![](../../.gitbook/assets/001-step1%20%281%29.jpg)
+![](<../../.gitbook/assets/001-step1 (1).jpg>)
 {% endtab %}
 
 {% tab title="1-2" %}
@@ -37,6 +37,8 @@ Locate six heat-set threaded inserts. Note that the two ends of the inserts are 
 Locate the six 4.6mm diameter holes in the top surface of the optics bracket.
 
 ![](../../.gitbook/assets/003.jpg)
+
+
 {% endtab %}
 
 {% tab title="1-4" %}
@@ -46,11 +48,11 @@ Heat your soldering iron, with blunt soldering tip, to 220°C. TS100 digital sol
 {% endtab %}
 
 {% tab title="1-5" %}
-Place each insert into one of the six 4.6mm holes and then insert the tip into the soldering iron into the insert. Do not apply significant pressure, as you don't want the threads catching on the surface of the iron's tip.   
-  
+Place each insert into one of the six 4.6mm holes and then insert the tip into the soldering iron into the insert. Do not apply significant pressure, as you don't want the threads catching on the surface of the iron's tip. \
+\
 As the plastic around the insert begins to soften, gently push the insert down into the hole until the edges are flush with the surface all the way around. Do your best to keep it centered. If it isn't perfect on the first try, you can use the soldering iron to reheat the insert and gently make adjustments.
 
-![](../../.gitbook/assets/005.jpg)
+![](../../.gitbook/assets/005.JPG)
 
 {% hint style="warning" %}
 Keep in mind that the heat-set inserts are brass and hold heat for a significant time after you've removed your soldering iron. **Do not try to correct a skewed insert using your finger; if the insert and plastic are still hot enough to be easily adjusted, it is still hot enough to burn your skin.**
@@ -60,7 +62,7 @@ Keep in mind that the heat-set inserts are brass and hold heat for a significant
 {% tab title="1-6" %}
 The resulting assembly should look like this.
 
-![](../../.gitbook/assets/006.jpg)
+![](../../.gitbook/assets/006.JPG)
 {% endtab %}
 
 {% tab title="1-7" %}
@@ -88,7 +90,7 @@ You will need the following
 
 1. **Optics Bracket Assembly**
 2. **Power Filter Board**
-3. **M2.5x0.45 5mm Button Head Phillips Screw \(1\)**
+3. **M2.5x0.45 5mm Button Head Phillips Screw (1)**
 
 {% tabs %}
 {% tab title="2-1" %}
@@ -100,7 +102,7 @@ Locate the hole illustrated here
 {% tab title="2-2" %}
 Inserting your screwdriver through the Leap Motion Controller mounting area, secure the power board to the optics bracket assembly using the M2.5 button-head screw as illustrated here.
 
-![](../../.gitbook/assets/011.jpg)
+![](../../.gitbook/assets/011.JPG)
 
 {% hint style="warning" %}
 **Note: Do not overtighten screws that fasten directly into printed parts without threaded inserts.**
@@ -110,11 +112,11 @@ Inserting your screwdriver through the Leap Motion Controller mounting area, sec
 {% tab title="2-3" %}
 As you might expect, the resulting assembly should look like this.
 
-![](../../.gitbook/assets/012.jpg)
+![](../../.gitbook/assets/012.JPG)
 {% endtab %}
 {% endtabs %}
 
-### Step 3- Install Leap Motion Controller 
+### Step 3- Install Leap Motion Controller&#x20;
 
 You will need the following components for this step:
 
@@ -132,7 +134,7 @@ Gather your optics bracket assembly, 6-conductor ribbon cable, and Ribbon to Mic
 {% tab title="3-2" %}
 Making sure that the latch of the ribbon connector on the adapter board is open, insert either end of the ribbon into the connector as shown.
 
-![](../../.gitbook/assets/014.jpg)
+![](../../.gitbook/assets/014.JPG)
 {% endtab %}
 
 {% tab title="3-3" %}
@@ -148,7 +150,7 @@ Insert the adapter board's USB connector into the wider side of the Micro USB Su
 
 Note: While the Leap Motion Controller has a SuperSpeed connector, it is a USB 2 device and does not require, or benefit from, the use of a SuperSpeed cable, so long as there is enough current available on the USB 2 pins.
 
-![](../../.gitbook/assets/017.jpg)
+![](../../.gitbook/assets/017.JPG)
 {% endtab %}
 
 {% tab title="3-5" %}
@@ -156,46 +158,46 @@ The male MicroUSB plug on the adapter is longer than the socket on the Leap Moti
 
 Remove the protective film from the front of the Leap Motion Controller and lay it with the outward side down on your assembly surface. Once installed in the optics bracket we'll be reapplying the firm to protect the sensor during the rest of the assembly process.
 
-![](../../.gitbook/assets/018.jpg)
+![](../../.gitbook/assets/018.JPG)
 {% endtab %}
 
 {% tab title="3-6" %}
-Double back \(but don't crease\) the ribbon, and hold as shown here.
+Double back (but don't crease) the ribbon, and hold as shown here.
 
-![](../../.gitbook/assets/019.jpg)
+![](<../../.gitbook/assets/019 (1).JPG>)
 {% endtab %}
 
 {% tab title="3-7" %}
 Tuck the doubled over ribbon and end of the adapter board under the small shelf on the top left side of the optics bracket cavity
 
-![](../../.gitbook/assets/020.jpg)
+![](../../.gitbook/assets/020.JPG)
 {% endtab %}
 
 {% tab title="3-8" %}
 Gently press your Leap Motion controller down and forward into its mounting area. It shouldn't take much pressure to do this, but because of the layering of the 3D-printed optics bracket, you may need to wiggle it a bit to get it into position.
 
-![](../../.gitbook/assets/021.jpg)
+![](../../.gitbook/assets/021.JPG)
 {% endtab %}
 
 {% tab title="3-9" %}
 The result should look like this.
 
-![](../../.gitbook/assets/022.jpg)
+![](../../.gitbook/assets/022.JPG)
 {% endtab %}
 
 {% tab title="3-10" %}
 Making sure that the Leap Motion Controller is positioned flat against the optics bracket lip along its top edge, you can reapply the protective film as shown. Or you can put it right side up. Your call.
 
-![](../../.gitbook/assets/023.jpg)
+![](../../.gitbook/assets/023.JPG)
 {% endtab %}
 {% endtabs %}
 
 ### Step 4- Display Driver Board Installation
 
 1. Optics Bracket Assembly
-2. Leap Motion Controller mounting spacer \(3D printed Part\)
+2. Leap Motion Controller mounting spacer (3D printed Part)
 3. Display Driver Board
-4. Self Threading Screws \(x3\)
+4. Self Threading Screws (x3)
 
 {% tabs %}
 {% tab title="4-1" %}
@@ -207,19 +209,19 @@ Locate your Leap Motion Controller Mounting Spacer
 {% tab title="4-2" %}
 Position the Leap Motion Controller Mounting Spacer behind the Leap Motion Controller as shown here, oriented so that the smaller "tooth" is positioned at the top.
 
-![](../../.gitbook/assets/025.jpg)
+![](../../.gitbook/assets/025.JPG)
 {% endtab %}
 
 {% tab title="4-3" %}
 Locate your Display Driver Board
 
-![](../../.gitbook/assets/026-step5.jpg)
+![](../../.gitbook/assets/026-step5.JPG)
 {% endtab %}
 
 {% tab title="4-4" %}
 Carefully position the Display Driver Board so that the + and - power header pins are positioned over header pin socket on the Power Filter Board as shown.
 
-![](../../.gitbook/assets/027.jpg)
+![](../../.gitbook/assets/027.JPG)
 {% endtab %}
 
 {% tab title="4-5" %}
@@ -227,7 +229,7 @@ Tucking the ribbon out of the way as necessary, hold the Power Filter Board in p
 
 The Display Driver Board should be resting on the shelves at the back and on both sides of the cavity.
 
-![](../../.gitbook/assets/028.jpg)
+![](../../.gitbook/assets/028.JPG)
 {% endtab %}
 
 {% tab title="4-6" %}
@@ -241,13 +243,13 @@ Secure the Display Driver Board to the Optics Bracket using three M2 8mm thread-
 
 Important Note: Do not flex the Display Drive Board significantly, as it can damage the solder welds between the electronic components and the board. If tightening the screws will flex the board, reposition things so that it won't, or leave the screws loose as necessary.
 
-![](../../.gitbook/assets/030.jpg)
+![](../../.gitbook/assets/030.JPG)
 {% endtab %}
 
 {% tab title="4-8" %}
 The result should look like this... except that our camera lens kind of makes it look like the display driver board is flexed here. It isn't, and yours shouldn't be either. Seriously. Don't flex the board.
 
-![](../../.gitbook/assets/031%20%281%29.jpg)
+![](<../../.gitbook/assets/031 (1).JPG>)
 {% endtab %}
 {% endtabs %}
 
@@ -262,24 +264,24 @@ You will need:
 {% tab title="5-1" %}
 
 
-![](../../.gitbook/assets/032-step7.jpg)
+![](../../.gitbook/assets/032-step7.JPG)
 {% endtab %}
 
 {% tab title="5-2" %}
-Connect either end of the JST Power Jumper cable to the JST socket on the Power Filter Board as shown. Hold the Power Filter Board with one hand \(not shown\) while inserting the jumper cable connector with the other.
+Connect either end of the JST Power Jumper cable to the JST socket on the Power Filter Board as shown. Hold the Power Filter Board with one hand (not shown) while inserting the jumper cable connector with the other.
 
-![](../../.gitbook/assets/033.jpg)
+![](../../.gitbook/assets/033.JPG)
 {% endtab %}
 {% endtabs %}
 
 ### Step 6- Prepare Display Trays
 
-1. Display Trays \(25, or 75cm depending on which focal length you want. If you're unsure choose the 25cm to start with.\)
-2. Heat-set inserts \(8\)
+1. Display Trays (25, or 75cm depending on which focal length you want. If you're unsure choose the 25cm to start with.)
+2. Heat-set inserts (8)
 
 {% tabs %}
 {% tab title="6-1" %}
-![](../../.gitbook/assets/036-step8.jpg)
+![](../../.gitbook/assets/036-step8.JPG)
 {% endtab %}
 
 {% tab title="6-2" %}
@@ -287,23 +289,23 @@ Install the heat-set inserts into the back of the display trays.
 
 Note: In the case of the 75cm trays, make sure that the inserts don't poke through too much into the slot for the display. If necessary, push inserts back into place from the other side.
 
-![](../../.gitbook/assets/037.jpg)
+![](../../.gitbook/assets/037.JPG)
 {% endtab %}
 
 {% tab title="6-3" %}
 The end result should look like this:
 
-![](../../.gitbook/assets/038.jpg)
+![](../../.gitbook/assets/038.JPG)
 {% endtab %}
 {% endtabs %}
 
 ### Step 7- Peeling back the display ribbon cables
 
 {% hint style="success" %}
-If you have the new ribbon cable extensions skip to [**Step 9B**](deck-x-assembly-guide.md#step-9-b-installing-the-displays-with-the-ribbon-cable-extensions)\*\*\*\*
+If you have the new ribbon cable extensions skip to [**Step 9B**](deck-x-assembly-guide.md#step-9-b-installing-the-displays-with-the-ribbon-cable-extensions)****
 {% endhint %}
 
-It will be very helpful to read through this step in full before proceeding. Pay Careful Attention and exercise patience. This is the hardest step in assembly of the headset. **\(Note that step 7-4 has multiple photos, you have to scroll down to see them\)**
+It will be very helpful to read through this step in full before proceeding. Pay Careful Attention and exercise patience. This is the hardest step in assembly of the headset. **(Note that step 7-4 has multiple photos, you have to scroll down to see them)**
 
 1. **Patience**
 2. **BOE 3.5" 1440px1600p displays**
@@ -312,7 +314,7 @@ It will be very helpful to read through this step in full before proceeding. Pay
 {% tab title="7-1" %}
 Locate your displays and place them face down on your assembly surface. Make sure that the surface is clean and clear of any debris that might scratch the display surface. Do not remove the protective film from the display.
 
-![](../../.gitbook/assets/039-step9.jpg)
+![](../../.gitbook/assets/039-step9.JPG)
 {% endtab %}
 
 {% tab title="7-2" %}
@@ -320,43 +322,43 @@ Okay... this is the scary part, so take a break and take some deep breaths. If y
 
 If you have a hair dryer or heat gun, use it at a LOW temperature to slightly soften the adhesive holding the ribbon cables to the back of the displays. Move your hot-air-blowing-device back and forth across the ribbon. If you don't feel confident doing this, don't do it. We're not sending you free replacement displays if you screw this up.
 
-![](../../.gitbook/assets/040.jpg)
+![](../../.gitbook/assets/040.JPG)
 {% endtab %}
 
 {% tab title="7-3" %}
 Starting from the loose end of the display connector ribbon cable, gently peel back the ribbon using even force and being careful not to tear it. This part is pretty easy. If you're lucky, the adhesive will come off the back of the display with the ribbon. You just won the lottery and at this point can just keep peeling until you get to the part of the ribbon with the electronics on it. If not, don't fret too much. You'll do fine.
 
-![](../../.gitbook/assets/041.jpg)
+![](../../.gitbook/assets/041.JPG)
 {% endtab %}
 
 {% tab title="7-4" %}
 Now that we've gotten to the part where the ribbon widens out and is populated with components, we're going to carefully keep separating the ribbon from the board. If the adhesive came off with the ribbon, this should be straightforward. If, in the more likely scenario that the adhesive is too solidly attached to the back of the display to peel it off by itself, we're just going to have to carefully work the edge free. Don't use a blade to do this.
 
-![](../../.gitbook/assets/042.jpg)
+![](../../.gitbook/assets/042.JPG)
 
 The greatest risk here is that the ribbon comes free and you accidentally tear the much thinner and delicate ribbon film actually connecting the FPC film to the display backplane. Don't do that. Be careful. And in case you catch it the first time, be careful!
 
-![](../../.gitbook/assets/043.jpg)
+![](../../.gitbook/assets/043.JPG)
 
 The other side of the ribbon isn't as delicate, and won't tear as easily because the backlight power FPC connects at this end. Regardless, be careful!
 
-![](../../.gitbook/assets/044.jpg)
+![](../../.gitbook/assets/044.JPG)
 
 Yay! We got... oh wait. No we didn't. The adhesive is still holding the ribbon to the back of the display.
 
-![](../../.gitbook/assets/045.jpg)
+![](../../.gitbook/assets/045.JPG)
 
 How about we just use our screwdriver to carefully peel the adhesive from the back of the ribbon.
 
-![](../../.gitbook/assets/046.jpg)
+![](../../.gitbook/assets/046.JPG)
 
-Seems that worked. That was quite an adventure. Let's do it again! \(Go do it again with the other display. That was too intense, so we'll just wait over here for you until you're done. Good luck, friend.\)
+Seems that worked. That was quite an adventure. Let's do it again! (Go do it again with the other display. That was too intense, so we'll just wait over here for you until you're done. Good luck, friend.)
 {% endtab %}
 
 {% tab title="7-5" %}
-Woohoo! You made it! Have some Gummy Bears! \(No, there aren't any in the kit, but if you've got some handy, have some.\)
+Woohoo! You made it! Have some Gummy Bears! (No, there aren't any in the kit, but if you've got some handy, have some.)
 
-![](../../.gitbook/assets/047.jpg)
+![](../../.gitbook/assets/047.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -380,11 +382,11 @@ Slide the display, down into the tray as shown. The edges of the tray should sli
 {% tab title="8-3" %}
 You can now lower the film back into place on the display surface. Ideally, leave them there until assembly is finished.
 
-![](../../.gitbook/assets/051.jpg)
+![](../../.gitbook/assets/051.JPG)
 {% endtab %}
 {% endtabs %}
 
-### Step 9a- Installing the Display Assembly \(Left Side\)
+### Step 9a- Installing the Display Assembly (Left Side)
 
 {% tabs %}
 {% tab title="9-1" %}
@@ -402,45 +404,45 @@ Place the left display tray into position as shown, the small tab at the top of 
 {% endtab %}
 
 {% tab title="9-3" %}
-If installed properly the threaded holes should line up with those in the optics bracket as shown. 
+If installed properly the threaded holes should line up with those in the optics bracket as shown.&#x20;
 
 ![](../../.gitbook/assets/061.jpg)
 {% endtab %}
 
 {% tab title="9-4" %}
-Hold the Power Jumper Cable out of the way of the display ribbon connector, then bend \(but do not crease\) the display ribbon as shown.
+Hold the Power Jumper Cable out of the way of the display ribbon connector, then bend (but do not crease) the display ribbon as shown.
 
 ![](../../.gitbook/assets/062.jpg)
 
-![](../../.gitbook/assets/063.jpg)
+![](../../.gitbook/assets/063.JPG)
 {% endtab %}
 
 {% tab title="9-5" %}
-Firmly Press the ribbon cable into the receptor on the driver board as shown. This does not require force, and will snap into place, 
+Firmly Press the ribbon cable into the receptor on the driver board as shown. This does not require force, and will snap into place,&#x20;
 
-![](../../.gitbook/assets/065.jpg)
+![](../../.gitbook/assets/065.JPG)
 {% endtab %}
 
 {% tab title="9-6" %}
-Locate the four screw locations on the rear of the optics bracket and use M2.5 Screws to fasten the display tray into the headset. 
+Locate the four screw locations on the rear of the optics bracket and use M2.5 Screws to fasten the display tray into the headset.&#x20;
 
 ![](../../.gitbook/assets/067.jpg)
 {% endtab %}
 
 {% tab title="9-7" %}
-Awesome! It should look like the following image! Now let's move on to the right side. 
+Awesome! It should look like the following image! Now let's move on to the right side.&#x20;
 
-![](../../.gitbook/assets/069.jpg)
+![](../../.gitbook/assets/069.JPG)
 {% endtab %}
 {% endtabs %}
 
-### Step 9a- Installing the Display Assembly \(Right Side\)
+### Step 9a- Installing the Display Assembly (Right Side)
 
 {% tabs %}
 {% tab title="9-1" %}
-Just like the previous step, go ahead and bend the cable like shown, careful not to crease the cable. 
+Just like the previous step, go ahead and bend the cable like shown, careful not to crease the cable.&#x20;
 
-![](../../.gitbook/assets/070-step11-right.jpg)
+![](../../.gitbook/assets/070-step11-right.JPG)
 {% endtab %}
 
 {% tab title="9-2" %}
@@ -452,17 +454,17 @@ Bend the cable under itself as shown
 {% endtab %}
 
 {% tab title="9-3" %}
-Slide the display tray into place, lining the notch up with the opening in the optics bracket. 
+Slide the display tray into place, lining the notch up with the opening in the optics bracket.&#x20;
 
-![](../../.gitbook/assets/073.jpg)
+![](../../.gitbook/assets/073.JPG)
 {% endtab %}
 
 {% tab title="9-4" %}
 Ensure that the display tray also lines up with the mounting location on the bottom of the optics bracket
 
-![](../../.gitbook/assets/074.jpg)
+![](../../.gitbook/assets/074.JPG)
 
-![](../../.gitbook/assets/075.jpg)
+![](../../.gitbook/assets/075.JPG)
 {% endtab %}
 
 {% tab title="9-5" %}
@@ -476,9 +478,9 @@ Verify that the notch is secured in place, then attach the ribbon cable to the d
 {% endtab %}
 
 {% tab title="9-7" %}
-Just like in the previous step, go ahead and screw in the display tray. 
+Just like in the previous step, go ahead and screw in the display tray.&#x20;
 
-![](../../.gitbook/assets/079.jpg)
+![](../../.gitbook/assets/079.JPG)
 {% endtab %}
 
 {% tab title="9-8" %}
@@ -492,7 +494,7 @@ Great Job! The headset should look like this currently! Next, we'll be installin
 
 ### Step9b - Installing the Displays with the Ribbon Cable Extensions
 
-We recently introduced a new product to improve the installation and safety of the display process. The ribbon cable extensions remove the need to peel the display cable and provide a cleaner overall installation experience. Please see the following video for instructions: 
+We recently introduced a new product to improve the installation and safety of the display process. The ribbon cable extensions remove the need to peel the display cable and provide a cleaner overall installation experience. Please see the following video for instructions:&#x20;
 
 {% embed url="https://www.youtube.com/watch?v=KuaIzV14c1s" %}
 
@@ -502,21 +504,21 @@ Newer headset kits come with a piece that does not use the heat set inserts, you
 
 {% tabs %}
 {% tab title="10-1" %}
-Locate the t261/Integrator Mounting bracket, this part is printed using PETG, which has a higher thermal threshold than the previous PLA prints, as such you will need to make sure your soldering iron is at a higher temperature. 
+Locate the t261/Integrator Mounting bracket, this part is printed using PETG, which has a higher thermal threshold than the previous PLA prints, as such you will need to make sure your soldering iron is at a higher temperature.&#x20;
 
 ![](../../.gitbook/assets/081-step12.jpg)
 {% endtab %}
 
 {% tab title="10-02" %}
-Installing the heat-set inserts will generally follow the same process as the previous sets. 
+Installing the heat-set inserts will generally follow the same process as the previous sets.&#x20;
 
-![](../../.gitbook/assets/082.jpg)
+![](../../.gitbook/assets/082.JPG)
 {% endtab %}
 
 {% tab title="10-03" %}
 That was pretty straightforward, onto the next step!
 
-![](../../.gitbook/assets/083%20%281%29.jpg)
+![](<../../.gitbook/assets/083 (1).JPG>)
 {% endtab %}
 {% endtabs %}
 
@@ -524,59 +526,61 @@ That was pretty straightforward, onto the next step!
 
 {% tabs %}
 {% tab title="11-1" %}
-oh boy fun stuff! Grab the included thermal paste, three heatsinks, and t261 sensor/mount. 
+oh boy fun stuff! Grab the included thermal paste, three heatsinks, and t261 sensor/mount.&#x20;
 
-![](../../.gitbook/assets/084-step13.jpg)
+![](../../.gitbook/assets/084-step13.JPG)
 {% endtab %}
 
 {% tab title="11-2" %}
-Line up the t261 sensor so that it lines up with the notch on the left side of the bracket. 
+Line up the t261 sensor so that it lines up with the notch on the left side of the bracket.&#x20;
 
-![](../../.gitbook/assets/085.jpg)
+![](../../.gitbook/assets/085.JPG)
+
+
 {% endtab %}
 
 {% tab title="11-3" %}
 Ensuring that the t261 is aligned properly, attach the heatsink to the middle of the t261 sensor.
 
-![](../../.gitbook/assets/086.jpg)
+![](../../.gitbook/assets/086.JPG)
 
-![](../../.gitbook/assets/087.jpg)
+![](../../.gitbook/assets/087.JPG)
 {% endtab %}
 
 {% tab title="11-4" %}
 Now that you have the middle heatsink aligned properly, remove the t261 from the bracket, next we'll be applying the thermal paste for the remaining two heatsinks.
 
-![](../../.gitbook/assets/089.jpg)
+![](../../.gitbook/assets/089.JPG)
 {% endtab %}
 
 {% tab title="11-5" %}
 Apply thermal paste to the two indented rectangles as shown.
 
-![](../../.gitbook/assets/090.jpg)
+![](../../.gitbook/assets/090.JPG)
 
-![](../../.gitbook/assets/091.jpg)
+![](../../.gitbook/assets/091.JPG)
 {% endtab %}
 
 {% tab title="11-6" %}
 When installing the heatsink you'll way to make sure that it does not block the vent at the top or bottom of the t261, line it up as illustrated below.
 
-![](../../.gitbook/assets/092.jpg)
+![](../../.gitbook/assets/092.JPG)
 
-![](../../.gitbook/assets/093.jpg)
+![](../../.gitbook/assets/093.JPG)
 {% endtab %}
 
 {% tab title="11-7" %}
-Following a similar process as the previous step, attach the heatsink to the other side of the t261, aligning it as illustrated. 
+Following a similar process as the previous step, attach the heatsink to the other side of the t261, aligning it as illustrated.&#x20;
 
-![](../../.gitbook/assets/095.jpg)
+![](../../.gitbook/assets/095.JPG)
 
-![](../../.gitbook/assets/097.jpg)
+![](../../.gitbook/assets/097.JPG)
 {% endtab %}
 
 {% tab title="11-8" %}
 Awesome! Now that you've got all the heatsinks installed your t261 should look like this!
 
-![](../../.gitbook/assets/098.jpg)
+![](../../.gitbook/assets/098.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -586,19 +590,19 @@ Awesome! Now that you've got all the heatsinks installed your t261 should look l
 {% tab title="12-1" %}
 Take note of the notch on the t261 bracket, we'll be using this to align and fasten the fan.
 
-![](../../.gitbook/assets/099-step-14.jpg)
+![](<../../.gitbook/assets/099-step 14.JPG>)
 {% endtab %}
 
 {% tab title="12-2" %}
 Holding the power cable out of the way, orient the fan so that the screw hole will line up with the t261 bracket as shown.
 
-![](../../.gitbook/assets/100.jpg)
+![](../../.gitbook/assets/100.JPG)
 {% endtab %}
 
 {% tab title="12-3" %}
 once you have the fan aligned go ahead and screw it into the t261 bracket.
 
-![](../../.gitbook/assets/101.jpg)
+![](../../.gitbook/assets/101.JPG)
 
 ![](../../.gitbook/assets/102.jpg)
 {% endtab %}
@@ -606,9 +610,9 @@ once you have the fan aligned go ahead and screw it into the t261 bracket.
 {% tab title="12-4" %}
 Flip the bracket around and fasten a second screw into the bottom right corner of the fan as illustrated below. Once finished this step we will move onto installing the t261 sensor.
 
-![](../../.gitbook/assets/104.jpg)
+![](../../.gitbook/assets/104.JPG)
 
-![](../../.gitbook/assets/105.jpg)
+![](../../.gitbook/assets/105.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -616,15 +620,15 @@ Flip the bracket around and fasten a second screw into the bottom right corner o
 
 {% tabs %}
 {% tab title="13-1" %}
-On this step we will be installing the t261 sensor, note the two holes on the t261 and on the mounting bracket. 
+On this step we will be installing the t261 sensor, note the two holes on the t261 and on the mounting bracket.&#x20;
 
-![](../../.gitbook/assets/107-step15.jpg)
+![](../../.gitbook/assets/107-step15.JPG)
 {% endtab %}
 
 {% tab title="13-2" %}
 Line up the t261 with the two mounting holes on the t261 bracket and fasten screws. As with previous steps make sure not to over fasten the screws.
 
-![](../../.gitbook/assets/108.jpg)
+![](../../.gitbook/assets/108.JPG)
 
 ![](../../.gitbook/assets/110.jpg)
 {% endtab %}
@@ -634,17 +638,17 @@ Line up the t261 with the two mounting holes on the t261 bracket and fasten scre
 
 {% tabs %}
 {% tab title="14-1" %}
-Installing the integrator board is as simple as 1,2,3,4. for screws and it's in! As with previous screws be sure not to over tighten them. 
+Installing the integrator board is as simple as 1,2,3,4. for screws and it's in! As with previous screws be sure not to over tighten them.&#x20;
 
-![](../../.gitbook/assets/111-step16.jpg)
+![](../../.gitbook/assets/111-step16.JPG)
 {% endtab %}
 
 {% tab title="14-2" %}
 The Mounting bracket also has two small pins to allow you to line it up easier. It should look as shown below.
 
-![](../../.gitbook/assets/112.jpg)
+![](../../.gitbook/assets/112.JPG)
 
-![](../../.gitbook/assets/113.jpg)
+![](../../.gitbook/assets/113.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -652,43 +656,43 @@ The Mounting bracket also has two small pins to allow you to line it up easier. 
 
 {% tabs %}
 {% tab title="15-1" %}
-In this step we'll be installing the ribbon cable that connects the integrator board to the t261. 
+In this step we'll be installing the ribbon cable that connects the integrator board to the t261.&#x20;
 
-![](../../.gitbook/assets/114-step17.jpg)
+![](../../.gitbook/assets/114-step17.JPG)
 {% endtab %}
 
 {% tab title="15-2" %}
 Open the gate and slide in the ribbon cable in a similar manner to how we setup the leap motion connection in step 3.The gate does not require force to open or close.
 
-![](../../.gitbook/assets/115.jpg)
+![](../../.gitbook/assets/115.JPG)
 
 ![](../../.gitbook/assets/116.jpg)
 {% endtab %}
 
 {% tab title="15.3" %}
-Connecting the ribbon cable to the integrator board functions in the same way we just connected it to the adapter board, make sure you plug it into the right header as shown here and you'll be set. 
+Connecting the ribbon cable to the integrator board functions in the same way we just connected it to the adapter board, make sure you plug it into the right header as shown here and you'll be set.&#x20;
 
-![](../../.gitbook/assets/117.jpg)
+![](../../.gitbook/assets/117.JPG)
 {% endtab %}
 
 {% tab title="15.4" %}
 Line up the connection between the adapter board and the t261 sensor. This connector works in a similar way to the display driver board.
 
-![](../../.gitbook/assets/118.jpg)
+![](../../.gitbook/assets/118.JPG)
 {% endtab %}
 
 {% tab title="15.5" %}
 Once the cable is attached properly your t261 bracket should look like the photo below. Next we'll be connecting the fan to the integrator.
 
-![](../../.gitbook/assets/121.jpg)
+![](../../.gitbook/assets/121.JPG)
 {% endtab %}
 
 {% tab title="15.6" %}
-The fan connection is a relatively standard connector for electronics. Make sure to match up the red \(positive\) and black \(ground\) to the correct polarity.
+The fan connection is a relatively standard connector for electronics. Make sure to match up the red (positive) and black (ground) to the correct polarity.
 
-![](../../.gitbook/assets/122.jpg)
+![](../../.gitbook/assets/122.JPG)
 
-![](../../.gitbook/assets/124.jpg)
+![](../../.gitbook/assets/124.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -698,7 +702,7 @@ It's the home stretch now! Let's attach the Integrator to the Optics Bracket!
 
 {% tabs %}
 {% tab title="16-1" %}
-Before we screw in the Integrator Mount we will need to plug in the display cable. You don't need to force it in, but it should be firmly connected. 
+Before we screw in the Integrator Mount we will need to plug in the display cable. You don't need to force it in, but it should be firmly connected.&#x20;
 
 ![](../../.gitbook/assets/125-step18.jpg)
 {% endtab %}
@@ -712,21 +716,21 @@ Fastening the integrator board is simple using the M2.5 screws
 {% tab title="16.3" %}
 After fastening the Integrator bracket we'll attach the ribbon cable from the leap motion to the Integrator as shown below.
 
-![](../../.gitbook/assets/128.jpg)
+![](../../.gitbook/assets/128.JPG)
 {% endtab %}
 
 {% tab title="16.4" %}
-Next we'll attach the power jumper to the integrator board, this allows the integrator board to handle powering the display board as well as the LMC and the t261 off a single cable! 
+Next we'll attach the power jumper to the integrator board, this allows the integrator board to handle powering the display board as well as the LMC and the t261 off a single cable!&#x20;
 
-![](../../.gitbook/assets/130.jpg)
+![](../../.gitbook/assets/130.JPG)
 
 ![](../../.gitbook/assets/131.jpg)
 {% endtab %}
 
 {% tab title="16.5" %}
-Starting to look impressive right? Only a few more steps now, Your headset should look like the photo shown below. 
+Starting to look impressive right? Only a few more steps now, Your headset should look like the photo shown below.&#x20;
 
-![](../../.gitbook/assets/132.jpg)
+![](../../.gitbook/assets/132.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -742,7 +746,7 @@ Locate your usb A to usb C cable, you'll be using the usb C connector to plug in
 {% tab title="17-2" %}
 Plug the cable in as shown below, note that the cable will have to loop around in order to be mounted properly, this is due to space constraints inside the lid of the headset.
 
-![](../../.gitbook/assets/134.jpg)
+![](../../.gitbook/assets/134.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -750,7 +754,7 @@ Plug the cable in as shown below, note that the cable will have to loop around i
 
 {% tabs %}
 {% tab title="18-1" %}
-Locate your Lid, D-Pad, and two round buttons, for this step we'll be installing the buttons and button control board. 
+Locate your Lid, D-Pad, and two round buttons, for this step we'll be installing the buttons and button control board.&#x20;
 
 ![](../../.gitbook/assets/136-step20.jpg)
 {% endtab %}
@@ -758,39 +762,39 @@ Locate your Lid, D-Pad, and two round buttons, for this step we'll be installing
 {% tab title="18-2" %}
 Take note of the alignment pin, this will help you position the D-Pad in the correct orientation, as well as the circuit board for the buttons.
 
-![](../../.gitbook/assets/137.jpg)
+![](../../.gitbook/assets/137.JPG)
 {% endtab %}
 
 {% tab title="18-3" %}
-The button with the small round circle goes in the top slot, and the larger round circle goes in the bottom slot, each button is unique, and switching them around will result in buttons that are difficult to push, so make sure to put them in properly. 
+The button with the small round circle goes in the top slot, and the larger round circle goes in the bottom slot, each button is unique, and switching them around will result in buttons that are difficult to push, so make sure to put them in properly.&#x20;
 
-![](../../.gitbook/assets/138.jpg)
+![](../../.gitbook/assets/138.JPG)
 {% endtab %}
 
 {% tab title="18-4" %}
 After you've got your buttons installed, go ahead and locate your button board, four m.2 button head screws, and the two cables shown below.
 
-![](../../.gitbook/assets/139-step21.jpg)
+![](../../.gitbook/assets/139-step21.JPG)
 {% endtab %}
 
 {% tab title="18-5" %}
-Before installing the board, you'll need to plug the cables in. This is similar to how we plugged the fan cable in earlier. 
+Before installing the board, you'll need to plug the cables in. This is similar to how we plugged the fan cable in earlier.&#x20;
 
-![](../../.gitbook/assets/140.jpg)
+![](../../.gitbook/assets/140.JPG)
 {% endtab %}
 
 {% tab title="18-6" %}
 The metal pin on the bottom of the board is for power delivery, make sure the jumper is connected properly, it should slide right onto the connector.
 
-![](../../.gitbook/assets/141.jpg)
+![](../../.gitbook/assets/141.JPG)
 
-![](../../.gitbook/assets/142.jpg)
+![](../../.gitbook/assets/142.JPG)
 {% endtab %}
 
 {% tab title="18.7" %}
-After you've got your cables connected screw the button board into the headset as shown below, take not to align it with properly, the two pins are there to help with that. 
+After you've got your cables connected screw the button board into the headset as shown below, take not to align it with properly, the two pins are there to help with that.&#x20;
 
-![](../../.gitbook/assets/144.jpg)
+![](../../.gitbook/assets/144.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -800,13 +804,13 @@ After you've got your cables connected screw the button board into the headset a
 {% tab title="19-1" %}
 Attaching the lid is pretty simple, though there are a lot of screws to keep track of. You'll need four m.2 screws to attach to the heat threaded inserts, and two self threading screws.
 
-![](../../.gitbook/assets/145-step22.jpg)
+![](../../.gitbook/assets/145-step22.JPG)
 {% endtab %}
 
 {% tab title="19-2" %}
 before screwing the lid on, you'll need to connect the button board cables, first up is the power jumper, the connection type is the same as it was on the button board. simply slide the jumper onto the metal rod on the integrator board.
 
-![](../../.gitbook/assets/146.jpg)
+![](../../.gitbook/assets/146.JPG)
 {% endtab %}
 
 {% tab title="19-3" %}
@@ -818,7 +822,7 @@ next up attach the input cable to the integrator board as shown.
 {% tab title="19-4" %}
 Once both cables are connected your headset should look like this.
 
-![](../../.gitbook/assets/149.jpg)
+![](../../.gitbook/assets/149.JPG)
 {% endtab %}
 
 {% tab title="19-5" %}
@@ -838,13 +842,13 @@ Once you've got the lid in position, maneuver the display and power cables so th
 {% tab title="19-7" %}
 Yay more screws! Locate the screw holes shown below and apply the proper screws to each, if the hole has a heat threaded insert, use a flat m.2 screw, if it does not, use the self threading screws that we identified earlier.
 
-![](../../.gitbook/assets/157.jpg)
+![](../../.gitbook/assets/157.JPG)
 {% endtab %}
 
 {% tab title="19-8" %}
 Congrats! We're almost there! Just two parts left!!
 
-![](../../.gitbook/assets/158.jpg)
+![](../../.gitbook/assets/158.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -854,7 +858,7 @@ Congrats! We're almost there! Just two parts left!!
 {% tab title="20-1" %}
 Don't skip this step! Padding is important, and 3D prints are not comfortable when applied directly to your forehead.
 
-![](../../.gitbook/assets/159-step23.jpg)
+![](../../.gitbook/assets/159-step23.JPG)
 {% endtab %}
 
 {% tab title="20-2" %}
@@ -864,19 +868,19 @@ This step is pretty self explanatory, just like a sticker, remove the film from 
 {% endtab %}
 
 {% tab title="20-3" %}
-Remove the backing from the 3M foam strip and apply to the forehead rest. 
+Remove the backing from the 3M foam strip and apply to the forehead rest.&#x20;
 
 ![](../../.gitbook/assets/162.jpg)
 
-![](../../.gitbook/assets/164.jpg)
+![](../../.gitbook/assets/164.JPG)
 {% endtab %}
 
 {% tab title="20-4" %}
-Once the padding is applied, it should look like this, use two thread forming screws to attach the forehead rest to the headset. 
+Once the padding is applied, it should look like this, use two thread forming screws to attach the forehead rest to the headset.&#x20;
 
-![](../../.gitbook/assets/166.jpg)
+![](../../.gitbook/assets/166.JPG)
 
-![](../../.gitbook/assets/167.jpg)
+![](../../.gitbook/assets/167.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -886,7 +890,7 @@ Once the padding is applied, it should look like this, use two thread forming sc
 {% tab title="21-1" %}
 Installing the combiners is one of the easiest steps, no screws, no glue, just form fitting polycarbonate!
 
-![](../../.gitbook/assets/169-step25.jpg)
+![](../../.gitbook/assets/169-step25.JPG)
 {% endtab %}
 
 {% tab title="21-2" %}
@@ -896,15 +900,15 @@ Line the combiner up so that the tabs on the top of the combiner are in sync wit
 {% endtab %}
 
 {% tab title="21-3" %}
-once you've done that you can apply a small amount of force to the optics bracket and the combiners to fit the side tabs in. As always, don't go crazy with pressure here, they'll snap in with little resistance. 
+once you've done that you can apply a small amount of force to the optics bracket and the combiners to fit the side tabs in. As always, don't go crazy with pressure here, they'll snap in with little resistance.&#x20;
 
-![](../../.gitbook/assets/171.jpg)
+![](../../.gitbook/assets/171.JPG)
 {% endtab %}
 
 {% tab title="21-4" %}
-Once you've got the combiner in, it should look like this, note the lack of gaps shown on the edges. 
+Once you've got the combiner in, it should look like this, note the lack of gaps shown on the edges.&#x20;
 
-![](../../.gitbook/assets/172.jpg)
+![](../../.gitbook/assets/172.JPG)
 {% endtab %}
 {% endtabs %}
 
@@ -912,23 +916,22 @@ Once you've got the combiner in, it should look like this, note the lack of gaps
 
 {% tabs %}
 {% tab title="22-1" %}
-Now that the Combiners are in place it's time to lock in the optics bracket. Get two \(2\) M2.5 screws and fasten the display trays to the optics bracket at the mounting points on the bottom of the bracket.
+Now that the Combiners are in place it's time to lock in the optics bracket. Get two (2) M2.5 screws and fasten the display trays to the optics bracket at the mounting points on the bottom of the bracket.
 
-![](../../.gitbook/assets/173-step26.jpg)
+![](../../.gitbook/assets/173-step26.JPG)
 {% endtab %}
 
 {% tab title="22-2" %}
-Once you've got the screws in your headset should like the photos below, note that the display trays aren't completely flush with the headset. 
+Once you've got the screws in your headset should like the photos below, note that the display trays aren't completely flush with the headset.&#x20;
 
-![](../../.gitbook/assets/175.jpg)
+![](../../.gitbook/assets/175.JPG)
 
-![](../../.gitbook/assets/174.jpg)
+![](../../.gitbook/assets/174.JPG)
 {% endtab %}
 
 {% tab title="22-3" %}
-All Done! Congrats on making it through the build process! To get started with software, check out the [Software](../../software/software.md) page, and the \#First-Steps channel on the discord!
+All Done! Congrats on making it through the build process! To get started with software, check out the [Software](../../software/software.md) page, and the #First-Steps channel on the discord!
 
-![](../../.gitbook/assets/176.jpg)
+![](../../.gitbook/assets/176.JPG)
 {% endtab %}
 {% endtabs %}
-

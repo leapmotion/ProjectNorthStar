@@ -6,8 +6,10 @@
 
 ## Getting Started!
 
-* [General FAQ](getting-started/faq.md)
+* [About](getting-started/about.md)
+* [FAQ](getting-started/faq.md)
 * [Helpful Content](getting-started/community-links.md)
+* [FAQ Ahead.IO Kits](getting-started/faq-ahead.io-kits.md)
 * [FAQ Smart Prototyping Kits](getting-started/faq-smart-prototyping-kits.md)
 
 ## Mechanical
@@ -16,7 +18,7 @@
   * [Deck X Assembly Guide](mechanical/combine-reality-deck-x/deck-x-assembly-guide.md)
   * [Deck X Bill of Materials](mechanical/combine-reality-deck-x/deck-x-bill-of-materials.md)
 * [Headgear Assembly Guide](mechanical/headgear-assembly.md)
-* [Northstar Release 3](mechanical/release-3/README.md)
+* [North Star Release 3](mechanical/release-3/README.md)
   * [Release 3 Bill of Materials](mechanical/release-3/headset-bom.md)
   * [Release 3 Assembly Guide](mechanical/release-3/headset-assembly.md)
   * [Changelog](mechanical/release-3/changelog.md)
@@ -29,6 +31,7 @@
 
 * [Getting Started with Software](software/getting-started-with-software.md)
 * [Esky](software/esky.md)
+* [Monado](software/monado.md)
 * [SteamVR](software/steamvr.md)
 * [Unity](software/software.md)
 
@@ -50,11 +53,11 @@
 ## Community Links
 
 * [Discord Community](https://discordapp.com/invite/NghjdX7)
-* [\#ProjectNorthStar On Twitter](https://twitter.com/search?q=%23ProjectNorthStar)
+* [#ProjectNorthStar On Twitter](https://twitter.com/search?q=%23ProjectNorthStar)
 * [Reddit Community](https://www.reddit.com/r/ProjectNorthStar/)
 * [Leap Motion Forums](https://forums.leapmotion.com/t/project-north-star/7071)
 
-## Leap Motion Blogs <a id="blogs"></a>
+## Leap Motion Blogs <a href="#blogs" id="blogs"></a>
 
 * [Leap Motion North Star Blog](http://blog.leapmotion.com/tag/north-star/)
 * [Unveiling Project North Star](blogs/blogs.md)
@@ -63,4 +66,3 @@
 * [Project North Star: Mechanical Update 1](blogs/project-north-star-mechanical-update-1.md)
 * [Project North Star: Mechanical and Calibration Update 3.1](blogs/project-north-star-mechanical-and-calibration-update-3.1.md)
 * [Project North Star: Mechanical Update 3](blogs/project-north-star-mechanical-update-3.md)
-
