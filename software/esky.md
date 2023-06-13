@@ -9,7 +9,7 @@ description: >-
 
 Project Esky is a complete unity framework that handles
 
-* Rendering (with 2D and 3D (V1 and V2) **** [**Optical Calibration**](../calibration/getting-started/)**s**)
+* Rendering (with 2D and 3D (V1 and V2) [**Optical Calibration**](../calibration/getting-started/)**s**)
 * MRTK Integration with the Leap Motion controller (aligned with the user's view)
 * 6DoF Head Tracking + Re-Localization events (Save map, load map, add persistence, callbacks, etc.)
 * Peer to Peer based co-localization and networking at the click of a button (Provided devices are on the same local network)

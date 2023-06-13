@@ -8,7 +8,7 @@ The Deck X headset uses the same headgear from release 3. The build process is d
 
 ### Contribution & Credits
 
-This page was contributed by [**Guillermo Guillesanbri**](https://guillesanbri.github.io/)****
+This page was contributed by [**Guillermo Guillesanbri**](https://guillesanbri.github.io/)
 
 If we take a look at the first page with instructions starting from the end of the document, we will find the 230-000 instructions.
 
@@ -34,7 +34,7 @@ First, we need to bend the forehead headgear span, to do this, it’s recommende
 * Using hot water.
 * Anything that gets the piece to \~70 °C.
 
-You can now shape the piece with a mannequin head or your own head if you cover your skin to avoid first degree burns (not really, just be careful). [**Demo video by Florian Maurer.**](https://www.youtube.com/watch?v=FLRj4\_IuamE)****
+You can now shape the piece with a mannequin head or your own head if you cover your skin to avoid first degree burns (not really, just be careful). [**Demo video by Florian Maurer.**](https://www.youtube.com/watch?v=FLRj4\_IuamE)
 
 Once we have the piece bent, it’s time to wrap up the foam, to do so, I did this, **I’m not 100% sure this is the best/correct way to do it**, but it worked out fine for me. Take into account that the felt-like side is the smoothest one and should be the one in contact with your forehead.
 

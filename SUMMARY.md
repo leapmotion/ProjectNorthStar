@@ -11,6 +11,11 @@
 * [Helpful Content](getting-started/community-links.md)
 * [FAQ Ahead.IO Kits](getting-started/faq-ahead.io-kits.md)
 
+## ✨ Northstar Next
+
+* [✨ Introduction](northstar-next/introduction.md)
+* [✨ Assembly Guide](northstar-next/assembly-guide.md)
+
 ## Mechanical
 
 * [Combine Reality Deck X](mechanical/combine-reality-deck-x/README.md)

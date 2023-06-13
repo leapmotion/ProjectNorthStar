@@ -24,13 +24,21 @@ You may also find it helpful to acquire these special [soldering iron tips](http
 {% tab title="1-1" %}
 Locate the Optics Bracket
 
-![](<../../.gitbook/assets/001-step1 (1).jpg>)
+<div align="left">
+
+<img src="../../.gitbook/assets/001-step1 (1).jpg" alt="">
+
+</div>
 {% endtab %}
 
 {% tab title="1-2" %}
 Locate six heat-set threaded inserts. Note that the two ends of the inserts are different; one has a flat surface around the threaded hole, while the other is tapered. You will be installing the inserts with the tapered end down, inserting your soldering iron into the flat end. For information about using heat-set inserts into printed plastic parts, read thi[s](https://hackaday.com/2019/02/28/threading-3d-printed-parts-how-to-use-heat-set-inserts/) [Hackaday artic](https://hackaday.com/2019/02/28/threading-3d-printed-parts-how-to-use-heat-set-inserts/)le.
 
-![Locate six heat threaded inserts](../../.gitbook/assets/002.jpg)
+<div align="left">
+
+<img src="../../.gitbook/assets/002.jpg" alt="Locate six heat threaded inserts">
+
+</div>
 {% endtab %}
 
 {% tab title="1-3" %}
@@ -302,7 +310,7 @@ The end result should look like this:
 ### Step 7- Peeling back the display ribbon cables
 
 {% hint style="success" %}
-If you have the new ribbon cable extensions skip to [**Step 9B**](deck-x-assembly-guide.md#step-9-b-installing-the-displays-with-the-ribbon-cable-extensions)****
+If you have the new ribbon cable extensions skip to [**Step 9B**](deck-x-assembly-guide.md#step-9-b-installing-the-displays-with-the-ribbon-cable-extensions)
 {% endhint %}
 
 It will be very helpful to read through this step in full before proceeding. Pay Careful Attention and exercise patience. This is the hardest step in assembly of the headset. **(Note that step 7-4 has multiple photos, you have to scroll down to see them)**

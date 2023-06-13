@@ -10,11 +10,11 @@ description: >-
 
 There are currently three methods of developing software on Northstar headsets.&#x20;
 
-1. ****[**Esky**](esky.md) **** This is the recommended developer experience. Esky is currently built on Unity and has built in support for the MRTK. It has video passthrough with the t261/t265, temporal reprojection, and supports both the 2D and 3D calibration methods. \
+1. [**Esky**](esky.md) This is the recommended developer experience. Esky is currently built on Unity and has built in support for the MRTK. It has video passthrough with the t261/t265, temporal reprojection, and supports both the 2D and 3D calibration methods. \
 
 2. &#x20;[**Unity**](software.md) This is the default unity experience, it's barebones and built for the 3D calibration rig. If you're experienced with unity and want to tinker with the original source code for Northstar this is the place for you.\
 
-3. ****[**SteamVR**](steamvr.md) The SteamVR integration allows any SteamVR game to run on a Northstar headset. Hand tracking isn't a replacement for controllers yet so you won't have a fun time in beat saber, but for demos like cat explorer or the infamous cubes demo you'll have full support for hand tracking.\
+3. [**SteamVR**](steamvr.md) The SteamVR integration allows any SteamVR game to run on a Northstar headset. Hand tracking isn't a replacement for controllers yet so you won't have a fun time in beat saber, but for demos like cat explorer or the infamous cubes demo you'll have full support for hand tracking.\
 
 4. **Prebuilt Examples** There are a handful of prebuilt demos for Northstar including LeapPaint, Galaxies and others. These will be linked on a separate page/database at a future date, for now, [**join the discord**](https://discord.com/invite/NghjdX7) and check the #showcase channel.&#x20;
 
@@ -50,8 +50,8 @@ In order to use your t261/t265 sensor you'll need to install the RealSense SDK, 
 
 There are currently three methods of getting software running on Northstar headsets.&#x20;
 
-1. ****[**Esky**](esky.md) **** This is the recommended developer experience. It has video passthrough with the t261/t265, built-in support for the mixed reality toolkit and support for both 2D and 3D calibration methods.&#x20;
+1. [**Esky**](esky.md) This is the recommended developer experience. It has video passthrough with the t261/t265, built-in support for the mixed reality toolkit and support for both 2D and 3D calibration methods.&#x20;
 2. &#x20;[**Unity**](software.md) This is the default unity experience, it's barebones and built for the 3D calibration rig. If you're experienced with unity and want to tinker with the original source code for Northstar this is the place for you.
-3. ****[**SteamVR**](steamvr.md) The steamvr integration allows any SteamVR game to run on a Northstar headset. Hand tracking isn't a replacement for controllers yet so you won't have a fun time in beat saber, but for demos like cat explorer or the infamous cubes demo you'll have full support for hand tracking a
+3. [**SteamVR**](steamvr.md) The steamvr integration allows any SteamVR game to run on a Northstar headset. Hand tracking isn't a replacement for controllers yet so you won't have a fun time in beat saber, but for demos like cat explorer or the infamous cubes demo you'll have full support for hand tracking a
 4. **Prebuilt Examples** There are a handful of prebuilt demos for Northstar including LeapPaint, Galaxies and others. These will be linked on a separate page/database at a future date, for now, [join the discord](https://discord.com/invite/NghjdX7) and check the #showcase channel&#x20;
 

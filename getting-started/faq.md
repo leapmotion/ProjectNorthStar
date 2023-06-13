@@ -94,7 +94,7 @@ These numbers refer to the focal distance that the images appear from the user. 
 \
 Typically, we recommend starting with a 25cm build since they are easier to get started with. \
 \
-&#x20;**** 25cm is sharper for items attached to your hand or right in front of your face.
+&#x20;25cm is sharper for items attached to your hand or right in front of your face.
 
 \- 25cm provides a much better experience when using all the virtual wearable interfaces from Leap Motion
 

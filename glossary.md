@@ -56,6 +56,14 @@ PD stands for power delivery. This is another subsection of the USB specificatio
 
 ## Electrical Engineering Terms 🔋
 
+### PCB&#x20;
+
+PCB stands for Printer Circuit Board. These are typically sheets of multi-layered copper that contain traces which allow electrical signals to be transmitted on the board. These signals can include power and data.&#x20;
+
+### FPC
+
+FPC stands for Flexible Printed Circuit, these are similar to PCBs, but the main difference is that these are flexible and can bend. These cables are used to connect the displays and other components and are often used in board to board connections when PCBs may be located in different locations that a rigid connection isn't suited for.&#x20;
+
 ### MCU
 
 MCU stands for Micro-controller. Microcontrollers are little self-contained computers in a chip that execute programs called firmware. These chips are on PCBs, or printed circuit boards. The programs control various peripherals that are either built into the chip or connected externally. Popular examples of Micro-controllers include [**Arduino**](https://www.arduino.cc) and Rasberry Pi.&#x20;
@@ -84,11 +92,11 @@ A DP to MIPI bridge is a specific chip designed to convert signal from a DP inpu
 
 ### Git
 
-Git is a common type of Source Control, Allowing developers to maintain a history of their code which is incredibly helpful in diagnosing and figuring out undesired results of changes to that code. You can learn more about Git here: [**https://docs.gitlab.com/ee/topics/git/**](https://docs.gitlab.com/ee/topics/git/)****
+Git is a common type of Source Control, Allowing developers to maintain a history of their code which is incredibly helpful in diagnosing and figuring out undesired results of changes to that code. You can learn more about Git here: [**https://docs.gitlab.com/ee/topics/git/**](https://docs.gitlab.com/ee/topics/git/)
 
 ### Pull Request
 
-A Pull Request is a term used to describe the act of submitting a piece of code for review and merging into the main code base. You can learn more about pull requests [**here**](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)****
+A Pull Request is a term used to describe the act of submitting a piece of code for review and merging into the main code base. You can learn more about pull requests [**here**](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 ### Runtime&#x20;
 
@@ -114,6 +122,6 @@ VIO stands for Visual Intertial Odometry, VIO is an important part of the proces
 
 ### IMU&#x20;
 
-IMU stands for Inertial Measurement Unit, it is a device that can read out vectors like acceleration, and gravity.In Northstar's case these devices are used for 3DOF movement and can help with [**VIO**](glossary.md#vio) and [**SLAM**](glossary.md#slam) [**https://en.wikipedia.org/wiki/Inertial\_measurement\_unit**](https://en.wikipedia.org/wiki/Inertial\_measurement\_unit)****
+IMU stands for Inertial Measurement Unit, it is a device that can read out vectors like acceleration, and gravity.In Northstar's case these devices are used for 3DOF movement and can help with [**VIO**](glossary.md#vio) and [**SLAM**](glossary.md#slam) [**https://en.wikipedia.org/wiki/Inertial\_measurement\_unit**](https://en.wikipedia.org/wiki/Inertial\_measurement\_unit)
 
 ####
