@@ -38,25 +38,25 @@ Project Northstar uses the same displays commonly used in VR headsets to provide
 
 #### Software Comparison
 
-| Functionality          | Northstar | Hololens 2 | MagicLeap | ARKit   | ARCore   |
-| ---------------------- | --------- | ---------- | --------- | ------- | -------- |
-| **Device Tracking**    | ✅         | ✅          | ✅         | ✅       | ✅        |
-| **Hand Tracking**      | ✅         | ✅          | ✅         | ✅       | ❌        |
-| **SteamVR**            | ✅         | ❌          | ❌         | ❌       | ❌        |
-| **Plane Tracking**     | ❌         | ✅          | ✅         | ✅       | ✅        |
-| **Anchors**            | ✅         | ✅          | ✅         | ✅       | ✅        |
-| **Light Estimation**   | ❌         | ❌          | ❌         | ✅       | ✅        |
-| **Environment Probes** | ❌         | ❌          |           | ✅       | ✅        |
-| **Face tracking**      | ❌         | ❌          | ❌         | ✅       | ✅        |
-| **Meshing**            | Zed Mini  | ✅          | ✅         | lidar\* | DepthKit |
-| **2D image tracking**  | Aruco     | ✅          | ✅         | ✅       | ✅        |
-| **Speech Input**       | ❌         | ✅          | ✅         |         |          |
+| Functionality           | Northstar | Hololens 2 | MagicLeap | ARKit   | ARCore   |
+| ----------------------- | --------- | ---------- | --------- | ------- | -------- |
+| **Positional Tracking** | ✅         | ✅          | ✅         | ✅       | ✅        |
+| **Hand Tracking**       | ✅         | ✅          | ✅         | ✅       | ❌        |
+| **SteamVR**             | 👷‍♂️     | ❌          | ❌         | ❌       | ❌        |
+| **Plane Tracking**      | ❌         | ✅          | ✅         | ✅       | ✅        |
+| **Anchors**             | ✅         | ✅          | ✅         | ✅       | ✅        |
+| **Light Estimation**    | ❌         | ❌          | ❌         | ✅       | ✅        |
+| **Environment Probes**  | ❌         | ❌          |           | ✅       | ✅        |
+| **Face tracking**       | ❌         | ❌          | ❌         | ✅       | ✅        |
+| **Meshing**             | ❌         | ✅          | ✅         | lidar\* | DepthKit |
+| **2D image tracking**   | Aruco     | ✅          | ✅         | ✅       | ✅        |
+| **Speech Input**        | ❌         | ✅          | ✅         |         |          |
 
 ### Where can I get the lenses and electronic components?
 
-While most of the design is 3d printable, there are components, like the screens, driver board, combiners, and leap motion controller that you will have to order. You can order your parts, upgrade kits, or fully assembled headsets here:&#x20;
+While most of the design is 3d printable, there are components, like the screens, driver board, combiners, and leap motion controller that you will have to order. You can order your parts or full kits from the shop here:
 
-{% embed url="https://www.smart-prototyping.com/AR-VR-MR-XR/AR-VR-Kits-Bundles" %}
+{% embed url="https://shop.combinereality.com" %}
 
 ### What 3d printer should I get?
 

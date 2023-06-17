@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Project North Star](README.md)
+* [Project Northstar](README.md)
 * [Code of Conduct](code-of-conduct.md)
 * [Glossary](glossary.md)
 
@@ -9,27 +9,12 @@
 * [About](getting-started/about.md)
 * [FAQ](getting-started/faq.md)
 * [Helpful Content](getting-started/community-links.md)
-* [FAQ Ahead.IO Kits](getting-started/faq-ahead.io-kits.md)
 
 ## ✨ Northstar Next
 
 * [✨ Introduction](northstar-next/introduction.md)
 * [✨ Assembly Guide](northstar-next/assembly-guide.md)
-
-## Mechanical
-
-* [Combine Reality Deck X](mechanical/combine-reality-deck-x/README.md)
-  * [Deck X Assembly Guide](mechanical/combine-reality-deck-x/deck-x-assembly-guide.md)
-  * [Deck X Bill of Materials](mechanical/combine-reality-deck-x/deck-x-bill-of-materials.md)
-* [Headgear Assembly Guide](mechanical/headgear-assembly.md)
-* [North Star Release 3](mechanical/release-3/README.md)
-  * [Release 3 Bill of Materials](mechanical/release-3/headset-bom.md)
-  * [Release 3 Assembly Guide](mechanical/release-3/headset-assembly.md)
-  * [Changelog](mechanical/release-3/changelog.md)
-* [Northstar Release 1](mechanical/northstar-v1/README.md)
-  * [Initial Release 3D Printing Reference](mechanical/northstar-v1/initial-release-3d-printing-reference.md)
-  * [Initial Release Assembly Guide](mechanical/northstar-v1/initial-release-assembly-guide.md)
-* [FAQ Mechanical](mechanical/faq-mechanical.md)
+* [📸 Sensor and Tracking Guide](northstar-next/sensor-and-tracking-guide.md)
 
 ## Software
 
@@ -53,6 +38,25 @@
 * [Electronics](electronics/electronics.md)
 * [Firmware](electronics/firmware.md)
 * [Schematics](electronics/schematics.md)
+
+## Previous Headset Designs <a href="#mechanical" id="mechanical"></a>
+
+* [Combine Reality Deck X](mechanical/combine-reality-deck-x/README.md)
+  * [Deck X Assembly Guide](mechanical/combine-reality-deck-x/deck-x-assembly-guide.md)
+  * [Deck X Bill of Materials](mechanical/combine-reality-deck-x/deck-x-bill-of-materials.md)
+* [Headgear Assembly Guide](mechanical/headgear-assembly.md)
+* [Northstar Release 3](mechanical/release-3/README.md)
+  * [Release 3 Bill of Materials](mechanical/release-3/headset-bom.md)
+  * [Release 3 Assembly Guide](mechanical/release-3/headset-assembly.md)
+  * [Changelog](mechanical/release-3/changelog.md)
+* [Northstar Release 1](mechanical/northstar-v1/README.md)
+  * [Initial Release 3D Printing Reference](mechanical/northstar-v1/initial-release-3d-printing-reference.md)
+  * [Initial Release Assembly Guide](mechanical/northstar-v1/initial-release-assembly-guide.md)
+* [FAQ Mechanical](mechanical/faq-mechanical.md)
+
+## FAQ & Vendors
+
+* [FAQ Ahead.IO Kits](faq-and-vendors/faq-ahead.io-kits.md)
 
 ## Community Links
 
