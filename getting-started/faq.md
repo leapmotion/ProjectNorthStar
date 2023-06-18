@@ -54,9 +54,15 @@ Project Northstar uses the same displays commonly used in VR headsets to provide
 
 ### Where can I get the lenses and electronic components?
 
-While most of the design is 3d printable, there are components, like the screens, driver board, combiners, and leap motion controller that you will have to order. You can order your parts or full kits from the shop here:
+While most of the design is 3d printable, there are components, like the screens, driver board, combiners, and leap motion controller that you will have to order.
+
+For [Northstar Next](broken-reference) you can get them from the CombineReality shop.
 
 {% embed url="https://shop.combinereality.com" %}
+
+{% hint style="info" %}
+CombineReality is a company started by Noah Zerkin and Alex Chu to be able to build, fund, and distribute Northstar Headsets.&#x20;
+{% endhint %}
 
 ### What 3d printer should I get?
 
