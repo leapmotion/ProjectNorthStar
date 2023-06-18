@@ -2,7 +2,7 @@
 description: The future of spatial computing deserves to be open.
 ---
 
-# Project North Star
+# Project Northstar
 
 ## Welcome to the [Community Built Documentation](https://project-north-star.gitbook.io/project-north-star/) for Project North Star!
 
@@ -28,15 +28,9 @@ For a more detailed look into the project, checkout our **General FAQ**, or Mech
 
 ## Variations
 
-Project Northstar has seen its fair share of revisions and updates since the original open-source files were released. To clear up any ambiguity from the outset, **Release 1** was an internal release. **Release 2**, the first public open-source release (sometimes referred to as the **initial release**), was in 2018. **Release 3** came in 2019 and improved on the mechanical design in many ways. As shown from the table below, the newly released **Deck X** is probably what new users will want to start with. It uses an integrated circuit board to reduce cables from the headset to just two, (USB 3 /mini DP), by combining USB devices into a custom-built USB hub + Arduino module.&#x20;
+Project North Star has seen its fair share of revisions and updates since the original open-source files were released. To clear up any ambiguity from the outset, **Release 1** was an internal release. **Release 2**, the first public open-source release (sometimes referred to as the **initial release**), was in 2018. **Release 3** came in 2019 and improved on the mechanical design in many ways. The Deck X innovated on this and provided an integrated circuit board to reduce cables from the headset to just two, (USB 3 / mini-DP), by combining USB devices into a custom-built USB hub + Arduino module. As shown from the table below, the newly released **Northstar Next** is probably what new users will want to start with, it has an emphasis on modularity and affordability.
 
-| Name                                         | Status   | Date        | Developer      | Spatial Tracking | Headgear | Bracket |
-| -------------------------------------------- | -------- | ----------- | -------------- | ---------------- | -------- | ------- |
-| [Deck X](mechanical/combine-reality-deck-x/) | Active   | 21 AUG 2020 | CombineReality | Realsense T261   | 3.1      | 3.2     |
-| Release 3-2                                  | InDev    | TBD         | LeapMotion     | Realsense T265   | 3.2      | 3.2     |
-| [Release 3-1](mechanical/release-3/)         | Stable   | 3 APR 2019  | LeapMotion     | Realsense T265   | 3.1      | 3.1     |
-| [Release 3](mechanical/release-3/)           | Stable   | 23 JAN 2019 | LeapMotion     | Realsense T265   | 3        | 3       |
-| Release 2                                    | Outdated | 6 JUN 2018  | LeapMotion     | N/A              | 1        | 1       |
+<table data-header-hidden><thead><tr><th width="168">Name</th><th width="111">Status</th><th width="136">Date</th><th width="162">Developer</th><th width="136">Spatial Tracking</th><th width="141">Hand Tracking</th><th width="107">Headgear</th><th>Optics Bracket</th></tr></thead><tbody><tr><td><a href="broken-reference">Northstar Next</a></td><td>Active</td><td>06 JUN 2023</td><td>CombineReality</td><td>XR50 / T261</td><td>SIR 170</td><td>BoboVR</td><td>Custom</td></tr><tr><td><a href="mechanical/combine-reality-deck-x/">Deck X</a></td><td>Active</td><td>21 AUG 2020</td><td>CombineReality</td><td>T261</td><td>LMC / SIR 170</td><td>3.1</td><td>3.2</td></tr><tr><td>Release 3-2</td><td>In Dev.</td><td>TBD</td><td>Leap Motion</td><td>T265</td><td>LMC</td><td>3.2</td><td>3.2</td></tr><tr><td><a href="mechanical/release-3/">Release 3-1</a></td><td>Outdated</td><td>03 APR 2019</td><td>Leap Motion</td><td>T265</td><td>LMC</td><td>3.1</td><td>3.1</td></tr><tr><td><a href="mechanical/release-3/">Release 3</a></td><td>Outdated</td><td>23 JAN 2019</td><td>Leap Motion</td><td>T265</td><td>LMC</td><td>3</td><td>3</td></tr><tr><td>Release 2</td><td>Outdated</td><td>6 JUN 2018</td><td>Leap Motion</td><td>N/A</td><td>LMC</td><td>1</td><td>1</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)

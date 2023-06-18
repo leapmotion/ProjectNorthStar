@@ -6,13 +6,13 @@ description: Work In Progress documentation on how to setup
 
 ### Installing Third Party Dependencies
 
-#### Intel Realsense
+#### Intel RealSense
 
-Download librealsense for intel's github repo.
+Download librealsense **v2.53.1** from Intel's github repo.
 
-{% embed url="https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md" %}
+{% embed url="https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md" fullWidth="false" %}
 
-Install using the following commands
+Debian / Ubuntu Install
 
 ```
 sh
@@ -20,6 +20,8 @@ sudo apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C
 sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo focal main" -u
 sudo apt-get install librealsense2-dkms librealsense2-utils librealsense2-dev librealsense2-dbg
 ```
+
+
 
 ### Installing Monado Dependencies
 
