@@ -45,11 +45,11 @@ The new display driver board supports two BOE 1440x1600 displays at \~90hz. The 
 
 ### Connecting the ribbon cables to the driver board.&#x20;
 
-The Driver board and break out boards, pictured here use special [FPC ](../glossary.md#fpc)connectors. These connectors have the pins wrap around the connector, meaning that either side can make contact with the ribbon cable pins.&#x20;
+The Driver board and break out boards use special [FPC ](../glossary.md#fpc)connectors. These connectors have the pins wrap around the connector, meaning that either side can make contact with the ribbon cable pins.&#x20;
 
 
 
-The ribbon connections on the Driver board and Adapter boards use a special ribbon connection gate. The gates have pins on both the top and bottom of the connector. **This means you **_<mark style="color:orange;">**must**</mark>_** connect the display ribbon cable as follows, otherwise you will short your displays.**&#x20;
+The ribbon connections on the Driver board and Adapter boards use an FPC connection called a **Backflip Latch**. The gates have pins on both the top and bottom of the connector. **This means you **_<mark style="color:orange;">**must**</mark>_** connect the display ribbon cable as shown in the instructions, otherwise you will short your displays.**&#x20;
 
 
 
@@ -57,15 +57,17 @@ In order to connect the ribbon cables to the adapter boards correctly you must d
 
 {% tabs %}
 {% tab title="Step 1" %}
-The gates on the Driver board and Adapter boards should be opened. In the photo below the gate on the right of the driver board is open, and the gate on the left is closed.&#x20;
+The gates on the Driver board and Adapter boards should be opened. In the photo below the backflip latch on the right of the driver board is open, and the backflip latch on the left is closed.&#x20;
 
-Move both gates to an open position.&#x20;
+Move both latches to the open position.&#x20;
 
 <figure><img src="../.gitbook/assets/02CED8D8-7CA6-495E-B724-4D49A4CFC84A.jpeg" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Step 2" %}
-Ensure that the ribbon cables are facing down so the pins are facing the [PCB ](../glossary.md#pcb)on the circuit board.&#x20;
+Ensure that the ribbon cables are facing down so the pins are facing the [PCB ](../glossary.md#pcb)on the circuit board. \
+\
+Ensure that the ribbon cable is fully inserted in the backflip latch, it should be fully parallel like shown below. Once inserted, close the latch.
 
 <figure><img src="../.gitbook/assets/2A91D442-EF26-4BEB-8841-28DB244F047C.jpeg" alt=""><figcaption></figcaption></figure>
 
@@ -109,6 +111,8 @@ Take a moment to examine each connection.&#x20;
 
 Are the cables fully inserted in each connector?&#x20;
 
+Are the backflip latches closed and fully secure?
+
 Are the cables in the correct orientation? \
 \
 It’s always better to be patient and double check your work then to rush and power on a system haphazardly.&#x20;
@@ -117,7 +121,7 @@ It’s always better to be patient and double check your work then to rush and p
 {% tab title="Step 6" %}
 Power on your Display Driver board by connecting the USB-C cable. \
 \
-Be careful when handling the displays as the cable will likely try to pull the driver board and displays along with it. \
+Be careful when handling the displays as the USB-C cable will likely try to pull the driver board and displays along with it.\
 \
 The driver board has no power button, so connecting the cable will power it on automatically. \
 \
